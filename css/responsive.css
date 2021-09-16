@@ -1,0 +1,587 @@
+
+/* a partir de 591px lo prestablecido 
+de 0px a 590px lo establecido a continuación*/
+@media (max-width:758px) {
+
+    /* 590px */
+
+    * {
+        box-sizing: border-box;
+        margin: 0px;
+        border: 0px;
+        padding: 0px;
+    }
+
+    .container__tittle {
+        display: flex;
+        height: 30%;
+        background: black;
+    }
+
+    .tittle {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .header__align {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
+
+    #menu {
+        border: none;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 24px;
+        font-size: 18px
+    }
+
+    .logo__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40%;
+    }
+
+    .subtittle {
+        display: none;
+    }
+
+    #header {
+        width: 100%;
+        height: 175px;
+    }
+
+    /* fin header */
+    
+    /* inicio hombre*/
+
+    #layout__hombre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+    }
+
+    #layout__hombre .layout__hombre__tittle {
+        height: 120px;
+        font-size: 30px;
+        padding: 12px;
+        box-shadow: none;
+
+    }
+
+    #layout__hombre .layout__hombre__menu {
+        display: none;
+    }
+
+    #layout__hombre .layout__hombre__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        height: 1000px;
+    }
+
+    .layout__hombre__contenido .layout__hombre__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout__hombre__image .img {
+        width: 320px;
+        height: 300px;
+        border-radius: 80%;
+    }
+    
+    .layout__hombre__image .img:hover {
+        width: 340px;
+        height: 320px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__hombre .layout__hombre__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        font-size: 20px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    /* fin hombre */
+
+    /* inicio mujer */
+
+    #layout__mujer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 3px 0px;
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+    } 
+
+    #layout__mujer .layout__mujer__tittle {
+        justify-self: center;
+        align-self: center;
+        padding:12px;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    #layout__mujer .layout__mujer__menu {
+        display: none;
+    }
+
+    #layout__mujer .layout__mujer__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+        height: 1000px;
+    }
+
+    .layout__mujer__contenido .layout__mujer__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .layout__mujer__image .img {
+        width: 320px;
+        height: 300px;
+        border-radius: 80%;
+    }
+
+    .layout__mujer__image .img:hover {
+        width: 340px;
+        height: 320px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__mujer .layout__mujer__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+   /* fin mujer */
+
+   /* inicio pregunta */
+
+   #comprar {
+    margin-top: 3px;
+    height: 880px;
+    background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+}
+
+   .containerText .titulo-pregunta {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       flex-wrap: wrap;
+       width: 100%;
+       font-size: 25px;
+       margin: 0px;
+   }
+
+    .containerText .subtittle-pregunta {
+         display: none;
+    }
+
+    #comprar .containerPhotos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 10px;
+        width: 100%;
+        gap: 30px;
+        padding:0px;
+        height: 100%;
+    }
+
+
+    .containerPhotos .select-img {
+        overflow: hidden;
+        height: 100%;
+    }
+        /* fin comprar */
+
+        /* inicio descuentos */
+
+        #containerPagos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 430px;
+            margin: 3px 0px;
+        }
+
+        
+      #containerPagos .title__descuentos {
+          justify-self: center;
+          align-self: center;
+          font-size: 20px;
+          padding: 40px;
+      }
+
+      #containerPagos .tabla__descuentos {
+        justify-self: center;
+        align-self: center;
+    
+        width: 70%;
+        height: 62%;
+    }
+
+    /* fin tabla descuento */
+
+    /* inicio formulario */
+
+    #formulario {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        font-size: 12px;
+    }
+
+    
+     #formulario .tituloForm { 
+        justify-self: center;
+        align-self: center;
+        margin: 20px 0px;
+        padding-bottom: 30px;
+        font-size: 14px;
+        font-weight: 100;
+        text-transform: uppercase;
+        width: 100%;
+        height: 10%;
+        border-bottom: 1px solid white;
+    }
+
+    #formulario .titleForm {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #formulario .bodyForm {
+        width: 50%;
+        height: 25px;
+        margin-left: 100px;
+        margin-bottom: 5px;
+        background: rgb(245, 207, 214);
+    }
+
+    #formulario .inputRadio__option {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+       
+    }
+
+    .inputRadio__option p {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 11px;
+        padding-left: 8px;
+    } 
+
+    #formulario .inputSubmit {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+}
+
+@media (max-width:950px) {
+
+    .container__tittle {
+        display: flex;
+        height: 30%;
+        background: black;
+    }
+
+    .tittle {
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        text-align: center;
+        padding-top: 30px;
+        color: white;
+        font-size: 18px;
+    }
+
+    .header__align {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+    }
+
+    #menu {
+        border: none;
+        width: 100%;
+        height: 100%;
+        margin: 0px;
+        padding: 24px;
+        font-size: 18px
+    }
+
+    .logo__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 40%;
+        padding-right: 50px;
+    }
+
+    .subtittle {
+        display: none;
+    }
+
+    #header {
+        width: 100%;
+        height: 175px;
+    }
+
+    /* fin header */
+
+    /* inicio hombre*/
+
+    #layout__hombre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+       /*  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
+    }
+
+    #layout__hombre .layout__hombre__tittle {
+        height: 120px;
+        font-size: 30px;
+        padding: 12px;
+        box-shadow: none;
+
+    }
+
+    #layout__hombre .layout__hombre__menu {
+        display: none;
+    }
+
+    #layout__hombre .layout__hombre__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0px;
+        height: 1000px;
+    }
+
+    .layout__hombre__contenido .layout__hombre__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    .layout__hombre__image .img {
+        width: 320px;
+        height: 300px;
+        border-radius: 80%;
+    }
+    
+    .layout__hombre__image .img:hover {
+        width: 340px;
+        height: 320px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__hombre .layout__hombre__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        font-size: 20px;
+        margin: 0px;
+        width: 100%;
+    }
+
+    /* fin hombre */
+
+    /* inicio mujer */
+
+    #layout__mujer {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        margin: 3px 0px;
+        /* background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
+    } 
+
+    #layout__mujer .layout__mujer__tittle {
+        justify-self: center;
+        align-self: center;
+        padding:12px;
+        height: 120px;
+        font-size: 30px;
+    }
+
+    #layout__mujer .layout__mujer__menu {
+        display: none;
+    }
+
+    #layout__mujer .layout__mujer__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+        height: 1000px;
+    }
+
+    .layout__mujer__contenido .layout__mujer__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .layout__mujer__image .img {
+        width: 320px;
+        height: 300px;
+        border-radius: 80%;
+    }
+
+    .layout__mujer__image .img:hover {
+        width: 340px;
+        height: 320px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__mujer .layout__mujer__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+        font-size: 20px;
+    }
+
+   /* fin mujer */
+
+   #comprar {
+    margin-top: 3px;
+   }
+   
+
+    /* fin comprar */
+
+    /* inicio descuento */
+
+    #containerPagos {
+        margin: 3px 0px;
+    }
+
+    /* inicio formulario */
+
+    #formulario {
+    margin: 3px 0px;
+    }
+
+}
+
+
+
+@media (max-width:1000px) {
+
+    #container {
+        width:100%;
+    }
+
+    .layout__hombre__contenido .layout__hombre__image {
+        overflow: hidden;
+  }
+
+    
+     .layout__mujer__contenido .layout__mujer__image {
+       overflow: hidden;
+       width: 80%;
+ }
+
+
+    #comprar .containerPhotos {
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        width: 100%;
+        column-gap: 50px;
+        padding-left: 0px;
+
+ }
+
+     .containerPhotos .select-img {
+         overflow: hidden;
+
+  }
+
+}
+
+@media (max-width:1256px) {
+
+    .layout__hombre__contenido .layout__hombre__image {
+        overflow: hidden;
+  }
+
+    
+     .layout__mujer__contenido .layout__mujer__image {
+       overflow: hidden;
+ }
+
+}
