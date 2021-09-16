@@ -67,7 +67,6 @@
     width: 90%;
     flex-direction: row;
     align-items: center;
-
 }
 
 #menu {
@@ -97,6 +96,21 @@ img.logotipo {
    width: 55px;
    height: 52px;
    border-radius:80%;
+   overflow: hidden;
+   animation-name: logoRotate;
+   animation-duration: 1s;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+}
+
+@keyframes logoRotate {
+    from {
+        transform:rotateZ(0deg)
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
 }
 
 .container__subtittle {
@@ -165,13 +179,15 @@ ul li:hover ul {
     text-transform: uppercase;
     color: black;
     padding: 5px;
-    transition: all 300ms;
+    overflow: hidden;
+    transition: all 500ms;
 }
 
 #menu a:hover {
-    background: rgb(139, 138, 138);
+    /* background: rgb(139, 138, 138); */
     /* color: rgb(253, 19, 253); */
     color: rgb(0, 235, 252);
+    font-size: 20px;
 }
 
 .subtittle__subpag {
