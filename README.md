@@ -11,7 +11,8 @@ En el mismo se utilizan los lenguajes HTML y CSS:
 Box
 Flex
 Grid
-Responsive. 
+Responsive
+Bootstrap. 
 
 Muchas Gracias por observar.
 Agradecería su feedback. 
