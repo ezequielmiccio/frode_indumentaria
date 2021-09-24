@@ -4,310 +4,366 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width", user-scalable=no>
+
+    <!-- para que el responsive funcione -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Idea Miccio</title>
 
     <link id="logofrode" rel="icon" href="./assets/images/logotipo-frode.jpg">
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&family=Staatliches&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Ephesis&family=Staatliches&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Ephesis&family=Special+Elite&family=Staatliches&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Ephesis&family=Poiret+One&family=Special+Elite&family=Staatliches&family=Varela+Round&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2&family=Bebas+Neue&family=Economica&family=Ephesis&family=Poiret+One&family=Special+Elite&family=Staatliches&family=Varela+Round&display=swap" rel="stylesheet">
 
 </head>
 
+<body id="myStyles">
 
-<body>
+    <div id="container">
 
-        <div id="container">
+        <header id="header">
 
-            <header id="header">
+            <div class="container__tittle">
+                <h1 class="tittle">Frode Indumentaria</h1>
+            </div>
 
-              <div class="container__tittle">
-                   <h1 class="tittle">Frode Indumentaria</h1>
-              </div>
+            <section class="header__align">
 
-                    <section class="header__align">
+                <div class="logo__image">
+                    <a href="#container"><img class="logotipo" src="./assets/images/logotipo-frode.jpg" alt="frode"></a>
+                </div>
 
-                       <div class="logo__image">
-                           <a href="#container"><img class="logotipo" src="./assets/images/logotipo-frode.jpg" alt="frode"></a> 
-                       </div>
-         
-                        <nav id="menu"> 
-                           <ul>
-                               <li class="menu__option"><a href="./páginas/hombre.html">Hombre</a>
-                                   <ul>
-                                       <li><a href="./páginas/hombre.html">Calzados</a></li>
-                                       <li><a href="./páginas/hombre.html">Pantalones</a> </li>
-                                       <li><a href="./páginas/hombre.html">Remeras</a> </li>
-                                   </ul>
-                               </li>
-
-                               <li class="menu__option"><a href="./páginas/mujer.html">Mujer</a>
-                                   <ul>
-                                        <li><a href="./páginas/mujer.html">Calzados</a></li>
-                                        <li><a href="./páginas/mujer.html">Pantalones</a></li>
-                                        <li><a href="./páginas/mujer.html">Remeras</a></li>
-                                   </ul>
-                               </li>
-
-                               <li class="menu__option"><a href="./páginas/niños.html">Niños</a>
-                                   <ul>
-                                        <li><a href="./páginas/niños.html">Calzados</a></li>
-                                        <li><a href="./páginas/niños.html">Pantalones</a></li>
-                                        <li><a href="./páginas/niños.html">Remeras</a></li>
-                                   </ul>
-                               </li>
-
-                               <li class="menu__option"><a href="./páginas/deportes.html">Deporte</a>
-                                   <ul>
-                                        <li><a href="./páginas/deportes.html">Botines</a></li>
-                                        <li><a href="./páginas/deportes.html">Shorts</a></li>
-                                        <li><a href="./páginas/deportes.html">Camisetas</a></li>
-                                   </ul>
-                               </li>
-                      
-                                  <li class="menu__option"><a href="./páginas/invierno.html">Invierno</a>
-                                      <ul>
-                                          <li><a href="./páginas/invierno.html">Calzados</a></li>
-                                          <li><a href="./páginas/invierno.html">Pantalones</a></li>
-                                          <li><a href="./páginas/invierno.html">Camperas</a></li>
-                                      </ul>
-                                 </li>
-                             
+                <nav id="menu">
+                    <ul id="textDeco">
+                        <li><a href="./páginas/hombre.html">Hombre</a>
+                            <ul>
+                                <li><a href="./páginas/hombre.html">Calzados</a></li>
+                                <li><a href="./páginas/hombre.html">Pantalones</a> </li>
+                                <li><a href="./páginas/hombre.html">Remeras</a> </li>
                             </ul>
-                       </nav>
-                 </section>
+                        </li>
 
-                         <section class="container__subtittle">
-                             <div class="subtittle">
-                                 <h2><a href="#formulario"> Registrate y obtené 10% OFF</a></h2>
-                             </div>
-                         </section>
+                        <li><a href="./páginas/mujer.html">Mujer</a>
+                            <ul>
+                                <li><a href="./páginas/mujer.html">Calzados</a></li>
+                                <li><a href="./páginas/mujer.html">Pantalones</a></li>
+                                <li><a href="./páginas/mujer.html">Remeras</a></li>
+                            </ul>
+                        </li>
 
-            </header>
-      </div>
+                        <li><a href="./páginas/niños.html">Niños</a>
+                            <ul>
+                                <li><a href="./páginas/niños.html">Calzados</a></li>
+                                <li><a href="./páginas/niños.html">Pantalones</a></li>
+                                <li><a href="./páginas/niños.html">Remeras</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="./páginas/deportes.html">Deporte</a>
+                            <ul>
+                                <li><a href="./páginas/deportes.html">Botines</a></li>
+                                <li><a href="./páginas/deportes.html">Shorts</a></li>
+                                <li><a href="./páginas/deportes.html">Camisetas</a></li>
+                            </ul>
+                        </li>
+
+                        <li><a href="./páginas/invierno.html">Invierno</a>
+                            <ul>
+                                <li><a href="./páginas/invierno.html">Calzados</a></li>
+                                <li><a href="./páginas/invierno.html">Pantalones</a></li>
+                                <li><a href="./páginas/invierno.html">Camperas</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+            </section>
+
+            <section class="container__subtittle">
+                <div class="subtittle">
+                    <h2 id="registroSub"><a href="#formulario">Registrate y obtené 10% OFF</a></h2>
+                </div>
+            </section>
+
+        </header>
+    </div>
 
 
-   <main>
+    <main>
 
-        <div id="layout__hombre">
+        <!-- boostrap -->
 
-                 <div class="layout__hombre__tittle">
-                      <h2><a href="./páginas/hombre.html">HOMBRES</a></h2>
-                 </div>
+        <section id="sectionWeare" class="container-fluid col-12 mb-3 mt-3">
 
-                 <div class="layout__hombre__menu">
-                     <nav>
-                          <ul>
-                              <li>OUTLET</li>
-                              <li>OFERTAS</li>
-                              <li>COLECCIONES</li>
-                              <li>OPORTUNIDAD</li>
-                              <li>AYUDA</li>
-                          </ul>
-                     </nav>
-                 </div>
+            <div class="row">
 
-                <div class="layout__hombre__contenido">
+                <div class="cajaWeare col-6 col-sm-12 col-md-6">
+                    <h2 id="textWeare" class="p-4 text-black display-1 text-uppercase">
+                        Somos Frode
+                    </h2>
+                    <p class="subWeare text-black">llevando el showroom a tu hogar</p>
+                </div>
 
-                  <div class="layout__hombre__image uno">
-                      <a href="./páginas/hombre.html"><img class="img one" src="./assets/images/buzos-frode.JPG" alt="buzos"></a>
-                  </div>
-
-                  <div class="layout__hombre__image dos">
-                     <a href="./páginas/hombre.html"><img class="img two" src="./assets/images/jogger-frode.jpg" alt="jogger-frode"></a>
-                   </div>
-
-                   <div class="layout__hombre__image tres">
-                       <a href="./páginas/hombre.html"><img class="img three" src="./assets/images/remeras-frode.JPG" alt="jogger-frode"></a>
-                   </div>
-
+                <div class="col-6 col-sm-12 col-md-6">
+                    <img id="logoWeare" class="rounded-circle" src="./assets/images/forde300px.jpg" alt="logo">
                 </div>
 
 
-               <div class="layout__hombre__comprar">
-                    <h2><a href="#comprar">Comprar ahora</a></h2>
-               </div>
+            </div>
+
+        </section>
+
+        <!-- fin bootstrap -->
+
+        <div id="layout__hombre">
+
+            <div class="layout__hombre__tittle">
+                <h2><a href="./páginas/hombre.html">HOMBRES</a></h2>
+            </div>
+
+            <div class="layout__hombre__menu">
+                <nav>
+                    <ul>
+                        <li>OUTLET</li>
+                        <li>OFERTAS</li>
+                        <li>COLECCIONES</li>
+                        <li>OPORTUNIDAD</li>
+                        <li>AYUDA</li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="layout__hombre__contenido">
+
+                <div class="layout__hombre__image uno">
+                    <a href="./páginas/hombre.html"><img class="img one" src="./assets/images/buzos-frode.JPG"
+                            alt="buzos"></a>
+                </div>
+
+                <div class="layout__hombre__image dos">
+                    <a href="./páginas/hombre.html"><img class="img two" src="./assets/images/jogger-frode.jpg"
+                            alt="jogger-frode"></a>
+                </div>
+
+                <div class="layout__hombre__image tres">
+                    <a href="./páginas/hombre.html"><img class="img three" src="./assets/images/remeras-frode.JPG"
+                            alt="jogger-frode"></a>
+                </div>
+
+            </div>
+
+
+            <div class="layout__hombre__comprar">
+                <h2><a href="#comprar">Comprar ahora</a></h2>
+            </div>
 
         </div>
 
         <div id="layout__mujer">
 
-             <div class="layout__mujer__tittle">
-                 <h2><a href="./páginas/mujer.html">MUJERES</a></h2>
-             </div>
+            <div class="layout__mujer__tittle">
+                <h2><a href="./páginas/mujer.html">MUJERES</a></h2>
+            </div>
 
-              <div class="layout__mujer__menu">
-                  <nav>
-                     <ul>
-                          <li>OUTLET</li>
-                          <li>OFERTAS</li>
-                          <li>COLECCIONES</li>
-                          <li>OPORTUNIDAD</li>
-                          <li>AYUDA</li>
-                      </ul>
-                  </nav>
-              </div>
+            <div class="layout__mujer__menu">
+                <nav>
+                    <ul>
+                        <li>OUTLET</li>
+                        <li>OFERTAS</li>
+                        <li>COLECCIONES</li>
+                        <li>OPORTUNIDAD</li>
+                        <li>AYUDA</li>
+                    </ul>
+                </nav>
+            </div>
 
-              <div class="layout__mujer__contenido">
+            <div class="layout__mujer__contenido">
 
-                 <div class="layout__mujer__image">
-                     <a href="./páginas/mujer.html"><img class="img" src="./assets/images/mujeresUNO.jpg" alt="buzos"></a> 
-                 </div>
-
-                 <div class="layout__mujer__image">
-                     <a href="./páginas/mujer.html"><img class="img" src="./assets/images/MUJERESDOS.jpg" alt="jogger-frode"></a>
-                 </div>
-
-                    <div class="layout__mujer__image">
-                         <a href="./páginas/mujer.html"><img class="img"  src="./assets/images/MUJERESTRES.jpg" alt="jogger-frode"></a>
-                     </div>
-
+                <div class="layout__mujer__image">
+                    <a href="./páginas/mujer.html"><img class="img" src="./assets/images/mujeresUNO.jpg"
+                            alt="buzos"></a>
                 </div>
 
-                     <div class="layout__mujer__comprar">
-                          <h2><a href="#comprar">Comprar ahora</a></h2>
-                     </div>
+                <div class="layout__mujer__image">
+                    <a href="./páginas/mujer.html"><img class="img" src="./assets/images/MUJERESDOS.jpg"
+                            alt="jogger-frode"></a>
+                </div>
+
+                <div class="layout__mujer__image">
+                    <a href="./páginas/mujer.html"><img class="img" src="./assets/images/MUJERESTRES.jpg"
+                            alt="jogger-frode"></a>
+                </div>
+
+            </div>
+
+            <div class="layout__mujer__comprar">
+                <h2><a href="#comprar">Comprar ahora</a></h2>
+            </div>
 
         </div>
 
 
 
-       <section id="comprar">
+        <section id="comprar">
 
             <div class="containerText">
 
-               <h2 class="titulo-pregunta">
-                   <em>¿Para quién querés comprar?</em>
-               </h2>
+                <h2 class="titulo-pregunta">
+                    <em>¿Para quién querés comprar?</em>
+                </h2>
 
-               <div class="subtittle-pregunta">
+                <div class="subtittle-pregunta">
                     <h3 class="optionH"><a href="./páginas/hombre.html">HOMBRE</a></h3>
                     <h3 class="optionM"><a href="./páginas/mujer.html">MUJER</a></h3>
                     <h3 class="optionN"><a href="./páginas/niños.html">NIÑOS</a></h3>
                 </div>
 
             </div>
-            
+
 
             <div class="containerPhotos">
 
-                <a class="photo1" href="./páginas/hombre.html"><img class="select-img" src="./assets/images/remera-hombre_edited.jpg" alt="hombres"></a>
+                <a class="photo1" href="./páginas/hombre.html"><img class="select-img"
+                        src="./assets/images/remera-hombre_edited.jpg" alt="hombres"></a>
 
-                <a class="photo2" href="./páginas/mujer.html"><img class="select-img" src="./assets/images/portada-mujer_edited.jpg" alt="mujeres"></a>
+                <a class="photo2" href="./páginas/mujer.html"><img class="select-img"
+                        src="./assets/images/portada-mujer_edited.jpg" alt="mujeres"></a>
 
-                <a class="photo3" href="./páginas/niños.html"><img class="select-img" src="./assets/images/edited.jpg" alt="niños"></a>  
+                <a class="photo3" href="./páginas/niños.html"><img class="select-img" src="./assets/images/edited.jpg"
+                        alt="niños"></a>
 
             </div>
-       </section>
+        </section>
 
-         <section id="containerPagos">
+        <section id="containerPagos">
 
-              <div class="title__descuentos">
-                  <h2>
-                      Descuentos exclusivos
-                  </h2>
-              </div>
-
-             <div class="tabla__descuentos">
-
-                    <table class="uno" border="1" cellpading="2">
-
-                      <thead>
-                           <tr>
-                               <th class="titleitem">Método de pago</th>
-                               <th class="titleitem">Descuento</th>
-                           </tr>
-                      </thead>
-   
-                      <tbody>
-                          <tr>
-                             <td class="item">Crédito BBVA</td>
-                             <td class="subitem">30% Reintegro</td>
-                          </tr>
-
-                          <tr>
-                             <td class="item">Cuenta DNI</td>
-                             <td class="subitem">35% Reintegro</td>
-                          </tr>
-
-                           <tr>
-                               <td class="item">Efectivo</td>
-                               <td class="subitem">15% OFF</td>
-                           </tr>
-
-                     </tbody>
-                 </table>
-             </div>
-         </section>
-
-            <section class="container">
-
-              <form id="formulario">
-                 <fieldset>
-                        <legend class="tituloForm"><b> Registrate y obtené un 10% de descuento</b></legend>
-
-                        <label class="titleForm" for="nombre">Nombre y Apellido:</label><input class="bodyForm"  type="text" id="nombre" required> <!-- <br> -->
-                        <label class="titleForm" for="correo">Correo Eléctronico:</label><input class="bodyForm"  type="email" id="correo" required> <!-- <br> -->
-                        <label class="titleForm" for="contraseña">Contraseña:</label><input class="bodyForm" type="password" id="contraseña" required> <!-- <br> -->
- 
-                        <label class="titleForm" for="sexo">Género</label>
-                           <select class="bodyForm"  name="sexo" id="sexo">
-                               <option value="masculino">Masculino</option>
-                               <option value="femenino">Femenino</option>
-                               <option value="otro">Otro</option>
-                           </select>
-
-                           <div class="inputRadio">
-                                  <p class="radioTitle" >¿Desea recibir notificaciones sobre promociones?</p>
-                           </div>
-
-                           <div class="inputRadio__option">
-                                <p>Si</p><input class="radioForm" type="radio" name="yesnot">
-                                <p>No</p><input class="radioForm" type="radio" name="yesnot">
-                           </div>
-
-                         <div class="inputCheck">
-                             <p>Acepto términos y condiciones:</p><input class="checkForm" type="checkbox" name="acepto" value="1" required>
-                         </div>
-
-                       <div inputSubmit>
-                           <input class="formSubmit" type="submit" value="enviar datos">
-                           <input class="formSubmit" type="reset" value="Limpiar formulario">
-                       </div>
-
-                    </fieldset>
-             </form>
-
-            </section>
-
-  </main>
-
-  <footer id="footerInline">
-
-      <div class="containerFooter">
-
-          <div>
-              <p class>TÉRMINOS Y CONDICIONES</p>
-              <p class>INFORMACIÓN DE LA EMPRESA<p>
-              <p class>NOSOTROS</p>
-              <p class>AYUDA</p>
-              <p class>DEFENSA AL CONSUMIDOR</p>
-              <p class>UBICACIÓN</p>
-              <p>REPOSITORIO</p>
-              <p class="author">&copy Creado por Ezequiel Miccio</p>
-              <p class="author">&copy 2021</p>
-           </div>
-
-            <div class="containerCoder">
-                <p class="coder">Coderhouse</p>
-                <p class="coder">Desarrollo Web</p>
-                <p class="coder">08/21 - 10/21</p>
+            <div class="title__descuentos">
+                <h2>
+                    Descuentos exclusivos
+                </h2>
             </div>
 
-      </div>
+            <div class="tabla__descuentos">
 
-  </footer>
+                <table class="uno" border="1" cellpading="2">
+
+                    <thead>
+                        <tr>
+                            <th class="titleitem">Método de pago</th>
+                            <th class="titleitem">Descuento</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td class="item">Crédito BBVA</td>
+                            <td class="subitem">30% Reintegro</td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">Cuenta DNI</td>
+                            <td class="subitem">35% Reintegro</td>
+                        </tr>
+
+                        <tr>
+                            <td class="item">Efectivo</td>
+                            <td class="subitem">15% OFF</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="container-fluid">
+
+            <form id="formulario">
+                <fieldset>
+                    <legend class="tituloForm"><b> Registrate y obtené un 10% de descuento</b></legend>
+
+                    <label class="titleForm" for="nombre">Nombre y Apellido:</label><input class="bodyForm" type="text"
+                        id="nombre" required> <!-- <br> -->
+                    <label class="titleForm" for="correo">Correo Eléctronico:</label><input class="bodyForm"
+                        type="email" id="correo" required> <!-- <br> -->
+                    <label class="titleForm" for="contraseña">Contraseña:</label><input class="bodyForm" type="password"
+                        id="contraseña" required> <!-- <br> -->
+
+                    <label class="titleForm" for="sexo">Género</label>
+                    <select class="bodyForm" name="sexo" id="sexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+
+                    <div class="inputRadio">
+                        <p class="radioTitle">¿Desea recibir notificaciones sobre promociones?</p>
+                    </div>
+
+                    <div class="inputRadio__option">
+                        <p>Si</p><input class="radioForm" type="radio" name="yesnot">
+                        <p>No</p><input class="radioForm" type="radio" name="yesnot">
+                    </div>
+
+                    <div class="inputCheck">
+                        <p>Acepto términos y condiciones:</p><input class="checkForm" type="checkbox" name="acepto"
+                            value="1" required>
+                    </div>
+
+                    <div inputSubmit>
+                        <input class="formSubmit" type="submit" value="enviar datos">
+                        <input class="formSubmit" type="reset" value="Limpiar formulario">
+                    </div>
+
+                </fieldset>
+            </form>
+
+        </section>
+
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"
+        integrity="sha384-W8fXfP3gkOKtndU4JGtKDvXbO53Wy8SZCQHczT5FMiiqmQfUpWbYdTil/SxwZgAN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.min.js"
+        integrity="sha384-skAcpIdS7UcVUC05LJ9Dxay8AXcDYfBJqt1CJ85S/CFujBsIzCIv+l9liuYLaMQ/"
+        crossorigin="anonymous"></script>
 
 </body>
+
+<footer id="footerInline">
+
+    <div class="containerFooter">
+
+        <div>
+            <p class>TÉRMINOS Y CONDICIONES</p>
+            <p class>INFORMACIÓN DE LA EMPRESA
+            <p>
+            <p class>NOSOTROS</p>
+            <p class>AYUDA</p>
+            <p class>DEFENSA AL CONSUMIDOR</p>
+            <p class>UBICACIÓN</p>
+            <p>REPOSITORIO</p>
+            <p class="author">&copy Creado por Ezequiel Miccio</p>
+            <p class="author">&copy 2021</p>
+        </div>
+
+        <div class="containerCoder">
+            <p class="coder">Coderhouse</p>
+            <p class="coder">Desarrollo Web</p>
+            <p class="coder">08/21 - 10/21</p>
+        </div>
+
+    </div>
+
+</footer>
+
 
 </html>

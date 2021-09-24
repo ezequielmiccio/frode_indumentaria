@@ -12,7 +12,7 @@
     text-decoration: none;
 }
 
-#container {
+#container{
     display: flex;
     align-items: center;
 
@@ -83,6 +83,11 @@
     margin-left: 290px;
     height: 60px;
     /* background: rgb(252, 252, 252); */
+    text-decoration: none;
+}
+
+#textDeco{
+    text-decoration: none;
 }
 
 .logo__image {
@@ -98,21 +103,29 @@ img.logotipo {
    border-radius:80%;
    overflow: hidden;
    animation-name: logoRotate;
-   animation-duration: 1s;
+   animation-duration: 3s;
    animation-iteration-count: 1;
    animation-timing-function: linear;
 }
 
 @keyframes logoRotate {
-    from {
+    25% {
         transform:rotateZ(0deg)
     }
 
-    to {
-        transform: rotate(360deg);
+    50% {
+        transform: rotateZ(360deg);
+    }
+
+    75% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
     }
 }
-
+    
 .container__subtittle {
     width: 25%;
     flex-wrap: wrap;
@@ -135,7 +148,12 @@ img.logotipo {
 
 .subtittle a:hover {
     color: cyan;
-    transition: all 500ms;
+    font-size:16px;
+    transition: 500ms;
+}
+
+#registroSub {
+    font-size: 15px;
 }
 
 li {
@@ -171,6 +189,7 @@ ul li:hover ul {
     justify-content: space-around;
     list-style: none;
     align-content: center; /* centrar texto dentro de caja */
+    text-decoration: none;
     
     height: 100%;
 }
@@ -179,7 +198,6 @@ ul li:hover ul {
     text-transform: uppercase;
     color: black;
     padding: 5px;
-    overflow: hidden;
     transition: all 500ms;
 }
 
@@ -246,6 +264,119 @@ ul li:hover ul {
 }
 
 /* fin menu */
+
+/* inicio bs */
+
+#sectionWeare {
+    background-image: url("../assets/images/fondoWeare.jpg.crdownload");
+    overflow: hidden;
+    box-shadow: 2px 1px 10px 3px rgb(158, 157, 157);
+    animation: backBanner 6s linear;
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    90% {
+        background-position: -200px -200px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+#sectionWeare #textWeare {
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Staatliches', cursive;
+    font-family: 'Baloo 2', cursive;
+    font-family: 'Special Elite', cursive;
+   /*  font-family: 'Poiret One', cursive; */
+    /* font-family: 'Economica', sans-serif; */
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 100px;
+    text-align: center;
+    margin-top: 30px;
+    font-style: bold;
+    margin-left: 200px;
+    text-shadow: 1px 1px 3px rgb(228, 228, 228);
+ /*    box-shadow: 1px 3px 7px rgb(179, 176, 176); */
+    overflow: hidden;
+    animation: showText 6s linear;
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-600%) scale(5,5);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateX(600%) scale(3,3);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-600%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 1px 1px 3px rgb(228, 228, 228);
+        color: black;
+        opacity: 1;
+    }
+}
+
+#sectionWeare .subWeare {
+    font-family: 'Ephesis', cursive;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 190px;
+    font-weight: bolder;
+    text-shadow: 1px 1px 2px rgb(110, 110, 110);
+    margin-top: 30px;
+    overflow: hidden;
+    animation: showSub 6s linear;
+}
+
+@keyframes showSub {
+
+    from {
+       transform: translateY(500%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+
+}
+
+#sectionWeare #logoWeare {
+    margin-top: 70px;
+    margin-left: 70px;
+    box-shadow: 1px 1px 7px 1px rgb(228, 228, 228);
+    overflow: hidden;
+    animation: showIcon 6s linear;
+}
+
+@keyframes showIcon {
+    from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+/* fin bs */
 
 /* inicio layout grid */
 
@@ -686,7 +817,7 @@ ul li:hover ul {
 
 /* fin forma de pagos */
 
-section.container {
+section.container-fluid {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -2307,4 +2438,9 @@ text-transform: uppercase;
 
 #lastCuotas .tittleInteresD {
     padding-left: 40px;
+}
+
+body#myStyles {
+    text-decoration: none;
+    text-transform: none;
 }
