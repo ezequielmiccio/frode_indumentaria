@@ -12,13 +12,13 @@
     text-decoration: none;
 }
 
-#container{
+#containerHeader{
     display: flex;
     align-items: center;
 
     width: 100%;
     height: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 2px;
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 0px 0px 10px #ccc;
     min-height: 160px;
@@ -31,7 +31,6 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    
     width: 100%;
     height: 110px;
     border-bottom: 1px solid rgba(175, 172, 172, 0.8);
@@ -51,48 +50,47 @@
 .tittle {
     flex-grow: 1;
     text-align: center;
-    
     font-family: Arial, Helvetica, sans-serif;
     font-size: 12px;
     /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
     text-transform: uppercase;
     /* padding-left: 570px; */
     color: white;
-    padding-bottom: 25px;
+    padding-bottom: 18px;
 
 }
 
 .header__align {
     display: flex;
-    width: 90%;
+    width: 100%;
     flex-direction: row;
     align-items: center;
+ /*    border: none; */
+    text-decoration: none;
 }
 
-#menu {
+nav#menu {
+    margin-top: 24px;
+    margin-right: 380px;
     flex-grow: 1; 
     flex-wrap: wrap;
     justify-content: space-around;
     align-content: center;
-
-    border: 2px solid black;
-    /* border: 1px solid rgba(175, 172, 172, 0.8); */
     font-weight: bold;
-    margin-top: 28px;
-    margin-right: 209px;
-    margin-left: 290px;
     height: 60px;
     /* background: rgb(252, 252, 252); */
     text-decoration: none;
+    background-image: linear-gradient(white, rgb(194, 194, 194));
 }
 
-#textDeco{
+nav#menu #textDeco{
+    font-family: 'Baloo 2', cursive;
     text-decoration: none;
 }
 
 .logo__image {
     margin-top: 30px;
-    margin-left: 18px;
+    margin-left: 53px;
 }
 
 img.logotipo {
@@ -138,12 +136,15 @@ img.logotipo {
     font-weight: lighter;
     /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
     text-transform: uppercase;
-    padding-top: 24px;
-    padding-left: 20px;
+    padding-top: 28px;
+    padding-left: 15px;
 }
 
 .subtittle a {
     color: white;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
 }
 
 .subtittle a:hover {
@@ -190,7 +191,7 @@ ul li:hover ul {
     list-style: none;
     align-content: center; /* centrar texto dentro de caja */
     text-decoration: none;
-    
+    width: 96%;
     height: 100%;
 }
 
@@ -270,8 +271,9 @@ ul li:hover ul {
 #sectionWeare {
     background-image: url("../assets/images/fondoWeare.jpg.crdownload");
     overflow: hidden;
-    box-shadow: 2px 1px 10px 3px rgb(158, 157, 157);
     animation: backBanner 6s linear;
+    margin-bottom: 4px;
+    height: 28rem;
 }
 
 @keyframes backBanner {
@@ -291,11 +293,15 @@ ul li:hover ul {
 #sectionWeare #textWeare {
     font-family: 'Varela Round', sans-serif;
     font-family: 'Staatliches', cursive;
-    font-family: 'Baloo 2', cursive;
-    font-family: 'Special Elite', cursive;
+    /* font-family: 'Baloo 2', cursive; */
+    /* font-family: 'Special Elite', cursive; */
+    /* font-family: 'Bad Script', cursive; */
+    
    /*  font-family: 'Poiret One', cursive; */
     /* font-family: 'Economica', sans-serif; */
+ /*    font-family: 'Alegreya Sans SC', sans-serif; */
     font-weight: 900;
+    font-style: italic;
     font-size: 100px;
     line-height: 100px;
     text-align: center;
@@ -305,6 +311,7 @@ ul li:hover ul {
     text-shadow: 1px 1px 3px rgb(228, 228, 228);
  /*    box-shadow: 1px 3px 7px rgb(179, 176, 176); */
     overflow: hidden;
+    letter-spacing: 12px;
     animation: showText 6s linear;
 }
 
@@ -336,9 +343,11 @@ ul li:hover ul {
 
 #sectionWeare .subWeare {
     font-family: 'Ephesis', cursive;
+    font-family: 'Bad Script', cursive;
+
     text-align: center;
-    font-size: 35px;
-    margin-left: 190px;
+    font-size: 25px;
+    margin-left: 195px;
     font-weight: bolder;
     text-shadow: 1px 1px 2px rgb(110, 110, 110);
     margin-top: 30px;
@@ -408,15 +417,20 @@ ul li:hover ul {
 
 .layout__hombre__tittle h2 {
     text-align: center;
-    margin: 20px;
+    padding-top:12px;
+    font-family: 'Itim', cursive;
 }
 
 .layout__hombre__tittle h2 a{
     color: white;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .layout__hombre__tittle h2 a:hover{
-    font-size: 26px;
+    font-size: 35px;
+    color: rgb(206, 206, 206);
     transition: all 500ms;
 }
 
@@ -479,13 +493,17 @@ ul li:hover ul {
     height: 50%;
     background-color: black;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
     margin-top: 22px;
 }
 
 .layout__hombre__comprar h2 a {
     color: rgb(255, 255, 255);
     text-transform: uppercase;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .layout__hombre__comprar h2 a:hover {
@@ -512,8 +530,7 @@ ul li:hover ul {
           background-image: url(../assets/images/fondo-frode.jpg);
           width: 100%;
           height: 750px;
-          margin-top: 10px;
-          margin-bottom: 10px;
+          margin-top: 4px;
 }
 
 #layout__mujer .layout__mujer__tittle {
@@ -527,12 +544,15 @@ ul li:hover ul {
 
 .layout__mujer__tittle h2 {
     text-align: center;
-    padding: 20px;
+    padding: 14px;
     color: white;
 }
 
 .layout__mujer__tittle h2 a{
     color: white;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .layout__mujer__tittle h2 a:hover{
@@ -602,12 +622,16 @@ ul li:hover ul {
     width: 100%;
     height: 62%;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
 }
 
 .layout__mujer__comprar h2 a{
     color: white;
     text-transform: uppercase;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-weight: bold;
+    text-decoration: none;
 }
 
 .layout__mujer__comprar h2 a:hover{
@@ -624,9 +648,10 @@ ul li:hover ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr;
-    margin-top: 30px;
-    height: 500px;
+    margin-top: 21px;
+    height: 550px;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+    overflow: hidden;
 }
 
 #comprar .containerText {
@@ -660,6 +685,8 @@ ul li:hover ul {
     line-height: 50px;
     color: white;
     font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
 }
 
 .containerText .optionM a{
@@ -671,6 +698,8 @@ ul li:hover ul {
     line-height: 50px;
     color: white;
     font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
 }
 
 .containerText .optionN a{
@@ -682,26 +711,28 @@ ul li:hover ul {
     line-height: 50px;
     color: white;
     font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
 }
 
 
 .subtittle-pregunta .optionH a:hover{
     color: cyan;
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
     transition: all 500ms;
 }
 
 .subtittle-pregunta .optionM a:hover{
     color: rgb(235, 54, 252);
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
     transition: all 500ms;
 }
 
 .subtittle-pregunta .optionN a:hover{
     color: rgb(247, 234, 58);
-    font-size: 25px;
+    font-size: 32px;
     font-weight: bold;
     transition: all 500ms;
 }
@@ -742,9 +773,9 @@ ul li:hover ul {
            "celda";
   
            background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
-    margin: 12px 0px;
+    margin: 4px 0px;
     width: 100%;
-    height: 500px;
+    height: 520px;
     /* background-image: url(../assets/images/fondo-frode.jpg); */
  
 }
@@ -788,7 +819,7 @@ ul li:hover ul {
     background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
     text-align: center;
     color: white;
-    margin-bottom: 50px;
+    margin-bottom: 80px;
 }
 
 .tabla__descuentos .item {
@@ -817,14 +848,14 @@ ul li:hover ul {
 
 /* fin forma de pagos */
 
-section.container-fluid {
+section.containerForm {
     display: flex;
     flex-direction: row;
     justify-content: center;
     background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
-    padding: 20px 0px;
+    padding-top:30px;
 
-    height: 500px;
+    height: 480px;
     width: 100%;
 }
 
@@ -834,12 +865,12 @@ section.container-fluid {
     flex-wrap: nowrap;
 
 
-    height: 450px;
+    height: 420px;
     width: auto;
     border: 3px solid white;
     background: linear-gradient(to bottom, rgba(240, 71, 164, 0.904), rgba(27, 124, 131, 0.932));
     color: white;
-    font-size: 18px;
+    font-size: 14px;
 
 }
 
@@ -847,25 +878,24 @@ section.container-fluid {
      display: flex;
      justify-content: center;
      align-items: center;
-
     font-size: 20px;
     font-weight: 100;
     text-transform: uppercase;
     width: 100%;
-    height: 15%;
-    margin-bottom: 15px;
+    height: 12%;
     border-bottom: 1px solid white;
     text-shadow: 1px 3px 3px rgb(90, 12, 90);
     padding: 20px;
+}
+
+.tituloForm b {
+    font-family: 'Itim', cursive;
 }
 
 #formulario .titleForm {
     display: flex;
     justify-content: center;
     align-items: center;
-
-    margin-bottom: 5px;
-
 }
 
 #formulario .bodyForm {
@@ -875,9 +905,15 @@ section.container-fluid {
     
     width: 50%;
     height: 25px;
-    margin-left: 130px;
+    margin-left: 119px;
     margin-bottom: 5px;
     background: rgb(245, 207, 214);
+}
+
+
+.containerRadio {
+    display: flex;
+    flex-direction: row;
 }
 
 #formulario .inputRadio {
@@ -885,8 +921,7 @@ section.container-fluid {
     flex-direction: column;
     align-items: stretch;
     
-    margin-top: 20px;
-    margin-bottom: 5px;
+    margin-top: 14px;
     width: 100%;
     margin-left: 10px;
 }
@@ -896,13 +931,15 @@ section.container-fluid {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 80%;
+    width: 40%;
+    padding-right: 45px;
 }
 .inputRadio__option p {
     text-transform: uppercase;
     font-weight: 100;
     font-size: 15px;
-    padding-left: 10px;
+    padding-left: 12px;
+    padding-top: 14px;
 }
 
 .inputRadio__option .radioForm {
@@ -912,15 +949,12 @@ section.container-fluid {
 #formulario .inputCheck {
     display: flex;
     flex-direction: row;
-    justify-content: start;
-    align-items: center;
-
-    margin-top: 10px;
     padding-left: 12px;
 }
 
 #formulario .checkForm {
-    margin: 0px 10px;
+    margin-top:4px;
+    margin-left: 4px;
 }
 
 #formulario .inputSubmit {
@@ -931,8 +965,8 @@ section.container-fluid {
 
 #formulario .formSubmit {
     justify-self: space-between;
-    margin-top: 20px;
-    margin-left: 85px;
+    margin-top: 10px;
+    margin-left: 66px;
     height: 100%;
 
     text-transform: uppercase;
@@ -949,10 +983,11 @@ footer {
     align-items: flex-start;
     font-size: 10px; 
     background-image: url(../assets/images/fondo-frode.jpg);
-    height: 400px;
+    height: 100%;
     width: auto;
-    margin-top: 12px;
-    padding-top: 120px;
+    margin-top: 5px;
+    padding-top: 80px;
+    padding-bottom: 80px;
     color: black;
     font-size: 12px;
     box-shadow: 5px 5px 7px 5px rgb(175, 175, 175);
@@ -963,6 +998,11 @@ footer .containerFooter {
     display: flex;
     flex-direction: column;
     color: white;
+    line-height: 2px;
+}
+
+footer .fotext:hover {
+    color: black;
 }
 
 footer .author {
@@ -2440,7 +2480,17 @@ text-transform: uppercase;
     padding-left: 40px;
 }
 
+
+/* textos */
+
+#registroSub {
+    font-family: 'PT Mono', monospace;
+}
+
 body#myStyles {
     text-decoration: none;
     text-transform: none;
+    font-family: 'PT Mono', monospace;
 }
+
+
