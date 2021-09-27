@@ -80,7 +80,8 @@ nav#menu {
     height: 60px;
     /* background: rgb(252, 252, 252); */
     text-decoration: none;
-    background-image: linear-gradient(white, rgb(194, 194, 194));
+    background-image: linear-gradient(rgb(245, 245, 245), rgb(180, 178, 178));
+    background-image: url(../assets/images/fondonav.jpg);
 }
 
 nav#menu #textDeco{
@@ -167,6 +168,7 @@ ul ul {
     display: none;
     padding-top: 10px;
     align-items: center;
+    overflow: hidden;
 }
 
 ul ul li {
@@ -174,9 +176,11 @@ ul ul li {
     padding-top: 5px;
     padding-bottom: 5px;
     align-items: center;
-    background: rgba(247, 244, 244, 0.938);
+    background: rgba(7, 7, 7, 0.938);
     /* background-image: url("../assets/images/fondo-frode.jpg"); */
     z-index: 3;
+    overflow: hidden;
+    transition: all 1000ms;
 }
 
 ul li:hover ul {
@@ -197,8 +201,10 @@ ul li:hover ul {
 
 #menu a {
     text-transform: uppercase;
-    color: black;
+    font-weight: 100;
+    color: white;
     padding: 5px;
+    text-decoration: none;
     transition: all 500ms;
 }
 
@@ -352,11 +358,10 @@ ul li:hover ul {
     text-shadow: 1px 1px 2px rgb(110, 110, 110);
     margin-top: 30px;
     overflow: hidden;
-    animation: showSub 6s linear;
+    animation: showSub 4500ms linear;
 }
 
 @keyframes showSub {
-
     from {
        transform: translateY(500%);
     }
@@ -364,25 +369,49 @@ ul li:hover ul {
     to {
         transform: translateY(0%);
     }
-
 }
 
 #sectionWeare #logoWeare {
     margin-top: 70px;
     margin-left: 70px;
-    box-shadow: 1px 1px 7px 1px rgb(228, 228, 228);
+    box-shadow: 1px 1px 7px 1px rgb(0, 0, 0);
     overflow: hidden;
-    animation: showIcon 6s linear;
+    animation: showIcon 9s linear;
 }
 
 @keyframes showIcon {
-    from {
+
+    0% {
+        transform: translateY(-200%);
+    }
+
+    50% {
+        transform: translateY(0%)
+    }
+
+    75% {
+        transform:rotateZ(0deg)
+    }
+
+    85% {
+        transform: rotateZ(360deg);
+    }
+
+    90% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+
+/*     from {
         transform: translateY(-200%);
     }
 
     to {
         transform: translateY(0%);
-    }
+    } */
 }
 
 /* fin bs */
@@ -391,26 +420,53 @@ ul li:hover ul {
 
 #sectionTarjets {
     background-image: linear-gradient(black 75%,rgb(43, 43, 43));
+    background-image: url(../assets/images/fondotarjet.jpg);
     height: 38rem;
+    animation-name: showTarjet;
+    animation-iteration-count: infinite;
+    animation-duration: 10s;
+}
+
+@keyframes showTarjet {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    75% {
+        background-position: -5px -20px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
 }
 
 .cardDark {
     background-color: rgb(255, 0, 119);
+    border-radius: 1%;
 }
 
 .cardRun {
-    background-color: rgb(0, 255, 200);
+    background-color: yellow;
+    border-radius: 1%;
 }
 
 .cardCold {
-    background-color: yellow;
+    background-color: rgb(0, 255, 255);
+    border-radius: 1%;
+}
+
+.cardImg {
+    box-shadow: 1px 1px 5px 1px black;
 }
 
 
 .card-text {
     font-weight: bold;
+    text-align: center;
     font-style: italic;
     font-size: 30px;
+    box-shadow: 1px 1px 3px 1px black;
 }
 
 .card-title {
@@ -422,6 +478,7 @@ ul li:hover ul {
 
 .card-p {
     font-weight: 200;
+    text-align: center;
 }
 
 .btnText {
