@@ -12,60 +12,79 @@ de 0px a 590px lo establecido a continuación*/
         padding: 0px;
     }
 
-    .container__tittle {
-        display: flex;
-        height: 30%;
-        background: black;
+    .navTitle {
+        display: none;
     }
 
-    .tittle {
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        text-align: center;
-        padding-top: 30px;
-        color: white;
-        font-size: 18px;
+    #containerHeader {
+        height: 100%;
+    }
+
+    .container__tittle {
+        margin-bottom: 40px;
+    }
+
+    .container__tittle .tittle {
+        font-weight: bold;
     }
 
     .header__align {
         display: flex;
         flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
+        flex-direction: row;
+        justify-content: space-around;
         align-items: center;
-        height: 50%;
-        width: 100%;
-    }
-
-    #menu {
-        border: none;
-        width: 100%;
         height: 100%;
-        margin: 0px;
-        padding: 24px;
-        font-size: 18px
+        width: 100%;
     }
 
-    .logo__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 40%;
+    #menuBs {
+       background: none;
+       margin-right: 50px;
     }
 
-    .subtittle {
-        display: none;
+    #menuBs ul {
+    background: rgba(49, 49, 49, 0.363);
+    }
+
+    #menuBs ul li {
+        background: rgba(49, 49, 49, 0.363);
+    }
+
+    #navTitle {
+       display: none;
+    }
+
+    .navbar-dark .navbar-toggler {
+        color: white;
+        border-color: white;
+    }    
+
+    .logotipo {
+        margin-top: 80px;
+    }
+
+    .subtittle h2 {
+        font-weight: bold;
+        margin-top: 65px;
     }
 
     #header {
         width: 100%;
-        height: 175px;
+        height: 200px;
+        margin-bottom: 0px;
     }
 
     /* fin header */
     
+    #sectionTarjets {
+        display: none;
+    }
+
+    .card {
+        display: none;
+    }
+
     /* inicio hombre*/
 
     #layout__hombre {
@@ -75,14 +94,31 @@ de 0px a 590px lo establecido a continuación*/
         align-items: center;
         height: 100%;
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+        background-image: url(../assets/images/fondowather.jpg);
+        animation-name: showWather;
+        animation-iteration-count: 1;
+        animation-duration: 8s;
+    }
+
+    @keyframes showWather {
+        from {
+            background-position: -200px -200px;
+        }
+
+        to {
+            background-position: 0px 0px;
+        }
+        
     }
 
     #layout__hombre .layout__hombre__tittle {
-        height: 120px;
-        font-size: 30px;
-        padding: 12px;
+        height: 100px;
         box-shadow: none;
+    }
 
+    .layout__hombre__tittle h2 {
+        font-size: 60px;
+        text-align: center;
     }
 
     #layout__hombre .layout__hombre__menu {
@@ -95,7 +131,7 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         margin: 0px;
-        height: 1000px;
+        width: 100%;
     }
 
     .layout__hombre__contenido .layout__hombre__image {
@@ -110,6 +146,7 @@ de 0px a 590px lo establecido a continuación*/
         width: 320px;
         height: 300px;
         border-radius: 80%;
+        box-shadow: 1px 1px 5px 1px rgb(31, 31, 31);
     }
     
     .layout__hombre__image .img:hover {
@@ -124,9 +161,19 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         height: 100px;
-        font-size: 20px;
         margin: 0px;
         width: 100%;
+    }
+
+    .layout__hombre__comprar h2 {
+        padding-top: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .layout__hombre__comprar h2:hover {
+        font-size: 42px;
+        transition: all 300ms;
     }
 
     /* fin hombre */
@@ -139,14 +186,38 @@ de 0px a 590px lo establecido a continuación*/
         height: 100%;
         margin: 3px 0px;
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
-    } 
+        background-image: url(../assets/images/fondowather.jpg);
+        animation-name: showWather;
+        animation-iteration-count: 1;
+        animation-duration: 8s;
+   }
+
+    @keyframes showWather {
+        from {
+            background-position: -200px -200px;
+        }
+
+        to {
+            background-position: 0px 0px;
+        }
+
+    }
 
     #layout__mujer .layout__mujer__tittle {
         justify-self: center;
         align-self: center;
-        padding:12px;
-        height: 120px;
-        font-size: 30px;
+        height: 100px;
+    }
+
+    .layout__mujer__tittle h2 {
+        font-size:60px;
+        text-align: center;
+    }
+
+    .layout__mujer__tittle h2:hover {
+        font-size:65px;
+        color: black;
+        transition: all 300ms;
     }
 
     #layout__mujer .layout__mujer__menu {
@@ -159,7 +230,6 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         margin: 25px 0px;
-        height: 1000px;
     }
 
     .layout__mujer__contenido .layout__mujer__image {
@@ -175,6 +245,7 @@ de 0px a 590px lo establecido a continuación*/
         width: 320px;
         height: 300px;
         border-radius: 80%;
+        box-shadow: 1px 1px 5px 1px rgb(31, 31, 31);
     }
 
     .layout__mujer__image .img:hover {
@@ -191,7 +262,12 @@ de 0px a 590px lo establecido a continuación*/
         width: 100%;
         height: 100px;
         margin: 0px;
-        font-size: 20px;
+    }
+
+    .layout__mujer__comprar h2 {
+        font-size:40px;
+        text-align: center;
+        padding-top: 10px;
     }
 
    /* fin mujer */
@@ -227,7 +303,6 @@ de 0px a 590px lo establecido a continuación*/
         margin-top: 10px;
         width: 100%;
         gap: 30px;
-        padding:0px;
         height: 100%;
     }
 
@@ -235,6 +310,12 @@ de 0px a 590px lo establecido a continuación*/
     .containerPhotos .select-img {
         overflow: hidden;
         height: 100%;
+        box-shadow: 1px 1px 5px 1px rgb(27, 27, 27);
+    }
+
+    .select-img:hover {
+        box-shadow: 1px 1px 10px 1px white;
+        transition: all 300ms;
     }
         /* fin comprar */
 
@@ -270,12 +351,17 @@ de 0px a 590px lo establecido a continuación*/
 
     /* inicio formulario */
 
+    .containerForm {
+        padding-bottom: 35px;
+    }
+
     #formulario {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
         width: 80%;
+        height: 100%;
         font-size: 12px;
     }
 
@@ -283,13 +369,11 @@ de 0px a 590px lo establecido a continuación*/
      #formulario .tituloForm { 
         justify-self: center;
         align-self: center;
-        margin: 20px 0px;
         padding-bottom: 30px;
-        font-size: 14px;
+        font-size: 15px;
         font-weight: 100;
         text-transform: uppercase;
         width: 100%;
-        height: 10%;
         border-bottom: 1px solid white;
     }
 
@@ -327,62 +411,115 @@ de 0px a 590px lo establecido a continuación*/
         width: 100%;
     }
 
+    #formulario .formSubmit {
+        margin-left: 48px;
+        margin-bottom: 15px;
+    }
+
+}
+
+@media (max-width:863) {
+
+    #header {
+        height: 190px;
+    }
+
+    #sectionTarjets {
+        display: flex;
+        flex-direction: row;
+        justify-content:center;
+        align-items: center;
+    }
+
+    .card-title {
+       display: none;
+    }
+    
+    .card-p {
+        display: none;
+    }
+    
+    .btnText {
+        text-align: center;
+    }
+
+
+    
 }
 
 @media (max-width:950px) {
 
     .container__tittle {
-        display: flex;
-        height: 30%;
-        background: black;
-    }
-
-    .tittle {
-        display: flex;
-        justify-content: center;
-        align-items:center;
-        text-align: center;
-        padding-top: 30px;
-        color: white;
-        font-size: 18px;
-    }
-
-    .header__align {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 50%;
-        width: 100%;
-    }
-
-    #menu {
-        border: none;
-        width: 100%;
-        height: 100%;
-        margin: 0px;
-        padding: 24px;
-        font-size: 18px
-    }
-
-    .logo__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        height: 40%;
-        padding-right: 50px;
-    }
-
-    .subtittle {
         display: none;
     }
-
-    #header {
-        width: 100%;
-        height: 175px;
-    }
+ 
+     #header {
+         height: 160px;
+     }
+ 
+     .header__align {
+         display: flex;
+         flex-wrap: nowrap;
+         flex-direction: column;
+         height: 70%;
+         width: 100%;
+     }
+ 
+     .logo__image {
+         padding-right:50px;
+         align-self: center;
+         justify-self: center;
+         margin-top: 10px;
+     }
+ 
+     #menuBs {
+         align-self: flex-end;
+         margin-right: 10px;
+         margin-bottom: 10px;
+         background: none;
+         width: auto;
+      }
+  
+      #menuBs ul {
+      background: rgba(49, 49, 49, 0.363);
+      }
+  
+      #menuBs ul li {
+          background: rgba(49, 49, 49, 0.363);
+      }
+ 
+      #navTitle {
+         background: none;
+      }
+ 
+      .navbar-dark .navbar-toggler {
+          color: white;
+          border-color: white;
+      }    
+  
+      .container__subtittle {
+          align-self: flex-start;
+          justify-content: flex-start;
+          height: 1px;
+          margin-bottom: 15px;
+          margin-left: 10px;
+      }
+ 
+      .subtittle {
+          padding-top: 0px;
+          margin-top: 40px;
+          width: 350px;
+          font-size: 45px;
+      }
+ 
+      #registroSub a {
+          font-size: 22px;
+      }
+ 
+      #registroSub a:hover {
+          font-size: 24px;
+          transition: all 300ms;
+      }
 
     /* fin header */
 
@@ -394,6 +531,7 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         height: 100%;
+        margin-top: 2px;
        /*  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
     }
 
@@ -537,6 +675,146 @@ de 0px a 590px lo establecido a continuación*/
 
 }
 
+@media (max-width:993px) {
+
+   .container__tittle {
+       display: none;
+   }
+
+    #header {
+        height: 180px;
+        margin-bottom: 20px;
+    }
+
+    .header__align {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: column;
+        height: 35%;
+        width: 100%;
+    }
+
+    .logo__image {
+        padding-right:50px;
+        align-self: center;
+        justify-self: center;
+        margin-top: 10px;
+    }
+
+    #menuBs {
+        align-self: flex-end;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        background: none;
+        width: auto;
+     }
+ 
+     #menuBs ul {
+     background: rgba(49, 49, 49, 0.363);
+     }
+ 
+     #menuBs ul li {
+         background: rgba(49, 49, 49, 0.363);
+     }
+
+     #navTitle {
+        background: none;
+     }
+
+     .navbar-dark .navbar-toggler {
+         color: white;
+         border-color: white;
+     }    
+ 
+     .container__subtittle {
+         align-self: flex-start;
+         justify-content: flex-start;
+         height: 1px;
+         margin-left: 10px;
+     }
+
+     .subtittle {
+         padding-top: 0px;
+         margin-top: 20px;
+         width: 350px;
+         font-size: 45px;
+     }
+
+     #registroSub a {
+         font-size: 22px;
+     }
+
+     #registroSub a:hover {
+         font-size: 24px;
+         transition: all 300ms;
+     }
+
+     /* fin header */
+
+     #sectionTarjets .container {
+         max-width: 100%;
+     }
+
+     .card {
+         padding-top: 18px;
+     }
+     
+     /* fin layout cards */
+
+     /* inicio hombres */
+
+     #layout__hombre .layout__hombre__tittle {
+        justify-self: center;
+        align-self: center;
+        height: 100px;
+    }
+
+    .layout__hombre__tittle h2 {
+        font-size:60px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .layout__hombre__comprar h2 {
+        padding-top: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .layout__hombre__comprar h2:hover {
+        font-size: 42px;
+        transition: all 300ms;
+    }
+
+    /* fin hombres */
+
+    /* inicio mujeres */
+
+    #layout__mujer .layout__mujer__tittle {
+        justify-self: center;
+        align-self: center;
+        height: 100px;
+    }
+
+    .layout__mujer__tittle h2 {
+        font-size:60px;
+        text-align: center;
+        line-height: 50px;
+    }
+
+    .layout__mujer__comprar h2 {
+        padding-top: 10px;
+        font-size: 40px;
+        text-align: center;
+    }
+
+    .layout__mujer__comprar h2:hover {
+        font-size: 42px;
+        transition: all 300ms;
+    }
+
+}
+
 
 
 @media (max-width:1000px) {
@@ -574,6 +852,15 @@ de 0px a 590px lo establecido a continuación*/
 }
 
 @media (max-width:1256px) {
+
+    #menuBs {
+        display: flex;
+        margin-left: 15%;
+    }
+
+    .searchNav {
+        display: none;
+    }
 
     .layout__hombre__contenido .layout__hombre__image {
         overflow: hidden;

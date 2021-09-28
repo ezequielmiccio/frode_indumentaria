@@ -11,9 +11,7 @@
     <title>Idea Miccio</title>
 
     <link id="logofrode" rel="icon" href="./assets/images/logotipo-frode.jpg">
-    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./css/styles.css">
-    <link rel="stylesheet" href="./css/responsive.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Ephesis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&family=Varela+Round&display=swap"
@@ -45,25 +43,14 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&family=Bad+Script&family=Baloo+2&family=Bebas+Neue&family=Economica&family=Ephesis&family=Itim&family=PT+Mono&family=Poiret+One&family=Special+Elite&family=Staatliches&family=Varela+Round&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/responsive.css">
 </head>
 
-<body id="myStyles">
 
-    <div id="containerHeader">
-
-        <header id="header">
-
-            <div class="container__tittle">
-                <h1 class="tittle">Frode Indumentaria</h1>
-            </div>
-
-            <section class="header__align">
-
-                <div class="logo__image">
-                    <a href="#container"><img class="logotipo" src="./assets/images/logotipo-frode.jpg" alt="frode"></a>
-                </div>
-
-                <nav id="menu">
+                <!--                 <nav id="menu">
                     <ul>
                         <li class="textDeco"><a href="./páginas/hombre.html">Hombre</a>
                             <ul>
@@ -106,7 +93,109 @@
                         </li>
 
                     </ul>
-                </nav>
+                </nav> -->
+
+<body id="myStyles">
+
+    <div id="containerHeader">
+
+        <header id="header">
+
+            <div class="container__tittle">
+                <h1 class="tittle">Frode Indumentaria</h1>
+            </div>
+
+            <section class="header__align">
+
+                <div class="logo__image">
+                    <a href="#container"><img class="logotipo" src="./assets/images/logotipo-frode.jpg" alt="frode"></a>
+                </div>
+
+                <nav id="menuBs" class="navbar navbar-expand-lg navbar-dark text-uppercase">
+                    <div class="container-fluid">
+                      <a id="navTitle" class="navbar-brand text-uppercase" href="./index.html">Frode</a>
+                      <button class="buttonNav navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#c" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Hombre
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./páginas/hombre.html">Calzados</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/hombre.html">Remeras</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/hombre.html">Patalones</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#c" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Mujer
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./páginas/mujer.html">Calzados</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/mujer.html">Tops</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/mujer.html">Jeans</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#c" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Niños
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./páginas/niños.html">Calzados</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/niños.html">Remeras</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/niños.html">Pantalones</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#c" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Deporte
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./páginas/deportes.html">Camisetas</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/deportes.html">Shorts</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/deportes.html">Botines</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#c" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    Invierno
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="./páginas/invierno.html">Calzados Nieve</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/invierno.html">Pantalón Sky</a></li>
+                                    <li><a class="dropdown-item" href="./páginas/invierno.html">Camperas Nieve</a></li>
+                                </ul>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                             </li>
+
+                             <li class="searchNav nav-item ml-4">
+                                <form class="navForm d-flex">
+                                    <input class="form-control me-2" type="search" placeholder="¿Qué quieres ver?" aria-label="Search">
+                                    <button class="btn btn-outline-info" type="submit">Buscar</button>
+                                  </form>
+                             </li>
+
+                        </ul>
+                      </div>
+                    </div>
+                  </nav>
+
             </section>
 
             <section class="container__subtittle">
@@ -123,21 +212,20 @@
 
         <!-- boostrap -->
 
-        <section id="sectionWeare" class="container-fluid col-12">
+        <section id="sectionWeare" class="container-fluid col-12 d-none d-md-block d-lg-block">
 
-            <div class="row">
+            <div class="row justify-content-center align-items-center">
 
-                <div class="cajaWeare col-6 col-sm-12 col-md-6">
+                <div class="cajaWeare col-12">
                     <h2 id="textWeare" class="p-4 text-black display-1 text-uppercase">
-                        Somos Frode
+                        Frode Indumentaria
                     </h2>
-                    <p class="subWeare text-black">llevando el showroom a tu hogar</p>
+ <!--                    <p class="subWeare text-black">llevando el showroom a tu hogar</p> -->
                 </div>
-
-                <div class="col-6 col-sm-12 col-md-6">
+<!-- 
+                <div class="col-12 col-md-6 col-lg-6">
                     <img id="logoWeare" class="rounded-circle" src="./assets/images/forde300px.jpg" alt="logo">
-                </div>
-
+                </div> -->
 
             </div>
 
@@ -147,14 +235,14 @@
 
         <!-- inicio tarjetas bs -->
 
-        <div id="sectionTarjets" class="row mb-1 mt-1">
+        <div id="sectionTarjets" class="mb-1 mt-1 d-none d-md-block d-lg-block">
 
-            <section class="container align-self-center">
+            <section class="container">
 
-                <div class="row col-12 containerPL justify-content-center">
+                <div class="row containerPL justify-content-evenly">
 
-                    <div class="cardDark card col-4 m-3" style="width:18rem;">
-                    <img src="./assets/images/blackEDIT.jpg" class="cardImg card-img-top mt-2" alt="section-1">
+                    <div class="cardDark card col-4 col-md-3 mr-3 mr-md-1 mt-5">
+                        <img src="./assets/images/blackEDIT.jpg" class="cardImg card-img-top mt-2" alt="section-1">
                         <div class="card-body">
                             <h5 class="card-title">Productos Destacados</h5>
                             <h3 class="card-text">Dark Friday</h3>
@@ -163,7 +251,7 @@
                         </div>
                     </div>
 
-                    <div class="cardRun card col-4 m-3" style="width: 18rem;">
+                    <div class="cardRun card col-4 col-md-3 mr-3 mr-md-1 mt-5">
                         <img src="./assets/images/runningEDIT.jpg" class="cardImg card-img-top mt-2" alt="section-2">
                         <div class="card-body">
                             <h5 class="card-title">Deportes</h5>
@@ -173,7 +261,7 @@
                         </div>
                     </div>
 
-                    <div class="cardCold card col-4 m-3" style="width: 18rem;">
+                    <div class="cardCold card col-4 col-md-3 mr-3 mr-md-1 mt-5">
                         <img src="./assets/images/brcEDIT.jpg" class="cardImg card-img-top mt-2" alt="section-3">
                         <div class="card-body">
                             <h5 class="card-title">Invierno</h5>
@@ -354,7 +442,7 @@
         <section class="containerForm">
 
             <form id="formulario">
-                <fieldset>
+                <fieldset id="formId">
                     <legend class="tituloForm"><b> Registrate y obtené un 10% de descuento</b></legend>
 
                     <label class="titleForm" for="nombre">Nombre y Apellido:</label><input class="bodyForm" type="text"

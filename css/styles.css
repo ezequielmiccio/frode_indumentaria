@@ -22,7 +22,7 @@
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 0px 0px 10px #ccc;
     min-height: 160px;
-    background: black;
+    background:black;
     /* background-image: url("../assets/images/fondo-frode.jpg"); */
 }
 
@@ -35,6 +35,7 @@
     height: 110px;
     border-bottom: 1px solid rgba(175, 172, 172, 0.8);
     background-image: url("../assets/images/fondo-frode.jpg");
+    background-image: url("../assets/images/fondonav.jpg");
 }
 
 .container__tittle{
@@ -69,6 +70,37 @@
     text-decoration: none;
 }
 
+#menuBs {
+    margin-left: 5rem;
+    margin-top: 1.6rem;
+    box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(78, 78, 78), black);
+}
+
+#menuBs a {
+    color: white;
+}
+
+#menuBs a:hover {
+    color: cyan;
+    font-weight: bold;
+    background-color: rgb(32, 32, 32);
+    transition: all 300ms;
+}
+
+#navTitle {
+    font-weight: bold;
+}
+
+.navForm {
+    margin-left: 1rem;
+}
+
+ul li ul li {
+    background-color: rgb(48, 46, 46);
+    font-weight: bold;
+}
+
 nav#menu {
     margin-top: 24px;
     margin-right: 380px;
@@ -88,6 +120,11 @@ nav#menu #textDeco{
     font-family: 'Baloo 2', cursive;
     text-decoration: none;
 }
+
+.navbar-dark .navbar-toggler {
+    color: white;
+    border-color: white;
+}    
 
 .logo__image {
     margin-top: 30px;
@@ -137,7 +174,7 @@ img.logotipo {
     font-weight: lighter;
     /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
     text-transform: uppercase;
-    padding-top: 28px;
+    padding-top: 30px;
     padding-left: 15px;
 }
 
@@ -221,7 +258,7 @@ ul li:hover ul {
     font-size: 12px;
     text-shadow: 1px 1px 0px rgb(255, 255, 255);
     text-transform: uppercase;
-    padding-top: 36px;
+    padding-top: 28px;
     padding-left: 20px;
     padding-left: 1020px;
 }
@@ -277,9 +314,10 @@ ul li:hover ul {
 #sectionWeare {
     background-image: url("../assets/images/fondoWeare.jpg.crdownload");
     overflow: hidden;
-    animation: backBanner 6s linear;
+    animation: backBanner 3s linear;
     margin-bottom: 4px;
-    height: 28rem;
+    height: 8rem;
+    width: 100%;
 }
 
 @keyframes backBanner {
@@ -308,32 +346,30 @@ ul li:hover ul {
  /*    font-family: 'Alegreya Sans SC', sans-serif; */
     font-weight: 900;
     font-style: italic;
-    font-size: 100px;
-    line-height: 100px;
+    font-size: 50px;
+    margin-top: 10px;
     text-align: center;
-    margin-top: 30px;
     font-style: bold;
-    margin-left: 200px;
     text-shadow: 1px 1px 3px rgb(228, 228, 228);
  /*    box-shadow: 1px 3px 7px rgb(179, 176, 176); */
     overflow: hidden;
     letter-spacing: 12px;
-    animation: showText 6s linear;
+    animation: showText 3s linear;
 }
 
 @keyframes showText {
     0% {
-        transform: translateX(-600%) scale(5,5);
+        transform: translateX(-100%) scale(5,5);
         opacity: 1;
     }
 
     25% {
-        transform: translateX(600%) scale(3,3);
+        transform: translateX(200%) scale(3,3);
         opacity: 1;
     }
 
     50% {
-        transform: translateX(-600%) scale(5,5);
+        transform: translateX(-200%) scale(5,5);
         text-shadow: none;
         color: transparent;
         opacity: 0;
@@ -347,7 +383,7 @@ ul li:hover ul {
     }
 }
 
-#sectionWeare .subWeare {
+/* #sectionWeare .subWeare {
     font-family: 'Ephesis', cursive;
     font-family: 'Bad Script', cursive;
 
@@ -403,7 +439,7 @@ ul li:hover ul {
 
     100% {
         transform: rotateY(0deg);
-    }
+    } */
 
 /*     from {
         transform: translateY(-200%);
@@ -412,7 +448,7 @@ ul li:hover ul {
     to {
         transform: translateY(0%);
     } */
-}
+
 
 /* fin bs */
 
@@ -420,14 +456,15 @@ ul li:hover ul {
 
 #sectionTarjets {
     background-image: linear-gradient(black 75%,rgb(43, 43, 43));
-    background-image: url(../assets/images/fondotarjet.jpg);
+    background-image: url("../assets/images/fondotarjet.jpg");
     height: 38rem;
-    animation-name: showTarjet;
+    width: 100%;
+/*     animation-name: showTarjet;
     animation-iteration-count: infinite;
-    animation-duration: 10s;
+    animation-duration: 10s; */
 }
 
-@keyframes showTarjet {
+/* @keyframes showTarjet {
     0% {
         background-position: 0px 0px;
     }
@@ -439,24 +476,15 @@ ul li:hover ul {
     100% {
         background-position: 0px 0px;
     }
-}
-
-.card:hover {
-    background-color: black;
-    color: white;
-    box-shadow:1px 1px 7px 1px white;
-    transition: all 300ms;
-    overflow: hidden;
-}
+} */
 
 .card:hover .card-text {
     color: cyan;
     box-shadow: 1px 1px 5px 1px white;
     transition: all 300ms;
-    animation: showText 400ms linear;
 }
 
-@keyframes showText {
+/* @keyframes showText {
     from {
         transform: translateY(-200px);
     }
@@ -466,7 +494,7 @@ ul li:hover ul {
     }
     
 }
-
+ */
 .card:hover .btnText {
     background-color: cyan;
     box-shadow: 1px 1px 5px 1px white;
@@ -479,7 +507,7 @@ ul li:hover ul {
     animation: showImg 300ms linear;
 }
 
-@keyframes showImg {
+/* @keyframes showImg {
     from {
         transform: translateY(-150px);
     }
@@ -488,24 +516,35 @@ ul li:hover ul {
         transform: translateY(0px);
     }
 }
+ */
 
-.cardDark {
+.card {
+    background-color: black;
+    border-radius: 1%;
+    color: white;
+    box-shadow:1px 1px 7px 1px white;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card:hover.cardDark {
     background-color: rgb(255, 0, 119);
     border-radius: 1%;
+    transition: all 300ms;
 }
 
-.cardRun {
+.card:hover.cardRun {
     background-color: yellow;
-    border-radius: 1%;
+    transition: all 
 }
 
-.cardCold {
-    background-color: rgb(0, 255, 255);
-    border-radius: 1%;
+.card:hover.cardCold {
+    background-color: rgb(92, 4, 255);
+    transition: all 300ms;
 }
 
 .cardImg {
-    box-shadow: 1px 1px 5px 1px black;
+    box-shadow: 1px 1px 7px 1px white;
     overflow: hidden;
 }
 
@@ -515,7 +554,8 @@ ul li:hover ul {
     text-align: center;
     font-style: italic;
     font-size: 30px;
-    box-shadow: 1px 1px 3px 1px black;
+    box-shadow: 1px 1px 5px 1px white;
+    transition: all 300ms;
 }
 
 .card-title {
@@ -534,6 +574,8 @@ ul li:hover ul {
     font-weight: bold;
     text-align: center;
     margin-left: 50px;
+    background-color: cyan;
+    box-shadow: 1px 1px 5px 1px white;
 }
 
 /* fin tarjetas bs */
@@ -568,13 +610,14 @@ ul li:hover ul {
 
 .layout__hombre__tittle h2 {
     text-align: center;
-    padding-top:12px;
-    font-family: 'Itim', cursive;
+    padding-top: 12px;
 }
 
 .layout__hombre__tittle h2 a{
     color: white;
     font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -639,6 +682,7 @@ ul li:hover ul {
 
 #layout__hombre .layout__hombre__comprar {
     grid-area: pie;
+    justify-self: center;
 
     width: 100%;
     height: 50%;
@@ -653,6 +697,8 @@ ul li:hover ul {
     text-transform: uppercase;
     color: white;
     font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -702,6 +748,8 @@ ul li:hover ul {
 .layout__mujer__tittle h2 a{
     color: white;
     font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
 }
@@ -781,6 +829,8 @@ ul li:hover ul {
     text-transform: uppercase;
     color: white;
     font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
 }
