@@ -18,7 +18,6 @@
 
     width: 100%;
     height: 10px;
-    margin-bottom: 2px;
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 0px 0px 10px #ccc;
     min-height: 160px;
@@ -75,6 +74,7 @@
     margin-top: 1.6rem;
     box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
     background-image: linear-gradient(rgb(78, 78, 78), black);
+    color: black;
 }
 
 #menuBs a {
@@ -123,8 +123,8 @@ nav#menu #textDeco{
 }
 
 .navbar-dark .navbar-toggler {
-    color: white;
-    border-color: white;
+    color: black;
+    border-color: black;
 }    
 
 .logo__image {
@@ -316,9 +316,10 @@ ul li:hover ul {
     background-image: url("../assets/images/fondoWeare.jpg.crdownload");
     overflow: hidden;
     animation: backBanner 3s linear;
-    margin-bottom: 4px;
     height: 8rem;
     width: 100%;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
     background-image: url("../assets/images/fondoSHOWW.jpg");
 }
 
@@ -448,6 +449,8 @@ ul li:hover ul {
     background-image: url("../assets/images/fondotarjet.jpg");
     height: 38rem;
     width: 100%;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
     /* background-image: url("../assets/images/fondonav.jpg"); */
 /*     animation-name: showTarjet;
     animation-iteration-count: infinite;
@@ -585,6 +588,8 @@ ul li:hover ul {
     width: 100%;
     height: 870px;
     background-image: url("../assets/images/fondo-frode.jpg");
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
 }
 
 
@@ -657,16 +662,17 @@ ul li:hover ul {
 }
 
 .layout__hombre__image .img {
-    width: 410px;
-    height: 510px;
+    width: 400px;
+    height: 490px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 3px 1px grey;
 }
 
 .layout__hombre__image .img:hover {
     width: 420px;
     height: 520px;
     border-radius: 5%;
-    border: 1px solid cyan;
-    box-shadow: 1px 1px 7px cyan;
+    box-shadow: 1px 1px 10px 1px rgb(96, 97, 97);
     transition: all 500ms;
 }
 
@@ -679,7 +685,9 @@ ul li:hover ul {
     background-color: black;
     text-align: center;
     padding: 15px;
-    margin-top: 22px;
+    margin-top: 23px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
 }
 
 .layout__hombre__comprar h2 a {
@@ -691,6 +699,7 @@ ul li:hover ul {
     letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 .layout__hombre__comprar h2 a:hover {
@@ -715,7 +724,8 @@ ul li:hover ul {
           "footer footer";
           width: 100%;
           height: 750px;
-          margin-top: 4px;
+          border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+          box-shadow: 1px 1px 10px 1px rgb(61, 61, 61);
           background-image: url("../assets/images/fondo-frode.jpg");
 }
 
@@ -814,6 +824,8 @@ ul li:hover ul {
     height: 62%;
     text-align: center;
     padding: 15px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
 }
 
 .layout__mujer__comprar h2 a{
@@ -841,10 +853,12 @@ ul li:hover ul {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr;
-    margin-top: 21px;
+    margin-top: 18px;
     height: 550px;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
     overflow: hidden;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
 }
 
 #comprar .containerText {
@@ -966,7 +980,8 @@ ul li:hover ul {
            "celda";
   
            background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
-    margin: 4px 0px;
+           border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+           box-shadow: 1px 1px 10px 1px #ccc;
     width: 100%;
     height: 520px;
     /* background-image: url(../assets/images/fondo-frode.jpg); */
@@ -1047,6 +1062,8 @@ section.containerForm {
     justify-content: center;
     background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
     padding-top:30px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 20px 1px #ccc;
 
     height: 480px;
     width: 100%;
@@ -1178,7 +1195,8 @@ footer {
     background-image: url(../assets/images/fondo-frode.jpg);
     height: 100%;
     width: auto;
-    margin-top: 5px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 20px 1px #ccc;
     padding-top: 80px;
     padding-bottom: 80px;
     color: black;
