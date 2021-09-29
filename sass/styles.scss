@@ -1,0 +1,2707 @@
+$fuente-normal: san-serif, Arial;
+$color-fondo:#666667;
+
+/* INDEX */
+
+/* para predeterminar */
+
+* {
+    box-sizing: border-box;/* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
+    margin: 0px;
+    padding: 0px;
+    list-style: none; /* para quitar viñetas a las listas */
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+#containerHeader{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    height: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    min-height: 160px;
+    background:black;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#header {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+    /* background-image: url("../assets/images/fondonav.jpg"); */
+}
+
+.container__tittle{
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittle {
+    flex-grow: 1;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 18px;
+
+}
+
+.header__align {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+ /*    border: none; */
+    text-decoration: none;
+}
+
+#menuBs {
+    margin-left: 5rem;
+    margin-top: 1.6rem;
+    box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
+ /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
+    color: black;
+}
+
+#menuBs a {
+    color: black;
+}
+
+#menuBs a:hover {
+    color: cyan;
+    font-weight: bold;
+    /* background-color: rgba(172, 171, 171, 0.596); */
+    transition: all 300ms;
+}
+
+#navTitle {
+    font-weight: bold;
+}
+
+.navForm {
+    margin-left: 1rem;
+}
+
+ul li ul li {
+    background-color: rgba(182, 182, 182, 0.527);
+    font-weight: bold;
+}
+
+
+
+nav#menu #textDeco{
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+}
+
+.navbar-dark .navbar-toggler {
+    color: black;
+    border-color: black;
+}    
+
+.logo__image {
+    margin-top: 30px;
+    margin-left: 53px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+   overflow: hidden;
+   animation-name: logoRotate;
+   animation-duration: 3s;
+   animation-iteration-count: 1;
+   animation-timing-function: linear;
+}
+
+@keyframes logoRotate {
+    25% {
+        transform:rotateZ(0deg)
+    }
+
+    50% {
+        transform: rotateZ(360deg);
+    }
+
+    75% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }
+}
+    
+.container__subtittle {
+    width: 25%;
+    flex-wrap: wrap;
+}
+
+.subtittle {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    font-weight: lighter;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 30px;
+    padding-left: 15px;
+}
+
+.subtittle a {
+    color: white;
+    font-family: 'PT Mono', monospace;
+    font-family: 'Baloo 2', cursive;
+    text-decoration: none;
+}
+
+.subtittle a:hover {
+    color: cyan;
+    font-size:16px;
+    transition: 500ms;
+}
+
+#registroSub {
+    font-size: 15px;
+}
+
+.subtittle__subpag {
+    flex-grow: 1;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-top: 28px;
+    padding-left: 20px;
+    padding-left: 1020px;
+}
+
+.subtittle__subpag a {
+    color: rgb(14, 13, 13);
+    /* background: rgb(0, 247, 255); */
+    
+}
+
+.subtittle__invierno {
+    display: flex;
+    font-family: sans-serif;
+    font-size: 12px;
+    text-shadow: 1px 1px 0px rgb(77, 76, 76);
+    text-transform: uppercase;
+    padding-top: 36px;
+    padding-left: 20px;
+}
+
+.subtittle__invierno h2 {
+    width: 30%;
+}
+
+.subtittle__invierno a {
+    color: cyan;
+}
+
+.list__inv {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    padding-left: 550px;
+    font-size: 15px;
+    color: white;
+
+}
+
+.list__inv__item {
+    justify-content: space-around;
+
+    flex-direction: row;
+    width: 10%;
+}
+
+/* fin menu */
+
+/* inicio bs */
+
+#sectionWeare {
+    background-image: url("../assets/images/fondoWeare.jpg.crdownload");
+    overflow: hidden;
+    animation: backBanner 3s linear;
+    height: 8rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+    background-image: url("../assets/images/fondoSHOWW.jpg");
+}
+
+@keyframes backBanner {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    90% {
+        background-position: -200px -200px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
+}
+
+#sectionWeare #textWeare {
+    font-family: 'Varela Round', sans-serif;
+    font-family: 'Staatliches', cursive;
+    /* font-family: 'Baloo 2', cursive; */
+    /* font-family: 'Special Elite', cursive; */
+    /* font-family: 'Bad Script', cursive; */
+    
+   /*  font-family: 'Poiret One', cursive; */
+    /* font-family: 'Economica', sans-serif; */
+ /*    font-family: 'Alegreya Sans SC', sans-serif; */
+    font-weight: 900;
+    font-style: italic;
+    font-size: 60px;
+    margin-top: 10px;
+    text-align: center;
+    font-style: bold;
+    text-shadow: 1px 1px 3px rgb(15, 15, 15);
+ /*    box-shadow: 1px 3px 7px rgb(179, 176, 176); */
+    overflow: hidden;
+    letter-spacing: 12px;
+    animation: showText 3s linear;
+}
+
+@keyframes showText {
+    0% {
+        transform: translateX(-100%) scale(5,5);
+        opacity: 1;
+    }
+
+    25% {
+        transform: translateX(200%) scale(3,3);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-200%) scale(5,5);
+        text-shadow: none;
+        color: transparent;
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0%) scale(1,1);
+        text-shadow: 1px 1px 3px rgb(228, 228, 228);
+        color: black;
+        opacity: 1;
+    }
+}
+
+#sectionWeare #logoWeare {
+    margin-top: 70px;
+    margin-left: 70px;
+    box-shadow: 1px 1px 7px 1px rgb(0, 0, 0);
+    overflow: hidden;
+    animation: showIcon 9s linear;
+}
+
+
+/* @keyframes showSub {
+    from {
+       transform: translateY(500%);
+    }
+
+    to {
+        transform: translateY(0%);
+    }
+}
+
+@keyframes showIcon {
+
+    0% {
+        transform: translateY(-200%);
+    }
+
+    50% {
+        transform: translateY(0%)
+    }
+
+    75% {
+        transform:rotateZ(0deg)
+    }
+
+    85% {
+        transform: rotateZ(360deg);
+    }
+
+    90% {
+        transform: rotateY(360deg);
+    }
+
+    100% {
+        transform: rotateY(0deg);
+    }  */
+
+/*     from {
+        transform: translateY(-200%);
+    }
+
+    to {
+        transform: translateY(0%);
+    } */
+
+
+/* fin bs */
+
+/* tarjetas bs */
+
+#sectionTarjets {
+    background-image: linear-gradient(black 75%,rgb(43, 43, 43));
+    background-image: url("../assets/images/fondotarjet.jpg");
+    height: 38rem;
+    width: 100%;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+    /* background-image: url("../assets/images/fondonav.jpg"); */
+/*     animation-name: showTarjet;
+    animation-iteration-count: infinite;
+    animation-duration: 10s; */
+}
+
+/* @keyframes showTarjet {
+    0% {
+        background-position: 0px 0px;
+    }
+
+    75% {
+        background-position: -5px -20px;
+    }
+
+    100% {
+        background-position: 0px 0px;
+    }
+} */
+
+.card:hover .card-text {
+    color: cyan;
+    box-shadow: 1px 1px 5px 1px white;
+    transition: all 300ms;
+}
+
+/* @keyframes showText {
+    from {
+        transform: translateY(-200px);
+    }
+
+    to {
+        transform: translateY(0px);
+    }
+    
+}
+ */
+.card:hover .btnText {
+    background-color: cyan;
+    box-shadow: 1px 1px 5px 1px white;
+    transition: all 300ms;
+
+}
+
+.card:hover .cardImg {
+    box-shadow: 1px 1px 7px 1px white;
+    animation: showImg 300ms linear;
+}
+
+/* @keyframes showImg {
+    from {
+        transform: translateY(-150px);
+    }
+    
+    to {
+        transform: translateY(0px);
+    }
+}
+ */
+
+.card {
+    background-color: black;
+    border-radius: 1%;
+    color: white;
+    box-shadow:1px 1px 7px 1px white;
+    transition: all 300ms;
+    overflow: hidden;
+}
+
+.card:hover.cardDark {
+    background-color: rgb(255, 0, 119);
+    border-radius: 1%;
+    transition: all 300ms;
+}
+
+.card:hover.cardRun {
+    background-color: yellow;
+    transition: all 
+}
+
+.card:hover.cardCold {
+    background-color: rgb(92, 4, 255);
+    transition: all 300ms;
+}
+
+.cardImg {
+    box-shadow: 1px 1px 7px 1px white;
+    overflow: hidden;
+}
+
+
+.card-text {
+    font-weight: bold;
+    text-align: center;
+    font-style: italic;
+    font-size: 30px;
+    box-shadow: 1px 1px 5px 1px white;
+    transition: all 300ms;
+}
+
+.card-title {
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: italic;
+    font-weight: 300;
+    font-size: 18px;
+}
+
+.card-p {
+    font-weight: 200;
+    text-align: center;
+}
+
+.btnText {
+    font-weight: bold;
+    text-align: center;
+    margin-left: 50px;
+    background-color: cyan;
+    box-shadow: 1px 1px 5px 1px white;
+}
+
+/* fin tarjetas bs */
+
+/* inicio layout grid */
+
+#layout__hombre {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows:10% 5% 75% 15%;
+    grid-template-areas: 
+        "head head"
+        "menu menu"
+        "contenido contenido"
+        "pie pie";
+
+    width: 100%;
+    height: 870px;
+    background-image: url("../assets/images/fondo-frode.jpg");
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+}
+
+
+#layout__hombre .layout__hombre__tittle {
+    grid-area: head;
+    background-image: linear-gradient(to top, rgb(106, 143, 212), rgb(130, 245, 239));
+    width: 100%;
+    height: 80%;
+    box-shadow: 3px 3px 3px rgb(210, 229, 250);
+    border-bottom: 2px solid white;
+    background-image: url("../assets/images/fondonav.jpg");
+}
+
+.layout__hombre__tittle h2 {
+    text-align: center;
+    padding-top: 12px;
+}
+
+.layout__hombre__tittle h2 a{
+    color: white;
+    font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.layout__hombre__tittle h2 a:hover{
+    font-size: 35px;
+    color: rgb(8, 247, 247);
+    transition: all 500ms;
+}
+
+#layout__hombre .layout__hombre__menu {
+    grid-area: menu;
+    align-items: center;
+
+    background-color: #111111ad;
+    border:1px solid white;
+    padding:12px;
+}
+
+.layout__hombre__menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+#layout__hombre .layout__hombre__menu ul li:hover {
+    background-color: rgb(0, 225, 255);
+    color: white;
+    transition: all 500ms;
+    box-shadow: 1px 1px 3px rgb(253, 255, 255);
+}
+
+#layout__hombre .layout__hombre__contenido {
+    display: grid;
+    align-items: center ;
+    grid-area: contenido;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 10px;
+    padding: 5px;
+
+}
+
+.layout__hombre__contenido .layout__hombre__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.layout__hombre__image .img {
+    width: 400px;
+    height: 490px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 3px 1px grey;
+}
+
+.layout__hombre__image .img:hover {
+    width: 420px;
+    height: 520px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 10px 1px rgb(96, 97, 97);
+    transition: all 500ms;
+}
+
+#layout__hombre .layout__hombre__comprar {
+    grid-area: pie;
+    justify-self: center;
+
+    width: 100%;
+    height: 50%;
+    background-color: black;
+    text-align: center;
+    padding: 15px;
+    margin-top: 23px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+}
+
+.layout__hombre__comprar h2 a {
+    color: rgb(255, 255, 255);
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+
+}
+
+.layout__hombre__comprar h2 a:hover {
+    color: cyan;
+    height: 70%;
+    transition: all 500ms;
+}
+
+/* fin layout hombre */
+
+
+/* inicio layout mujer */
+
+#layout__mujer {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 10% 5% 78% 15%;
+    grid-template-areas: 
+          "title title"
+          "barra barra"
+          "image image"
+          "footer footer";
+          width: 100%;
+          height: 750px;
+          border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+          box-shadow: 1px 1px 10px 1px rgb(61, 61, 61);
+          background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+#layout__mujer .layout__mujer__tittle {
+    grid-area: title;
+    background-image: linear-gradient(to bottom, rgba(241, 79, 155, 0.973), rgb(170, 30, 170));
+    border-bottom: 2px solid white;
+    background-image: url("../assets/images/fondonav.jpg");
+    
+    width: 100%;
+    height: 70px;
+}
+
+.layout__mujer__tittle h2 {
+    text-align: center;
+    padding: 14px;
+    color: white;
+}
+
+.layout__mujer__tittle h2 a{
+    color: white;
+    font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.layout__mujer__tittle h2 a:hover{
+    font-size: 35px;
+    color: rgb(255, 0, 255);
+    transition: all 500ms;
+}
+
+#layout__mujer .layout__mujer__menu {
+    grid-area: barra;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0px;
+
+    background: rgba(238, 130, 238, 0.801);
+    background: #111111ad;
+    border:1px solid white
+}
+
+.layout__mujer__menu ul {
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+    padding: 10px;
+}
+
+.layout__mujer__menu ul li:hover {
+    background-color: rgb(225, 0, 255);
+    color: white;
+    transition: all 300ms;
+    box-shadow: 1px 1px 3px rgb(253, 255, 255);
+    transition: all 500ms;
+}
+
+#layout__mujer .layout__mujer__contenido {
+    display: grid;
+    align-items: center;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3,30%);
+    grid-area: image;
+    grid-column-gap: 5px;
+    width: 100%;
+}
+
+.layout__mujer__contenido .layout__mujer__image {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.layout__mujer__image .img {
+    width: 400px;
+    height: 410px;
+    border-radius: 10%;
+    box-shadow: 1px 1px 3px 1px grey;
+}
+
+.layout__mujer__image .img:hover {
+    width: 420px;
+    height: 420px;
+    border-radius: 5%;
+    box-shadow: 1px 1px 7px rgb(239, 68, 255);
+    transition: all 500ms;
+    box-shadow: 1px 1px 10px 1px rgb(96, 97, 97);
+}
+
+#layout__mujer .layout__mujer__comprar {
+    grid-area: footer;
+
+    background: black;
+    width: 100%;
+    height: 62%;
+    text-align: center;
+    padding: 15px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+}
+
+.layout__mujer__comprar h2 a{
+    color: white;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Itim', cursive;
+    font-family: 'Staatliches', cursive;
+    letter-spacing: 5px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.layout__mujer__comprar h2 a:hover{
+    color: rgb(255, 58, 212);
+    transition: all 300ms;
+}
+
+/* FIN LAYOUT MUJERES */
+
+
+/* inicio PARA QUIEN QUERES COMPRAR */
+
+#comprar {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 3fr;
+    margin-top: 18px;
+    height: 550px;
+    background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+    overflow: hidden;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+}
+
+#comprar .containerText {
+    grid-column: 1 / 4;
+}
+
+.containerText .titulo-pregunta {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 30px;
+    color: rgb(255, 255, 255);
+}
+
+.containerText .subtittle-pregunta {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+
+.containerText .optionH a{
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
+}
+
+.containerText .optionM a{
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
+}
+
+.containerText .optionN a{
+    grid-column: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    align-items: center;
+    line-height: 50px;
+    color: white;
+    font-weight: 500;
+    font-family: 'Alegreya Sans SC', sans-serif;
+    text-decoration: none;
+}
+
+
+.subtittle-pregunta .optionH a:hover{
+    color: cyan;
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.subtittle-pregunta .optionM a:hover{
+    color: rgb(235, 54, 252);
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+.subtittle-pregunta .optionN a:hover{
+    color: rgb(247, 234, 58);
+    font-size: 32px;
+    font-weight: bold;
+    transition: all 500ms;
+}
+
+#comprar .containerPhotos {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 1 / 4;
+    margin-top: 70px;
+    width: 90%;
+    padding-left: 150px;
+}
+
+.containerPhotos .select-img {
+    border-radius: 100%;
+    height: 220px;
+    width: 220px;
+}
+
+.containerPhotos .select-img:hover{
+    height: 240px;
+    width: 240px;
+    transition: all 700ms;
+}
+
+/* fin container "para quien queres comprar" */
+
+/* inicio formas de pago / descuentos */
+
+
+#containerPagos {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+           "title"
+           "celda";
+  
+           background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
+           border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+           box-shadow: 1px 1px 10px 1px #ccc;
+    width: 100%;
+    height: 520px;
+    /* background-image: url(../assets/images/fondo-frode.jpg); */
+ 
+}
+
+#containerPagos .title__descuentos {
+    grid-area: title;
+    justify-self: center;
+    align-self: center;
+
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.title__descuentos h2 {
+    font-family: sans-serif;
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 2px 10px rgb(49, 250, 213);
+    box-shadow: 1px 2px 2px 2px rgb(114, 162, 205);
+}
+
+.title__descuentos h2:hover {
+    color: rgb(255, 255, 0);
+    font-size: 46px;
+    transition: all 1s;
+}
+
+#containerPagos .tabla__descuentos {
+    display: grid;
+    grid-area: celda;
+    justify-self: center;
+    align-self: center;
+
+    width: 30%;
+    height: 90%;
+    padding: 5px;
+    border-top: 5px solid tomato;
+    border-left: 5px solid yellow;
+    border-right: 5px solid cyan;
+    border-bottom:  5px solid greenyellow;
+    background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
+    text-align: center;
+    color: white;
+    margin-bottom: 80px;
+}
+
+.tabla__descuentos .item {
+    font-weight: 100;
+}
+
+.tabla__descuentos .subitem {
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: rgb(239, 219, 7);
+}
+
+.tabla__descuentos .subitem:hover {
+    font-size: 15px;
+    transition: all 500ms;
+}
+
+.tabla__descuentos .titleitem {
+    text-transform: uppercase;
+    height: 50px;
+    width: 50%;
+    font-size: 18px;
+    color: rgb(250, 250, 250);
+}
+
+/* fin forma de pagos */
+
+section.containerForm {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
+    padding-top:30px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 20px 1px #ccc;
+
+    height: 480px;
+    width: 100%;
+}
+
+#formulario {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+
+    height: 420px;
+    width: auto;
+    border: 3px solid white;
+    background: linear-gradient(to bottom, rgba(240, 71, 164, 0.904), rgba(27, 124, 131, 0.932));
+    color: white;
+    font-size: 14px;
+
+}
+
+#formulario .tituloForm { 
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    font-size: 20px;
+    font-weight: 100;
+    text-transform: uppercase;
+    width: 100%;
+    height: 12%;
+    border-bottom: 1px solid white;
+    text-shadow: 1px 3px 3px rgb(90, 12, 90);
+    padding: 20px;
+}
+
+.tituloForm b {
+    font-family: 'Itim', cursive;
+}
+
+#formulario .titleForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#formulario .bodyForm {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    
+    width: 50%;
+    height: 25px;
+    margin-left: 119px;
+    margin-bottom: 5px;
+    background: rgb(245, 207, 214);
+}
+
+
+.containerRadio {
+    display: flex;
+    flex-direction: row;
+}
+
+#formulario .inputRadio {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    
+    margin-top: 14px;
+    width: 100%;
+    margin-left: 10px;
+}
+
+#formulario .inputRadio__option {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding-right: 45px;
+}
+.inputRadio__option p {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 15px;
+    padding-left: 12px;
+    padding-top: 14px;
+}
+
+.inputRadio__option .radioForm {
+    margin:2px;
+}
+
+#formulario .inputCheck {
+    display: flex;
+    flex-direction: row;
+    padding-left: 12px;
+}
+
+#formulario .checkForm {
+    margin-top:4px;
+    margin-left: 4px;
+}
+
+#formulario .inputSubmit {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+#formulario .formSubmit {
+    justify-self: space-between;
+    margin-top: 10px;
+    margin-left: 66px;
+    height: 100%;
+
+    text-transform: uppercase;
+}
+
+/* fin formulario */
+
+/* inicio footer */
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 10px; 
+    background-image: url(../assets/images/fondo-frode.jpg);
+    height: 100%;
+    width: auto;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 20px 1px #ccc;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    color: black;
+    font-size: 12px;
+    box-shadow: 5px 5px 7px 5px rgb(175, 175, 175);
+    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.904), rgba(0, 0, 0, 0.932));
+}
+
+footer .containerFooter {
+    display: flex;
+    flex-direction: column;
+    color: white;
+    line-height: 2px;
+}
+
+footer .fotext:hover {
+    color: black;
+}
+
+footer .author {
+    font-weight: bold;
+}
+
+footer .containerCoder {
+    margin-top: 50px;
+}
+
+footer .coder {
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+
+
+
+
+
+/* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/ /* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/ /* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/
+
+
+#containerH {
+    display: flex;
+    align-items: center; /* centrar items uno al lado del otro */
+
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 9px #777;
+    min-height: 160px;
+    background: black;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#headerH {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+/* agregar clase nueva para el contenedor del logo frode */
+.container__tittleH {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittleH {
+    flex-grow: 1;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 25px;
+
+}
+
+.header__alignH {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center; /* centrar texto dentro de caja */
+
+}
+
+#menu {
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border: 2px solid black;
+    /* border: 1px solid rgba(175, 172, 172, 0.8); */
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: 209px;
+    margin-left: 290px;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+}
+
+.logo__imageH {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+}
+
+.container__subtittleH {
+    width: 26%;
+    flex-wrap: wrap;
+}
+
+.subtittleH {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.subtittleH a {
+    color: white;
+}
+
+.subtittleH a:hover {
+    color: cyan;
+}
+
+/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
+
+/* inicio submenú */
+
+.subnav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    /* margin-left: 20px; */
+    /* box-shadow: 1px 8px 20px grey (0 0 0 5%); */
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+
+}
+
+.subnav__tittle {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    flex-grow: 1;
+    background: white;
+    /* position: relative; */
+    width: 100%;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+.subnav__tittle_men {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    /* border-bottom: 2px solid black; */
+}
+
+.subnav__subtittle {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 1px 5px 8px rgb(121, 121, 121);
+    /* background: rgb(214, 210, 210); */
+    background: #ccc;
+    margin-bottom: 40px;
+    width: 50%;
+    align-items: center;
+    /* padding-left: 5px; */
+}
+
+.subnav__subtittle__items {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 60px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+
+.subnav__subtittle__items li {
+    text-align: center;
+
+}
+
+.subnav__subtittle__items li a{
+    color: black;
+}
+
+/* fin subnav */
+
+
+#tituloHombre {
+    font-size: 14px;
+    padding:8px 0px 0px 640px;
+}
+
+header #logotipo {
+    width: 20px;
+    height: 20px;
+    margin: 5px auto;
+}
+
+#navHombre{
+    height: 120px;
+    padding: 30px 60px 100px 290px;
+    word-spacing: 35px;
+    background-image: url("../assets/images/fondo-frode.jpg");
+    border-bottom: 1px solid black;
+}
+
+#navHombre .color {
+    display: inline;
+    font-size: 25px;
+    padding-left: 60px;
+    color: black;
+}
+
+#backIndex {
+    word-spacing: 2px;
+    padding: 50px 20px 5px 1px;
+    display: block;
+    position: absolute;
+    left: 10px;
+    top: 110px;
+    font-size: 18px;
+    color:#db0f80;;
+}
+
+#section {
+    background-image: url("../assets/images/fondo-frode.jpg");
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittleCalzados {
+    font-size: 40px;
+    padding-left: 150px;
+    color: rgb(7, 6, 6);
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+div#cuotas {
+    padding-left: 100px;
+    padding-top: 10px;
+    height: 500px;
+}
+
+#cuotas .tittleCuotas {
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 150px;
+
+}
+
+.imageNike {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 420px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 380px;
+}
+
+#cuotas {
+    margin-top: 20px;
+}
+
+.tittleInteres {
+    color: rgb(255, 251, 251);
+    margin: 5px 30px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.tittleAhorro {
+    padding-left: 120px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.table {
+    background-color: rgb(112, 111, 111);
+    color: white;
+
+}
+
+.table .tablePosition {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 600px;
+    left: 80px;
+}
+
+#sectionPant {
+    background-image: url("../assets/images/hombrefondo.jpg");
+    margin: 4px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittlePant {
+    font-size: 40px;
+    padding-left: 150px;
+    color: rgb(243, 243, 243);
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.imagePant {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 880px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+
+#cuotasPant {
+    margin-top: 20px;
+}
+
+div#cuotasPant {
+    padding-left: 100px;
+    padding-top: 10px;
+    height: 500px;
+}
+
+#cuotasPant .tittleCuotas {
+    font-size: 30px;
+    color: rgb(201, 196, 196);
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 150px;
+
+}
+
+#cuotasPant .tittleInteres {
+    padding-left: 45px;
+    color: rgb(255, 251, 251);
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+#cuotasPant .tittleAhorro {
+    padding-left: 130px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.table .menPosition {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1220px;
+    left: 120px;
+}
+
+.valor {
+    color: rgb(248, 204, 10);
+}
+
+#lastSection {
+    background-image: url("../assets/images/hombrefondo.jpg");
+    margin: 5px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.lastTittle {
+    font-size: 40px;
+    padding-left: 170px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+div#lastCuotas {
+    padding-left: 100px;
+    padding-top: 10px;
+    height: 500px;
+}
+
+#lastCuotas .tittleCuotas {
+    font-size: 30px;
+    color: rgb(201, 196, 196);
+    padding-left: 70px;
+    padding-bottom: 10px;
+    padding-top: 150px;
+}
+
+#lastCuotas .tittleInteres {
+    padding-left: 40px;
+    color: rgb(255, 251, 251);
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.lastImage {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 1480px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+.table .lastPosition {
+        position: absolute;
+        background-color: rgb(112, 111, 111);
+        top: 1780px;
+        left: 125px;
+}
+
+#lastContainer {
+    background-image: url("../assets/images/titularencuesta.jpg");
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+
+.hombreOff {
+    background-color: #db0f80;
+    color: white;
+    width: 200px;
+    height: 150px;
+    margin: 0px 550px;
+    border-top: 5px solid tomato;
+    border-left: 5px solid yellow;
+    border-right: 5px solid cyan;
+    border-bottom:  5px solid greenyellow;
+}
+
+/* MUJER */ /* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER */
+
+
+#containerM {
+    display: flex;
+    align-items: center; /* centrar items uno al lado del otro */
+
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    min-height: 160px;
+    background: black;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#headerM{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+/* agregar clase nueva para el contenedor del logo frode */
+.container__tittleM {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittleM {
+    flex-grow: 1;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 25px;
+
+}
+
+.header__alignM {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center; /* centrar texto dentro de caja */
+
+}
+
+#menu {
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border: 2px solid black;
+    /* border: 1px solid rgba(175, 172, 172, 0.8); */
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: 209px;
+    margin-left: 290px;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+}
+
+.logo__imageM {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+}
+
+.container__subtittleM {
+    width: 26%;
+    flex-wrap: wrap;
+}
+
+.subtittleM {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.subtittleM a {
+    color: white;
+}
+
+.subtittleM a:hover {
+    color: rgb(255, 14, 255);
+}
+
+/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
+
+
+#navMujer{
+    height: 120px;
+    padding: 30px 60px 100px 290px;
+    word-spacing: 35px;
+    background-image: url("../assets/images/fondo-frode.jpg");
+    border-bottom: 1px solid black;
+}
+
+#navMujer .color {
+    display: inline;
+    font-size: 25px;
+    padding-left: 70px;
+    color: black;
+}
+
+#sectionF {
+    background-image: url("../assets/images/titularmujer.jpg");
+    margin: 138px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.imageNikeF {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 250px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+#sectionPantF {
+    background-image: url("../assets/images/titularmujer.jpg");
+    margin: 4px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittlePantF {
+font-size: 40px;
+padding-left: 130px;
+color: rgb(243, 243, 243);
+letter-spacing: 2px;
+display: inline;
+text-transform: uppercase;
+}
+
+.imagePantF {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 880px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+#lastSectionF {
+    background-image: url("../assets/images/titularmujer.jpg");
+    margin: 5px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.lastTittleF {
+    font-size: 40px;
+    padding-left: 180px;
+    color: rgb(255, 255, 255);
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.tittleInteresF{
+    padding-left: 15px;
+    color: rgb(255, 251, 251);
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.lastImageF {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 1480px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+.lastPositionF {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1780px;
+    left: 140px;
+}
+
+/* INVIERNO */ /* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO */
+
+
+#containerI {
+    display: flex;
+    align-items: center; /* centrar items uno al lado del otro */
+
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    min-height: 160px;
+    background: black;
+   /*  background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#headerI {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+/* agregar clase nueva para el contenedor del logo frode */
+.container__tittleI {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittleI {
+    flex-grow: 1;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 25px;
+
+}
+
+.header__alignI {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center; /* centrar texto dentro de caja */
+
+}
+
+#menu {
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border: 2px solid black;
+    /* border: 1px solid rgba(175, 172, 172, 0.8); */
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: 209px;
+    margin-left: 290px;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+}
+
+.logo__imageI {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+}
+
+.container__subtittleI {
+    width: 26%;
+    flex-wrap: wrap;
+}
+
+.subtittleI {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.subtittleI a {
+    color: white;
+}
+
+.subtittleI a:hover {
+    color: rgb(212, 0, 255);
+}
+
+/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
+
+#sectionI {
+    background-image: url("../assets/images/fondo-frode.jpg");
+    margin: 138px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.titleCalzadosI {
+    font-size: 40px;
+    padding-left: 150px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.imageNikeI {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 250px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+.tittleInteresI {
+    color: black;
+    margin: 5px 30px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.tittleCuotasI {
+font-size: 30px;
+color: black;
+padding-left: 55px;
+padding-bottom: 10px;
+padding-top: 150px;
+}
+
+.valorI {
+    color: rgb(2, 20, 2);
+}
+
+#sectionPantI {
+    background-image: url("../assets/images/fondo-frode.jpg");
+    margin: 4px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittlePantI {
+font-size: 40px;
+padding-left: 130px;
+color: black;
+letter-spacing: 2px;
+display: inline;
+text-transform: uppercase;
+}
+
+.imagePantI {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 880px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+#lastSectionI {
+    background-image: url("../assets/images/fondo-frode.jpg");
+    margin: 5px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.lastTittleI {
+    font-size: 40px;
+    padding-left: 180px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+#lastCuotas .tittleInteresI {
+    padding-left: 28px;
+
+}
+
+.tittleInteresI{
+    padding-left: 15px;
+    color: black;
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.tittleAhorroI {
+    padding-left: 120px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.lastImageI {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 1480px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+.lastPositionI {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1780px;
+    left: 110px;
+}
+
+.menPositionI {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1220px;
+    left: 100px;
+}
+
+/* NIÑOS */  /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS */ /* NIÑOS *//* NIÑOS *//* NIÑOS *//* NIÑOS *//* NIÑOS *//* NIÑOS *//* NIÑOS */
+
+#containerK {
+    display: flex;
+    align-items: center; /* centrar items uno al lado del otro */
+
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    min-height: 160px;
+    background: black;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#headerK {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+/* agregar clase nueva para el contenedor del logo frode */
+.container__tittleK {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittleK {
+    flex-grow: 1;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 25px;
+
+}
+
+.header__alignK {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center; /* centrar texto dentro de caja */
+
+}
+
+#menu {
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border: 2px solid black;
+    /* border: 1px solid rgba(175, 172, 172, 0.8); */
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: 209px;
+    margin-left: 290px;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+}
+
+.logo__imageK {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+}
+
+.container__subtittleK {
+    width: 26%;
+    flex-wrap: wrap;
+}
+
+.subtittleK {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.subtittleK a {
+    color: white;
+}
+
+.subtittleK a:hover {
+    color: rgb(157, 255, 0);
+}
+
+/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
+
+
+#tituloHombreK {
+    color: white;
+    font-size: 14px;
+    padding:8px 0px 0px 650px;
+}
+
+#sectionK {
+    background-image: url("../assets/images/fondo2kid.jpg");
+    margin: 138px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.titleCalzadosK {
+    font-size: 40px;
+    padding-left: 150px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.imageNikeK {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 250px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+.tittleInteresK {
+    color: black;
+    margin: 5px 30px;
+    padding-left: 30px;
+    font-size: 15px;
+}
+
+.tittleCuotasK {
+font-size: 30px;
+color: black;
+padding-left: 55px;
+padding-bottom: 10px;
+padding-top: 150px;
+}
+
+.valorK {
+    color: yellow;
+}
+
+#sectionPantK {
+    background-image: url("../assets/images/fondo2kid.jpg");
+    margin: 4px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittlePantK {
+font-size: 40px;
+padding-left: 130px;
+color: black;
+letter-spacing: 2px;
+display: inline;
+text-transform: uppercase;
+}
+
+.imagePantK {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 880px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+#lastSectionK {
+    background-image: url("../assets/images/fondo2kid.jpg");
+    margin: 5px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.lastTittleK {
+    font-size: 40px;
+    padding-left: 180px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+#lastCuotas .tittleInteresK {
+    padding-left: 28px;
+
+}
+
+.tittleInteresK {
+    padding-left: 15px;
+    color: black;
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.tittleAhorroK {
+    padding-left: 120px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.lastImageK {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 1480px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+.lastPositionK {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1780px;
+    left: 110px;
+}
+
+.menPositionK {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1220px;
+    left: 100px;
+}
+
+/* DEPORTE */ /* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE *//* DEPORTE */
+
+
+#containerD {
+    display: flex;
+    align-items: center; /* centrar items uno al lado del otro */
+
+    width: 100%;
+    height: 10px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 0px 0px 10px #ccc;
+    min-height: 160px;
+    background: black;
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#headerD {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+    background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+/* agregar clase nueva para el contenedor del logo frode */
+.container__tittleD {
+    display: flex;
+    align-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 1px;
+    /* box-shadow: 0px 0px 10px #ccc; */
+}
+
+.tittleD {
+    flex-grow: 1;
+    text-align: center;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
+    text-transform: uppercase;
+    /* padding-left: 570px; */
+    color: white;
+    padding-bottom: 25px;
+
+}
+
+.header__alignD {
+    display: flex;
+    width: 90%;
+    flex-direction: row;
+    align-items: center; /* centrar texto dentro de caja */
+
+}
+
+#menu {
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+
+    border: 2px solid black;
+    /* border: 1px solid rgba(175, 172, 172, 0.8); */
+    font-weight: bold;
+    margin-top: 28px;
+    margin-right: 209px;
+    margin-left: 290px;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+}
+
+.logo__imageD {
+    margin-top: 30px;
+    margin-left: 18px;
+}
+
+img.logotipo {
+   flex-grow: 1;
+ 
+   width: 55px;
+   height: 52px;
+   border-radius:80%;
+}
+
+.container__subtittleD {
+    width: 26%;
+    flex-wrap: wrap;
+}
+
+.subtittleD {
+    flex-grow: 1;
+    font-family:'sans-serif';
+    font-size: 10px;
+    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+    text-transform: uppercase;
+    padding-top: 24px;
+    padding-left: 20px;
+}
+
+.subtittleD a {
+    color: white;
+}
+
+.subtittleD a:hover {
+    color: rgb(251, 255, 0);
+}
+
+/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
+
+
+#navHombreD{
+    height: 120px;
+    padding: 30px 60px 100px 290px;
+    word-spacing: 35px;
+    background-image: url("../assets/images/fondo-frode.jpg");
+    border-bottom: 1px solid black;
+}
+
+#navHombreD .color {
+    display: inline;
+    font-size: 25px;
+    padding-left: 90px;
+    color: black;
+}
+
+#tituloHombreD {
+    color: white;
+    font-size: 14px;
+    padding:8px 0px 0px 635px;
+}
+
+#sectionD {
+    background-image: url("../assets/images/fondodeporte1.jpg");
+    margin: 138px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittleCalzadosD {
+    font-size: 40px;
+    padding-left: 150px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+.imageNikeD {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 250px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 400px;
+}
+
+#cuotas .tittleInteresD {
+    color: black;
+    margin: 5px 30px;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.tittleCuotasD {
+font-size: 30px;
+color: black;
+padding-left: 80px;
+padding-bottom: 10px;
+padding-top: 150px;
+}
+
+#cuotas .tittleAhorroD {
+    padding-left: 100px;
+}
+
+.valorD {
+    color: yellow;
+}
+
+#sectionPantD {
+    background-image: url("../assets/images/fondodeporte1.jpg");
+    margin: 4px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.tittlePantD {
+font-size: 40px;
+padding-left: 150px;
+color: black;
+letter-spacing: 2px;
+display: inline;
+text-transform: uppercase;
+}
+
+#cuotasPant .tittleCuotasD {
+    padding-left: 40px;
+}
+
+#cuotasPant .tittleAhorroD {
+    padding-left: 110px;
+}
+
+.imagePantD {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 880px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+#lastSectionD {
+    background-image: url("../assets/images/fondodeporte1.jpg");
+    margin: 5px 0px 5px 0px;
+    width: auto;
+    height: auto;
+    padding-top: 50px;
+}
+
+.lastTittleD {
+    font-size: 40px;
+    padding-left: 180px;
+    color: black;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
+}
+
+#lastCuotas .tittleInteresD {
+    padding-left: 28px;
+
+}
+
+.tittleInteresD {
+    padding-left: 15px;
+    color: black;
+    margin: 5px 30px;
+    font-size: 15px;
+}
+
+.tittleAhorroD {
+    padding-left: 120px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
+}
+
+.lastImageD {
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 1480px;
+    padding-bottom: 100px;
+    width: 400px;
+    height: 600px
+}
+
+.lastPositionD {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1780px;
+    left: 110px;
+}
+
+.menPositionD {
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 1220px;
+    left: 100px;
+}
+
+.lastTittleD {
+    padding-left: 150px;
+}
+
+#lastCuotas .tittleCuotasD {
+    padding-left: 45px;
+}
+
+#lastCuotas .tittleInteresD {
+    padding-left: 40px;
+}
+
+
+/* textos */
+
+#registroSub {
+    font-family: 'PT Mono', monospace;
+}
+
+body#myStyles {
+    text-decoration: none;
+    text-transform: none;
+    font-family: 'PT Mono', monospace;
+}
+
+
+/* nav#menu {
+    margin-top: 24px;
+    margin-right: 380px;
+    flex-grow: 1; 
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: center;
+    font-weight: bold;
+    height: 60px;
+    /* background: rgb(252, 252, 252); */
+
+    /* li {
+    display: inline-block;
+    position: relative;
+}
+
+ul ul {
+    position: absolute;
+    display: none;
+    padding-top: 10px;
+    align-items: center;
+    overflow: hidden;
+}
+
+ul ul li {
+    display: block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    align-items: center;
+    background: rgba(7, 7, 7, 0.938);
+    /* background-image: url("../assets/images/fondo-frode.jpg"); */
+/*     z-index: 3;
+    overflow: hidden;
+    transition: all 1000ms;
+}
+
+ul li:hover ul {
+    display: block;
+}
+
+#menu > ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    list-style: none;
+    align-content: center; /* centrar texto dentro de caja */
+ /*    text-decoration: none;
+    width: 96%;
+    height: 100%;
+} */
+
+#menu a {
+    text-transform: uppercase;
+    font-weight: 100;
+    color: white;
+    padding: 5px;
+    text-decoration: none;
+    transition: all 500ms;
+}
+
+#menu a:hover {
+    /* background: rgb(139, 138, 138); */
+    /* color: rgb(253, 19, 253); */
+    color: rgb(0, 235, 252);
+    font-size: 20px;
+}  
