@@ -94,8 +94,9 @@
 }
 
 ul li ul li {
-  background-color: rgba(182, 182, 182, 0.527);
+  background-color: rgba(228, 228, 228, 0.527);
   font-weight: bold;
+  transition: all 400ms;
 }
 
 nav#menu #textDeco {

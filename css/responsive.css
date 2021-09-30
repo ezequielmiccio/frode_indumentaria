@@ -12,6 +12,14 @@ de 0px a 590px lo establecido a continuación*/
         padding: 0px;
     }
 
+    #header {
+        background-image: linear-gradient(black, rgb(51, 51, 51));
+    }
+
+    .buttonNav {
+        color: white;
+    }
+
     .navTitle {
         display: none;
     }
@@ -56,11 +64,6 @@ de 0px a 590px lo establecido a continuación*/
        display: none;
     }
 
-    .navbar-dark .navbar-toggler {
-        color: black;
-        border-color: black;
-    }    
-
     .logotipo {
         margin-top: 80px;
     }
@@ -68,6 +71,7 @@ de 0px a 590px lo establecido a continuación*/
     .subtittle h2 {
         font-weight: bold;
         margin-top: 65px;
+        font-size: 10px;
     }
 
     #header {
@@ -122,6 +126,11 @@ de 0px a 590px lo establecido a continuación*/
         text-align: center;
     }
 
+    .layout.layout__hombre__tittle h2:hover {
+        color: cyan;
+        transition: all 400ms;
+    }
+
     #layout__hombre .layout__hombre__menu {
         display: none;
     }
@@ -131,7 +140,7 @@ de 0px a 590px lo establecido a continuación*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 0px;
+        margin: 25px 0px;
         width: 100%;
     }
 
@@ -141,6 +150,7 @@ de 0px a 590px lo establecido a continuación*/
         align-items: center;
         height: 100%;
         width: 100%;
+        overflow: hidden;
     }
 
     .layout__hombre__image .img {
@@ -152,7 +162,7 @@ de 0px a 590px lo establecido a continuación*/
     
     .layout__hombre__image .img:hover {
         width: 340px;
-        height: 320px;
+        height: 300px;
         border-radius: 100%;
         transition: all 500ms;
     }
@@ -184,8 +194,11 @@ de 0px a 590px lo establecido a continuación*/
     #layout__mujer {
         display: flex;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
         height: 100%;
-        margin: 3px 0px;
+        margin: 1px 0px;
+       /*  box-shadow: 1px 1px 3px 1px white; */
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
         background-image: url(../assets/images/fondowather.jpg);
         animation-name: showWather;
