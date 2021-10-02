@@ -94,9 +94,8 @@
 }
 
 ul li ul li {
-  background-color: rgba(228, 228, 228, 0.527);
+  background-color: rgba(182, 182, 182, 0.527);
   font-weight: bold;
-  transition: all 400ms;
 }
 
 nav#menu #textDeco {
@@ -650,7 +649,7 @@ img.logotipo {
   width: 100%;
   height: 100%;
   margin: 20px 0px;
-  background: rgba(216, 216, 216, 0.801);
+  background: rgba(238, 130, 238, 0.801);
   background: #111111ad;
   border: 1px solid white;
 }
@@ -1226,7 +1225,6 @@ img.logotipo {
   flex-wrap: nowrap;
   align-items: center;
   flex-grow: 1;
-  background: white;
   /* position: relative; */
   width: 100%;
   /* background-image: url("../assets/images/fondo-frode.jpg"); */
@@ -2678,4 +2676,191 @@ ul li:hover ul {
   /* color: rgb(253, 19, 253); */
   color: #00ebfc;
   font-size: 20px;
+}
+
+/* CSS SECCION HOMBRE */
+* {
+  box-sizing: border-box;
+  /* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  /* para quitar viñetas a las listas */
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#containerH {
+  display: flex;
+  align-items: center;
+  /* centrar items uno al lado del otro */
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+  box-shadow: 0px 0px 10px #777;
+  min-height: 160px;
+  background: black;
+  /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#containerH #headerH {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+  background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+#containerH #headerH .container__tittleH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+#containerH #headerH .container__tittleH .tittle {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#containerH #headerH .header__alignH {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+#containerH #headerH .header__alignH .logo__imageH {
+  margin-top: 30px;
+  margin-left: 53px;
+}
+
+#containerH #headerH .header__alignH .logo__imageH .logotipo {
+  flex-grow: 1;
+  width: 55px;
+  height: 52px;
+  border-radius: 80%;
+  overflow: hidden;
+}
+
+#containerH #headerH .header__alignH #menuBs {
+  margin-left: 5rem;
+  margin-top: 1.6rem;
+  box-shadow: 1px 1px 3px 1px black;
+  /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
+  color: black;
+}
+
+#containerH #headerH .header__alignH #menuBs #menuBs a {
+  color: black;
+}
+
+#containerH #headerH .header__alignH #menuBs #menuBs a:hover {
+  color: cyan;
+  font-weight: bold;
+  /* background-color: rgba(172, 171, 171, 0.596); */
+  transition: all 300ms;
+}
+
+#containerH #headerH .header__alignH #menuBs #navTitle {
+  font-weight: bold;
+}
+
+#containerH #headerH .header__alignH #menuBs .navForm {
+  margin-left: 1rem;
+}
+
+#containerH #headerH .header__alignH #menuBs ul li ul li {
+  background-color: rgba(182, 182, 182, 0.527);
+  font-weight: bold;
+}
+
+#containerH #headerH .header__alignH #menuBs #textDeco {
+  font-family: "Baloo 2", cursive;
+  text-decoration: none;
+}
+
+#containerH #headerH .header__alignH #menuBs .navbar-toggler {
+  color: black;
+  border-color: black;
+}
+
+#containerH #headerH .container__subtittleH {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#containerH #headerH .container__subtittleH .subtittleH {
+  flex-grow: 1;
+  font-family: "sans-serif";
+  font-size: 10px;
+  font-weight: lighter;
+  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+#containerH #headerH .container__subtittleH .subtittleH h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#containerH #headerH .container__subtittleH .subtittleH a {
+  color: white;
+  font-family: "PT Mono", monospace;
+  font-family: "Baloo 2", cursive;
+  text-decoration: none;
+}
+
+#containerH #headerH .container__subtittleH .subtittleH a:hover {
+  color: cyan;
+  font-size: 16px;
+  transition: 500ms;
+}
+
+/* main */
+.subnav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  background-image: linear-gradient(orange 30%, cyan);
+  border-bottom: 1px solid white;
+  box-shadow: 1px 1px 5px wheat;
+}
+
+.subnav .subnav.tittle {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: center;
+  flex-grow: 1;
+  /* position: relative; */
+  width: 100%;
+  margin: 30px 0px;
+}
+
+.subnav .subnav.tittle .subnav__tittle_men {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  padding-top: 20px;
+  margin-bottom: 30px;
+}
+
+.subnav .subnav__subtittle {
+  display: flex;
+  flex-direction: row;
+  box-shadow: 1px 1px 8px #797979;
+  /* background: rgb(214, 210, 210); */
+  width: 50%;
+  align-items: center;
+  /* padding-left: 5px; */
 }
