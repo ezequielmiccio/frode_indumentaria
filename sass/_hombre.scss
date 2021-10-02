@@ -229,27 +229,58 @@
 }
 
 #section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 20% 60%;
+  grid-template-areas: "head head head"
+                       "tabla tabla img"
+                        ". . img";
+  background-image: url("../assets/images/fondo-frode.jpg");
+  width: auto;
+  height: 40rem;
+  box-shadow: 1px 1px 7px white;
+  border-top: 1px solid white;
+
 
   .tittleCalzados {
 
+    font-size: 40px;
+    padding-left: 150px;
+    color: #070606;
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
   }
 
   #cuotas {
+    padding-left: 100px;
+    padding-top: 10px;
+    height: 500px;
 
-    .tittleCuotas {
-
-
+  .tittleCuotas {
+    font-size: 30px;
+    color: white;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 150px;
     }
 
     .tittleInteres {
-
+    color: #fffbfb;
+    margin: 5px 30px;
+    padding-left: 30px;
+    font-size: 15px;
 
     }
 
     .tittleAhorro {
+      padding-left: 120px;
+      color: red;
+      font-size: 15px;
+      padding-top: 10px;
 
       .valor {
-
+        color: #f8cc0a;
       }
 
     }
