@@ -159,7 +159,8 @@
   box-shadow: 1px 1px 10px wheat;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
   background-image: url("../assets/images/fondoSHOWW.jpg");
-  animation: showBanner 15s 1 linear;
+  background-image: linear-gradient(rgb(14, 14, 14), black);
+  animation: showBanner 5s 1 linear;
   overflow: hidden;
   
   @keyframes showBanner {
