@@ -73,11 +73,11 @@
         /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
         color: black;
 
-        #menuBs a {
+        & a {
           color: black;
         }
 
-        #menuBs a:hover {
+        & a:hover {
           color: cyan;
           font-weight: bold;
           /* background-color: rgba(172, 171, 171, 0.596); */
@@ -123,12 +123,12 @@
         padding-top: 30px;
         padding-left: 15px;
 
-        h2 {
+        & h2 {
           font-size: 14px;
           font-weight: bold;
         }
 
-        a {
+        & a {
           color: white;
           font-family: "PT Mono", monospace;
           font-family: "Baloo 2", cursive;
@@ -180,7 +180,7 @@
       height: 20%;
       margin-bottom: 60px;
 
-      h2 {
+      & h2 {
         font-size: 35px;
         color: white;
         text-align: center;
@@ -210,13 +210,13 @@
         text-transform: uppercase;
         font-weight: 100;
 
-        li {
+       & li {
           justify-self: center;
           align-self: center;
           margin-top: 15px;
           margin-right: 30px;
 
-          a {
+         & a {
             font-size: 25px;
             font-weight: bold;
             font-style: italic;

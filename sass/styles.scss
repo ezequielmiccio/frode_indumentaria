@@ -1,5 +1,6 @@
-$fuente-normal: san-serif, Arial;
-$color-fondo:#666667;
+/* CSS SECCION HOMBRE */
+
+@import "hombre";
 
 /* INDEX */
 
@@ -779,6 +780,90 @@ img.logotipo {
 
 /* FIN LAYOUT MUJERES */
 
+/* INICIO CAROUSEL */
+
+#container-carousel {
+    background-image: linear-gradient(white, rgb(182, 180, 180));
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "title title"
+                          "img img";
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    height: 500px;
+    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    box-shadow: 1px 1px 10px 1px #ccc;
+
+    .titleCarousel {
+        grid-area: title;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & h2 {
+            font-family: 'Staatliches', cursive;
+            letter-spacing: 8px;
+            font-size: 50px;
+            font-weight: 800;
+            text-transform: uppercase;
+            font-style: bold;
+            animation: showText1 5s linear;
+
+            @keyframes showText1 {
+                0% {
+                    color: rgb(92, 92, 92);
+                }
+                
+                25% {
+                    color: rgb(112, 112, 112);
+                }
+
+                50% {
+                    color: rgb(43, 43, 43);
+                }
+
+                100% {
+                    color: rgb(0, 0, 0);
+                }
+                
+            }
+        }
+    }
+
+    #carouselExampleControls {
+        grid-area: img;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .carousel-inner {
+            
+            overflow: hidden;
+            margin-left: 37%;
+            margin-bottom: 70px;
+            
+            
+            .imagenCarou {
+                justify-self: center;
+                align-self: center;
+                border-radius: 20%;
+            }
+            
+        }
+  }
+
+  .carousel-control-prev {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+}
+
+/* FIN CAROUSEL */
+
 
 /* inicio PARA QUIEN QUERES COMPRAR */
 
@@ -786,7 +871,7 @@ img.logotipo {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr;
-    margin-top: 18px;
+/*     margin-top: 18px; */
     height: 550px;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
     overflow: hidden;
@@ -2558,7 +2643,5 @@ ul li:hover ul {
     font-size: 20px;
 }  
 
-/* CSS SECCION HOMBRE */
 
-@import "hombre";
 

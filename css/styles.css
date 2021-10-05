@@ -1,4 +1,285 @@
 @charset "UTF-8";
+/* CSS SECCION HOMBRE */
+* {
+  box-sizing: border-box;
+  /* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
+  margin: 0px;
+  padding: 0px;
+  list-style: none;
+  /* para quitar viñetas a las listas */
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+#containerHo {
+  display: flex;
+  align-items: center;
+  /* centrar items uno al lado del otro */
+  width: 100%;
+  height: 10px;
+  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+  box-shadow: 0px 0px 10px #777;
+  min-height: 160px;
+  background: black;
+  /* background-image: url("../assets/images/fondo-frode.jpg"); */
+}
+
+#containerHo #headerH {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  width: 100%;
+  height: 110px;
+  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
+  background-image: url("../assets/images/fondo-frode.jpg");
+}
+
+#containerHo #headerH .container__tittleH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 2px;
+}
+
+#containerHo #headerH .container__tittleH .tittle {
+  flex-grow: 1;
+  text-align: center;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+#containerHo #headerH .header__alignH {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  align-items: center;
+  text-decoration: none;
+}
+
+#containerHo #headerH .header__alignH .logo__imageH {
+  margin-top: 30px;
+  margin-left: 53px;
+}
+
+#containerHo #headerH .header__alignH .logo__imageH .logotipo {
+  flex-grow: 1;
+  width: 55px;
+  height: 52px;
+  border-radius: 80%;
+  overflow: hidden;
+}
+
+#containerHo #headerH .header__alignH #menuBs {
+  margin-left: 5rem;
+  margin-top: 1.6rem;
+  box-shadow: 1px 1px 3px 1px black;
+  /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
+  color: black;
+}
+
+#containerHo #headerH .header__alignH #menuBs a {
+  color: black;
+}
+
+#containerHo #headerH .header__alignH #menuBs a:hover {
+  color: cyan;
+  font-weight: bold;
+  /* background-color: rgba(172, 171, 171, 0.596); */
+  transition: all 300ms;
+}
+
+#containerHo #headerH .header__alignH #menuBs #navTitle {
+  font-weight: bold;
+}
+
+#containerHo #headerH .header__alignH #menuBs .navForm {
+  margin-left: 1rem;
+}
+
+#containerHo #headerH .header__alignH #menuBs ul li ul li {
+  background-color: rgba(182, 182, 182, 0.527);
+  font-weight: bold;
+}
+
+#containerHo #headerH .header__alignH #menuBs #textDeco {
+  font-family: "Baloo 2", cursive;
+  text-decoration: none;
+}
+
+#containerHo #headerH .header__alignH #menuBs .navbar-toggler {
+  color: black;
+  border-color: black;
+}
+
+#containerHo #headerH .container__subtittleH {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+#containerHo #headerH .container__subtittleH .subtittleH {
+  flex-grow: 1;
+  font-family: "sans-serif";
+  font-size: 10px;
+  font-weight: lighter;
+  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
+  text-transform: uppercase;
+  padding-top: 30px;
+  padding-left: 15px;
+}
+
+#containerHo #headerH .container__subtittleH .subtittleH h2 {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+#containerHo #headerH .container__subtittleH .subtittleH a {
+  color: white;
+  font-family: "PT Mono", monospace;
+  font-family: "Baloo 2", cursive;
+  text-decoration: none;
+}
+
+#containerHo #headerH .container__subtittleH .subtittleH a:hover {
+  color: cyan;
+  font-size: 16px;
+  transition: 500ms;
+}
+
+/* main */
+#subnavH {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 25rem;
+  border-bottom: 1px solid white;
+  box-shadow: 1px 1px 10px wheat;
+  background: linear-gradient(to bottom, #dd78bf, #7094bd);
+  background-image: url("../assets/images/fondoSHOWW.jpg");
+  animation: showBanner 15s 1 linear;
+  overflow: hidden;
+}
+
+@keyframes showBanner {
+  from {
+    background-position: -500px -500px;
+  }
+  to {
+    background-position: 0px 0px;
+  }
+}
+
+#subnavH .subnav__tittleH {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  width: 100%;
+  height: 20%;
+  margin-bottom: 60px;
+}
+
+#subnavH .subnav__tittleH h2 {
+  font-size: 35px;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+#subnavH .subnav__subtittleH {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  align-items: flex-start;
+  box-shadow: 1px 1px 10px #b4b4b4;
+  margin-bottom: 40px;
+}
+
+#subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  height: 50px;
+  text-transform: uppercase;
+  font-weight: 100;
+}
+
+#subnavH .subnav__subtittleH .subnav__subtittle__itemsH li {
+  justify-self: center;
+  align-self: center;
+  margin-top: 15px;
+  margin-right: 30px;
+}
+
+#subnavH .subnav__subtittleH .subnav__subtittle__itemsH li a {
+  font-size: 25px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: "Staatliches", cursive;
+  color: white;
+}
+
+#section {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 20% 20% 60%;
+  grid-template-areas: "head head head" "tabla tabla img" ". . img";
+  background-image: url("../assets/images/fondo-frode.jpg");
+  width: auto;
+  height: 40rem;
+  box-shadow: 1px 1px 7px white;
+  border-top: 1px solid white;
+}
+
+#section .tittleCalzados {
+  font-size: 40px;
+  padding-left: 150px;
+  color: #070606;
+  letter-spacing: 2px;
+  display: inline;
+  text-transform: uppercase;
+}
+
+#section #cuotas {
+  padding-left: 100px;
+  padding-top: 10px;
+  height: 500px;
+}
+
+#section #cuotas .tittleCuotas {
+  font-size: 30px;
+  color: white;
+  padding-left: 25px;
+  padding-bottom: 10px;
+  padding-top: 150px;
+}
+
+#section #cuotas .tittleInteres {
+  color: #fffbfb;
+  margin: 5px 30px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+#section #cuotas .tittleAhorro {
+  padding-left: 120px;
+  color: red;
+  font-size: 15px;
+  padding-top: 10px;
+}
+
+#section #cuotas .tittleAhorro .valor {
+  color: #f8cc0a;
+}
+
 /* INDEX */
 /* para predeterminar */
 * {
@@ -723,12 +1004,86 @@ img.logotipo {
 }
 
 /* FIN LAYOUT MUJERES */
+/* INICIO CAROUSEL */
+#container-carousel {
+  background-image: linear-gradient(white, #b6b4b4);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "title title" "img img";
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  height: 500px;
+  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+  box-shadow: 1px 1px 10px 1px #ccc;
+}
+
+#container-carousel .titleCarousel {
+  grid-area: title;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-carousel .titleCarousel h2 {
+  font-family: 'Staatliches', cursive;
+  letter-spacing: 8px;
+  font-size: 50px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-style: bold;
+  animation: showText1 5s linear;
+}
+
+@keyframes showText1 {
+  0% {
+    color: #5c5c5c;
+  }
+  25% {
+    color: #707070;
+  }
+  50% {
+    color: #2b2b2b;
+  }
+  100% {
+    color: black;
+  }
+}
+
+#container-carousel #carouselExampleControls {
+  grid-area: img;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container-carousel #carouselExampleControls .carousel-inner {
+  overflow: hidden;
+  margin-left: 37%;
+  margin-bottom: 70px;
+}
+
+#container-carousel #carouselExampleControls .carousel-inner .imagenCarou {
+  justify-self: center;
+  align-self: center;
+  border-radius: 20%;
+}
+
+#container-carousel .carousel-control-prev {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* FIN CAROUSEL */
 /* inicio PARA QUIEN QUERES COMPRAR */
 #comprar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 3fr;
-  margin-top: 18px;
+  /*     margin-top: 18px; */
   height: 550px;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
   overflow: hidden;
@@ -2524,285 +2879,4 @@ ul li:hover ul {
   /* color: rgb(253, 19, 253); */
   color: #00ebfc;
   font-size: 20px;
-}
-
-/* CSS SECCION HOMBRE */
-* {
-  box-sizing: border-box;
-  /* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  /* para quitar viñetas a las listas */
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
-#containerHo {
-  display: flex;
-  align-items: center;
-  /* centrar items uno al lado del otro */
-  width: 100%;
-  height: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #777;
-  min-height: 160px;
-  background: black;
-  /* background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#containerHo #headerH {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: 110px;
-  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-#containerHo #headerH .container__tittleH {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 2px;
-}
-
-#containerHo #headerH .container__tittleH .tittle {
-  flex-grow: 1;
-  text-align: center;
-  font-size: 12px;
-  font-weight: bold;
-}
-
-#containerHo #headerH .header__alignH {
-  display: flex;
-  width: 100%;
-  flex-direction: row;
-  align-items: center;
-  text-decoration: none;
-}
-
-#containerHo #headerH .header__alignH .logo__imageH {
-  margin-top: 30px;
-  margin-left: 53px;
-}
-
-#containerHo #headerH .header__alignH .logo__imageH .logotipo {
-  flex-grow: 1;
-  width: 55px;
-  height: 52px;
-  border-radius: 80%;
-  overflow: hidden;
-}
-
-#containerHo #headerH .header__alignH #menuBs {
-  margin-left: 5rem;
-  margin-top: 1.6rem;
-  box-shadow: 1px 1px 3px 1px black;
-  /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
-  color: black;
-}
-
-#containerHo #headerH .header__alignH #menuBs #menuBs a {
-  color: black;
-}
-
-#containerHo #headerH .header__alignH #menuBs #menuBs a:hover {
-  color: cyan;
-  font-weight: bold;
-  /* background-color: rgba(172, 171, 171, 0.596); */
-  transition: all 300ms;
-}
-
-#containerHo #headerH .header__alignH #menuBs #navTitle {
-  font-weight: bold;
-}
-
-#containerHo #headerH .header__alignH #menuBs .navForm {
-  margin-left: 1rem;
-}
-
-#containerHo #headerH .header__alignH #menuBs ul li ul li {
-  background-color: rgba(182, 182, 182, 0.527);
-  font-weight: bold;
-}
-
-#containerHo #headerH .header__alignH #menuBs #textDeco {
-  font-family: "Baloo 2", cursive;
-  text-decoration: none;
-}
-
-#containerHo #headerH .header__alignH #menuBs .navbar-toggler {
-  color: black;
-  border-color: black;
-}
-
-#containerHo #headerH .container__subtittleH {
-  width: 100%;
-  flex-wrap: wrap;
-}
-
-#containerHo #headerH .container__subtittleH .subtittleH {
-  flex-grow: 1;
-  font-family: "sans-serif";
-  font-size: 10px;
-  font-weight: lighter;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-  text-transform: uppercase;
-  padding-top: 30px;
-  padding-left: 15px;
-}
-
-#containerHo #headerH .container__subtittleH .subtittleH h2 {
-  font-size: 14px;
-  font-weight: bold;
-}
-
-#containerHo #headerH .container__subtittleH .subtittleH a {
-  color: white;
-  font-family: "PT Mono", monospace;
-  font-family: "Baloo 2", cursive;
-  text-decoration: none;
-}
-
-#containerHo #headerH .container__subtittleH .subtittleH a:hover {
-  color: cyan;
-  font-size: 16px;
-  transition: 500ms;
-}
-
-/* main */
-#subnavH {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-  height: 25rem;
-  border-bottom: 1px solid white;
-  box-shadow: 1px 1px 10px wheat;
-  background: linear-gradient(to bottom, #dd78bf, #7094bd);
-  background-image: url("../assets/images/fondoSHOWW.jpg");
-  animation: showBanner 15s 1 linear;
-  overflow: hidden;
-}
-
-@keyframes showBanner {
-  from {
-    background-position: -500px -500px;
-  }
-  to {
-    background-position: 0px 0px;
-  }
-}
-
-#subnavH .subnav__tittleH {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  width: 100%;
-  height: 20%;
-  margin-bottom: 60px;
-}
-
-#subnavH .subnav__tittleH h2 {
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: italic;
-}
-
-#subnavH .subnav__subtittleH {
-  display: flex;
-  flex-direction: row;
-  width: 50%;
-  align-items: flex-start;
-  box-shadow: 1px 1px 10px #b4b4b4;
-  margin-bottom: 40px;
-}
-
-#subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-around;
-  width: 100%;
-  height: 50px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-
-#subnavH .subnav__subtittleH .subnav__subtittle__itemsH li {
-  justify-self: center;
-  align-self: center;
-  margin-top: 15px;
-  margin-right: 30px;
-}
-
-#subnavH .subnav__subtittleH .subnav__subtittle__itemsH li a {
-  font-size: 25px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: "Staatliches", cursive;
-  color: white;
-}
-
-#section {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20% 20% 60%;
-  grid-template-areas: "head head head" "tabla tabla img" ". . img";
-  background-image: url("../assets/images/fondo-frode.jpg");
-  width: auto;
-  height: 40rem;
-  box-shadow: 1px 1px 7px white;
-  border-top: 1px solid white;
-}
-
-#section .tittleCalzados {
-  font-size: 40px;
-  padding-left: 150px;
-  color: #070606;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-#section #cuotas {
-  padding-left: 100px;
-  padding-top: 10px;
-  height: 500px;
-}
-
-#section #cuotas .tittleCuotas {
-  font-size: 30px;
-  color: white;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  padding-top: 150px;
-}
-
-#section #cuotas .tittleInteres {
-  color: #fffbfb;
-  margin: 5px 30px;
-  padding-left: 30px;
-  font-size: 15px;
-}
-
-#section #cuotas .tittleAhorro {
-  padding-left: 120px;
-  color: red;
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-#section #cuotas .tittleAhorro .valor {
-  color: #f8cc0a;
 }
