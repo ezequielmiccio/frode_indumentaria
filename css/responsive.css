@@ -49,15 +49,15 @@ de 0px a 590px lo establecido a continuación*/
     #menuBs {
        background: none;
        margin-right: 50px;
-       background-color: black;
+       background-color: rgb(207, 207, 207);
     }
 
-    #menuBs ul {
-    background: rgba(49, 49, 49, 0.363);
+    #menuBs .navbar-nav {
+        background-color: white;
     }
 
     #menuBs ul li {
-        background: rgba(49, 49, 49, 0.363);
+        background: rgba(199, 199, 199, 0.822);
     }
 
     #navTitle {
