@@ -147,6 +147,44 @@
   transition: 500ms;
 }
 
+/* ACTIVIDAD SASS OPERACIONES */
+.bgColor {
+  width: 50%;
+  height: 300px;
+  background: orangered;
+  border: 10px solid orangered;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px white;
+}
+
+.bgColor .caja-uno {
+  width: 50%;
+  height: 40px;
+  background: blue;
+  border: 2px solid blue;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px black;
+}
+
+.bgColor .caja-dos {
+  width: 50%;
+  height: 40px;
+  background: green;
+  border: 2px solid green;
+  border-radius: 2px;
+  box-shadow: 0px 0px 2px white;
+}
+
+.bgColor .caja-tres {
+  width: 50%;
+  height: 40px;
+  background: violet;
+  border: 5px solid violet;
+  border-radius: 5px;
+  box-shadow: 0px 0px 5px cyan;
+}
+
+/* FIN ACTIVIDAD SASS OPERACIONES */
 /* main */
 #subnavH {
   display: flex;
@@ -155,7 +193,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 25rem;
+  height: 8rem;
   border-bottom: 1px solid white;
   box-shadow: 1px 1px 10px wheat;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
@@ -167,7 +205,7 @@
 
 @keyframes showBanner {
   from {
-    background-position: -500px -500px;
+    background-position: -400px -400px;
   }
   to {
     background-position: 0px 0px;
@@ -181,7 +219,7 @@
   align-items: flex-start;
   width: 100%;
   height: 20%;
-  margin-bottom: 60px;
+  margin-bottom: 40px;
 }
 
 #subnavH .subnav__tittleH h2 {
@@ -194,21 +232,23 @@
 }
 
 #subnavH .subnav__subtittleH {
+  /* container de la caja completa */
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-direction: row;
   width: 50%;
-  align-items: flex-start;
   box-shadow: 1px 1px 10px #b4b4b4;
-  margin-bottom: 40px;
 }
 
 #subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
+  /* caja de los items */
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-around;
   width: 100%;
-  height: 50px;
+  height: 100%;
   text-transform: uppercase;
   font-weight: 100;
 }
@@ -237,16 +277,17 @@
 #section {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20% 20% 60%;
-  grid-template-areas: "head head head" "tabla tabla img" ". . img";
+  grid-template-rows: 20% 30% 50%;
+  grid-template-areas: "head head head" "tabla tabla img";
   background-image: url("../assets/images/fondo-frode.jpg");
-  width: auto;
+  width: 100%;
   height: 40rem;
   box-shadow: 1px 1px 7px white;
   border-top: 1px solid white;
 }
 
 #section .tittleCalzados {
+  grid-area: head;
   font-size: 40px;
   padding-left: 150px;
   color: #070606;
@@ -1519,76 +1560,77 @@ header #logotipo {
   color: #db0f80;
 }
 
-#section {
-  background-image: url("../assets/images/fondo-frode.jpg");
-  width: auto;
-  height: auto;
-  padding-top: 50px;
+/* #section {
+    background-image: url("../assets/images/fondo-frode.jpg");
+    width: auto;
+    height: auto;
+    padding-top: 50px;
 }
 
 .tittleCalzados {
-  font-size: 40px;
-  padding-left: 150px;
-  color: #070606;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
+    font-size: 40px;
+    padding-left: 150px;
+    color: rgb(7, 6, 6);
+    letter-spacing: 2px;
+    display: inline;
+    text-transform: uppercase;
 }
 
 div#cuotas {
-  padding-left: 100px;
-  padding-top: 10px;
-  height: 500px;
+    padding-left: 100px;
+    padding-top: 10px;
+    height: 500px;
 }
 
 #cuotas .tittleCuotas {
-  font-size: 30px;
-  color: white;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  padding-top: 150px;
+    font-size: 30px;
+    color: rgb(255, 255, 255);
+    padding-left: 25px;
+    padding-bottom: 10px;
+    padding-top: 150px;
+
 }
 
 .imageNike {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 420px;
-  padding-bottom: 100px;
-  height: 600px;
-  width: 380px;
+    position: absolute;
+    display: inline;
+    margin-left: 700px;
+    top: 420px;
+    padding-bottom: 100px;
+    height: 600px;
+    width: 380px;
 }
 
 #cuotas {
-  margin-top: 20px;
+    margin-top: 20px;
 }
 
 .tittleInteres {
-  color: #fffbfb;
-  margin: 5px 30px;
-  padding-left: 30px;
-  font-size: 15px;
+    color: rgb(255, 251, 251);
+    margin: 5px 30px;
+    padding-left: 30px;
+    font-size: 15px;
 }
 
 .tittleAhorro {
-  padding-left: 120px;
-  color: red;
-  font-size: 15px;
-  padding-top: 10px;
+    padding-left: 120px;
+    color: red;
+    font-size: 15px;
+    padding-top: 10px;
 }
 
 .table {
-  background-color: #706f6f;
-  color: white;
+    background-color: rgb(112, 111, 111);
+    color: white;
+
 }
 
 .table .tablePosition {
-  position: absolute;
-  background-color: #706f6f;
-  top: 600px;
-  left: 80px;
-}
-
+    position: absolute;
+    background-color: rgb(112, 111, 111);
+    top: 600px;
+    left: 80px;
+} */
 #sectionPant {
   background-image: url("../assets/images/hombrefondo.jpg");
   margin: 4px 0px 5px 0px;

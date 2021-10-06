@@ -17,7 +17,7 @@
   height: 10px;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
   box-shadow: 0px 0px 10px #777;
-  min-height: 160px;
+  min-height: 320px / (2);
   background: black;
   /* background-image: url("../assets/images/fondo-frode.jpg"); */
 
@@ -26,8 +26,8 @@
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-    width: 100%;
-    height: 110px;
+    width: 50% * 2;
+    height: 220px / (2);
     border-bottom: 1px solid rgba(175, 172, 172, 0.8);
     background-image: url("../assets/images/fondo-frode.jpg");
 
@@ -54,7 +54,7 @@
       text-decoration: none;
 
       .logo__imageH {
-        margin-top: 30px;
+        margin-top: 15px * 2;
         margin-left: 53px;
 
         .logotipo {
@@ -145,6 +145,45 @@
   }
 }
 
+/* ACTIVIDAD SASS OPERACIONES */
+
+@mixin box-color($color, $size, $shadow) {
+  background: $color;
+  border: $size solid $color;
+  border-radius: $size;
+  box-shadow: 0px 0px $size $shadow;
+}
+
+.bgColor {
+  width: 50%;
+  height: 300px;
+  @include box-color (orangered,10px,white)
+
+  .caja-uno {
+    width: 50%;
+    height:40px;
+    @include box-color (blue,2px,black)
+  }
+
+  .caja-dos {
+    width: 50%;
+    height: 40px;
+    @include box-color (green,2px,white)
+  }
+
+  .caja-tres {
+    width: 50%;
+    height: 40px;
+    @include box-color (violet,5px,cyan)
+  }
+}
+
+
+
+/* FIN ACTIVIDAD SASS OPERACIONES */
+
+
+
 /* main */
 
 #subnavH {
@@ -154,7 +193,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 25rem;
+  height: 8rem;
   border-bottom: 1px solid white;
   box-shadow: 1px 1px 10px wheat;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
@@ -162,95 +201,95 @@
   /* background-image: linear-gradient(rgb(14, 14, 14), black); */
   animation: showBanner 5s 1 linear;
   overflow: hidden;
-  
+
   @keyframes showBanner {
     from {
-      background-position: -500px -500px;
+      background-position: -800px/(2) -400px;
     }
     to {
       background-position: 0px 0px;
     }
-    
   }
-    .subnav__tittleH {
-      display: flex;
-      justify-content: center;
-      flex-wrap: nowrap;
-      align-items: flex-start;
-      width: 100%;
-      height: 20%;
-      margin-bottom: 60px;
 
-      & h2 {
-        font-size: 35px;
-        color: white;
-        text-align: center;
-        font-weight: bold;
-        text-transform: uppercase;
-        font-style: italic;
-      }
+  .subnav__tittleH {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    width: 100%;
+    height: 20%;
+    margin-bottom: 20px * 2;
+
+    & h2 {
+      font-size: 35px;
+      color: white;
+      text-align: center;
+      font-weight: bold;
+      text-transform: uppercase;
+      font-style: italic;
     }
+  }
 
-    //second block
+  //second block
 
-    .subnav__subtittleH {
+  .subnav__subtittleH { /* container de la caja completa */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    width: 25% + 25%;
+    box-shadow: 1px 1px 10px rgb(180, 180, 180);
+
+    .subnav__subtittle__itemsH { /* caja de los items */
       display: flex;
-      flex-direction: row;
-      width: 50%;
-      align-items: flex-start;
-      box-shadow: 1px 1px 10px rgb(180, 180, 180);
-      margin-bottom: 40px;
+      text-align: center;
+      align-items: center;
+      justify-content: space-around;
+      width: 50% * 2;
+      height: 100%;
+      text-transform: uppercase;
+      font-weight: 100;
 
-      .subnav__subtittle__itemsH {
-        display: flex;
-        text-align: center;
-        align-items: center;
-        justify-content: space-around;
-        width: 100%;
-        height: 50px;
-        text-transform: uppercase;
-        font-weight: 100;
+     & li {
+        justify-self: center;
+        align-self: center;
+        margin-top: 15px;
+        margin-right: 30px;
 
-       & li {
-          justify-self: center;
-          align-self: center;
-          margin-top: 15px;
-          margin-right: 30px;
+       & a {
+          font-size: 25px;
+          font-weight: bold;
+          font-style: italic;
+          font-family: "Staatliches", cursive;
+          color: white;
 
-         & a {
-            font-size: 25px;
-            font-weight: bold;
-            font-style: italic;
-            font-family: "Staatliches", cursive;
-            color: white;
-
-            &:hover {
-              color: wheat;
-              font-size: 28px;
-              transition: all 300ms;
-            }
+          &:hover {
+            color: wheat;
+            font-size: 28px;
+            transition: all 300ms;
           }
         }
       }
     }
+  }
 }
+
 
 #section {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 20% 20% 60%;
-  grid-template-areas: "head head head"
-                       "tabla tabla img"
-                        ". . img";
+  grid-template-columns: repeat(3,1fr);
+  grid-template-rows: 20% 30% 50%;
+  grid-template-areas:
+    "head head head"
+    "tabla tabla img";
   background-image: url("../assets/images/fondo-frode.jpg");
-  width: auto;
+  width: 100%;
   height: 40rem;
   box-shadow: 1px 1px 7px white;
   border-top: 1px solid white;
 
-
   .tittleCalzados {
-
+    grid-area: head;
     font-size: 40px;
     padding-left: 150px;
     color: #070606;
@@ -264,20 +303,19 @@
     padding-top: 10px;
     height: 500px;
 
-  .tittleCuotas {
-    font-size: 30px;
-    color: white;
-    padding-left: 25px;
-    padding-bottom: 10px;
-    padding-top: 150px;
+    .tittleCuotas {
+      font-size: 30px;
+      color: white;
+      padding-left: 25px;
+      padding-bottom: 10px;
+      padding-top: 150px;
     }
 
     .tittleInteres {
-    color: #fffbfb;
-    margin: 5px 30px;
-    padding-left: 30px;
-    font-size: 15px;
-
+      color: #fffbfb;
+      margin: 5px 30px;
+      padding-left: 30px;
+      font-size: 15px;
     }
 
     .tittleAhorro {
@@ -289,9 +327,6 @@
       .valor {
         color: #f8cc0a;
       }
-
     }
-
-
   }
 }
