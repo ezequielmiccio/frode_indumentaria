@@ -369,7 +369,7 @@
   display: flex;
   align-items: center;
   width: 100%;
-  box-shadow: 0px 0px 10px #ccc;
+  /* box-shadow: 0px 0px 10px #ccc; */
   min-height: 160px;
   background: black;
   background-image: linear-gradient(#fdfafa, white);
@@ -466,11 +466,9 @@ nav#menu #textDeco {
   border-color: black;
 }
 
-.logo__image {
+/* .logo__image {
   /*   margin-top: 1rem; */
-  /*    margin-left: 53px; */
-}
-
+/*    margin-left: 53px; */
 img.logotipo {
   flex-grow: 1;
   width: 55px;
@@ -511,7 +509,7 @@ img.logotipo {
   font-weight: lighter;
   /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
   text-transform: uppercase;
-  padding-top: 30px;
+  padding-top: 33px;
   padding-left: 15px;
 }
 
@@ -594,6 +592,7 @@ img.logotipo {
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
   box-shadow: 1px 1px 10px 1px #ccc;
   background-image: url("../assets/images/fondoSHOWW.jpg");
+  margin-top: 5px;
 }
 
 @keyframes backBanner {
