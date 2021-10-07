@@ -184,6 +184,30 @@
   box-shadow: 0px 0px 5px cyan;
 }
 
+.btn-uno {
+  width: 25%;
+  height: 5rem;
+  margin: 10px;
+  background: aqua;
+  text-align: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+  text-shadow: blue;
+}
+
+.btn-dos {
+  width: 25%;
+  height: 5rem;
+  margin: 10px;
+  background: black;
+  background: red;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 100;
+  text-shadow: white;
+}
+
 /* FIN ACTIVIDAD SASS OPERACIONES */
 /* main */
 #subnavH {
