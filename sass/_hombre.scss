@@ -158,7 +158,7 @@
 .bgColor {
   width: 50%;
   height: 300px;
-  @include box-color (orangered,10px,white)
+  @include box-color (orangered,10px,white);
 
   .caja-uno {
     width: 50%;
