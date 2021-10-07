@@ -20,11 +20,10 @@
     align-items: center;
 
     width: 100%;
-    height: 10px;
-    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 0px 0px 10px #ccc;
     min-height: 160px;
     background:black;
+    background-image: linear-gradient(rgb(253, 250, 250), white);
     /* background-image: url("../assets/images/fondo-frode.jpg"); */
 }
 
@@ -36,17 +35,18 @@
     width: 100%;
     height: 110px;
     border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-    background-image: url("../assets/images/fondo-frode.jpg");
+  /*   background-image: url("../assets/images/fondo-frode.jpg");
+    background-image: linear-gradient(rgb(231, 231, 231), white); */
     /* background-image: url("../assets/images/fondonav.jpg"); */
 }
 
 .container__tittle{
+    margin-top: 10px;
     display: flex;
     align-content: center;
     align-items: center;
-
-    width: 100%;
     height: 1px;
+    width: 100%;
     /* box-shadow: 0px 0px 10px #ccc; */
 }
 
@@ -58,23 +58,26 @@
     /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
     text-transform: uppercase;
     /* padding-left: 570px; */
-    color: white;
-    padding-bottom: 18px;
-
+    color: black;
+    font-weight: bold;
+    padding-bottom: 20px;
 }
 
 .header__align {
     display: flex;
+    justify-content: center;
     width: 100%;
     flex-direction: row;
     align-items: center;
  /*    border: none; */
     text-decoration: none;
+    margin-top: 1rem;
+    margin-right: 2rem;
 }
 
 #menuBs {
     margin-left: 5rem;
-    margin-top: 1.6rem;
+  /*   margin-top: 1.6rem; */
     box-shadow: 1px 1px 3px 1px rgb(0, 0, 0);
  /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
     color: black;
@@ -117,8 +120,9 @@ nav#menu #textDeco{
 }    
 
 .logo__image {
-    margin-top: 30px;
-    margin-left: 53px;
+  /*   margin-top: 1rem; */
+ /*    margin-left: 53px; */
+
 }
 
 img.logotipo {
@@ -127,6 +131,7 @@ img.logotipo {
    width: 55px;
    height: 52px;
    border-radius:80%;
+   box-shadow: 1px 1px 3px rgb(197, 197, 197);
    overflow: hidden;
    animation-name: logoRotate;
    animation-duration: 3s;
@@ -169,10 +174,10 @@ img.logotipo {
 }
 
 .subtittle a {
-    color: white;
+    color: black;
     font-family: 'PT Mono', monospace;
     font-family: 'Baloo 2', cursive;
-    text-decoration: none;
+    text-transform: underline;
 }
 
 .subtittle a:hover {
@@ -380,9 +385,10 @@ img.logotipo {
     background-image: linear-gradient(black 75%,rgb(43, 43, 43));
     background-image: url("../assets/images/fondotarjet.jpg");
     height: 38rem;
-    width: 100%;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    box-shadow: 1px 1px 3px 1px rgb(105, 105, 105);
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-    box-shadow: 1px 1px 10px 1px #ccc;
     /* background-image: url("../assets/images/fondonav.jpg"); */
 /*     animation-name: showTarjet;
     animation-iteration-count: infinite;
@@ -517,11 +523,14 @@ img.logotipo {
         "contenido contenido"
         "pie pie";
 
-    width: 100%;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
     height: 870px;
     background-image: url("../assets/images/fondo-frode.jpg");
-    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-    box-shadow: 1px 1px 10px 1px #ccc;
+    border-bottom: 1px solid rgb(46, 46, 46);
+    /* box-shadow: 1px 1px 3px 1px rgb(105, 105, 105); */
+    /* box-shadow: 1px 1px 5px 1px rgb(61, 61, 61); */
 }
 
 
@@ -654,10 +663,12 @@ img.logotipo {
           "barra barra"
           "image image"
           "footer footer";
-          width: 100%;
+          width: 95%;
+          margin: 28px 28px 28px 34px;
+          box-shadow: 1px 1px 3px 1px rgb(105, 105, 105);
           height: 750px;
           border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-          box-shadow: 1px 1px 10px 1px rgb(61, 61, 61);
+          box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
           background-image: url("../assets/images/fondo-frode.jpg");
 }
 
@@ -707,7 +718,7 @@ img.logotipo {
     display: flex;
     justify-content: space-evenly;
     color: white;
-    padding: 10px;
+    padding: 7px;
 }
 
 .layout__mujer__menu ul li:hover {
@@ -795,6 +806,10 @@ img.logotipo {
     height: 500px;
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 1px 1px 10px 1px #ccc;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    margin-top: 3rem;
+    box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
 
     .titleCarousel {
         grid-area: title;
@@ -877,6 +892,9 @@ img.logotipo {
     overflow: hidden;
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
     box-shadow: 1px 1px 10px 1px #ccc;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
 }
 
 #comprar .containerText {
@@ -1003,6 +1021,9 @@ img.logotipo {
            box-shadow: 1px 1px 10px 1px #ccc;
     width: 100%;
     height: 520px;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
     /* background-image: url(../assets/images/fondo-frode.jpg); */
  
 }
@@ -1082,10 +1103,11 @@ section.containerForm {
     background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
     padding-top:30px;
     border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-    box-shadow: 1px 1px 20px 1px #ccc;
 
     height: 480px;
-    width: 100%;
+    width: 95%;
+    margin: 28px 28px 28px 34px;
+    box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
 }
 
 #formulario {
@@ -1221,7 +1243,7 @@ footer {
     color: black;
     font-size: 12px;
     box-shadow: 5px 5px 7px 5px rgb(175, 175, 175);
-    background: linear-gradient(to bottom, rgba(31, 31, 31, 0.904), rgba(0, 0, 0, 0.932));
+    background: linear-gradient(to bottom, rgba(54, 54, 54, 0.904) 10%, rgba(0, 0, 0, 0.932));
 }
 
 footer .containerFooter {
