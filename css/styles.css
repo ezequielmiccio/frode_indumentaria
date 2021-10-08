@@ -1,5 +1,4 @@
 @charset "UTF-8";
-/* CSS SECCION HOMBRE */
 * {
   box-sizing: border-box;
   /* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
@@ -1470,9 +1469,7 @@ section.containerForm {
 }
 
 #formulario .inputSubmit {
-  display: flex;
-  flex-wrap: nowrap;
-  flex-direction: row;
+  margin-left: 30px;
 }
 
 #formulario .formSubmit {
