@@ -368,11 +368,9 @@
   display: flex;
   align-items: center;
   width: 100%;
-  /* box-shadow: 0px 0px 10px #ccc; */
   min-height: 160px;
   background: black;
   background-image: linear-gradient(#fdfafa, white);
-  /* background-image: url("../assets/images/fondo-frode.jpg"); */
 }
 
 #header {
@@ -383,9 +381,6 @@
   width: 100%;
   height: 110px;
   border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  /*   background-image: url("../assets/images/fondo-frode.jpg");
-    background-image: linear-gradient(rgb(231, 231, 231), white); */
-  /* background-image: url("../assets/images/fondonav.jpg"); */
 }
 
 .container__tittle {
@@ -395,7 +390,6 @@
   align-items: center;
   height: 1px;
   width: 100%;
-  /* box-shadow: 0px 0px 10px #ccc; */
 }
 
 .tittle {
@@ -403,9 +397,7 @@
   text-align: center;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
-  /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
   text-transform: uppercase;
-  /* padding-left: 570px; */
   color: black;
   font-weight: bold;
   padding-bottom: 20px;
@@ -417,7 +409,6 @@
   width: 100%;
   flex-direction: row;
   align-items: center;
-  /*    border: none; */
   text-decoration: none;
   margin-top: 1rem;
   margin-right: 2rem;
@@ -425,9 +416,7 @@
 
 #menuBs {
   margin-left: 5rem;
-  /*   margin-top: 1.6rem; */
   box-shadow: 1px 1px 3px 1px black;
-  /*    background-image: linear-gradient(rgb(78, 78, 78), black); */
   color: black;
 }
 
@@ -438,7 +427,6 @@
 #menuBs a:hover {
   color: cyan;
   font-weight: bold;
-  /* background-color: rgba(172, 171, 171, 0.596); */
   transition: all 300ms;
 }
 
@@ -465,9 +453,6 @@ nav#menu #textDeco {
   border-color: black;
 }
 
-/* .logo__image {
-  /*   margin-top: 1rem; */
-/*    margin-left: 53px; */
 img.logotipo {
   flex-grow: 1;
   width: 55px;
@@ -506,7 +491,6 @@ img.logotipo {
   font-family: 'sans-serif';
   font-size: 10px;
   font-weight: lighter;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
   text-transform: uppercase;
   padding-top: 33px;
   padding-left: 15px;
@@ -652,48 +636,6 @@ img.logotipo {
   animation: showIcon 9s linear;
 }
 
-/* @keyframes showSub {
-    from {
-       transform: translateY(500%);
-    }
-
-    to {
-        transform: translateY(0%);
-    }
-}
-
-@keyframes showIcon {
-
-    0% {
-        transform: translateY(-200%);
-    }
-
-    50% {
-        transform: translateY(0%)
-    }
-
-    75% {
-        transform:rotateZ(0deg)
-    }
-
-    85% {
-        transform: rotateZ(360deg);
-    }
-
-    90% {
-        transform: rotateY(360deg);
-    }
-
-    100% {
-        transform: rotateY(0deg);
-    }  */
-/*     from {
-        transform: translateY(-200%);
-    }
-
-    to {
-        transform: translateY(0%);
-    } */
 /* fin bs */
 /* tarjetas bs */
 #sectionTarjets {
@@ -705,42 +647,14 @@ img.logotipo {
   margin: 28px 28px 28px 34px;
   box-shadow: 1px 1px 3px 1px dimgray;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  /* background-image: url("../assets/images/fondonav.jpg"); */
-  /*     animation-name: showTarjet;
-    animation-iteration-count: infinite;
-    animation-duration: 10s; */
 }
 
-/* @keyframes showTarjet {
-    0% {
-        background-position: 0px 0px;
-    }
-
-    75% {
-        background-position: -5px -20px;
-    }
-
-    100% {
-        background-position: 0px 0px;
-    }
-} */
 .card:hover .card-text {
   color: cyan;
   box-shadow: 1px 1px 5px 1px white;
   transition: all 300ms;
 }
 
-/* @keyframes showText {
-    from {
-        transform: translateY(-200px);
-    }
-
-    to {
-        transform: translateY(0px);
-    }
-    
-}
- */
 .card:hover .btnText {
   background-color: cyan;
   box-shadow: 1px 1px 5px 1px white;
@@ -749,19 +663,8 @@ img.logotipo {
 
 .card:hover .cardImg {
   box-shadow: 1px 1px 7px 1px white;
-  animation: showImg 300ms linear;
 }
 
-/* @keyframes showImg {
-    from {
-        transform: translateY(-150px);
-    }
-    
-    to {
-        transform: translateY(0px);
-    }
-}
- */
 .card {
   background-color: black;
   border-radius: 1%;
@@ -1528,37 +1431,6 @@ footer .coder {
 /* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/
 /* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/
 /* PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE PAGINA HOMBRE*/
-.subnav__subtittle {
-  display: flex;
-  flex-direction: row;
-  box-shadow: 1px 5px 8px #797979;
-  /* background: rgb(214, 210, 210); */
-  background: #ccc;
-  margin-bottom: 40px;
-  width: 50%;
-  align-items: center;
-  /* padding-left: 5px; */
-}
-
-.subnav__subtittle__items {
-  display: flex;
-  text-align: center;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  height: 60px;
-  text-transform: uppercase;
-  font-weight: 100;
-}
-
-.subnav__subtittle__items li {
-  text-align: center;
-}
-
-.subnav__subtittle__items li a {
-  color: black;
-}
-
 /* fin subnav */
 #tituloHombre {
   font-size: 14px;
@@ -1597,77 +1469,6 @@ header #logotipo {
   color: #db0f80;
 }
 
-/* #section {
-    background-image: url("../assets/images/fondo-frode.jpg");
-    width: auto;
-    height: auto;
-    padding-top: 50px;
-}
-
-.tittleCalzados {
-    font-size: 40px;
-    padding-left: 150px;
-    color: rgb(7, 6, 6);
-    letter-spacing: 2px;
-    display: inline;
-    text-transform: uppercase;
-}
-
-div#cuotas {
-    padding-left: 100px;
-    padding-top: 10px;
-    height: 500px;
-}
-
-#cuotas .tittleCuotas {
-    font-size: 30px;
-    color: rgb(255, 255, 255);
-    padding-left: 25px;
-    padding-bottom: 10px;
-    padding-top: 150px;
-
-}
-
-.imageNike {
-    position: absolute;
-    display: inline;
-    margin-left: 700px;
-    top: 420px;
-    padding-bottom: 100px;
-    height: 600px;
-    width: 380px;
-}
-
-#cuotas {
-    margin-top: 20px;
-}
-
-.tittleInteres {
-    color: rgb(255, 251, 251);
-    margin: 5px 30px;
-    padding-left: 30px;
-    font-size: 15px;
-}
-
-.tittleAhorro {
-    padding-left: 120px;
-    color: red;
-    font-size: 15px;
-    padding-top: 10px;
-}
-
-.table {
-    background-color: rgb(112, 111, 111);
-    color: white;
-
-}
-
-.table .tablePosition {
-    position: absolute;
-    background-color: rgb(112, 111, 111);
-    top: 600px;
-    left: 80px;
-} */
 #sectionPant {
   background-image: url("../assets/images/hombrefondo.jpg");
   margin: 4px 0px 5px 0px;
@@ -2902,56 +2703,6 @@ body#myStyles {
   font-family: 'PT Mono', monospace;
 }
 
-/* nav#menu {
-    margin-top: 24px;
-    margin-right: 380px;
-    flex-grow: 1; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-    font-weight: bold;
-    height: 60px;
-    /* background: rgb(252, 252, 252); */
-/* li {
-    display: inline-block;
-    position: relative;
-}
-
-ul ul {
-    position: absolute;
-    display: none;
-    padding-top: 10px;
-    align-items: center;
-    overflow: hidden;
-}
-
-ul ul li {
-    display: block;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    align-items: center;
-    background: rgba(7, 7, 7, 0.938);
-    /* background-image: url("../assets/images/fondo-frode.jpg"); */
-/*     z-index: 3;
-    overflow: hidden;
-    transition: all 1000ms;
-}
-
-ul li:hover ul {
-    display: block;
-}
-
-#menu > ul {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    list-style: none;
-    align-content: center; /* centrar texto dentro de caja */
-/*    text-decoration: none;
-    width: 96%;
-    height: 100%;
-} */
 #menu a {
   text-transform: uppercase;
   font-weight: 100;
@@ -2962,8 +2713,6 @@ ul li:hover ul {
 }
 
 #menu a:hover {
-  /* background: rgb(139, 138, 138); */
-  /* color: rgb(253, 19, 253); */
   color: #00ebfc;
   font-size: 20px;
 }
