@@ -92,7 +92,6 @@ de 0px a 590px lo establecido a continuación*/
         height: 100%;
         width: 96%;
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
-        background-image: url("../assets/images/fondopastelhonbreMOBILE.jpg");
         margin-left: 10px;
         margin-top: 10px;
     }
@@ -183,22 +182,7 @@ de 0px a 590px lo establecido a continuación*/
         margin-left: 10px;
        /*  box-shadow: 1px 1px 3px 1px white; */
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
-        background-image: url(../assets/images/fondowather.jpg);
-        animation-name: showWather;
-        animation-iteration-count: 1;
-        animation-duration: 8s;
    }
-
-    @keyframes showWather {
-        from {
-            background-position: -200px -200px;
-        }
-
-        to {
-            background-position: 0px 0px;
-        }
-
-    }
 
     #layout__mujer .layout__mujer__tittle {
         justify-self: center;
@@ -280,10 +264,9 @@ de 0px a 590px lo establecido a continuación*/
    /* inicio pregunta */
 
    #comprar {
-    margin-top: 5rem;
-    height: 55rem;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
     margin-right: 10px;
+    height: 55rem;
 }
 
    .containerText .titulo-pregunta {
@@ -306,7 +289,7 @@ de 0px a 590px lo establecido a continuación*/
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin-top: 10px;
+        margin-top: 2rem;
         width: 100%;
         gap: 30px;
         height: 100%;
@@ -419,7 +402,51 @@ de 0px a 590px lo establecido a continuación*/
 
 }
 
-@media (max-width:863) {
+@media (max-width:790px) {
+    
+    #sectionTarjets {
+        margin: 10px;
+    }
+
+    #layout__hombre {
+        background-image: linear-gradient(to bottom, black, rgb(17, 17, 17));
+        width: 91%;
+    }
+
+    #layout__hombre .layout__hombre__contenido {
+        width: 100%;
+    }
+
+    #layout__mujer {
+        background-image: linear-gradient(to bottom, black, rgb(17, 17, 17));
+        width: 91%;
+        margin-left: 2.2rem;
+    }
+
+     #container-carousel {
+         display: none;
+    }
+
+    #comprar {
+        width: 97%;
+    }
+
+    #containerPagos {
+        width: 97%;
+    }
+
+    #containerPagos .tabla__descuentos {
+        width: 65%;
+        height: 80%;
+    }
+
+    section.containerForm {
+        width: 97%;
+        margin-left: 11px;
+    }
+}
+
+@media (max-width:863px) {
 
     #header {
         height: 190px;
@@ -595,8 +622,8 @@ de 0px a 590px lo establecido a continuación*/
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 96%;
-        margin-left: 10px;
+        width: 91%;
+        margin-left: 2.2rem;
         /* background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
     } 
 
@@ -656,7 +683,6 @@ de 0px a 590px lo establecido a continuación*/
    /* fin mujer */
 
    #comprar {
-    margin-top: 2rem;
     margin-left: 10px;
    }
    
@@ -666,7 +692,6 @@ de 0px a 590px lo establecido a continuación*/
     /* inicio descuento */
 
     #containerPagos {
-        width: 96%;
         height: 40rem;
         margin-left: 10px;
     }
@@ -837,9 +862,7 @@ de 0px a 590px lo establecido a continuación*/
     #comprar .containerPhotos {
         display: flex;
         align-items: center;
-        margin-top: 30px;
         width: 100%;
-        column-gap: 50px;
         padding-left: 0px;
 
  }
