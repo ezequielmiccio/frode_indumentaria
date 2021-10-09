@@ -355,11 +355,9 @@
 /* para predeterminar */
 * {
   box-sizing: border-box;
-  /* lo que hace es decirle al ordenador que respete el tamaño de mis cajas */
   margin: 0px;
   padding: 0px;
   list-style: none;
-  /* para quitar viñetas a las listas */
   font-family: sans-serif;
   text-decoration: none;
 }
@@ -369,7 +367,6 @@
   align-items: center;
   width: 100%;
   min-height: 160px;
-  background: black;
   background-image: linear-gradient(#fdfafa, white);
 }
 
@@ -384,7 +381,6 @@
 }
 
 .container__tittle {
-  margin-top: 10px;
   display: flex;
   align-content: center;
   align-items: center;
@@ -400,7 +396,6 @@
   text-transform: uppercase;
   color: black;
   font-weight: bold;
-  padding-bottom: 20px;
 }
 
 .header__align {
@@ -449,8 +444,8 @@ nav#menu #textDeco {
 }
 
 .navbar-dark .navbar-toggler {
-  color: black;
-  border-color: black;
+  color: white;
+  border-color: white;
 }
 
 img.logotipo {
@@ -492,8 +487,8 @@ img.logotipo {
   font-size: 10px;
   font-weight: lighter;
   text-transform: uppercase;
-  padding-top: 33px;
-  padding-left: 15px;
+  padding-top: 2.7rem;
+  padding-left: 1rem;
 }
 
 .subtittle a {
@@ -511,57 +506,6 @@ img.logotipo {
 
 #registroSub {
   font-size: 15px;
-}
-
-.subtittle__subpag {
-  flex-grow: 1;
-  font-family: sans-serif;
-  font-size: 12px;
-  text-shadow: 1px 1px 0px white;
-  text-transform: uppercase;
-  padding-top: 28px;
-  padding-left: 20px;
-  padding-left: 1020px;
-}
-
-.subtittle__subpag a {
-  color: #0e0d0d;
-  /* background: rgb(0, 247, 255); */
-}
-
-.subtittle__invierno {
-  display: flex;
-  font-family: sans-serif;
-  font-size: 12px;
-  text-shadow: 1px 1px 0px #4d4c4c;
-  text-transform: uppercase;
-  padding-top: 36px;
-  padding-left: 20px;
-}
-
-.subtittle__invierno h2 {
-  width: 30%;
-}
-
-.subtittle__invierno a {
-  color: cyan;
-}
-
-.list__inv {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  padding-left: 550px;
-  font-size: 15px;
-  color: white;
-}
-
-.list__inv__item {
-  justify-content: space-around;
-  flex-direction: row;
-  width: 10%;
 }
 
 /* fin menu */
@@ -639,14 +583,13 @@ img.logotipo {
 /* fin bs */
 /* tarjetas bs */
 #sectionTarjets {
-  background-image: linear-gradient(black 75%, #2b2b2b);
-  background-image: url("../assets/images/fondotarjet.jpg");
   background-color: black;
   height: 38rem;
   width: 95%;
   margin: 28px 28px 28px 34px;
   box-shadow: 1px 1px 3px 1px dimgray;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+  background-image: url("../assets/images/fond");
 }
 
 .card:hover .card-text {
@@ -659,6 +602,10 @@ img.logotipo {
   background-color: cyan;
   box-shadow: 1px 1px 5px 1px white;
   transition: all 300ms;
+}
+
+#sectionTarjets .container {
+  padding-top: 12px;
 }
 
 .card:hover .cardImg {
@@ -732,32 +679,31 @@ img.logotipo {
   grid-template-rows: 10% 5% 75% 15%;
   grid-template-areas: "head head" "menu menu" "contenido contenido" "pie pie";
   width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 5px 1px #3d3d3d;
+  margin: 28px 28px 35px 34px;
+  box-shadow: 1px 1px 5px 1px #afadad;
   height: 870px;
-  background-image: url("../assets/images/fondo-frode.jpg");
-  border-bottom: 1px solid #2e2e2e;
-  /* box-shadow: 1px 1px 3px 1px rgb(105, 105, 105); */
-  /* box-shadow: 1px 1px 5px 1px rgb(61, 61, 61); */
+  height: 50rem;
+  border-bottom: 1px solid #3d3d3d;
+  background-image: linear-gradient(white, #ebebeb);
+  background-image: url("../assets/images/fondopastelhonbre.jpg");
 }
 
 #layout__hombre .layout__hombre__tittle {
   grid-area: head;
-  background-image: linear-gradient(to top, #6a8fd4, #82f5ef);
   width: 100%;
-  height: 80%;
+  height: 100%;
   box-shadow: 3px 3px 3px #d2e5fa;
-  border-bottom: 2px solid white;
-  background-image: url("../assets/images/fondonav.jpg");
+  /*     border-bottom: 2px solid white; */
+  background-image: linear-gradient(to bottom, white 75%, rgba(174, 216, 216, 0.541));
 }
 
 .layout__hombre__tittle h2 {
   text-align: center;
-  padding-top: 12px;
+  padding-top: 20px;
 }
 
 .layout__hombre__tittle h2 a {
-  color: white;
+  color: black;
   font-family: 'Itim', cursive;
   font-family: 'Staatliches', cursive;
   letter-spacing: 5px;
@@ -797,8 +743,8 @@ img.logotipo {
   align-items: center;
   grid-area: contenido;
   grid-template-columns: repeat(3, 1fr);
-  grid-column-gap: 10px;
-  padding: 5px;
+  padding: 12px;
+  margin-bottom: 40px;
 }
 
 .layout__hombre__contenido .layout__hombre__image {
@@ -824,13 +770,13 @@ img.logotipo {
 
 #layout__hombre .layout__hombre__comprar {
   grid-area: pie;
-  justify-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 10px;
   width: 100%;
-  height: 50%;
+  height: 75%;
   background-color: black;
-  text-align: center;
-  padding: 15px;
-  margin-top: 23px;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
   box-shadow: 1px 1px 10px 1px #ccc;
 }
@@ -861,30 +807,26 @@ img.logotipo {
   grid-template-areas: "title title" "barra barra" "image image" "footer footer";
   width: 95%;
   margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 3px 1px dimgray;
-  height: 750px;
+  height: 50rem;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
   box-shadow: 1px 1px 5px 1px #3d3d3d;
-  background-image: url("../assets/images/fondo-frode.jpg");
+  background-image: url("../assets/images/fondopastelmen.jpg");
 }
 
 #layout__mujer .layout__mujer__tittle {
   grid-area: title;
-  background-image: linear-gradient(to bottom, rgba(241, 79, 155, 0.973), #aa1eaa);
-  border-bottom: 2px solid white;
-  background-image: url("../assets/images/fondonav.jpg");
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.973) 75%, rgba(187, 162, 184, 0.74));
   width: 100%;
-  height: 70px;
+  height: 100%;
 }
 
 .layout__mujer__tittle h2 {
   text-align: center;
-  padding: 14px;
-  color: white;
+  padding: 20px;
 }
 
 .layout__mujer__tittle h2 a {
-  color: white;
+  color: black;
   font-family: 'Itim', cursive;
   font-family: 'Staatliches', cursive;
   letter-spacing: 5px;
@@ -898,31 +840,6 @@ img.logotipo {
   transition: all 500ms;
 }
 
-#layout__mujer .layout__mujer__menu {
-  grid-area: barra;
-  width: 100%;
-  height: 100%;
-  margin: 20px 0px;
-  background: rgba(238, 130, 238, 0.801);
-  background: #111111ad;
-  border: 1px solid white;
-}
-
-.layout__mujer__menu ul {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-  padding: 7px;
-}
-
-.layout__mujer__menu ul li:hover {
-  background-color: #e100ff;
-  color: white;
-  transition: all 300ms;
-  box-shadow: 1px 1px 3px #fdffff;
-  transition: all 500ms;
-}
-
 #layout__mujer .layout__mujer__contenido {
   display: grid;
   align-items: center;
@@ -931,6 +848,7 @@ img.logotipo {
   grid-area: image;
   grid-column-gap: 5px;
   width: 100%;
+  margin-bottom: 45px;
 }
 
 .layout__mujer__contenido .layout__mujer__image {
@@ -957,11 +875,14 @@ img.logotipo {
 
 #layout__mujer .layout__mujer__comprar {
   grid-area: footer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10px;
   background: black;
   width: 100%;
-  height: 62%;
+  height: 75%;
   text-align: center;
-  padding: 15px;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
   box-shadow: 1px 1px 10px 1px #ccc;
 }
@@ -995,10 +916,9 @@ img.logotipo {
   overflow: hidden;
   height: 500px;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 1px 1px 10px 1px #ccc;
   width: 95%;
-  margin: 28px 28px 28px 34px;
-  margin-top: 3rem;
+  margin: 0px 28px 28px 34px;
+  margin-top: 3.6rem;
   box-shadow: 1px 1px 5px 1px #a5a4a4;
 }
 
@@ -1272,7 +1192,7 @@ section.containerForm {
   background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
   padding-top: 30px;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  height: 480px;
+  height: 30rem;
   width: 95%;
   margin: 28px 28px 28px 34px;
   box-shadow: 1px 1px 5px 1px #3d3d3d;
@@ -1282,7 +1202,7 @@ section.containerForm {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  height: 420px;
+  height: 26rem;
   width: auto;
   border: 3px solid white;
   background: linear-gradient(to bottom, rgba(240, 71, 164, 0.904), rgba(27, 124, 131, 0.932));

@@ -1,9 +1,7 @@
 
 /* a partir de 591px lo prestablecido 
 de 0px a 590px lo establecido a continuación*/
-@media (max-width:758px) {
-
-    /* 590px */
+@media (max-width:750px) {
 
     * {
         box-sizing: border-box;
@@ -12,48 +10,39 @@ de 0px a 590px lo establecido a continuación*/
         padding: 0px;
     }
 
-    #header {
-        background-image: linear-gradient(black, rgb(51, 51, 51));
-    }
-
-    .buttonNav {
-        color: white;
-    }
-
-    .navTitle {
-        display: none;
-    }
-
     #containerHeader {
-        height: 100%;
-    }
-
-    .container__tittle {
-        margin-bottom: 40px;
-    }
-
-    .container__tittle .tittle {
-        font-weight: bold;
-    }
-
-    .header__align {
         display: flex;
-        flex-wrap: nowrap;
         flex-direction: row;
-        justify-content: space-around;
-        align-items: center;
+        background-image: linear-gradient(rgb(253, 250, 250), white);
         height: 100%;
         width: 100%;
     }
 
+    .header__align {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+    }
+
+    img.logotipo {
+        align-self: flex-start;
+        margin-top: 15px;
+        margin-right: 18rem;
+        margin-left: 1rem;
+    }
+
     #menuBs {
-       background: none;
-       margin-right: 50px;
-       background-color: rgb(207, 207, 207);
+        background-color: black;
+    }
+
+    #menuBs a {
+        color: black;
     }
 
     #menuBs .navbar-nav {
-        background-color: white;
+        background-color: black;
     }
 
     #menuBs ul li {
@@ -64,20 +53,17 @@ de 0px a 590px lo establecido a continuación*/
        display: none;
     }
 
-    .logotipo {
-        margin-top: 80px;
+    .buttonNav {
+        color: black;
     }
 
-    .subtittle h2 {
-        font-weight: bold;
-        margin-top: 65px;
-        font-size: 10px;
-    }
+    .navbar-dark .navbar-toggler {
+        color: black;
+        border-color: black;
+    }    
 
-    #header {
-        width: 100%;
-        height: 200px;
-        margin-bottom: 0px;
+    .navbar-toggler-icon {
+        color: #000;
     }
 
     /* fin header */
@@ -98,11 +84,13 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 96%;
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
         background-image: url(../assets/images/fondowather.jpg);
         animation-name: showWather;
         animation-iteration-count: 1;
         animation-duration: 8s;
+        margin-left: 10px;
     }
 
     @keyframes showWather {
@@ -197,7 +185,9 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         height: 100%;
-        margin: 1px 0px;
+        width: 96%;
+        margin:10px;
+        margin-left: 10px;
        /*  box-shadow: 1px 1px 3px 1px white; */
         background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
         background-image: url(../assets/images/fondowather.jpg);
@@ -286,12 +276,21 @@ de 0px a 590px lo establecido a continuación*/
 
    /* fin mujer */
 
+   /* inicio carousel */
+
+   #container-carousel {
+      display: none;
+   }
+
+   /* fin carousel */
+
    /* inicio pregunta */
 
    #comprar {
-    margin-top: 3px;
-    height: 880px;
+    margin-top: 5rem;
+    height: 55rem;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+    margin-right: 10px;
 }
 
    .containerText .titulo-pregunta {
@@ -340,9 +339,6 @@ de 0px a 590px lo establecido a continuación*/
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100%;
-            height: 430px;
-            margin: 3px 0px;
         }
 
         
@@ -365,16 +361,14 @@ de 0px a 590px lo establecido a continuación*/
 
     /* inicio formulario */
 
-    .containerForm {
-        padding-bottom: 35px;
+    section.containerForm {
+       display: none;
     }
 
     #formulario {
-        display: flex;
+        display: none;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        width: 80%;
+        width: 100%;
         height: 100%;
         font-size: 12px;
     }
@@ -457,8 +451,6 @@ de 0px a 590px lo establecido a continuación*/
         text-align: center;
     }
 
-
-    
 }
 
 @media (max-width:950px) {
@@ -492,6 +484,7 @@ de 0px a 590px lo establecido a continuación*/
          margin-bottom: 10px;
          background: none;
          width: auto;
+         color: black;
       }
   
       #menuBs ul {
@@ -507,8 +500,8 @@ de 0px a 590px lo establecido a continuación*/
       }
  
       .navbar-dark .navbar-toggler {
-          color: white;
-          border-color: white;
+          color: black;
+          border-color: black;
       }    
   
       .container__subtittle {
@@ -567,7 +560,7 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         margin: 0px;
-        height: 1000px;
+        height: 68rem;
     }
 
     .layout__hombre__contenido .layout__hombre__image {
@@ -609,7 +602,8 @@ de 0px a 590px lo establecido a continuación*/
         display: flex;
         flex-direction: column;
         height: 100%;
-        margin: 3px 0px;
+        width: 96%;
+        margin-left: 10px;
         /* background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
     } 
 
@@ -669,7 +663,8 @@ de 0px a 590px lo establecido a continuación*/
    /* fin mujer */
 
    #comprar {
-    margin-top: 3px;
+    margin-top: 2rem;
+    margin-left: 10px;
    }
    
 
@@ -678,14 +673,12 @@ de 0px a 590px lo establecido a continuación*/
     /* inicio descuento */
 
     #containerPagos {
-        margin: 3px 0px;
+        width: 96%;
+        height: 40rem;
+        margin-left: 10px;
     }
 
     /* inicio formulario */
-
-    #formulario {
-    margin: 3px 0px;
-    }
 
 }
 
@@ -736,7 +729,7 @@ de 0px a 590px lo establecido a continuación*/
      }
 
      .navbar-dark .navbar-toggler {
-         color: white;
+         color: black;
          border-color: white;
      }    
  
