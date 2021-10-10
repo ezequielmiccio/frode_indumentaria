@@ -1,479 +1,4 @@
-
-/* a partir de 591px lo prestablecido 
-de 0px a 590px lo establecido a continuación*/
-@media (max-width:750px) {
-
-    * {
-        box-sizing: border-box;
-        margin: 0px;
-        border: 0px;
-        padding: 0px;
-    }
-
-    #containerHeader {
-        display: flex;
-        flex-direction: row;
-        /* background-image: linear-gradient(rgb(253, 250, 250), white); */
-        height: 100%;
-        width: 100%;
-        background: black;
-    }
-
-    .header__align {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        height: 100%;
-        width: 100%;
-    }
-
-    img.logotipo {
-        align-self: flex-start;
-        margin-top: 15px;
-        margin-right: 18rem;
-        margin-left: 1rem;
-        box-shadow: 1px 1px 1px grey;
-    }
-
-    #menuBs {
-        background-color: grey;
-    }
-
-    #menuBs a {
-        color: white;
-    }
-
-    #menuBs .navbar-nav {
-        background-color: white;
-    }
-
-    #menuBs ul li {
-        background: rgba(199, 199, 199, 0.822);
-    }
-
-    #navTitle {
-       display: none;
-    }
-
-    .buttonNav {
-        color: black;
-    }
-
-    .navbar-dark .navbar-toggler {
-        color: black;
-        border-color: black;
-    }    
-
-    .navbar-toggler-icon {
-        color: #000;
-    }
-
-    .subtittle a {
-        color: white;
-    }
-
-    /* fin header */
-    
-    #sectionTarjets {
-        display: none;
-    }
-
-    .card {
-        display: none;
-    }
-
-    /* inicio hombre*/
-
-    #layout__hombre {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 96%;
-        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-
-    #layout__hombre .layout__hombre__tittle {
-        height: 100px;
-        box-shadow: none;
-    }
-
-    .layout__hombre__tittle h2 {
-        font-size: 60px;
-        text-align: center;
-    }
-
-    .layout.layout__hombre__tittle h2:hover {
-        color: cyan;
-        transition: all 400ms;
-    }
-
-    #layout__hombre .layout__hombre__menu {
-        display: none;
-    }
-
-    #layout__hombre .layout__hombre__contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 25px 0px;
-        width: 100%;
-    }
-
-    .layout__hombre__contenido .layout__hombre__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .layout__hombre__image .img {
-        width: 320px;
-        height: 300px;
-        border-radius: 80%;
-        box-shadow: 1px 1px 5px 1px rgb(31, 31, 31);
-    }
-    
-    .layout__hombre__image .img:hover {
-        width: 340px;
-        height: 300px;
-        border-radius: 100%;
-        transition: all 500ms;
-    }
-
-    #layout__hombre .layout__hombre__comprar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100px;
-        margin: 0px;
-        width: 100%;
-    }
-
-    .layout__hombre__comprar h2 {
-        padding-top: 10px;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .layout__hombre__comprar h2:hover {
-        font-size: 42px;
-        transition: all 300ms;
-    }
-
-    /* fin hombre */
-
-    /* inicio mujer */
-
-    #layout__mujer {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 96%;
-        margin:10px;
-        margin-left: 10px;
-       /*  box-shadow: 1px 1px 3px 1px white; */
-        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
-   }
-
-    #layout__mujer .layout__mujer__tittle {
-        justify-self: center;
-        align-self: center;
-        height: 100px;
-    }
-
-    .layout__mujer__tittle h2 {
-        font-size:60px;
-        text-align: center;
-    }
-
-    .layout__mujer__tittle h2:hover {
-        font-size:65px;
-        color: black;
-        transition: all 300ms;
-    }
-
-    #layout__mujer .layout__mujer__menu {
-        display: none;
-    }
-
-    #layout__mujer .layout__mujer__contenido {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 25px 0px;
-    }
-
-    .layout__mujer__contenido .layout__mujer__image {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100%;
-        width: 100%;
-        overflow: hidden;
-    }
-
-    .layout__mujer__image .img {
-        width: 320px;
-        height: 300px;
-        border-radius: 80%;
-        box-shadow: 1px 1px 5px 1px rgb(31, 31, 31);
-    }
-
-    .layout__mujer__image .img:hover {
-        width: 340px;
-        height: 320px;
-        border-radius: 100%;
-        transition: all 500ms;
-    }
-
-    #layout__mujer .layout__mujer__comprar {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 100px;
-        margin: 0px;
-    }
-
-    .layout__mujer__comprar h2 {
-        font-size:40px;
-        text-align: center;
-        padding-top: 10px;
-    }
-
-   /* fin mujer */
-
-   /* inicio carousel */
-
-   #container-carousel {
-      display: none;
-   }
-
-   /* fin carousel */
-
-   /* inicio pregunta */
-
-   #comprar {
-    background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
-    margin-right: 10px;
-    height: 55rem;
-}
-
-   .containerText .titulo-pregunta {
-       display: flex;
-       justify-content: center;
-       align-items: center;
-       text-align: center;
-       flex-wrap: wrap;
-       width: 100%;
-       font-size: 25px;
-       margin: 0px;
-   }
-
-    .containerText .subtittle-pregunta {
-         display: none;
-    }
-
-    #comprar .containerPhotos {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin-top: 2rem;
-        width: 100%;
-        gap: 30px;
-        height: 100%;
-    }
-
-
-    .containerPhotos .select-img {
-        overflow: hidden;
-        height: 100%;
-        box-shadow: 1px 1px 5px 1px rgb(27, 27, 27);
-    }
-
-    .select-img:hover {
-        box-shadow: 1px 1px 10px 1px white;
-        transition: all 300ms;
-    }
-        /* fin comprar */
-
-        /* inicio descuentos */
-
-        #containerPagos {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        
-      #containerPagos .title__descuentos {
-          justify-self: center;
-          align-self: center;
-          font-size: 20px;
-          padding: 40px;
-      }
-
-      #containerPagos .tabla__descuentos {
-        justify-self: center;
-        align-self: center;
-    
-        width: 70%;
-        height: 62%;
-    }
-
-    /* fin tabla descuento */
-
-    /* inicio formulario */
-
-    section.containerForm {
-       display: none;
-    }
-
-    #formulario {
-        display: none;
-        flex-direction: column;
-        width: 100%;
-        height: 100%;
-        font-size: 12px;
-    }
-
-    
-     #formulario .tituloForm { 
-        justify-self: center;
-        align-self: center;
-        padding-bottom: 30px;
-        font-size: 15px;
-        font-weight: 100;
-        text-transform: uppercase;
-        width: 100%;
-        border-bottom: 1px solid white;
-    }
-
-    #formulario .titleForm {
-        justify-self: center;
-        align-self: center;
-    }
-    
-    #formulario .bodyForm {
-        width: 50%;
-        height: 25px;
-        margin-left: 100px;
-        margin-bottom: 5px;
-        background: rgb(245, 207, 214);
-    }
-
-    #formulario .inputRadio__option {
-        display: flex;
-        justify-content: flex-start;
-        margin-left: 10px;
-       
-    }
-
-    .inputRadio__option p {
-        text-transform: uppercase;
-        font-weight: 100;
-        font-size: 11px;
-        padding-left: 8px;
-    } 
-
-    #formulario .inputSubmit {
-        display: flex;
-        flex-wrap: nowrap;
-        flex-direction: row;
-        width: 100%;
-    }
-
-    #formulario .formSubmit {
-        margin-left: 48px;
-        margin-bottom: 15px;
-    }
-
-}
-
-@media (max-width:790px) {
-    
-    #sectionTarjets {
-        margin: 10px;
-    }
-
-    #layout__hombre {
-        background-image: linear-gradient(to bottom, black, rgb(17, 17, 17));
-        width: 91%;
-    }
-
-    #layout__hombre .layout__hombre__contenido {
-        width: 100%;
-    }
-
-    #layout__mujer {
-        background-image: linear-gradient(to bottom, black, rgb(17, 17, 17));
-        width: 91%;
-        margin-left: 2.2rem;
-    }
-
-     #container-carousel {
-         display: none;
-    }
-
-    #comprar {
-        width: 97%;
-    }
-
-    #containerPagos {
-        width: 97%;
-    }
-
-    #containerPagos .tabla__descuentos {
-        width: 65%;
-        height: 80%;
-    }
-
-    section.containerForm {
-        width: 97%;
-        margin-left: 11px;
-    }
-}
-
-@media (max-width:863px) {
-
-    #header {
-        height: 190px;
-    }
-
-    #sectionTarjets {
-        display: flex;
-        flex-direction: row;
-        justify-content:center;
-        align-items: center;
-    }
-
-    .card-title {
-       display: none;
-    }
-    
-    .card-p {
-        display: none;
-    }
-    
-    .btnText {
-        text-align: center;
-    }
-
-}
-
-@media (max-width:950px) {
+@media (min-width:759px) and (max-width:950px) {
 
     .container__tittle {
         display: none;
@@ -558,8 +83,11 @@ de 0px a 590px lo establecido a continuación*/
         justify-content: center;
         align-items: center;
         height: 100%;
+        width: 100%;
         margin-top: 2px;
-       /*  background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+        margin: 0px 0px 0px 0px;
+        margin-left: 5px;
     }
 
     #layout__hombre .layout__hombre__tittle {
@@ -622,9 +150,10 @@ de 0px a 590px lo establecido a continuación*/
         display: flex;
         flex-direction: column;
         height: 100%;
-        width: 91%;
-        margin-left: 2.2rem;
-        /* background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932)); */
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+        margin: 0px 0px 0px 0px;
+        margin-left: 5px;
     } 
 
     #layout__mujer .layout__mujer__tittle {
@@ -700,104 +229,150 @@ de 0px a 590px lo establecido a continuación*/
 
 }
 
-@media (max-width:993px) {
+@media (max-width:759px) {
 
-   .container__tittle {
-       display: none;
-   }
+    #containerHeader {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        background: white;
+    }
 
     #header {
-        height: 180px;
-        margin-bottom: 20px;
+        height: 10rem;
+        width: 100%;
     }
 
     .header__align {
         display: flex;
-        flex-wrap: nowrap;
-        flex-direction: column;
-        height: 35%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 100%;
         width: 100%;
+        margin-left: 33px;
     }
 
-    .logo__image {
-        padding-right:50px;
-        align-self: center;
-        justify-self: center;
-        margin-top: 10px;
+    .container__tittle {
+        display: none;
+    }
+
+    img.logotipo {
+        margin-bottom: 5rem;
+        margin-right: 3rem;
+        box-shadow: 1px 1px 1px grey;
     }
 
     #menuBs {
-        align-self: flex-end;
-        margin-right: 10px;
-        margin-bottom: 10px;
-        background: none;
-        width: auto;
-     }
- 
-     #menuBs ul {
-     background: rgba(49, 49, 49, 0.363);
-     }
- 
-     #menuBs ul li {
-         background: rgba(49, 49, 49, 0.363);
-     }
+        background-color: grey;
+        margin-bottom: 5rem;
+        margin-left: 3rem;
+    }
 
-     #navTitle {
-        background: none;
-     }
+    #menuBs a {
+        color: white;
+    }
 
-     .navbar-dark .navbar-toggler {
-         color: black;
-         border-color: white;
-     }    
- 
-     .container__subtittle {
-         align-self: flex-start;
-         justify-content: flex-start;
-         height: 1px;
-         margin-left: 10px;
-     }
+    #menuBs .navbar-nav {
+        background-color: white;
+    }
 
-     .subtittle {
-         padding-top: 0px;
-         margin-top: 20px;
-         width: 350px;
-         font-size: 45px;
-     }
+    #menuBs ul li {
+        background: rgba(124, 124, 124, 0.822);
+    }
 
-     #registroSub a {
-         font-size: 22px;
-     }
+    #navTitle {
+       display: none;
+    }
 
-     #registroSub a:hover {
-         font-size: 24px;
-         transition: all 300ms;
-     }
+    .container__subtittle {
+        display: none;
+    }
 
-     /* fin header */
+    /* fin header */
+    
+    #sectionTarjets {
+        display: none;
+    }
 
-     #sectionTarjets .container {
-         max-width: 100%;
-     }
+    .card {
+        display: none;
+    }
 
-     .card {
-         padding-top: 18px;
-     }
-     
-     /* fin layout cards */
+    /* inicio hombre*/
 
-     /* inicio hombres */
+    #layout__hombre {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+        margin-left: 5px;
+    }
 
-     #layout__hombre .layout__hombre__tittle {
-        justify-self: center;
-        align-self: center;
+    #layout__hombre .layout__hombre__tittle {
         height: 100px;
+        box-shadow: none;
     }
 
     .layout__hombre__tittle h2 {
-        font-size:60px;
+        font-size: 60px;
         text-align: center;
-        line-height: 50px;
+    }
+
+    .layout.layout__hombre__tittle h2:hover {
+        color: cyan;
+        transition: all 400ms;
+    }
+
+    #layout__hombre .layout__hombre__menu {
+        display: none;
+    }
+
+    #layout__hombre .layout__hombre__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+        width: 100%;
+    }
+
+    .layout__hombre__contenido .layout__hombre__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        overflow: hidden;
+
+    }
+
+    .layout__hombre__image .img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 100%;
+        box-shadow: 1px 1px 5px 1px rgb(112, 112, 112);
+        margin: 2rem;
+    }
+    
+    .layout__hombre__image .img:hover {
+        width: 340px;
+        height: 300px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__hombre .layout__hombre__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100px;
+        margin: 0px;
+        width: 100%;
     }
 
     .layout__hombre__comprar h2 {
@@ -811,9 +386,21 @@ de 0px a 590px lo establecido a continuación*/
         transition: all 300ms;
     }
 
-    /* fin hombres */
+    /* fin hombre */
 
-    /* inicio mujeres */
+    /* inicio mujer */
+
+    #layout__mujer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-left: 5px;
+       /*  box-shadow: 1px 1px 3px 1px white; */
+        background: linear-gradient(to bottom, rgba(29, 29, 29, 0.904), rgba(0, 0, 0, 0.932));
+   }
 
     #layout__mujer .layout__mujer__tittle {
         justify-self: center;
@@ -824,74 +411,218 @@ de 0px a 590px lo establecido a continuación*/
     .layout__mujer__tittle h2 {
         font-size:60px;
         text-align: center;
-        line-height: 50px;
     }
 
-    .layout__mujer__comprar h2 {
-        padding-top: 10px;
-        font-size: 40px;
-        text-align: center;
-    }
-
-    .layout__mujer__comprar h2:hover {
-        font-size: 42px;
+    .layout__mujer__tittle h2:hover {
+        font-size:65px;
+        color: black;
         transition: all 300ms;
     }
 
-}
-
-
-
-@media (max-width:1000px) {
-
-    #container {
-        width:100%;
-    }
-
-    .layout__hombre__contenido .layout__hombre__image {
-        overflow: hidden;
-  }
-
-    
-     .layout__mujer__contenido .layout__mujer__image {
-       overflow: hidden;
-       width: 80%;
- }
-
-
-    #comprar .containerPhotos {
-        display: flex;
-        align-items: center;
-        width: 100%;
-        padding-left: 0px;
-
- }
-
-     .containerPhotos .select-img {
-         overflow: hidden;
-
-  }
-
-}
-
-@media (max-width:1256px) {
-
-    #menuBs {
-        display: flex;
-        margin-left: 15%;
-    }
-
-    .searchNav {
+    #layout__mujer .layout__mujer__menu {
         display: none;
     }
 
-    .layout__hombre__contenido .layout__hombre__image {
+    #layout__mujer .layout__mujer__contenido {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 25px 0px;
+    }
+
+    .layout__mujer__contenido .layout__mujer__image {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
         overflow: hidden;
-  }
+        margin: 2rem;
+    }
+
+    .layout__mujer__image .img {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 80%;
+        box-shadow: 1px 1px 5px 1px rgb(87, 87, 87);
+    }
+
+    .layout__mujer__image .img:hover {
+        width: 340px;
+        height: 320px;
+        border-radius: 100%;
+        transition: all 500ms;
+    }
+
+    #layout__mujer .layout__mujer__comprar {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100px;
+        margin: 0px;
+    }
+
+    .layout__mujer__comprar h2 {
+        font-size:40px;
+        text-align: center;
+        padding-top: 10px;
+    }
+
+   /* fin mujer */
+
+   /* inicio carousel */
+
+   #container-carousel {
+      display: none;
+   }
+
+   /* fin carousel */
+
+   /* inicio pregunta */
+
+   #comprar {
+    background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+    height: 55rem;
+    margin: 0px 0px 0px 0px;
+    margin-left: 4px;
+    width: 100%;
+}
+
+   .containerText .titulo-pregunta {
+       display: flex;
+       justify-content: center;
+       align-items: center;
+       text-align: center;
+       flex-wrap: wrap;
+       width: 100%;
+       font-size: 25px;
+       margin: 0px;
+   }
+
+    .containerText .subtittle-pregunta {
+         display: none;
+    }
+
+    #comprar .containerPhotos {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+        width: 70%;
+        gap: 30px;
+        height: 100%;
+    }
+
+
+    .containerPhotos .select-img {
+        overflow: hidden;
+        height: 100%;
+        box-shadow: 1px 1px 5px 1px rgb(27, 27, 27);
+    }
+
+    .select-img:hover {
+        box-shadow: 1px 1px 10px 1px white;
+        transition: all 300ms;
+    }
+        /* fin comprar */
+
+        /* inicio descuentos */
+
+        #containerPagos {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            height: 33rem;
+            margin: 0px 0px 0px 0px;
+            margin-left: 2px;
+        }
+
+        
+      #containerPagos .title__descuentos {
+          justify-self: center;
+          align-self: center;
+          font-size: 20px;
+          padding: 40px;
+      }
+
+      #containerPagos .tabla__descuentos {
+        justify-self: center;
+        align-self: center;
+    
+        width: 70%;
+        height: 62%;
+    }
+
+    /* fin tabla descuento */
+
+    /* inicio formulario */
+
+    section.containerForm {
+       display: none;
+    }
+
+    #formulario {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        font-size: 12px;
+    }
 
     
-     .layout__mujer__contenido .layout__mujer__image {
-       overflow: hidden;
- }
+     #formulario .tituloForm { 
+        justify-self: center;
+        align-self: center;
+        padding-bottom: 30px;
+        font-size: 15px;
+        font-weight: 100;
+        text-transform: uppercase;
+        width: 100%;
+        border-bottom: 1px solid white;
+    }
+
+    #formulario .titleForm {
+        justify-self: center;
+        align-self: center;
+    }
+    
+    #formulario .bodyForm {
+        width: 50%;
+        height: 25px;
+        margin-left: 100px;
+        margin-bottom: 5px;
+        background: rgb(245, 207, 214);
+    }
+
+    #formulario .inputRadio__option {
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 10px;
+       
+    }
+
+    .inputRadio__option p {
+        text-transform: uppercase;
+        font-weight: 100;
+        font-size: 11px;
+        padding-left: 8px;
+    } 
+
+    #formulario .inputSubmit {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        width: 100%;
+    }
+
+    #formulario .formSubmit {
+        margin-left: 48px;
+        margin-bottom: 15px;
+    }
 
 }
