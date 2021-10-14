@@ -1,4 +1,9 @@
-@media (min-width:759px) and (max-width:950px) {
+
+
+@media (max-width:780px) {
+
+    /* menu hamburguesa */
+
 
     .container__tittle {
         display: none;
@@ -268,6 +273,7 @@
         background-color: grey;
         margin-bottom: 5rem;
         margin-left: 3rem;
+        overflow: hidden;
     }
 
     #menuBs a {
