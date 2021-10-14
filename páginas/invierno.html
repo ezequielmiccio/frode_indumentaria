@@ -29,124 +29,81 @@
 </head>
 
 <body>
+    <header id="header">
 
-    <div id="containerI">
+        <div class="headerFixed">
+            <h1>
+                Frode Indumentaria
+            </h1>
+        </div>
 
-        <header id="headerI">
+        <div class="headerMenu">
 
-            <div class="container__tittleI">
-                <h1 class="tittle">Frode Indumentaria</h1>
+            <div class="containerLogo">
+                <a href="./index.html"><img id="logoFrode" src="../assets/images/logotipo-frode.jpg"
+                        alt="logotipo-marca"></a>
             </div>
 
-            <section class="header__alignI">
+            <nav id="nav">
 
-                <div class="logo__imageI">
-                    <img class="logotipo" src="../assets/images/logotipo-frode.jpg" alt="frode">
-                </div>
+                <button class="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-                <nav id="menuBs" class="navbar navbar-expand-lg text-uppercase">
-                    <div class="container-fluid">
-                        <a id="navTitle" class="navbar-brand text-uppercase" href="../index.html">Frode</a>
-                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                            aria-expanded="false" aria-label="Toggle navigation">
-                            <span class="navbar-toggler-icon"></span>
-                        </button>
-                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="./páginas/hombre.html"
+                            class="nav-link">Hombre</a>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Hombre
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../páginas/hombre.html">Calzados</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/hombre.html">Remeras</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/hombre.html">Patalones</a></li>
-                                    </ul>
-                                </li>
+                        <ul>
+                            <li><a class="dropdown-item" href="../páginas/hombre.html">Calzados</a></li>
+                            <li><a class="dropdown-item" href="../páginas/hombre.html">Remeras</a></li>
+                            <li><a class="dropdown-item" href="../páginas/hombre.html">Patalones</a></li>
+                        </ul>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Mujer
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../páginas/mujer.html">Calzados</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/mujer.html">Tops</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/mujer.html">Jeans</a></li>
-                                    </ul>
-                                </li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="../páginas/mujer.html"
+                            class="nav-link">Mujer</a>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Niños
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../páginas/niños.html">Calzados</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/niños.html">Remeras</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/niños.html">Pantalones</a></li>
-                                    </ul>
-                                </li>
+                        <ul>
+                            <li><a class="dropdown-item" href="../páginas/mujer.html">Calzados</a></li>
+                            <li><a class="dropdown-item" href="../páginas/mujer.html">Tops</a></li>
+                            <li><a class="dropdown-item" href="../páginas/mujer.html">Jeans</a></li>
+                        </ul>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Deporte
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../páginas/deportes.html">Camisetas</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/deportes.html">Shorts</a></li>
-                                        <li><a class="dropdown-item" href="../páginas/deportes.html">Botines</a></li>
-                                    </ul>
-                                </li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="./páginas/niños.html"
+                            class="nav-link">Niños</a>
 
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        Invierno
-                                    </a>
-                                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                        <li><a class="dropdown-item" href="../páginas/invierno.html">Calzados Nieve</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="../páginas/invierno.html">Pantalón Sky</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="../páginas/invierno.html">Camperas Nieve</a>
-                                        </li>
-                                    </ul>
-                                </li>
+                        <ul>
+                            <li><a class="dropdown-item" href="../páginas/niños.html">Calzados</a></li>
+                            <li><a class="dropdown-item" href="../páginas/niños.html">Remeras</a></li>
+                            <li><a class="dropdown-item" href="../páginas/niños.html">Pantalones</a></li>
+                        </ul>
 
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#footer">Nosotros</a>
-                                </li>
+                    </li>
+                    <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="./páginas/deportes.html"
+                            class="nav-link">Deportes</a>
 
-                                <li class="nav-item ml-4">
-                                    <form class="navForm d-flex">
-                                        <input class="form-control me-2" type="search" placeholder="¿Qué quieres ver?"
-                                            aria-label="Search">
-                                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                                    </form>
-                                </li>
+                        <ul>
+                            <li><a class="dropdown-item" href="../páginas/deportes.html">Camisetas</a></li>
+                            <li><a class="dropdown-item" href="../páginas/deportes.html">Shorts</a></li>
+                            <li><a class="dropdown-item" href="../páginas/deportes.html">Botines</a></li>
+                        </ul>
 
-                            </ul>
-                        </div>
-                    </div>
-                </nav>
+                    </li>
+                    <li class="nav-item"><a href="./páginas/deportes.html" class="nav-link">Nosotros</a></li>
+                </ul>
 
-            </section>
+            </nav>
 
-            <section class="container__subtittleI">
+        </div>
 
-                <div class="subtittleI">
-                    <h2><a href="../index.html">Aprovechá hasta 3 cuotas sin interés</a></h2>
-                </div>
-
-            </section>
-
-        </header>
-    </div>
+    </header>
 
     <main>
         <div class="subnav">

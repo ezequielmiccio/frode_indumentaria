@@ -7,8 +7,8 @@
     text-decoration: none;
 }
 
-@import "header";
 @import "hombre";
+@import "header";
 
 /* inicio bs */
 
@@ -189,7 +189,7 @@
 #layout__hombre {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-template-rows:10% 5% 75% 15%;
+    grid-template-rows: 20% 1% 75% 15%;
     grid-template-areas: 
         "head head"
         "menu menu"
@@ -197,12 +197,12 @@
         "pie pie";
 
     width: 95%;
-    margin: 28px 28px 35px 34px;
-    box-shadow: 1px 1px 5px 1px rgb(175, 173, 173);
+    margin: 28px 28px 90px 34px;
     height: 870px;
     height: 50rem;
-    border-bottom: 1px solid rgb(61, 61, 61);
-    background-image: linear-gradient(white, rgb(201, 198, 198));
+    border:1px solid rgb(119, 119, 119);
+    box-shadow: 0px 0px 4px rgb(36, 36, 36);
+    background-image: linear-gradient(white, rgb(223, 223, 223));
 }
 
 
@@ -210,28 +210,30 @@
     grid-area: head;
     width: 100%;
     height: 100%;
-    box-shadow: 0px 0px 4px rgb(245, 245, 245);
-    border-bottom: 2px solid rgb(224, 224, 224);
-    background-image: linear-gradient(to top, rgb(218, 212, 212), white);
 }
 
 .layout__hombre__tittle h2 {
-    text-align: center;
-    padding-top: 20px;
+    text-align: start;
+    padding-top: 2rem;
+    padding-left: 4rem;
+    
 }
 
 .layout__hombre__tittle h2 a{
     color: black;
-    font-family: 'Itim', cursive;
+    font-size: 6rem;
     font-family: 'Staatliches', cursive;
     letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
+    border-bottom: 2px solid black;
+    font-style: italic;
 }
 
 .layout__hombre__tittle h2 a:hover{
-    font-size: 35px;
-    color: rgb(8, 247, 247);
+    font-size: 6.5rem;
+    color: cyan;
+    border-bottom: 2px solid cyan;
     transition: all 500ms;
 }
 
@@ -327,47 +329,47 @@
 #layout__mujer {
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    grid-template-rows: 10% 5% 78% 15%;
+    grid-template-rows: 20% 1% 78% 15%;
     grid-template-areas: 
           "title title"
           "barra barra"
           "image image"
           "footer footer";
           width: 95%;
-          margin: 28px 28px 28px 34px;
+          margin: 28px 28px 110px 34px;
           height: 50rem;
-          border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-          box-shadow: 1px 1px 5px 1px rgb(138, 138, 138);
-          background-image: linear-gradient(white, rgb(201, 198, 198));
-
+          border:1px solid rgb(119, 119, 119);
+          box-shadow: 0px 0px 4px rgb(36, 36, 36);
+          background-image: linear-gradient(white, wheat);
 }
 
 #layout__mujer .layout__mujer__tittle {
     grid-area: title;
-    box-shadow: 0px 0px 4px rgb(245, 245, 245);
-    border-bottom: 2px solid rgb(224, 224, 224);
-    background-image: linear-gradient(to top, rgb(218, 212, 212), white);
     width: 100%;
     height: 100%;
 }
 
 .layout__mujer__tittle h2 {
-    text-align: center;
-    padding: 20px;
+    text-align: end;
+    padding-top: 2rem;
+    padding-right: 4rem;
 }
 
 .layout__mujer__tittle h2 a{
     color: black;
-    font-family: 'Itim', cursive;
+    font-size: 6rem;
     font-family: 'Staatliches', cursive;
     letter-spacing: 5px;
     font-weight: bold;
     text-decoration: none;
+    border-bottom: 2px solid black;
+    font-style: italic;
 }
 
 .layout__mujer__tittle h2 a:hover{
-    font-size: 35px;
+    font-size: 6.5rem;
     color: rgb(255, 0, 255);
+    border-bottom: rgb(241, 69, 184);
     transition: all 500ms;
 }
 
@@ -434,12 +436,12 @@
     transition: all 300ms;
 }
 
+
 /* FIN LAYOUT MUJERES */
 
 /* INICIO CAROUSEL */
 
 #container-carousel {
-    background-image: linear-gradient(white, rgb(233, 233, 233));
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
@@ -449,11 +451,12 @@
     align-items: center;
     overflow: hidden;
     height: 500px;
-    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+    border:1px solid rgb(119, 119, 119);
+    box-shadow: 0px 0px 4px rgb(36, 36, 36);
     width: 95%;
     margin: 0px 28px 28px 34px;
     margin-top: 3.6rem;
-    box-shadow: 1px 1px 5px 1px rgb(165, 164, 164);
+    background: black;
 
     .titleCarousel {
         grid-area: title;
@@ -464,30 +467,12 @@
         & h2 {
             font-family: 'Staatliches', cursive;
             letter-spacing: 8px;
-            font-size: 50px;
+            font-size: 8rem;
             font-weight: 800;
             text-transform: uppercase;
             font-style: bold;
-            animation: showText1 5s linear;
+            color: white;
 
-            @keyframes showText1 {
-                0% {
-                    color: rgb(92, 92, 92);
-                }
-                
-                25% {
-                    color: rgb(112, 112, 112);
-                }
-
-                50% {
-                    color: rgb(43, 43, 43);
-                }
-
-                100% {
-                    color: rgb(0, 0, 0);
-                }
-                
-            }
         }
     }
 
@@ -907,8 +892,8 @@ footer .author {
 
     .icon {
         margin: 0px 1rem;
-        width: 1.5rem;
-        height: 3rem;
+        width: 2rem;
+        height: 2rem;
         color: white;
         font-size: 2rem;
 
