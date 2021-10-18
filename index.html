@@ -28,10 +28,11 @@
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/9e80c3eecd.js" crossorigin="anonymous"></script>
-    <script defer src="main.js"></script>
+    <script src="./main.js" refer></script>
 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
+    <link rel="stylesheet" href="main.js">
 </head>
 
 <!-- <div id="containerHeader">
@@ -178,11 +179,6 @@
             </div>
 
             <nav id="nav">
-
-                <button class="nav-toggle">
-                    <i class="fas fa-bars"></i>
-                </button>
-
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -231,8 +227,11 @@
                     </li>
                     <li class="nav-item"><a href="./páginas/nosotros.html" class="nav-link">Nosotros</a></li>
                 </ul>
-
             </nav>
+
+            <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
 
         </div>
 
@@ -242,7 +241,7 @@
 
         <div class="subtitleHeader">
             <h2>
-               <a href="#formulario">Registrate y obtené 10% OFF</a>
+                <a href="#formulario">Registrate y obtené 10% OFF</a>
             </h2>
         </div>
 
@@ -538,16 +537,29 @@
                 <p class="fotext">NOSOTROS</p>
                 <p class="fotext">AYUDA</p>
                 <p class="fotext">DEFENSA AL CONSUMIDOR</p>
-                <a href="./páginas/invierno.html"><p class="fotext">UBICACIÓN</p></a> <!-- pagina nosotros -->
+                <a href="./páginas/invierno.html">
+                    <p class="fotext">UBICACIÓN</p>
+                </a> <!-- pagina nosotros -->
                 <p class="fotext">REPOSITORIO</p>
                 <p class="author fotext">&copy; Creado por Ezequiel Miccio</p>
                 <p class="author fotext">&copy; 2021</p>
             </div>
 
             <div class="btnRedes">
-                <a href="https://www.instagram.com/frodeindumentaria/" target="_blank"><i class="icon fab fa-instagram"></i></a>
-                <a href="https://www.facebook.com/frodeoficial/" target="_blank"><i class="icon fab fa-facebook-square"></i></a>
-                <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank"><i class="icon fab fa-linkedin"></i></a>
+
+                <div class="btnTitle">
+                    <h2>Visitanos en:</h2>
+                </div>
+
+                <div class="btnImages">
+                    <a href="https://www.instagram.com/frodeindumentaria/" target="_blank"><i
+                            class="icon fab fa-instagram"></i></a>
+                    <a href="https://www.facebook.com/frodeoficial/" target="_blank"><i
+                            class="icon fab fa-facebook-square"></i></a>
+                    <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank"><i
+                            class="icon fab fa-linkedin"></i></a>
+                </div>
+
             </div>
 
             <div class="containerCoder">

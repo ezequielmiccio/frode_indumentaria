@@ -17,138 +17,9 @@
   text-decoration: none;
 }
 
-/* 
-#containerHo {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  height: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #777;
-  min-height: 320px / (2);
-  background: black;
-
-  #headerH {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    width: 50% * 2;
-    height: 220px / (2);
-    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-    background-image: url("../assets/images/fondo-frode.jpg");
-
-    .container__tittleH {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 2px;
-
-      .tittle {
-        flex-grow: 1;
-        text-align: center;
-        font-size: 12px;
-        font-weight: bold;
-      }
-    }
-
-    .header__alignH {
-      display: flex;
-      width: 100%;
-      flex-direction: row;
-      align-items: center;
-      text-decoration: none;
-
-      .logo__imageH {
-        margin-top: 15px * 2;
-        margin-left: 53px;
-
-        .logotipo {
-          flex-grow: 1;
-          width: 55px;
-          height: 52px;
-          border-radius: 80%;
-          overflow: hidden;
-        }
-      }
-
-      #menuBs {
-        margin-left: 5rem;
-        margin-top: 1.6rem;
-        box-shadow: 1px 1px 3px 1px black;
-        color: black;
-
-        & a {
-          color: black;
-        }
-
-        & a:hover {
-          color: cyan;
-          font-weight: bold;
-          transition: all 300ms;
-        }
-
-        #navTitle {
-          font-weight: bold;
-        }
-
-        .navForm {
-          margin-left: 1rem;
-        }
-
-        ul li ul li {
-          background-color: rgba(182, 182, 182, 0.527);
-          font-weight: bold;
-        }
-
-        #textDeco {
-          font-family: "Baloo 2", cursive;
-          text-decoration: none;
-        }
-
-        .navbar-toggler {
-          color: black;
-          border-color: black;
-        }
-      }
-    }
-
-    .container__subtittleH {
-      width: 100%;
-      flex-wrap: wrap;
-
-      .subtittleH {
-        flex-grow: 1;
-        font-family: "sans-serif";
-        font-size: 10px;
-        font-weight: lighter;
-        text-transform: uppercase;
-        padding-top: 30px;
-        padding-left: 15px;
-
-        & h2 {
-          font-size: 14px;
-          font-weight: bold;
-        }
-
-        & a {
-          color: white;
-          font-family: "PT Mono", monospace;
-          font-family: "Baloo 2", cursive;
-          text-decoration: none;
-
-          &:hover {
-            color: cyan;
-            font-size: 16px;
-            transition: 500ms;
-          }
-        }
-      }
-    }
-  }
-} */
+/* header en import */
 /* main */
+/* inicio sub-menú enlaces relativos */
 #subnavH {
   display: flex;
   align-items: center;
@@ -157,29 +28,10 @@
   align-items: center;
   width: 100%;
   height: 8rem;
-  border-bottom: 1px solid white;
-  box-shadow: 1px 1px 10px wheat;
-  background: linear-gradient(to bottom, #dd78bf, #7094bd);
+  box-shadow: 0px 0px 4px grey;
+  background-color: black;
   overflow: hidden;
-}
-
-#subnavH .subnav__tittleH {
-  display: flex;
-  justify-content: center;
-  flex-wrap: nowrap;
-  align-items: flex-start;
-  width: 100%;
-  height: 20%;
-  margin-bottom: 40px;
-}
-
-#subnavH .subnav__tittleH h2 {
-  font-size: 35px;
-  color: white;
-  text-align: center;
-  font-weight: bold;
-  text-transform: uppercase;
-  font-style: italic;
+  margin: 5px 0px;
 }
 
 #subnavH .subnav__subtittleH {
@@ -189,7 +41,7 @@
   align-items: center;
   flex-direction: row;
   width: 50%;
-  box-shadow: 1px 1px 10px #b4b4b4;
+  box-shadow: 0px 0px 8px #fdfdfd;
 }
 
 #subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
@@ -215,7 +67,7 @@
   font-size: 25px;
   font-weight: bold;
   font-style: italic;
-  font-family: "Staatliches", cursive;
+  font-family: "Staatliches", "cursive";
   color: white;
 }
 
@@ -225,61 +77,264 @@
   transition: all 300ms;
 }
 
+/* fin sub-menu enlaces relativos */
+/* inicio primera section */
 #sectionMen {
   display: grid;
+  max-width: 1420px;
   grid-gap: 5px;
-  grid-template-columns: repeat(2, 50%);
+  grid-template-columns: repeat(3, 33%);
   grid-template-rows: 20% 30% 50%;
-  grid-template-areas: "head head head" "tabla tabla img";
-  background: grey;
+  grid-template-areas: "description . ." "description . ." "vermas . .";
   width: 95%;
   margin: 28px 26px 35px 34px;
-  height: 40rem;
+  height: 30rem;
   box-shadow: 0px 0px 4px grey;
+  background-image: url("../assets/images/sitio-nike-fondozapa.jpg");
 }
 
-#sectionMen .tittleCalzados {
-  grid-area: head;
-  font-size: 40px;
-  padding-left: 150px;
-  color: #070606;
+#sectionMen .vermas {
+  align-self: end;
+  justify-self: center;
+  grid-area: vermas;
+  width: 30%;
+  height: 2.5rem;
+  margin-bottom: 4rem;
+  margin-left: 3rem;
+  background-color: black;
+}
+
+#sectionMen .vermas a {
+  text-decoration: none;
+}
+
+#sectionMen .vermas h2 {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 18px;
   letter-spacing: 2px;
-  display: inline;
+  text-align: center;
+  line-height: 1.7rem;
   text-transform: uppercase;
-}
-
-#sectionMen #cuotas {
-  padding-left: 100px;
-  padding-top: 10px;
-  height: 500px;
-}
-
-#sectionMen #cuotas .tittleCuotas {
-  font-size: 30px;
+  font-style: italic;
   color: white;
-  padding-left: 25px;
-  padding-bottom: 10px;
-  padding-top: 150px;
 }
 
-#sectionMen #cuotas .tittleInteres {
-  color: #fffbfb;
-  margin: 5px 30px;
-  padding-left: 30px;
+#sectionMen .vermas:hover {
+  color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+}
+
+#sectionMen .description {
+  display: flex;
+  flex-direction: column;
+  grid-area: description;
+  height: 10rem;
+  width: 22rem;
+  padding: 1rem;
+  align-items: flex-start;
+  justify-content: center;
+  margin-top: 2rem;
+  margin-left: 5rem;
+}
+
+#sectionMen .description .tittleCuotas {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: white;
+  border-bottom: 2px solid black;
+  text-shadow: 1px 1px 1px black;
+}
+
+#sectionMen .description .tittleInteres {
+  font-family: sans-serif;
+  align-self: center;
+  color: white;
+  text-shadow: 1px 1px 1px black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
   font-size: 15px;
+  margin-right: 1.5rem;
 }
 
-#sectionMen #cuotas .tittleAhorro {
-  padding-left: 120px;
+#sectionMen .description .tittleAhorro {
+  align-self: center;
+  font-family: "Staatliches", cursive;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+  margin-right: 1.9rem;
+  border: 1px solid white;
+  background-color: white;
+  border-radius: 10%;
+  box-shadow: 0px 0px 6px grey;
+  padding: 5px;
+}
+
+#sectionMen .description .tittleAhorro .valor {
+  font-family: "Staatliches", "cursive";
   color: red;
+}
+
+/* fin primera section */
+/* inicio jordan setion */
+#jordan {
+  display: flex;
+  flex-direction: column;
+  width: 95%;
+  height: 49rem;
+  margin: 28px 20px 16px 35px;
+  background-color: white;
+}
+
+#jordan .titleJordan {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  margin: 3rem 8rem;
+}
+
+#jordan .titleJordan h2 {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: black;
+}
+
+#jordan .titleJordan p {
+  color: black;
+  margin-left: 1rem;
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  border-bottom: 3px solid black;
+}
+
+#jordan .jordanFull img {
+  width: 100%;
+  box-shadow: 0px 0px 3px black;
+}
+
+/* fin jordan section */
+/* inicio tercera section */
+#secondSection {
+  display: grid;
+  column-gap: 5px;
+  grid-template-columns: repeat(2, calc(50% - 10px));
+  grid-template-rows: 70% 30%;
+  grid-template-areas: "imgrow title" "imgrow vermas";
+  align-items: center;
+  width: 95%;
+  margin: 0px 26px 35px 34px;
+  height: 30rem;
+  box-shadow: 0px 0px 4px #dfdfdf;
+  background-image: linear-gradient(white, #ebebeb);
+}
+
+#secondSection .imageRow {
+  width: 95%;
+  grid-area: imgrow;
+  align-self: center;
+  text-align: center;
+}
+
+#secondSection .titleRow {
+  grid-area: title;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 8rem;
+}
+
+#secondSection .titleRow .titleCuotas {
+  font-family: "Staatliches", "cursive";
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid black;
+  text-shadow: 0px 0px 2px #313131;
+  font-size: 4rem;
+  color: black;
+}
+
+#secondSection .titleRow .titleInteres {
+  font-family: sans-serif;
+  align-self: center;
+  color: black;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-style: italic;
   font-size: 15px;
-  padding-top: 10px;
 }
 
-#sectionMen #cuotas .tittleAhorro .valor {
-  color: #f8cc0a;
+#secondSection .titleRow .titleAhorro {
+  align-self: center;
+  font-family: "Staatliches", cursive;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: 17px;
+  letter-spacing: 1px;
+  border: 1px solid white;
+  background-color: black;
+  border-radius: 5%;
+  padding: 5px;
 }
 
+#secondSection .titleRow .valor {
+  font-family: "Staatliches", "cursive";
+  color: red;
+}
+
+#secondSection .vermas {
+  align-self: end;
+  justify-self: center;
+  grid-area: vermas;
+  width: 20%;
+  height: 2.5rem;
+  margin-bottom: 4rem;
+  background-color: black;
+}
+
+#secondSection .vermas a {
+  text-decoration: none;
+}
+
+#secondSection .vermas h2 {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 18px;
+  letter-spacing: 2px;
+  text-align: center;
+  line-height: 1.7rem;
+  text-transform: uppercase;
+  font-style: italic;
+  color: white;
+}
+
+#secondSection .vermas:hover {
+  color: white;
+  font-size: 18px;
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+}
+
+/* fin tercera section */
 #header {
   width: 100%;
   height: 10rem;
@@ -388,7 +443,38 @@
   letter-spacing: 1px;
 }
 
-#header .headerMenu #nav .nav-toggle {
+#header .headerMenu #nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 6rem;
+  left: 0;
+}
+
+#header .headerMenu #nav .nav-menu .nav-item {
+  margin: 0px 15px;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: max-content;
+}
+
+#header .headerMenu #nav .nav-menu .nav-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+
+#header .headerMenu #nav .nav-menu .nav-link:hover {
+  background-color: black;
+  color: white;
+  scale: 1.2, 1.2;
+  transition: all 400ms;
+}
+
+.nav-toggle {
   color: black;
   background: none;
   border: none;
@@ -399,38 +485,8 @@
   display: none;
 }
 
-#header .headerMenu .nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 6rem;
-}
-
-#header .headerMenu .nav-menu .nav-menu_visible {
-  left: 0%;
-}
-
-#header .headerMenu .nav-menu .nav-item {
-  margin: 0px 15px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-  width: max-content;
-}
-
-#header .headerMenu .nav-menu .nav-link {
-  color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 2px;
-}
-
-#header .headerMenu .nav-menu .nav-link:hover {
-  background-color: black;
-  color: white;
-  scale: 1.2, 1.2;
-  transition: all 400ms;
+.nav-menu_visible {
+  left: 0;
 }
 
 .subtitleHeader {
@@ -789,7 +845,7 @@
 .layout__mujer__tittle h2 a:hover {
   font-size: 6.5rem;
   color: magenta;
-  border-bottom: #f145b8;
+  border-bottom: 2px solid #f31dbe;
   transition: all 500ms;
 }
 
@@ -1274,12 +1330,23 @@ footer .author {
 
 .btnRedes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
   margin: 40px auto;
+}
+
+.btnRedes .btnTitle {
+  margin-bottom: 1rem;
+}
+
+.btnRedes .btnTitle h2 {
+  font-size: 13px;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-style: italic;
 }
 
 .btnRedes .icon {
@@ -2621,9 +2688,6 @@ body#myStyles {
     animation-iteration-count: 1;
     animation-timing-function: linear;
   }
-  #header .headerMenu #nav .nav-toggle {
-    display: block;
-  }
   #header .headerMenu #nav .nav-menu {
     flex-direction: column;
     justify-content: center;
@@ -2645,5 +2709,14 @@ body#myStyles {
     font-weight: bold;
     font-family: sans-serif;
     width: max-content;
+    top: -100vh;
+    flex-direction: column;
+  }
+  #header .headerMenu #nav .nav-menu .nav-item li {
+    margin: 30px 0 0 0;
+    line-height: 30px;
+  }
+  #header .headerMenu .nav-toggle {
+    display: block;
   }
 }

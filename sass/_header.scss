@@ -1,7 +1,7 @@
 #header {
   width: 100%;
   height: 10rem;
-  
+
   .headerFixed {
     width: 100%;
     height: 1.5rem;
@@ -73,113 +73,112 @@
       margin-left: 5rem;
       max-width: 992px;
 
-      & > ul >li > ul {
-          display: none;
-          position: absolute;
-          color: black;
-          text-align: left;
-          width: 10rem;
-          box-shadow: 0px 2px 2px rgb(253, 253, 253);
-          margin-top: 2px;
-          z-index: 1;
+      & > ul > li > ul {
+        display: none;
+        position: absolute;
+        color: black;
+        text-align: left;
+        width: 10rem;
+        box-shadow: 0px 2px 2px rgb(253, 253, 253);
+        margin-top: 2px;
+        z-index: 1;
+      }
+
+      & > ul > li:hover > ul {
+        display: block;
+        margin-left: 0px;
+        padding-left: 0px;
+      }
+
+      & > ul > li:hover > ul > li {
+        background-color: rgb(173, 173, 173);
+        border-bottom: 1px solid rgb(206, 206, 206);
+        font-size: 18px;
+        transition: all 300ms;
+      }
+
+      & > ul > li:hover > ul > li:hover {
+        box-shadow: 0px 0px 6px white inset;
+      }
+
+      & > ul > li:hover > ul > li a {
+        color: black;
+        font-family: "Staatliches", cursive;
+        letter-spacing: 1px;
+      }
+
+      
+      .nav-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-right: 6rem;
+        left: 0;
+        
+        .nav-item {
+          margin: 0px 15px;
+          font-size: 20px;
+          font-weight: bold;
+          font-family: sans-serif;
+          width: max-content;
         }
 
-         & > ul > li:hover > ul {
-             display: block;
-             margin-left: 0px;
-             padding-left: 0px;
-         }
+        .nav-link {
+          color: black;
+          text-decoration: none;
+          text-transform: uppercase;
+          font-family: "Staatliches", cursive;
+          letter-spacing: 2px;
 
-         & > ul > li:hover > ul > li {
-             background-color: rgb(173, 173, 173);
-             border-bottom: 1px solid rgb(206, 206, 206);
-             font-size: 18px;
-             transition: all 300ms;
-         }
-
-         & > ul > li:hover > ul > li:hover {
-             box-shadow: 0px 0px 6px white inset;
-         }
-
-         & > ul > li:hover > ul > li a {
-             color: black;
-             font-family: "Staatliches", cursive;
-             letter-spacing: 1px;
-         }
-
-
-      .nav-toggle {
-        color: black;
-        background: none;
-        border: none;
-        font-size: 30px;
-        padding: 0 20px;
-        line-height: 60px;
-        cursor: pointer;
-
-        display: none;
-      }
-    }
-
-    .nav-menu {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 6rem;
-
-      .nav-menu_visible {
-          left: 0%;
-      }
-
-      .nav-item {
-        margin: 0px 15px;
-        font-size: 20px;
-        font-weight: bold;
-        font-family: sans-serif;
-        width: max-content;
-      }
-
-      .nav-link {
-        color: black;
-        text-decoration: none;
-        text-transform: uppercase;
-        font-family: "Staatliches", cursive;
-        letter-spacing: 2px;
-
-        &:hover {
-          background-color: black;
-          color: white;
-          scale: (1.2, 1.2);
-          transition: all 400ms;
+          &:hover {
+            background-color: black;
+            color: white;
+            scale: (1.2, 1.2);
+            transition: all 400ms;
+          }
         }
       }
     }
   }
 }
 
-.subtitleHeader {
-    height: 2rem;
-    width: 100%;
-
-    & h2 {
-        line-height: 1.7rem;
-        margin-left: 1rem;
-    }
-
-    & h2 a{
-        text-decoration: none;
-        font-size: 15px;
-        color: black;
-        font-family: "Staatliches", cursive;
-        letter-spacing: 1px;
-        text-decoration:underline;
-    }
-
-    h2 a:hover {
-        color: white;
-        background-color: cyan;
-        font-size: 18px;
-        transition: all 300ms;
-    }
+.nav-toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
+.nav-menu_visible {
+  left: 0;
+}
+
+.subtitleHeader {
+  height: 2rem;
+  width: 100%;
+
+  & h2 {
+    line-height: 1.7rem;
+    margin-left: 1rem;
+  }
+
+  & h2 a {
+    text-decoration: none;
+    font-size: 15px;
+    color: black;
+    font-family: "Staatliches", cursive;
+    letter-spacing: 1px;
+    text-decoration: underline;
+  }
+
+  h2 a:hover {
+    color: white;
+    background-color: cyan;
+    font-size: 18px;
+    transition: all 300ms;
+  }
+}

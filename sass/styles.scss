@@ -1,3 +1,5 @@
+$font-miccio: "Staatliches", "cursive";
+
 * {
     box-sizing: border-box;
     margin: 0px;
@@ -369,7 +371,7 @@
 .layout__mujer__tittle h2 a:hover{
     font-size: 6.5rem;
     color: rgb(255, 0, 255);
-    border-bottom: rgb(241, 69, 184);
+    border-bottom: 2px solid rgb(243, 29, 190);
     transition: all 500ms;
 }
 
@@ -883,12 +885,23 @@ footer .author {
 
 .btnRedes {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: auto;
     margin: 40px auto;
+
+    .btnTitle{
+        margin-bottom: 1rem;
+        
+        & h2{
+            font-size: 13px;
+            font-weight: bold;
+            font-family: sans-serif;
+            font-style: italic;
+        }
+    }
 
     .icon {
         margin: 0px 1rem;
