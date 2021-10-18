@@ -29,7 +29,7 @@
   width: 100%;
   height: 8rem;
   box-shadow: 0px 0px 4px grey;
-  background-color: black;
+  background-color: white;
   overflow: hidden;
   margin: 5px 0px;
 }
@@ -41,7 +41,8 @@
   align-items: center;
   flex-direction: row;
   width: 50%;
-  box-shadow: 0px 0px 8px #fdfdfd;
+  height: 5rem;
+  box-shadow: 0px 0px 8px #0c0c0c;
 }
 
 #subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
@@ -68,7 +69,7 @@
   font-weight: bold;
   font-style: italic;
   font-family: "Staatliches", "cursive";
-  color: white;
+  color: black;
 }
 
 #subnavH .subnav__subtittleH .subnav__subtittle__itemsH li a:hover {
@@ -148,7 +149,7 @@
   text-transform: uppercase;
   font-weight: bold;
   color: white;
-  border-bottom: 2px solid black;
+  border-bottom: 4px solid white;
   text-shadow: 1px 1px 1px black;
 }
 
@@ -173,8 +174,7 @@
   font-size: 17px;
   letter-spacing: 1px;
   margin-right: 1.9rem;
-  border: 1px solid white;
-  background-color: white;
+  background-color: orangered;
   border-radius: 10%;
   box-shadow: 0px 0px 6px grey;
   padding: 5px;
@@ -182,7 +182,7 @@
 
 #sectionMen .description .tittleAhorro .valor {
   font-family: "Staatliches", "cursive";
-  color: red;
+  color: white;
 }
 
 /* fin primera section */
@@ -235,14 +235,14 @@
   display: grid;
   column-gap: 5px;
   grid-template-columns: repeat(2, calc(50% - 10px));
-  grid-template-rows: 70% 30%;
+  grid-template-rows: 50% 50%;
   grid-template-areas: "imgrow title" "imgrow vermas";
   align-items: center;
   width: 95%;
-  margin: 0px 26px 35px 34px;
+  margin: 25px 26px 35px 34px;
   height: 30rem;
-  box-shadow: 0px 0px 4px #dfdfdf;
-  background-image: linear-gradient(white, #ebebeb);
+  box-shadow: 0px 0px 6px #dfdfdf;
+  background-image: linear-gradient(#cfcfcf, white);
 }
 
 #secondSection .imageRow {
@@ -257,7 +257,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 8rem;
+  margin-left: 5rem;
 }
 
 #secondSection .titleRow .titleCuotas {
@@ -265,16 +265,17 @@
   letter-spacing: 1px;
   font-weight: bold;
   text-transform: uppercase;
-  border-bottom: 2px solid black;
-  text-shadow: 0px 0px 2px #313131;
+  border-bottom: 4px solid white;
+  text-shadow: 1px 1px 1px black;
   font-size: 4rem;
-  color: black;
+  color: white;
 }
 
 #secondSection .titleRow .titleInteres {
   font-family: sans-serif;
   align-self: center;
-  color: black;
+  color: white;
+  text-shadow: 1px 1px 1px black;
   text-transform: uppercase;
   font-weight: bold;
   font-style: italic;
@@ -289,15 +290,15 @@
   text-transform: uppercase;
   font-size: 17px;
   letter-spacing: 1px;
-  border: 1px solid white;
-  background-color: black;
-  border-radius: 5%;
+  background-color: orangered;
+  border-radius: 8%;
+  box-shadow: 0px 0px 4px black;
   padding: 5px;
 }
 
-#secondSection .titleRow .valor {
+#secondSection .titleRow .titleAhorro .valor {
   font-family: "Staatliches", "cursive";
-  color: red;
+  color: white;
 }
 
 #secondSection .vermas {
@@ -308,6 +309,7 @@
   height: 2.5rem;
   margin-bottom: 4rem;
   background-color: black;
+  margin-left: 5.5rem;
 }
 
 #secondSection .vermas a {
