@@ -236,6 +236,41 @@ $font-miccio: "Staatliches", "cursive";
 
 /* fin jordan section */
 
+/* pre section */
+
+  .preSection {
+    display: flex;
+    flex-direction: column;
+    width: 95%;
+    margin: 28px 20px 25px 35px;
+    background-color: white;
+    height: 13rem;
+    
+    & h2 {
+      font-family: $font-miccio;
+      font-size: 4rem;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 1px;
+      color: black;
+      margin-left: 5rem;
+    }
+
+    & p {
+      color: black;
+      width: 35%;
+      margin-left: 8rem;
+      font-family: $font-miccio;
+      font-size: 4rem;
+      font-weight: bold;
+      font-style: italic;
+      letter-spacing: 1px;
+      border-bottom: 4px solid black;
+    }
+  }
+
+  /* fin pre section */
+  
 /* inicio tercera section */
 
 #secondSection {
