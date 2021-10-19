@@ -2,17 +2,77 @@
 
 /* inicio first layout */
 
+#present {
+    overflow: hidden;
+    padding: 1.5rem 2rem 0rem 2rem;
+    width: 100%;
+    position: relative;
+
+    figure {
+        img {
+            box-shadow: 0px 0px 6px black;
+            width: 100%;
+        }
+
+        & h2 {
+            display: block;
+            position: absolute;
+            z-index: 10;
+            font-family: $font-miccio;
+            text-align: center;
+            line-height: 2.3rem;
+            border-radius: 5%;
+            text-decoration: none;
+            text-transform: uppercase;
+            background-color: white;
+            width: 8rem;
+            height: 2.5rem;
+            bottom: 1.6rem;
+            left: 4rem;
+
+            a {
+                text-align: center;
+                font-family: $font-miccio;
+                padding: 1rem;
+                color: black;
+                text-decoration: none;
+                font-size: 20px;
+                letter-spacing: 2px;
+                font-weight: bold;
+                font-style: italic;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 6px cyan;
+                background-color: cyan;
+                border: 1px solid cyan;
+                width: 8.2rem;
+                height: 2.7rem;
+                transition: all 300ms;
+          
+                &:hover > a {
+                  color: white;
+                  font-weight: bold;
+                  transition: all 300ms;
+                }
+            }  
+            
+        }
+    }
+}
+
 #firstSection {
     display: flex;
     flex-direction: column;
     overflow: hidden;
     width: 100%;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     position: relative;
+    margin: 0px;
 
     .firstText {
-        height: 15rem;
-        padding: 2rem 5rem;
+        height: 13rem;
+        padding: 0px 2rem 1.5rem 2rem;
         text-align: start;
         
         & h2 {
@@ -49,9 +109,10 @@
                 position: relative;
                 overflow: hidden;
                 width: 100%;
+                box-shadow: 0px 0px 4px black;
             }
 
-            & h2 {
+            h2 {
                 display: block;
                 position: absolute;
                 z-index: 10;
@@ -60,9 +121,8 @@
                 height: 2.5rem;
                 border-radius: 5%;
                 text-align: center;
-                margin-bottom: 1rem;
                 line-height: 2rem;
-                bottom: 3rem;
+                bottom: 3.5rem;
                 right: 4.5rem;
 
                 &:hover {
@@ -81,8 +141,8 @@
                 }  
 
                 a {
-                    text-align: center;
                     font-family: $font-miccio;
+                    text-align: center;
                     padding: 1rem;
                     color: white;
                     text-decoration: none;
@@ -99,3 +159,287 @@
 }
 
 /* fin first layout */
+
+/* pre row nike */
+
+.divpreRow {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    height: 13.5rem;
+    width: 100%;
+    padding: 0rem 5rem;
+
+    h2 {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        margin-right: 5rem;
+        color: black;
+    }
+
+    h3 {
+        text-transform: uppercase;
+        text-decoration: none;
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 4rem;
+        letter-spacing: 1px;
+        color: black;
+        margin-right: 4rem;
+        width: 25%;
+        border-bottom: 3px solid black;
+    }
+}
+
+/* fin pre row nike */
+
+/* inicio row nike */
+
+#rowSection {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0rem 2rem;
+    column-gap: 1.5rem;
+
+    .rowFirst {
+        position: relative;
+
+        img {
+            box-shadow: 0px 0px 4px black;
+        }
+
+        h2 {
+            position: absolute;
+            display: block;
+            z-index: 10;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: white;
+            border-radius: 5%;
+            width: 8rem;
+            height: 2.5rem;
+            text-align: center;
+            line-height: 2.2rem;
+            font-family: $font-miccio;
+
+            a {
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 6px cyan;
+                background-color: cyan;
+                border: 1px solid cyan;
+                width: 8.2rem;
+                height: 2.7rem;
+                transition: all 300ms;
+          
+                &:hover > a {
+                  color: white;
+                  font-weight: bold;
+                  transition: all 300ms;
+                }
+            }  
+        }
+    
+    }
+
+    .rowSecond {
+        position: relative;
+
+        img {
+            box-shadow: 0px 0px 4px black;
+        }
+
+        h2 {
+            position: absolute;
+            display: block;
+            z-index: 10;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: black;
+            border-radius: 5%;
+            width: 8rem;
+            height: 2.5rem;
+            text-align: center;
+            line-height: 2.2rem;
+            font-family: $font-miccio;
+
+            a {
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 6px cyan;
+                background-color: cyan;
+                border: 1px solid cyan;
+                width: 8.2rem;
+                height: 2.7rem;
+                transition: all 300ms;
+          
+                &:hover > a {
+                  color: white;
+                  font-weight: bold;
+                  transition: all 300ms;
+                }
+            }  
+        }
+    
+    }
+
+    .rowThird {
+        position: relative;
+
+        img {
+            box-shadow: 0px 0px 4px black;
+        }
+
+        h2 {
+            position: absolute;
+            display: block;
+            z-index: 10;
+            bottom: 1.5rem;
+            right: 1.5rem;
+            background-color: white;
+            border-radius: 5%;
+            width: 8rem;
+            height: 2.5rem;
+            text-align: center;
+            line-height: 2.2rem;
+            font-family: $font-miccio;
+
+            a {
+                color: black;
+                text-decoration: none;
+                text-transform: uppercase;
+                font-size: 18px;
+                font-weight: bold;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 6px cyan;
+                background-color: cyan;
+                border: 1px solid cyan;
+                width: 8.2rem;
+                height: 2.7rem;
+                transition: all 300ms;
+          
+                &:hover > a {
+                  color: white;
+                  font-weight: bold;
+                  transition: all 300ms;
+                }
+            }  
+        }
+    
+    }
+}
+
+/* fin rows section */
+
+/* third section zapatillas */
+
+#thirdSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 2.2rem 2rem 0rem 2rem;
+
+    .thirdTitle {
+        height: 13.5rem;
+        padding-left: 5rem;
+        
+        h2 {
+            font-family: $font-miccio;
+            color: black;
+            font-size: 4rem;
+            letter-spacing: 1px;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: bold;
+            font-style: italic;
+        }
+
+        h3 {
+            text-align: center;
+            margin-left: 3rem;
+            text-transform: uppercase;
+            text-decoration: none;
+            font-family: $font-miccio;
+            font-weight: bold;
+            font-style: italic;
+            font-size: 4rem;
+            letter-spacing: 1px;
+            color: black;
+            width: 18%;
+            border-bottom: 3px solid black;
+        }
+    }
+
+    .thirdImg {
+        position: relative;
+        figure {
+            img {
+                box-shadow: 0px 0px 4px black;
+            }
+
+            h2 {
+                display: block;
+                position: absolute;
+                z-index: 10;
+                bottom: 1.5rem;
+                right: 1.5rem;
+                background-color: black;
+                border-radius: 5%;
+                width: 9rem;
+                height: 2.5rem;
+                text-align: center;
+                line-height: 2rem;
+                font-family: $font-miccio;
+
+                a {
+                    color: white;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    font-size: 15px;
+                    font-weight: bold;
+                }
+    
+                &:hover {
+                    box-shadow: 0px 0px 6px cyan;
+                    background-color: cyan;
+                    border: 1px solid cyan;
+                    width: 9.2rem;
+                    height: 2.7rem;
+                    transition: all 300ms;
+              
+                    &:hover > a {
+                      color: black;
+                      font-weight: bold;
+                      transition: all 300ms;
+                    }
+                }  
+            }
+        }
+    }
+}
+
+/* fin third section zapatillas */
