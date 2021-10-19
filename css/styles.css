@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* variables */
 * {
   box-sizing: border-box;
   margin: 0px;
@@ -8,15 +9,7 @@
   text-decoration: none;
 }
 
-* {
-  box-sizing: border-box;
-  margin: 0px;
-  padding: 0px;
-  list-style: none;
-  font-family: sans-serif;
-  text-decoration: none;
-}
-
+/* imports */
 /* header en import */
 /* main */
 /* inicio sub-menú enlaces relativos */
@@ -31,11 +24,10 @@
   box-shadow: 0px 0px 4px grey;
   background-color: white;
   overflow: hidden;
-  margin: 5px 0px;
+  margin: 10px 0px;
 }
 
 #subnavH .subnav__subtittleH {
-  /* container de la caja completa */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -46,7 +38,6 @@
 }
 
 #subnavH .subnav__subtittleH .subnav__subtittle__itemsH {
-  /* caja de los items */
   display: flex;
   text-align: center;
   align-items: center;
@@ -88,7 +79,7 @@
   grid-template-rows: 20% 30% 50%;
   grid-template-areas: "description . ." "description . ." "vermas . .";
   width: 95%;
-  margin: 28px 26px 35px 34px;
+  margin: 30px 26px 0px 34px;
   height: 30rem;
   box-shadow: 0px 0px 4px grey;
   background-image: url("../assets/images/sitio-nike-fondozapa.jpg");
@@ -111,8 +102,8 @@
 
 #sectionMen .vermas h2 {
   font-family: "Staatliches", "cursive";
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 20px;
   letter-spacing: 2px;
   text-align: center;
   line-height: 1.7rem;
@@ -122,11 +113,18 @@
 }
 
 #sectionMen .vermas:hover {
-  color: white;
-  font-size: 18px;
   box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
   border: 1px solid cyan;
+  width: 8.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#sectionMen .vermas:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
 }
 
 #sectionMen .description {
@@ -192,7 +190,7 @@
   flex-direction: column;
   width: 95%;
   height: 49rem;
-  margin: 28px 20px 16px 35px;
+  margin: 10px 20px 16px 35px;
   background-color: white;
 }
 
@@ -213,7 +211,7 @@
   color: black;
 }
 
-#jordan .titleJordan p {
+#jordan .titleJordan h3 {
   color: black;
   margin-left: 1rem;
   font-family: "Staatliches", "cursive";
@@ -224,7 +222,12 @@
   border-bottom: 3px solid black;
 }
 
-#jordan .jordanFull img {
+#jordan .jordanFull {
+  position: relative;
+  margin-bottom: 5rem;
+}
+
+#jordan .jordanFull figure img {
   width: 100%;
   box-shadow: 0px 0px 3px black;
 }
@@ -235,7 +238,7 @@
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: 28px 20px 25px 35px;
+  margin: 1rem 3rem;
   background-color: white;
   height: 13rem;
 }
@@ -250,7 +253,7 @@
   margin-left: 5rem;
 }
 
-.preSection p {
+.preSection h3 {
   color: black;
   width: 35%;
   margin-left: 8rem;
@@ -263,7 +266,7 @@
 }
 
 /* fin pre section */
-/* inicio tercera section */
+/* inicio tercera section img - txt */
 #secondSection {
   display: grid;
   column-gap: 5px;
@@ -283,6 +286,11 @@
   grid-area: imgrow;
   align-self: center;
   text-align: center;
+}
+
+#secondSection .imageRow img {
+  width: 40rem;
+  height: 30rem;
 }
 
 #secondSection .titleRow {
@@ -351,8 +359,8 @@
 
 #secondSection .vermas h2 {
   font-family: "Staatliches", "cursive";
-  font-weight: bold;
-  font-size: 18px;
+  font-weight: 100;
+  font-size: 20px;
   letter-spacing: 2px;
   text-align: center;
   line-height: 1.7rem;
@@ -362,14 +370,168 @@
 }
 
 #secondSection .vermas:hover {
-  color: white;
-  font-size: 18px;
   box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
   border: 1px solid cyan;
+  width: 8.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#secondSection .vermas:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
 }
 
 /* fin tercera section */
+/* inicio cuarta section row */
+#sectionForty {
+  width: 95%;
+}
+
+#sectionForty .titlePreRow {
+  margin: 4rem 0px;
+}
+
+#sectionForty .titlePreRow h2 {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: black;
+  margin-right: 13rem;
+  text-align: end;
+}
+
+#sectionForty .titlePreRow h3 {
+  color: black;
+  width: 35%;
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  border-bottom: 4px solid black;
+  margin-left: 40rem;
+}
+
+#sectionForty .sectionRow {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  overflow: hidden;
+  column-gap: 1rem;
+  width: 95%;
+  height: 30rem;
+  margin-left: 7rem;
+}
+
+#sectionForty .sectionRow .imgRow-one {
+  position: relative;
+}
+
+#sectionForty .sectionRow .imgRow-one img {
+  box-shadow: 0px 0px 4px #a7a7a7;
+}
+
+#sectionForty .sectionRow .imgRow-one h2 {
+  display: block;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  background-color: black;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 5%;
+  text-align: center;
+  margin-bottom: 1rem;
+  line-height: 2rem;
+}
+
+#sectionForty .sectionRow .imgRow-one h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 8.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#sectionForty .sectionRow .imgRow-one h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#sectionForty .sectionRow .imgRow-one h2 a {
+  text-align: center;
+  font-family: "Staatliches", "cursive";
+  padding: 1rem;
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: 100;
+  font-style: italic;
+}
+
+#sectionForty .sectionRow .imgRow-two {
+  position: relative;
+}
+
+#sectionForty .sectionRow .imgRow-two img {
+  box-shadow: 0px 0px 4px #a7a7a7;
+}
+
+#sectionForty .sectionRow .imgRow-two h2 {
+  display: block;
+  position: absolute;
+  text-align: end;
+  bottom: 1rem;
+  left: 1rem;
+  z-index: 10;
+  background-color: white;
+  width: 8rem;
+  height: 2.5rem;
+  border-radius: 5%;
+  margin-bottom: 1rem;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#sectionForty .sectionRow .imgRow-two h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 8.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#sectionForty .sectionRow .imgRow-two h2:hover:hover > a {
+  color: white;
+  transition: all 300ms;
+}
+
+#sectionForty .sectionRow .imgRow-two h2 a {
+  font-family: "Staatliches", "cursive";
+  padding: 1rem;
+  color: black;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 2px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* fin cuarta section row */
+header {
+  font-family: "Staatliches", "cursive";
+}
+
 #header {
   width: 100%;
   height: 10rem;
@@ -550,44 +712,32 @@
   transition: all 300ms;
 }
 
-/* inicio bs */
+/* inicio banner bootstrap */
 #sectionWeare {
-  background-image: url("../assets/images/fondoWeare.jpg.crdownload");
-  overflow: hidden;
   animation: backBanner 3s linear;
   height: 8rem;
   width: 100%;
   border: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 4px #000000;
-  background-image: url("../assets/images/fondoSHOWW.jpg");
-  margin-top: 5px;
-}
-
-@keyframes backBanner {
-  0% {
-    background-position: 0px 0px;
-  }
-  90% {
-    background-position: -200px -200px;
-  }
-  100% {
-    background-position: 0px 0px;
-  }
+  box-shadow: 0px 0px 4px #d6d6d6;
+  background-color: black;
+  overflow: hidden;
 }
 
 #sectionWeare #textWeare {
-  font-family: 'Varela Round', sans-serif;
-  font-family: 'Staatliches', cursive;
   font-weight: 900;
   font-style: italic;
-  font-size: 60px;
-  margin-top: 10px;
   text-align: center;
-  font-style: bold;
   text-shadow: 1px 1px 3px #0f0f0f;
-  overflow: hidden;
   letter-spacing: 12px;
   animation: showText 3s linear;
+}
+
+#sectionWeare #textWeare a {
+  font-family: "Staatliches", "cursive";
+  color: white;
+  font-size: 5rem;
+  font-style: bold;
+  text-decoration: none;
 }
 
 @keyframes showText {
@@ -613,16 +763,8 @@
   }
 }
 
-#sectionWeare #logoWeare {
-  margin-top: 70px;
-  margin-left: 70px;
-  box-shadow: 1px 1px 7px 1px black;
-  overflow: hidden;
-  animation: showIcon 9s linear;
-}
-
-/* fin bs */
-/* tarjetas bs */
+/* fin banner bootstrap */
+/* tarjets black friday bootstrap */
 #sectionTarjets {
   background-color: black;
   height: 38rem;
@@ -712,8 +854,8 @@
   box-shadow: 1px 1px 5px 1px white;
 }
 
-/* fin tarjetas bs */
-/* inicio layout grid */
+/* fin tarjets black friday bootstrap */
+/* inicio layout hombres grid */
 #layout__hombre {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -839,8 +981,8 @@
   transition: all 500ms;
 }
 
-/* fin layout hombre */
-/* inicio layout mujer */
+/* fin layout hombres grid */
+/* inicio layout mujeres grid */
 #layout__mujer {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -947,8 +1089,8 @@
   transition: all 300ms;
 }
 
-/* FIN LAYOUT MUJERES */
-/* INICIO CAROUSEL */
+/* fin layout mujeres grid*/
+/* INICIO CAROUSEL BOOTSTRAP*/
 #container-carousel {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -1009,13 +1151,12 @@
   justify-content: center;
 }
 
-/* FIN CAROUSEL */
-/* inicio PARA QUIEN QUERES COMPRAR */
+/* FIN CAROUSEL BOOTSTRAP*/
+/* inicio PARA QUIEN QUERES COMPRAR grid-flex */
 #comprar {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 3fr;
-  /*     margin-top: 18px; */
   height: 550px;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
   overflow: hidden;
@@ -1131,8 +1272,8 @@
   transition: all 700ms;
 }
 
-/* fin container "para quien queres comprar" */
-/* inicio formas de pago / descuentos */
+/* fin container para quien queres comprar grid-flex */
+/* inicio formas de pago - descuentos */
 #containerPagos {
   display: grid;
   grid-template-columns: 1fr;
@@ -1146,7 +1287,6 @@
   width: 95%;
   margin: 28px 28px 28px 34px;
   box-shadow: 1px 1px 5px 1px #3d3d3d;
-  /* background-image: url(../assets/images/fondo-frode.jpg); */
 }
 
 #containerPagos .title__descuentos {
@@ -1206,6 +1346,7 @@
 }
 
 .tabla__descuentos .titleitem {
+  border-bottom: 2px solid white;
   text-transform: uppercase;
   height: 50px;
   width: 50%;
@@ -1404,243 +1545,6 @@ footer .coder {
 }
 
 /* fin footer index */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-/* MUJER */
-#containerM {
-  display: flex;
-  align-items: center;
-  /* centrar items uno al lado del otro */
-  width: 100%;
-  height: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #ccc;
-  min-height: 160px;
-  background: black;
-  /* background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#headerM {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: 110px;
-  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-/* agregar clase nueva para el contenedor del logo frode */
-.container__tittleM {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  /* box-shadow: 0px 0px 10px #ccc; */
-}
-
-.tittleM {
-  flex-grow: 1;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
-  text-transform: uppercase;
-  /* padding-left: 570px; */
-  color: white;
-  padding-bottom: 25px;
-}
-
-.header__alignM {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  align-items: center;
-  /* centrar texto dentro de caja */
-}
-
-#menu {
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  border: 2px solid black;
-  /* border: 1px solid rgba(175, 172, 172, 0.8); */
-  font-weight: bold;
-  margin-top: 28px;
-  margin-right: 209px;
-  margin-left: 290px;
-  height: 60px;
-  /* background: rgb(252, 252, 252); */
-}
-
-.logo__imageM {
-  margin-top: 30px;
-  margin-left: 18px;
-}
-
-img.logotipo {
-  flex-grow: 1;
-  width: 55px;
-  height: 52px;
-  border-radius: 80%;
-}
-
-.container__subtittleM {
-  width: 26%;
-  flex-wrap: wrap;
-}
-
-.subtittleM {
-  flex-grow: 1;
-  font-family: 'sans-serif';
-  font-size: 10px;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-left: 20px;
-}
-
-.subtittleM a {
-  color: white;
-}
-
-.subtittleM a:hover {
-  color: #ff0eff;
-}
-
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-#navMujer {
-  height: 120px;
-  padding: 30px 60px 100px 290px;
-  word-spacing: 35px;
-  background-image: url("../assets/images/fondo-frode.jpg");
-  border-bottom: 1px solid black;
-}
-
-#navMujer .color {
-  display: inline;
-  font-size: 25px;
-  padding-left: 70px;
-  color: black;
-}
-
-#sectionF {
-  background-image: url("../assets/images/titularmujer.jpg");
-  margin: 138px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.imageNikeF {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 250px;
-  padding-bottom: 100px;
-  height: 600px;
-  width: 400px;
-}
-
-#sectionPantF {
-  background-image: url("../assets/images/titularmujer.jpg");
-  margin: 4px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.tittlePantF {
-  font-size: 40px;
-  padding-left: 130px;
-  color: #f3f3f3;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imagePantF {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 880px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-#lastSectionF {
-  background-image: url("../assets/images/titularmujer.jpg");
-  margin: 5px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.lastTittleF {
-  font-size: 40px;
-  padding-left: 180px;
-  color: white;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.tittleInteresF {
-  padding-left: 15px;
-  color: #fffbfb;
-  margin: 5px 30px;
-  font-size: 15px;
-}
-
-.lastImageF {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 1480px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-.lastPositionF {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1780px;
-  left: 140px;
-}
-
 /* INVIERNO */
 /* INVIERNO */
 /* INVIERNO */

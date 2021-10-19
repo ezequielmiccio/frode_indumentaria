@@ -1,3 +1,4 @@
+/* variables */
 $font-miccio: "Staatliches", "cursive";
 
 * {
@@ -9,50 +10,39 @@ $font-miccio: "Staatliches", "cursive";
     text-decoration: none;
 }
 
+/* imports */
+
 @import "hombre";
+@import "mujer";
 @import "header";
 
-/* inicio bs */
+/* inicio banner bootstrap */
 
 #sectionWeare {
-    background-image: url("../assets/images/fondoWeare.jpg.crdownload");
-    overflow: hidden;
     animation: backBanner 3s linear;
     height: 8rem;
     width: 100%;
     border: 1px solid rgba(207, 197, 197, 0.8);
-    box-shadow: 0px 0px 4px #000000;
-    background-image: url("../assets/images/fondoSHOWW.jpg");
-    margin-top: 5px;
-}
-
-@keyframes backBanner {
-    0% {
-        background-position: 0px 0px;
-    }
-
-    90% {
-        background-position: -200px -200px;
-    }
-
-    100% {
-        background-position: 0px 0px;
-    }
-}
-
-#sectionWeare #textWeare {
-    font-family: 'Varela Round', sans-serif;
-    font-family: 'Staatliches', cursive;
-    font-weight: 900;
-    font-style: italic;
-    font-size: 60px;
-    margin-top: 10px;
-    text-align: center;
-    font-style: bold;
-    text-shadow: 1px 1px 3px rgb(15, 15, 15);
+    box-shadow: 0px 0px 4px #d6d6d6;
+    background-color: black;
     overflow: hidden;
-    letter-spacing: 12px;
-    animation: showText 3s linear;
+
+    #textWeare {
+        font-weight: 900;
+        font-style: italic;
+        text-align: center;
+        text-shadow: 1px 1px 3px rgb(15, 15, 15);
+        letter-spacing: 12px;
+        animation: showText 3s linear;
+
+        & a {
+            font-family: $font-miccio;
+            color: white;
+            font-size: 5rem;
+            font-style: bold;
+            text-decoration: none;
+        }
+    }
 }
 
 @keyframes showText {
@@ -81,17 +71,9 @@ $font-miccio: "Staatliches", "cursive";
     }
 }
 
-#sectionWeare #logoWeare {
-    margin-top: 70px;
-    margin-left: 70px;
-    box-shadow: 1px 1px 7px 1px rgb(0, 0, 0);
-    overflow: hidden;
-    animation: showIcon 9s linear;
-}
+/* fin banner bootstrap */
 
-/* fin bs */
-
-/* tarjetas bs */
+/* tarjets black friday bootstrap */
 
 #sectionTarjets {
     background-color: black;
@@ -184,9 +166,9 @@ $font-miccio: "Staatliches", "cursive";
     box-shadow: 1px 1px 5px 1px white;
 }
 
-/* fin tarjetas bs */
+/* fin tarjets black friday bootstrap */
 
-/* inicio layout grid */
+/* inicio layout hombres grid */
 
 #layout__hombre {
     display: grid;
@@ -323,10 +305,10 @@ $font-miccio: "Staatliches", "cursive";
     transition: all 500ms;
 }
 
-/* fin layout hombre */
+/* fin layout hombres grid */
 
 
-/* inicio layout mujer */
+/* inicio layout mujeres grid */
 
 #layout__mujer {
     display: grid;
@@ -439,9 +421,9 @@ $font-miccio: "Staatliches", "cursive";
 }
 
 
-/* FIN LAYOUT MUJERES */
+/* fin layout mujeres grid*/
 
-/* INICIO CAROUSEL */
+/* INICIO CAROUSEL BOOTSTRAP*/
 
 #container-carousel {
     display: grid;
@@ -508,16 +490,15 @@ $font-miccio: "Staatliches", "cursive";
   }
 }
 
-/* FIN CAROUSEL */
+/* FIN CAROUSEL BOOTSTRAP*/
 
 
-/* inicio PARA QUIEN QUERES COMPRAR */
+/* inicio PARA QUIEN QUERES COMPRAR grid-flex */
 
 #comprar {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 3fr;
-/*     margin-top: 18px; */
     height: 550px;
     background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
     overflow: hidden;
@@ -634,9 +615,9 @@ $font-miccio: "Staatliches", "cursive";
     transition: all 700ms;
 }
 
-/* fin container "para quien queres comprar" */
+/* fin container para quien queres comprar grid-flex */
 
-/* inicio formas de pago / descuentos */
+/* inicio formas de pago - descuentos */
 
 
 #containerPagos {
@@ -655,7 +636,6 @@ $font-miccio: "Staatliches", "cursive";
     width: 95%;
     margin: 28px 28px 28px 34px;
     box-shadow: 1px 1px 5px 1px rgb(61, 61, 61);
-    /* background-image: url(../assets/images/fondo-frode.jpg); */
  
 }
 
@@ -718,6 +698,7 @@ $font-miccio: "Staatliches", "cursive";
 }
 
 .tabla__descuentos .titleitem {
+    border-bottom: 2px solid white;
     text-transform: uppercase;
     height: 50px;
     width: 50%;
@@ -924,223 +905,6 @@ footer .coder {
 
 /* fin footer index */
 
-/* MUJER */ /* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER *//* MUJER */
-
-
-#containerM {
-    display: flex;
-    align-items: center; /* centrar items uno al lado del otro */
-
-    width: 100%;
-    height: 10px;
-    margin-bottom: 10px;
-    border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-    box-shadow: 0px 0px 10px #ccc;
-    min-height: 160px;
-    background: black;
-    /* background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#headerM{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-items: center;
-    
-    width: 100%;
-    height: 110px;
-    border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-    background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-/* agregar clase nueva para el contenedor del logo frode */
-.container__tittleM {
-    display: flex;
-    align-content: center;
-    align-items: center;
-
-    width: 100%;
-    height: 1px;
-    /* box-shadow: 0px 0px 10px #ccc; */
-}
-
-.tittleM {
-    flex-grow: 1;
-    text-align: center;
-    
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 12px;
-    /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
-    text-transform: uppercase;
-    /* padding-left: 570px; */
-    color: white;
-    padding-bottom: 25px;
-
-}
-
-.header__alignM {
-    display: flex;
-    width: 90%;
-    flex-direction: row;
-    align-items: center; /* centrar texto dentro de caja */
-
-}
-
-#menu {
-    flex-grow: 1; 
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: center;
-
-    border: 2px solid black;
-    /* border: 1px solid rgba(175, 172, 172, 0.8); */
-    font-weight: bold;
-    margin-top: 28px;
-    margin-right: 209px;
-    margin-left: 290px;
-    height: 60px;
-    /* background: rgb(252, 252, 252); */
-}
-
-.logo__imageM {
-    margin-top: 30px;
-    margin-left: 18px;
-}
-
-img.logotipo {
-   flex-grow: 1;
- 
-   width: 55px;
-   height: 52px;
-   border-radius:80%;
-}
-
-.container__subtittleM {
-    width: 26%;
-    flex-wrap: wrap;
-}
-
-.subtittleM {
-    flex-grow: 1;
-    font-family:'sans-serif';
-    font-size: 10px;
-    /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-    text-transform: uppercase;
-    padding-top: 24px;
-    padding-left: 20px;
-}
-
-.subtittleM a {
-    color: white;
-}
-
-.subtittleM a:hover {
-    color: rgb(255, 14, 255);
-}
-
-/* fin header */ /* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header *//* fin header */
-
-
-#navMujer{
-    height: 120px;
-    padding: 30px 60px 100px 290px;
-    word-spacing: 35px;
-    background-image: url("../assets/images/fondo-frode.jpg");
-    border-bottom: 1px solid black;
-}
-
-#navMujer .color {
-    display: inline;
-    font-size: 25px;
-    padding-left: 70px;
-    color: black;
-}
-
-#sectionF {
-    background-image: url("../assets/images/titularmujer.jpg");
-    margin: 138px 0px 5px 0px;
-    width: auto;
-    height: auto;
-    padding-top: 50px;
-}
-
-.imageNikeF {
-    position: absolute;
-    display: inline;
-    margin-left: 700px;
-    top: 250px;
-    padding-bottom: 100px;
-    height: 600px;
-    width: 400px;
-}
-
-#sectionPantF {
-    background-image: url("../assets/images/titularmujer.jpg");
-    margin: 4px 0px 5px 0px;
-    width: auto;
-    height: auto;
-    padding-top: 50px;
-}
-
-.tittlePantF {
-font-size: 40px;
-padding-left: 130px;
-color: rgb(243, 243, 243);
-letter-spacing: 2px;
-display: inline;
-text-transform: uppercase;
-}
-
-.imagePantF {
-    position: absolute;
-    display: inline;
-    margin-left: 700px;
-    top: 880px;
-    padding-bottom: 100px;
-    width: 400px;
-    height: 600px
-}
-
-#lastSectionF {
-    background-image: url("../assets/images/titularmujer.jpg");
-    margin: 5px 0px 5px 0px;
-    width: auto;
-    height: auto;
-    padding-top: 50px;
-}
-
-.lastTittleF {
-    font-size: 40px;
-    padding-left: 180px;
-    color: rgb(255, 255, 255);
-    letter-spacing: 2px;
-    display: inline;
-    text-transform: uppercase;
-}
-
-.tittleInteresF{
-    padding-left: 15px;
-    color: rgb(255, 251, 251);
-    margin: 5px 30px;
-    font-size: 15px;
-}
-
-.lastImageF {
-    position: absolute;
-    display: inline;
-    margin-left: 700px;
-    top: 1480px;
-    padding-bottom: 100px;
-    width: 400px;
-    height: 600px
-}
-
-.lastPositionF {
-    position: absolute;
-    background-color: rgb(112, 111, 111);
-    top: 1780px;
-    left: 140px;
-}
 
 /* INVIERNO */ /* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO *//* INVIERNO */
 
