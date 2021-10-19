@@ -8,10 +8,11 @@ La finalidad de la creación de está página es para la entrega del proyecto fi
 
 En el mismo se utilizan los lenguajes HTML y CSS:
 
-Box
+Box Model
+Responsive
+SASS
 Flex
 Grid
-Responsive
 Bootstrap. 
 
 Muchas Gracias por observar.
