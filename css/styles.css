@@ -104,7 +104,6 @@
   font-family: "Staatliches", "cursive";
   font-weight: 100;
   font-size: 20px;
-  letter-spacing: 2px;
   text-align: center;
   line-height: 1.7rem;
   text-transform: uppercase;
@@ -271,7 +270,6 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: 100;
   font-style: italic;
 }
@@ -405,7 +403,6 @@
   font-family: "Staatliches", "cursive";
   font-weight: 100;
   font-size: 20px;
-  letter-spacing: 2px;
   text-align: center;
   line-height: 1.7rem;
   text-transform: uppercase;
@@ -467,7 +464,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  column-gap: 1rem;
+  column-gap: 2rem;
   width: 100%;
   height: 30rem;
   margin-left: 2rem;
@@ -517,7 +514,6 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: 100;
   font-style: italic;
 }
@@ -565,7 +561,6 @@
   color: black;
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: bold;
   font-style: italic;
 }
@@ -609,7 +604,6 @@
   color: black;
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: bold;
   font-style: italic;
 }
@@ -713,7 +707,6 @@
   color: white;
   text-decoration: none;
   font-size: 20px;
-  letter-spacing: 2px;
   font-weight: 100;
   font-style: italic;
 }
@@ -993,6 +986,295 @@
 }
 
 /* fin third section zapatillas */
+/* header en el import */
+/* primera section row conjuntos */
+#firstSectionK {
+  width: 100%;
+  padding: 2rem 2rem 1rem 2rem;
+  overflow: hidden;
+  background-image: linear-gradient(white, #f1f1f1);
+  /* inicio imagenes row */
+  /* fin imagenes row */
+  /* subtitle de los row */
+  /* fin subtitle row */
+}
+
+#firstSectionK .sectionRow {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  column-gap: 1.5rem;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1rem;
+  /* imagen derecha */
+  /* imagen izquierda */
+}
+
+#firstSectionK .sectionRow .firstImg {
+  position: relative;
+}
+
+#firstSectionK .sectionRow .firstImg figure img {
+  box-shadow: 0px 0px 4px black;
+  overflow: hidden;
+}
+
+#firstSectionK .sectionRow .firstImg figure h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: white;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 5%;
+  left: 1rem;
+  bottom: 1.5rem;
+}
+
+#firstSectionK .sectionRow .firstImg figure h2 a {
+  font-family: "Staatliches", "cursive";
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
+}
+
+#firstSectionK .sectionRow .firstImg figure h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#firstSectionK .sectionRow .firstImg figure h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#firstSectionK .sectionRow .secondImg {
+  position: relative;
+}
+
+#firstSectionK .sectionRow .secondImg figure img {
+  box-shadow: 0px 0px 4px black;
+  overflow: hidden;
+}
+
+#firstSectionK .sectionRow .secondImg figure h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: black;
+  text-align: center;
+  line-height: 2rem;
+  border-radius: 5%;
+  left: 1rem;
+  bottom: 1.5rem;
+}
+
+#firstSectionK .sectionRow .secondImg figure h2 a {
+  font-family: "Staatliches", "cursive";
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#firstSectionK .sectionRow .secondImg figure h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#firstSectionK .sectionRow .secondImg figure h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#firstSectionK .txtProducto {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 2px;
+}
+
+#firstSectionK .txtProducto h2 {
+  font-family: "Staatliches", "cursive";
+  font-size: 3rem;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: black;
+}
+
+#firstSectionK .txtProducto h3 {
+  font-family: "Staatliches", "cursive";
+  font-style: italic;
+  font-size: 1.5rem;
+  font-weight: 100;
+  letter-spacing: 1px;
+  color: black;
+}
+
+#firstSectionK .txtProducto h4 {
+  background-color: black;
+  text-align: center;
+  line-height: 2.2rem;
+  border-radius: 5%;
+  width: 7rem;
+  height: 2.5rem;
+}
+
+#firstSectionK .txtProducto h4 a {
+  font-family: "Staatliches", "cursive";
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#firstSectionK .txtProducto h4:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#firstSectionK .txtProducto h4:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 300ms;
+}
+
+/* fin primera section row conjuntos */
+/* inicio row niñas */
+#rowGirls {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  width: 100%;
+  padding: 2rem 2rem;
+  /* fin imagen izquierda */
+  /* comienzo imagen derecha */
+}
+
+#rowGirls .imgGirl {
+  position: relative;
+}
+
+#rowGirls .imgGirl figure img {
+  box-shadow: 0px 0px 4px black;
+  overflow: hidden;
+}
+
+#rowGirls .imgGirl figure h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: black;
+  text-align: center;
+  line-height: 2rem;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+#rowGirls .imgGirl figure h2 a {
+  font-family: "Staatliches", "cursive";
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: italic;
+}
+
+#rowGirls .imgGirl figure h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#rowGirls .imgGirl figure h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 300ms;
+}
+
+#rowGirls .secondImg {
+  position: relative;
+}
+
+#rowGirls .secondImg figure img {
+  box-shadow: 0px 0px 4px black;
+  overflow: hidden;
+}
+
+#rowGirls .secondImg figure h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  background-color: white;
+  text-align: center;
+  line-height: 2rem;
+  bottom: 1.5rem;
+  left: 1rem;
+}
+
+#rowGirls .secondImg figure h2 a {
+  font-family: "Staatliches", "cursive";
+  color: black;
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-style: italic;
+  font-weight: bold;
+}
+
+#rowGirls .secondImg figure h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#rowGirls .secondImg figure h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  font-size: 22px;
+  transition: all 300ms;
+}
+
+/* fin row niñas */
 #header {
   width: 100%;
   height: 10rem;
@@ -1012,13 +1294,17 @@
 }
 
 #header .headerFixed h1 {
-  color: white;
   font-family: sans-serif;
   font-size: 12px;
   font-weight: bold;
   text-align: center;
   line-height: 1.5rem;
   text-transform: uppercase;
+  text-decoration: none;
+}
+
+#header .headerFixed h1 a {
+  color: white;
   text-decoration: none;
 }
 

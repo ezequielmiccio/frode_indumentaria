@@ -1,0 +1,309 @@
+/* header en el import */
+
+/* primera section row conjuntos */
+
+#firstSectionK {
+    width: 100%;
+    padding: 2rem 2rem 1rem 2rem;
+    overflow: hidden;
+    background-image: linear-gradient(white, rgb(241, 241, 241));
+
+    /* inicio imagenes row */
+
+    .sectionRow {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row;
+        column-gap: 1.5rem;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        /* imagen derecha */
+
+        .firstImg {
+            position: relative;
+            & figure {
+                & img {
+                    box-shadow: 0px 0px 4px black;
+                    overflow: hidden;
+                }
+
+                & h2 {
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    width: 7rem;
+                    height: 2.5rem;
+                    background-color: white;
+                    text-align: center;
+                    line-height: 2rem;
+                    border-radius: 5%;
+                    left: 1rem;
+                    bottom: 1.5rem;
+
+                    a {
+                        font-family: $font-miccio;
+                        color: black;
+                        text-decoration: none;
+                        text-transform: uppercase;
+                        font-size: 20px;
+                        font-weight: bold;
+                        font-style: italic;
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 6px cyan;
+                        background-color: cyan;
+                        border: 1px solid cyan;
+                        width: 7.2rem;
+                        height: 2.7rem;
+                        transition: all 300ms;
+                  
+                        &:hover > a {
+                          color: white;
+                          font-weight: bold;
+                          transition: all 300ms;
+                        }
+                    }  
+                }
+            }
+        }
+
+        /* imagen izquierda */
+
+        .secondImg {
+            position: relative;
+             figure {
+                img {
+                    box-shadow: 0px 0px 4px black;
+                    overflow: hidden;
+                }
+
+                 h2 {
+                    display: block;
+                    position: absolute;
+                    z-index: 10;
+                    width: 7rem;
+                    height: 2.5rem;
+                    background-color: black;
+                    text-align: center;
+                    line-height: 2rem;
+                    border-radius: 5%;
+                    left: 1rem;
+                    bottom: 1.5rem;
+
+                    a {
+                        font-family: $font-miccio;
+                        font-size: 20px;
+                        font-style: italic;
+                        color: white;
+                        text-transform: uppercase;
+                        text-decoration: none;
+
+                    }
+
+                    &:hover {
+                        box-shadow: 0px 0px 6px cyan;
+                        background-color: cyan;
+                        border: 1px solid cyan;
+                        width: 7.2rem;
+                        height: 2.7rem;
+                        transition: all 300ms;
+                  
+                        &:hover > a {
+                          color: black;
+                          font-weight: bold;
+                          transition: all 300ms;
+                        }
+                    }  
+
+                }
+            }
+        }
+    }
+
+    /* fin imagenes row */
+
+    /* subtitle de los row */
+
+    .txtProducto {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 2px;
+
+        h2 {
+            font-family: $font-miccio;
+            font-size: 3rem;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: black;
+        }
+
+        h3 {
+            font-family: $font-miccio;
+            font-style: italic;
+            font-size: 1.5rem;
+            font-weight: 100;
+            letter-spacing: 1px;
+            color: black;
+        }
+
+        h4 {
+            background-color: black;
+            text-align: center;
+            line-height: 2.2rem;
+            border-radius: 5%;
+            width: 7rem;
+            height: 2.5rem;
+
+            a {
+                font-family: $font-miccio;
+                font-size: 20px;
+                font-style: italic;
+                color: white;
+                text-decoration: none;
+                text-transform: uppercase;
+            }
+
+            &:hover {
+                box-shadow: 0px 0px 6px cyan;
+                background-color: cyan;
+                border: 1px solid cyan;
+                width: 7.2rem;
+                height: 2.7rem;
+                transition: all 300ms;
+          
+                &:hover > a {
+                  color: black;
+                  font-weight: bold;
+                  font-size: 22px;
+                  transition: all 300ms;
+                }
+            }  
+        }
+    }
+
+    /* fin subtitle row */
+}
+
+/* fin primera section row conjuntos */
+
+/* inicio row niñas */
+
+#rowGirls {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 1.5rem;
+    width: 100%;
+    padding: 2rem 2rem;
+
+    .imgGirl {
+        position: relative;
+        
+        figure {
+            img {
+                box-shadow: 0px 0px 4px black;
+                overflow: hidden;
+            }
+
+            h2 {
+                display: block;
+                position: absolute;
+                z-index: 10;
+                width: 7rem;
+                height: 2.5rem;
+                background-color: black;
+                text-align: center;
+                line-height: 2rem;
+                bottom: 1.5rem;
+                left: 1rem;
+
+                a {
+                    font-family: $font-miccio;
+                    color: white;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-style: italic;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 6px cyan;
+                    background-color: cyan;
+                    border: 1px solid cyan;
+                    width: 7.2rem;
+                    height: 2.7rem;
+                    transition: all 300ms;
+              
+                    &:hover > a {
+                      color: black;
+                      font-weight: bold;
+                      font-size: 22px;
+                      transition: all 300ms;
+                    }
+                }  
+            }
+        }
+    }
+
+    /* fin imagen izquierda */
+
+    /* comienzo imagen derecha */
+
+    .secondImg {
+        position: relative;
+        
+        figure {
+            img {
+                box-shadow: 0px 0px 4px black;
+                overflow: hidden;
+            }
+
+            h2 {
+                display: block;
+                position: absolute;
+                z-index: 10;
+                width: 7rem;
+                height: 2.5rem;
+                background-color: white;
+                text-align: center;
+                line-height: 2rem;
+                bottom: 1.5rem;
+                left: 1rem;
+
+                a {
+                    font-family: $font-miccio;
+                    color: black;
+                    font-size: 20px;
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    font-style: italic;
+                    font-weight: bold;
+                }
+
+                &:hover {
+                    box-shadow: 0px 0px 6px cyan;
+                    background-color: cyan;
+                    border: 1px solid cyan;
+                    width: 7.2rem;
+                    height: 2.7rem;
+                    transition: all 300ms;
+              
+                    &:hover > a {
+                      color: white;
+                      font-weight: bold;
+                      font-size: 22px;
+                      transition: all 300ms;
+                    }
+                }  
+            }
+        }
+    }
+}
+
+/* fin row niñas */
