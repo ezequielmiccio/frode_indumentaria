@@ -1322,6 +1322,114 @@
 }
 
 /* fin slider */
+#openWeb {
+  width: 100%;
+  padding: 2rem;
+  /* imagen con ver más */
+  /* fin img con ver más */
+}
+
+#openWeb .introImg {
+  position: relative;
+}
+
+#openWeb .introImg figure .openImg {
+  box-shadow: 0px 0px 4px black;
+}
+
+#openWeb .introImg figure h2 {
+  text-align: center;
+  position: absolute;
+  display: block;
+  z-index: 10;
+  line-height: 2.2rem;
+  background-color: white;
+  width: 7rem;
+  height: 2.5rem;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 5%;
+}
+
+#openWeb .introImg figure h2 a {
+  font-size: 20px;
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#openWeb .introImg figure h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#openWeb .introImg figure h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#openWeb .introTxt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 0.5rem;
+}
+
+#openWeb .introTxt .openTxt a {
+  font-size: 4rem;
+  font-family: "Staatliches", "cursive";
+  letter-spacing: 1px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+}
+
+#openWeb .introTxt .younger h2 {
+  text-align: center;
+  z-index: 10;
+  line-height: 2.2rem;
+  background-color: black;
+  width: 7rem;
+  height: 2.5rem;
+  left: 1.5rem;
+  bottom: 1.5rem;
+  border-radius: 5%;
+}
+
+#openWeb .introTxt .younger h2 a {
+  font-size: 20px;
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#openWeb .introTxt .younger h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#openWeb .introTxt .younger h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
 #header {
   width: 100%;
   height: 10rem;
@@ -1340,6 +1448,15 @@
   left: 0;
 }
 
+#header .headerFixed:hover {
+  height: 1.8rem;
+  background-color: white;
+}
+
+#header .headerFixed:hover > h1 > a {
+  color: black;
+}
+
 #header .headerFixed h1 {
   font-family: sans-serif;
   font-size: 12px;
@@ -1351,8 +1468,20 @@
 }
 
 #header .headerFixed h1 a {
+  font-family: "Staatliches", "cursive";
   color: white;
   text-decoration: none;
+}
+
+#header .headerFixed h1 a:hover {
+  color: black;
+  font-family: "Staatliches", "cursive";
+  font-size: 13px;
+}
+
+#header .headerFixed h1 a:hover > .headerFixed {
+  height: 1.8rem;
+  background-color: white;
 }
 
 #header .headerMenu {
@@ -2343,849 +2472,6 @@ footer .coder {
 }
 
 /* fin footer index */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-/* INVIERNO */
-#containerI {
-  display: flex;
-  align-items: center;
-  /* centrar items uno al lado del otro */
-  width: 100%;
-  height: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #ccc;
-  min-height: 160px;
-  background: black;
-  /*  background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#headerI {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: 110px;
-  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-/* agregar clase nueva para el contenedor del logo frode */
-.container__tittleI {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  /* box-shadow: 0px 0px 10px #ccc; */
-}
-
-.tittleI {
-  flex-grow: 1;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
-  text-transform: uppercase;
-  /* padding-left: 570px; */
-  color: white;
-  padding-bottom: 25px;
-}
-
-.header__alignI {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  align-items: center;
-  /* centrar texto dentro de caja */
-}
-
-#menu {
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  border: 2px solid black;
-  /* border: 1px solid rgba(175, 172, 172, 0.8); */
-  font-weight: bold;
-  margin-top: 28px;
-  margin-right: 209px;
-  margin-left: 290px;
-  height: 60px;
-  /* background: rgb(252, 252, 252); */
-}
-
-.logo__imageI {
-  margin-top: 30px;
-  margin-left: 18px;
-}
-
-img.logotipo {
-  flex-grow: 1;
-  width: 55px;
-  height: 52px;
-  border-radius: 80%;
-}
-
-.container__subtittleI {
-  width: 26%;
-  flex-wrap: wrap;
-}
-
-.subtittleI {
-  flex-grow: 1;
-  font-family: 'sans-serif';
-  font-size: 10px;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-left: 20px;
-}
-
-.subtittleI a {
-  color: white;
-}
-
-.subtittleI a:hover {
-  color: #d400ff;
-}
-
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-#sectionI {
-  background-image: url("../assets/images/fondo-frode.jpg");
-  margin: 138px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.titleCalzadosI {
-  font-size: 40px;
-  padding-left: 150px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imageNikeI {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 250px;
-  padding-bottom: 100px;
-  height: 600px;
-  width: 400px;
-}
-
-.tittleInteresI {
-  color: black;
-  margin: 5px 30px;
-  padding-left: 30px;
-  font-size: 15px;
-}
-
-.tittleCuotasI {
-  font-size: 30px;
-  color: black;
-  padding-left: 55px;
-  padding-bottom: 10px;
-  padding-top: 150px;
-}
-
-.valorI {
-  color: #021402;
-}
-
-#sectionPantI {
-  background-image: url("../assets/images/fondo-frode.jpg");
-  margin: 4px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.tittlePantI {
-  font-size: 40px;
-  padding-left: 130px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imagePantI {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 880px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-#lastSectionI {
-  background-image: url("../assets/images/fondo-frode.jpg");
-  margin: 5px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.lastTittleI {
-  font-size: 40px;
-  padding-left: 180px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-#lastCuotas .tittleInteresI {
-  padding-left: 28px;
-}
-
-.tittleInteresI {
-  padding-left: 15px;
-  color: black;
-  margin: 5px 30px;
-  font-size: 15px;
-}
-
-.tittleAhorroI {
-  padding-left: 120px;
-  color: red;
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-.lastImageI {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 1480px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-.lastPositionI {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1780px;
-  left: 110px;
-}
-
-.menPositionI {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1220px;
-  left: 100px;
-}
-
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-/* NIÑOS */
-#containerK {
-  display: flex;
-  align-items: center;
-  /* centrar items uno al lado del otro */
-  width: 100%;
-  height: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #ccc;
-  min-height: 160px;
-  background: black;
-  /* background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#headerK {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: 110px;
-  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-/* agregar clase nueva para el contenedor del logo frode */
-.container__tittleK {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  /* box-shadow: 0px 0px 10px #ccc; */
-}
-
-.tittleK {
-  flex-grow: 1;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
-  text-transform: uppercase;
-  /* padding-left: 570px; */
-  color: white;
-  padding-bottom: 25px;
-}
-
-.header__alignK {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  align-items: center;
-  /* centrar texto dentro de caja */
-}
-
-#menu {
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  border: 2px solid black;
-  /* border: 1px solid rgba(175, 172, 172, 0.8); */
-  font-weight: bold;
-  margin-top: 28px;
-  margin-right: 209px;
-  margin-left: 290px;
-  height: 60px;
-  /* background: rgb(252, 252, 252); */
-}
-
-.logo__imageK {
-  margin-top: 30px;
-  margin-left: 18px;
-}
-
-img.logotipo {
-  flex-grow: 1;
-  width: 55px;
-  height: 52px;
-  border-radius: 80%;
-}
-
-.container__subtittleK {
-  width: 26%;
-  flex-wrap: wrap;
-}
-
-.subtittleK {
-  flex-grow: 1;
-  font-family: 'sans-serif';
-  font-size: 10px;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-left: 20px;
-}
-
-.subtittleK a {
-  color: white;
-}
-
-.subtittleK a:hover {
-  color: #9dff00;
-}
-
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-#tituloHombreK {
-  color: white;
-  font-size: 14px;
-  padding: 8px 0px 0px 650px;
-}
-
-#sectionK {
-  background-image: url("../assets/images/fondo2kid.jpg");
-  margin: 138px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.titleCalzadosK {
-  font-size: 40px;
-  padding-left: 150px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imageNikeK {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 250px;
-  padding-bottom: 100px;
-  height: 600px;
-  width: 400px;
-}
-
-.tittleInteresK {
-  color: black;
-  margin: 5px 30px;
-  padding-left: 30px;
-  font-size: 15px;
-}
-
-.tittleCuotasK {
-  font-size: 30px;
-  color: black;
-  padding-left: 55px;
-  padding-bottom: 10px;
-  padding-top: 150px;
-}
-
-.valorK {
-  color: yellow;
-}
-
-#sectionPantK {
-  background-image: url("../assets/images/fondo2kid.jpg");
-  margin: 4px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.tittlePantK {
-  font-size: 40px;
-  padding-left: 130px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imagePantK {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 880px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-#lastSectionK {
-  background-image: url("../assets/images/fondo2kid.jpg");
-  margin: 5px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.lastTittleK {
-  font-size: 40px;
-  padding-left: 180px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-#lastCuotas .tittleInteresK {
-  padding-left: 28px;
-}
-
-.tittleInteresK {
-  padding-left: 15px;
-  color: black;
-  margin: 5px 30px;
-  font-size: 15px;
-}
-
-.tittleAhorroK {
-  padding-left: 120px;
-  color: red;
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-.lastImageK {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 1480px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-.lastPositionK {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1780px;
-  left: 110px;
-}
-
-.menPositionK {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1220px;
-  left: 100px;
-}
-
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-/* DEPORTE */
-#containerD {
-  display: flex;
-  align-items: center;
-  /* centrar items uno al lado del otro */
-  width: 100%;
-  height: 10px;
-  margin-bottom: 10px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 0px 0px 10px #ccc;
-  min-height: 160px;
-  background: black;
-  /* background-image: url("../assets/images/fondo-frode.jpg"); */
-}
-
-#headerD {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  width: 100%;
-  height: 110px;
-  border-bottom: 1px solid rgba(175, 172, 172, 0.8);
-  background-image: url("../assets/images/fondo-frode.jpg");
-}
-
-/* agregar clase nueva para el contenedor del logo frode */
-.container__tittleD {
-  display: flex;
-  align-content: center;
-  align-items: center;
-  width: 100%;
-  height: 1px;
-  /* box-shadow: 0px 0px 10px #ccc; */
-}
-
-.tittleD {
-  flex-grow: 1;
-  text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
-  /* text-shadow: 1px 1px 0px rgb(255, 255, 255); */
-  text-transform: uppercase;
-  /* padding-left: 570px; */
-  color: white;
-  padding-bottom: 25px;
-}
-
-.header__alignD {
-  display: flex;
-  width: 90%;
-  flex-direction: row;
-  align-items: center;
-  /* centrar texto dentro de caja */
-}
-
-#menu {
-  flex-grow: 1;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  align-content: center;
-  border: 2px solid black;
-  /* border: 1px solid rgba(175, 172, 172, 0.8); */
-  font-weight: bold;
-  margin-top: 28px;
-  margin-right: 209px;
-  margin-left: 290px;
-  height: 60px;
-  /* background: rgb(252, 252, 252); */
-}
-
-.logo__imageD {
-  margin-top: 30px;
-  margin-left: 18px;
-}
-
-img.logotipo {
-  flex-grow: 1;
-  width: 55px;
-  height: 52px;
-  border-radius: 80%;
-}
-
-.container__subtittleD {
-  width: 26%;
-  flex-wrap: wrap;
-}
-
-.subtittleD {
-  flex-grow: 1;
-  font-family: 'sans-serif';
-  font-size: 10px;
-  /* text-shadow: 1px 1px 0px rgb(114, 111, 111); */
-  text-transform: uppercase;
-  padding-top: 24px;
-  padding-left: 20px;
-}
-
-.subtittleD a {
-  color: white;
-}
-
-.subtittleD a:hover {
-  color: #fbff00;
-}
-
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-/* fin header */
-#navHombreD {
-  height: 120px;
-  padding: 30px 60px 100px 290px;
-  word-spacing: 35px;
-  background-image: url("../assets/images/fondo-frode.jpg");
-  border-bottom: 1px solid black;
-}
-
-#navHombreD .color {
-  display: inline;
-  font-size: 25px;
-  padding-left: 90px;
-  color: black;
-}
-
-#tituloHombreD {
-  color: white;
-  font-size: 14px;
-  padding: 8px 0px 0px 635px;
-}
-
-#sectionD {
-  background-image: url("../assets/images/fondodeporte1.jpg");
-  margin: 138px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.tittleCalzadosD {
-  font-size: 40px;
-  padding-left: 150px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-.imageNikeD {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 250px;
-  padding-bottom: 100px;
-  height: 600px;
-  width: 400px;
-}
-
-#cuotas .tittleInteresD {
-  color: black;
-  margin: 5px 30px;
-  padding-left: 10px;
-  font-size: 15px;
-}
-
-.tittleCuotasD {
-  font-size: 30px;
-  color: black;
-  padding-left: 80px;
-  padding-bottom: 10px;
-  padding-top: 150px;
-}
-
-#cuotas .tittleAhorroD {
-  padding-left: 100px;
-}
-
-.valorD {
-  color: yellow;
-}
-
-#sectionPantD {
-  background-image: url("../assets/images/fondodeporte1.jpg");
-  margin: 4px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.tittlePantD {
-  font-size: 40px;
-  padding-left: 150px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-#cuotasPant .tittleCuotasD {
-  padding-left: 40px;
-}
-
-#cuotasPant .tittleAhorroD {
-  padding-left: 110px;
-}
-
-.imagePantD {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 880px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-#lastSectionD {
-  background-image: url("../assets/images/fondodeporte1.jpg");
-  margin: 5px 0px 5px 0px;
-  width: auto;
-  height: auto;
-  padding-top: 50px;
-}
-
-.lastTittleD {
-  font-size: 40px;
-  padding-left: 180px;
-  color: black;
-  letter-spacing: 2px;
-  display: inline;
-  text-transform: uppercase;
-}
-
-#lastCuotas .tittleInteresD {
-  padding-left: 28px;
-}
-
-.tittleInteresD {
-  padding-left: 15px;
-  color: black;
-  margin: 5px 30px;
-  font-size: 15px;
-}
-
-.tittleAhorroD {
-  padding-left: 120px;
-  color: red;
-  font-size: 15px;
-  padding-top: 10px;
-}
-
-.lastImageD {
-  position: absolute;
-  display: inline;
-  margin-left: 700px;
-  top: 1480px;
-  padding-bottom: 100px;
-  width: 400px;
-  height: 600px;
-}
-
-.lastPositionD {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1780px;
-  left: 110px;
-}
-
-.menPositionD {
-  position: absolute;
-  background-color: #706f6f;
-  top: 1220px;
-  left: 100px;
-}
-
-.lastTittleD {
-  padding-left: 150px;
-}
-
-#lastCuotas .tittleCuotasD {
-  padding-left: 45px;
-}
-
-#lastCuotas .tittleInteresD {
-  padding-left: 40px;
-}
-
 /* textos */
 #registroSub {
   font-family: 'PT Mono', monospace;
