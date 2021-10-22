@@ -169,7 +169,7 @@
 
         <div class="headerFixed">
             <h1>
-                <a href="#header">Frode Indumentaria</a> 
+                <a href="#header">Frode Indumentaria</a>
             </h1>
         </div>
 
@@ -267,8 +267,8 @@
 
                 <div class="cajaWeare col-12">
                     <h2 id="textWeare" class="p-3 text-white display-1 text-uppercase"><a href="#sectionTarjets">
-                        Black Friday
-                    </a></h2>
+                            Black Friday
+                        </a></h2>
                 </div>
 
             </div>
@@ -355,6 +355,10 @@
 
         </div>
 
+        <!-- fin layout hombre -->
+
+        <!-- inicio layout mujer -->
+
         <div id="layout__mujer">
 
             <div class="layout__mujer__tittle">
@@ -386,6 +390,8 @@
 
         </div>
 
+        <!-- fin layout mujer -->
+
         <!-- inicio carousel marcas -->
 
         <div id="container-carousel">
@@ -408,6 +414,9 @@
                         <img src="./assets/images/carousel111.jpg" class="d-block w-40" alt="adidas">
                     </div>
                 </div>
+
+                <!-- fin imagenes -->
+
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
                     data-bs-slide="prev">
                     <span class="carousel-control-prev-icon bg-none" aria-hidden="true"></span>
@@ -424,37 +433,55 @@
         <!-- fin carousel marcas -->
 
 
+<!-- inicio para quien queres comprar -->
 
         <section id="comprar">
 
-            <div class="containerText">
+            <!-- comienzo textos -->
 
-                <h2 class="titulo-pregunta">
-                    <em>¿Para quién querés comprar?</em>
-                </h2>
+            <div class="containerText">
+                <!-- titulo -->
+
+                <div class="containerPreg">
+                    <h2 class="titulo-pregunta">
+                        <em>¿Para quién querés comprar?</em>
+                    </h2>
+                </div>
+                <!-- subtitles -->
 
                 <div class="subtittle-pregunta">
                     <h3 class="optionH"><a href="./páginas/hombre.html">HOMBRE</a></h3>
                     <h3 class="optionM"><a href="./páginas/mujer.html">MUJER</a></h3>
                     <h3 class="optionN"><a href="./páginas/niños.html">NIÑOS</a></h3>
                 </div>
-
             </div>
+
+            <!-- comienzo imagenes -->
 
 
             <div class="containerPhotos">
 
-                <a class="photo1" href="./páginas/hombre.html"><img class="select-img"
-                        src="./assets/images/remera-hombre_edited.jpg" alt="hombres"></a>
+                <div>
+                    <a class="photo1" href="./páginas/hombre.html"><img class="select-img" src="./assets/images/remera-hombre_edited.jpg" alt="hombres"></a>
 
-                <a class="photo2" href="./páginas/mujer.html"><img class="select-img"
-                        src="./assets/images/portada-mujer_edited.jpg" alt="mujeres"></a>
+                </div>
 
-                <a class="photo3" href="./páginas/niños.html"><img class="select-img" src="./assets/images/edited.jpg"
-                        alt="niños"></a>
+                <div>
+                    <a class="photo2" href="./páginas/mujer.html"><img class="select-img"
+                            src="./assets/images/portada-mujer_edited.jpg" alt="mujeres"></a>
+                </div>
+
+                <div>
+                    <a class="photo3" href="./páginas/niños.html"><img class="select-img"
+                            src="./assets/images/edited.jpg" alt="niños"></a>
+                </div>
 
             </div>
         </section>
+
+        <!-- fin para quien queres comprar -->
+
+        <!-- inicio cuadro descuentos -->
 
         <section id="containerPagos">
 
@@ -496,17 +523,31 @@
             </div>
         </section>
 
+        <!-- fin cuadro descuentos -->
+
+        <!-- inicio formulario -->
+
         <section class="containerForm">
             <form id="formulario">
+
+                <!-- titulo -->
                 <fieldset id="formId">
                     <legend class="tituloForm"><b> Registrate y obtené un 10% de descuento</b></legend>
 
+                    <!-- fin titulo -->
+
+                    <!-- datos -->
+
                     <label class="titleForm" for="nombre">Nombre y Apellido:</label><input class="bodyForm" type="text"
-                        id="nombre" required> <!-- <br> -->
+                        id="nombre" required>
                     <label class="titleForm" for="correo">Correo Eléctronico:</label><input class="bodyForm"
-                        type="email" id="correo" required> <!-- <br> -->
+                        type="email" id="correo" required>
                     <label class="titleForm" for="contraseña">Contraseña:</label><input class="bodyForm" type="password"
-                        id="contraseña" required> <!-- <br> -->
+                        id="contraseña" required>
+
+                        <!-- fin datos -->
+
+                        <!-- select -->
 
                     <label class="titleForm" for="sexo">Género</label>
                     <select class="bodyForm" name="sexo" id="sexo">
@@ -515,7 +556,11 @@
                         <option value="otro">Otro</option>
                     </select>
 
+                    <!-- fin select -->
+
                     <div class="containerRadio">
+
+                        <!-- radio -->
 
                         <div class="inputRadio">
                             <p class="radioTitle">¿Desea recibir notificaciones sobre promociones?</p>
@@ -525,22 +570,34 @@
                             <p>Si</p><input class="radioForm" type="radio" name="yesnot">
                             <p>No</p><input class="radioForm" type="radio" name="yesnot">
                         </div>
+
+                        <!-- radio -->
                     </div>
+
+                    <!-- check -->
 
                     <div class="inputCheck">
                         <p>Acepto términos y condiciones:</p><input class="checkForm" type="checkbox" name="acepto"
                             value="1" required>
                     </div>
 
+                    <!-- check -->
+
+                    <!-- enviar form -->
+
                     <div class="inputSubmit">
                         <input class="formSubmit" type="submit" value="enviar datos">
                         <input class="formSubmit" type="reset" value="Limpiar formulario">
                     </div>
 
+                    <!-- fin enviaar -->
+
                 </fieldset>
             </form>
 
         </section>
+
+        <!-- fin formulario -->
 
     </main>
 

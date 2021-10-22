@@ -314,10 +314,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 30rem;
+  height: 35rem;
   box-shadow: 0px 0px 4px rgb(168, 168, 168);
-  width: 90%;
-  margin: 0rem 4.2rem;
+  width: 95%;
+  margin: 0rem 2rem 2rem 2rem;
   background: rgb(255, 255, 255);
 
   /* titulo */
@@ -340,18 +340,29 @@
   /* fin titulo */
 
   #carouselExampleControls {
+    grid-area: img;
+    width: 100%;
     display: flex;
+    justify-content: center;
     align-items: center;
-    width: 90%;
 
     .carousel-inner {
       overflow: hidden;
-      margin-left: 24rem;
+      margin-left: 33%;
+      margin-bottom: 70px;
+
+      .imagenCarou {
+        justify-self: center;
+        align-self: center;
+        border-radius: 20%;
+      }
     }
   }
 
   .carousel-control-prev {
-    margin: 0rem 7.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 /* fin slider */

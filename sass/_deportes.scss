@@ -194,13 +194,13 @@
 
 #rowTwo {
   display: flex;
-  column-gap: 1.5rem;
+  column-gap: 3rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 1.5rem 2rem 0rem 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
 
   .firstRow {
     position: relative;
@@ -305,12 +305,12 @@
 #rowUnisx {
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  column-gap: 3rem;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 
   .women {
     position: relative;
@@ -414,7 +414,7 @@
 
 #lastLayout {
   width: 100%;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 
   .lastPort {
     position: relative;

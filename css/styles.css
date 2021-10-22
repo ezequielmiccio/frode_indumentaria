@@ -10,6 +10,7 @@
 }
 
 /* imports */
+/* carpeta páginas */
 /* header en import */
 /* main */
 /* inicio sub-menú enlaces relativos */
@@ -428,7 +429,11 @@
 /* fin tercera section */
 /* inicio cuarta section row */
 #sectionForty {
-  width: 95%;
+  width: 100%;
+  padding: 2rem;
+  /* inicio titulo */
+  /* fin titulo */
+  /* imagenes row */
 }
 
 #sectionForty .titlePreRow {
@@ -467,7 +472,8 @@
   column-gap: 2rem;
   width: 100%;
   height: 30rem;
-  margin-left: 2rem;
+  /* fin primera imagen */
+  /* segunda imagen derecha */
 }
 
 #sectionForty .sectionRow .imgRow-one {
@@ -905,7 +911,7 @@
   display: flex;
   flex-direction: column;
   width: 100%;
-  padding: 2.2rem 2rem 0rem 2rem;
+  padding: 2.2rem 2rem 2rem 2rem;
 }
 
 #thirdSection .thirdTitle {
@@ -1282,10 +1288,10 @@
   display: flex;
   flex-direction: column;
   overflow: hidden;
-  height: 30rem;
+  height: 35rem;
   box-shadow: 0px 0px 4px #a8a8a8;
-  width: 90%;
-  margin: 0rem 4.2rem;
+  width: 95%;
+  margin: 0rem 2rem 2rem 2rem;
   background: white;
   /* titulo */
   /* fin titulo */
@@ -1307,18 +1313,29 @@
 }
 
 #containerCarousel #carouselExampleControls {
+  grid-area: img;
+  width: 100%;
   display: flex;
+  justify-content: center;
   align-items: center;
-  width: 90%;
 }
 
 #containerCarousel #carouselExampleControls .carousel-inner {
   overflow: hidden;
-  margin-left: 24rem;
+  margin-left: 33%;
+  margin-bottom: 70px;
+}
+
+#containerCarousel #carouselExampleControls .carousel-inner .imagenCarou {
+  justify-self: center;
+  align-self: center;
+  border-radius: 20%;
 }
 
 #containerCarousel .carousel-control-prev {
-  margin: 0rem 7.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* fin slider */
@@ -1507,13 +1524,13 @@
 /* segunda section row zapatillas */
 #rowTwo {
   display: flex;
-  column-gap: 1.5rem;
+  column-gap: 3rem;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: auto;
-  padding: 1.5rem 2rem 0rem 2rem;
+  padding: 1.5rem 2rem 1rem 2rem;
 }
 
 #rowTwo .firstRow {
@@ -1614,12 +1631,12 @@
 #rowUnisx {
   display: flex;
   flex-direction: row;
-  column-gap: 1.5rem;
+  column-gap: 3rem;
   align-items: center;
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 0.5rem 2rem;
+  padding: 1rem 2rem;
 }
 
 #rowUnisx .women {
@@ -1719,7 +1736,7 @@
 /* last layout */
 #lastLayout {
   width: 100%;
-  padding: 0rem 2rem 2rem 2rem;
+  padding: 1rem 2rem 2rem 2rem;
 }
 
 #lastLayout .lastPort {
@@ -1769,6 +1786,8 @@
 }
 
 /* fin last layout */
+/* fin carpeta páginas */
+/* header styles*/
 #header {
   width: 100%;
   height: 10rem;
@@ -1980,6 +1999,7 @@
 }
 
 /* fin registrate 10% off */
+/* header styles */
 /* inicio banner bootstrap */
 #sectionWeare {
   animation: backBanner 3s linear;
@@ -2033,13 +2053,12 @@
 /* fin banner bootstrap */
 /* tarjets black friday bootstrap */
 #sectionTarjets {
-  background-color: black;
+  background-image: linear-gradient(black 98%, #222);
   height: 38rem;
   width: 95%;
   margin: 28px 28px 28px 34px;
   box-shadow: 1px 1px 3px 1px dimgray;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  background-image: url("../assets/images/fond");
 }
 
 .card:hover .card-text {
@@ -2152,7 +2171,7 @@
 .layout__hombre__tittle h2 a {
   color: black;
   font-size: 6rem;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -2235,8 +2254,8 @@
   color: white;
   text-transform: uppercase;
   color: white;
-  font-family: 'Itim', cursive;
-  font-family: 'Staatliches', cursive;
+  font-family: "Itim", cursive;
+  font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -2278,7 +2297,7 @@
 .layout__mujer__tittle h2 a {
   color: black;
   font-size: 6rem;
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -2344,8 +2363,8 @@
   color: white;
   text-transform: uppercase;
   color: white;
-  font-family: 'Itim', cursive;
-  font-family: 'Staatliches', cursive;
+  font-family: "Itim", cursive;
+  font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
@@ -2366,11 +2385,10 @@
   justify-content: center;
   align-items: center;
   overflow: hidden;
-  height: 500px;
+  height: 40rem;
   box-shadow: 0px 0px 4px #575757;
-  width: 95%;
-  margin: 0px 28px 28px 34px;
-  margin-top: 3.6rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
   background: black;
 }
 
@@ -2382,7 +2400,7 @@
 }
 
 #container-carousel .titleCarousel h2 {
-  font-family: 'Staatliches', cursive;
+  font-family: "Staatliches", cursive;
   letter-spacing: 8px;
   font-size: 8rem;
   font-weight: 800;
@@ -2409,6 +2427,7 @@
   justify-self: center;
   align-self: center;
   border-radius: 20%;
+  padding-left: 1.2rem;
 }
 
 #container-carousel .carousel-control-prev {
@@ -2420,27 +2439,36 @@
 /* FIN CAROUSEL BOOTSTRAP*/
 /* inicio PARA QUIEN QUERES COMPRAR grid-flex */
 #comprar {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 3fr;
-  height: 550px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 40rem;
   background: linear-gradient(to bottom, #dd78bf, #7094bd);
   overflow: hidden;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 1px 1px 10px 1px #ccc;
-  width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 5px 1px #3d3d3d;
+  box-shadow: 0px 0px 4px #ccc;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  /* fin textos - opciones */
+  /* inicio imagenes */
 }
 
 #comprar .containerText {
-  grid-column: 1 / 4;
-}
-
-.containerText .titulo-pregunta {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 15rem;
+  padding: 2rem;
+}
+
+#comprar .containerText .containerPreg {
+  height: 50%;
+}
+
+#comprar .containerText .containerPreg .titulo-pregunta {
   font-size: 30px;
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -2449,66 +2477,44 @@
   color: white;
 }
 
-.containerText .subtittle-pregunta {
+#comprar .containerText .subtittle-pregunta {
   display: flex;
-  justify-content: space-evenly;
-  margin-top: 50px;
+  flex-direction: row;
+  column-gap: 14rem;
+  height: 50%;
+  padding-top: 3rem;
 }
 
-.containerText .optionH a {
-  grid-column: 1 / 2;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  line-height: 50px;
-  color: white;
-  font-weight: 500;
+#comprar .containerText .subtittle-pregunta h3 {
+  justify-self: space-between;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+#comprar .containerText .subtittle-pregunta h3 a {
   font-family: 'Alegreya Sans SC', sans-serif;
-  text-decoration: none;
-}
-
-.containerText .optionM a {
-  grid-column: 1 / 2;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  line-height: 50px;
-  color: white;
+  justify-self: space-between;
   font-weight: 500;
-  font-family: 'Alegreya Sans SC', sans-serif;
   text-decoration: none;
-}
-
-.containerText .optionN a {
-  grid-column: 1 / 2;
-  display: flex;
-  justify-content: center;
-  align-self: center;
-  align-items: center;
-  line-height: 50px;
+  text-transform: uppercase;
   color: white;
-  font-weight: 500;
-  font-family: 'Alegreya Sans SC', sans-serif;
-  text-decoration: none;
 }
 
-.subtittle-pregunta .optionH a:hover {
+#comprar .containerText .subtittle-pregunta .optionH a:hover {
   color: cyan;
   font-size: 32px;
   font-weight: bold;
   transition: all 500ms;
 }
 
-.subtittle-pregunta .optionM a:hover {
+#comprar .containerText .subtittle-pregunta .optionM a:hover {
   color: #eb36fc;
   font-size: 32px;
   font-weight: bold;
   transition: all 500ms;
 }
 
-.subtittle-pregunta .optionN a:hover {
+#comprar .containerText .subtittle-pregunta .optionN a:hover {
   color: #f7ea3a;
   font-size: 32px;
   font-weight: bold;
@@ -2517,25 +2523,27 @@
 
 #comprar .containerPhotos {
   display: flex;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  column-gap: 8rem;
   grid-column: 1 / 4;
   margin-top: 70px;
-  width: 90%;
-  padding-left: 150px;
+  width: 100%;
+  height: 60%;
 }
 
-.containerPhotos .select-img {
+#comprar .containerPhotos .select-img {
   border-radius: 100%;
   height: 220px;
   width: 220px;
 }
 
-.containerPhotos .select-img:hover {
-  height: 240px;
-  width: 240px;
-  box-shadow: 1px 1px 10px white;
-  transition: all 700ms;
+#comprar .containerPhotos .select-img:hover {
+  height: 225px;
+  width: 225px;
+  box-shadow: 0px 0px 10px white;
+  transition: all 300ms;
 }
 
 /* fin container para quien queres comprar grid-flex */
@@ -2546,13 +2554,10 @@
   grid-template-rows: 1fr 2fr;
   grid-template-areas: "title" "celda";
   background: linear-gradient(to bottom, rgba(65, 239, 245, 0.904), rgba(145, 46, 170, 0.932));
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 1px 1px 10px 1px #ccc;
+  height: 40rem;
   width: 100%;
-  height: 520px;
-  width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 5px 1px #3d3d3d;
+  box-shadow: 0px 0px 4px #ccc;
+  margin-bottom: 0.5rem;
 }
 
 #containerPagos .title__descuentos {
@@ -2625,13 +2630,12 @@ section.containerForm {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
   background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904), rgba(177, 53, 136, 0.932));
-  padding-top: 30px;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  height: 30rem;
-  width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 5px 1px #3d3d3d;
+  height: 40rem;
+  width: 100%;
+  margin-bottom: 0.5rem;
+  box-shadow: 0px 0px 4px #ccc;
 }
 
 #formulario {
@@ -2743,16 +2747,14 @@ footer {
   justify-content: center;
   align-items: center;
   font-size: 10px;
-  height: 100%;
+  height: 35rem;
   width: 100%;
   border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
-  margin-right: 1rem;
   color: black;
   font-size: 12px;
+  padding-top: 2rem;
   box-shadow: 0px 0px 4px #afafaf;
-  background: linear-gradient(to bottom, rgba(54, 54, 54, 0.904) 10%, rgba(0, 0, 0, 0.932));
+  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.904) 10%, rgba(0, 0, 0, 0.932));
 }
 
 footer .containerFooter {
@@ -2813,13 +2815,13 @@ footer .coder {
 /* fin footer index */
 /* textos */
 #registroSub {
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
 }
 
 body#myStyles {
   text-decoration: none;
   text-transform: none;
-  font-family: 'PT Mono', monospace;
+  font-family: "PT Mono", monospace;
 }
 
 #menu a {
