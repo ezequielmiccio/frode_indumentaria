@@ -1786,6 +1786,21 @@
 }
 
 /* fin last layout */
+/* header en import */
+/* quienes somos */
+#weAre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+}
+
+#weAre .aboutFrode {
+  background-color: whitesmoke;
+}
+
 /* fin carpeta páginas */
 /* header styles*/
 #header {
