@@ -1793,12 +1793,121 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  row-gap: 2rem;
   width: 100%;
   padding: 2rem;
+  height: 40rem;
 }
 
 #weAre .aboutFrode {
-  background-color: whitesmoke;
+  margin-bottom: 2rem;
+}
+
+#weAre .aboutFrode h1 {
+  font-family: "Staatliches", "cursive";
+  font-size: 5rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem 2rem 0rem 15rem;
+}
+
+#weAre .aboutFrode h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+  padding: 0rem 17rem;
+}
+
+#weAre .weAbout {
+  padding: 2rem 2rem 0rem 2rem;
+}
+
+#weAre .weAbout h2 {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: 100;
+  letter-spacing: 2px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 2rem 2rem 0rem 13rem;
+  margin-bottom: 0.5rem;
+}
+
+#weAre .weAbout h3 {
+  text-decoration: none;
+  font-family: "Staatliches", "cursive";
+  font-size: 1rem;
+  font-weight: 500;
+  letter-spacing: 2px;
+  color: black;
+  text-align: start;
+  padding: 0rem 15rem;
+}
+
+#weAre .weAbout p {
+  padding: 0rem 15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-decoration: none;
+}
+
+#aspiration {
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#aspiration .weImg {
+  width: 100%;
+}
+
+#aspiration .weImg figure img {
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+#aspiration .weTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  width: 100%;
+}
+
+#aspiration .weTxt h2 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+  border-bottom: 2px solid cyan;
+  margin-bottom: 5rem;
+}
+
+#aspiration .weTxt h3 {
+  font-family: "Staatliches", "cursive";
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#aspiration .weTxt p {
+  font-family: "Staatliches", "cursive";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1919;
 }
 
 /* fin carpeta páginas */
