@@ -430,7 +430,8 @@
 /* inicio cuarta section row */
 #sectionForty {
   width: 100%;
-  padding: 2rem;
+  padding: 0rem 2rem;
+  margin-bottom: 4rem;
   /* inicio titulo */
   /* fin titulo */
   /* imagenes row */
@@ -440,7 +441,7 @@
   margin: 4rem 0px;
 }
 
-#sectionForty .titlePreRow h1 {
+#sectionForty .titlePreRow h2 {
   font-family: "Staatliches", "cursive";
   font-size: 4rem;
   font-weight: bold;
@@ -451,7 +452,7 @@
   text-align: end;
 }
 
-#sectionForty .titlePreRow h2 {
+#sectionForty .titlePreRow h3 {
   color: black;
   width: 35%;
   font-family: "Staatliches", "cursive";
@@ -1797,6 +1798,8 @@
   width: 100%;
   padding: 2rem;
   height: 40rem;
+  /* fin sobre frode */
+  /* inicio objetivo */
 }
 
 #weAre .aboutFrode {
@@ -1859,20 +1862,25 @@
   text-decoration: none;
 }
 
+/* fin objetivo */
+/* inicio innovacion */
 #aspiration {
   width: 100%;
   padding: 2rem;
+  column-gap: 3rem;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 }
 
 #aspiration .weImg {
-  width: 100%;
+  border-top: 5px solid cyan;
+  border-left: 5px solid cyan;
+  position: relative;
 }
 
-#aspiration .weImg figure img {
+#aspiration .weImg img {
   box-shadow: 0px 0px 4px #ccc;
 }
 
@@ -1880,19 +1888,19 @@
   display: flex;
   flex-direction: column;
   justify-content: start;
-  align-items: flex-start;
-  width: 100%;
 }
 
 #aspiration .weTxt h2 {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   text-transform: uppercase;
   font-size: 1.2rem;
   font-weight: bold;
-  letter-spacing: 2px;
+  letter-spacing: 5px;
   color: black;
-  border-bottom: 2px solid cyan;
+  border-bottom: 3px solid cyan;
   margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  width: 10%;
 }
 
 #aspiration .weTxt h3 {
@@ -1908,8 +1916,184 @@
   font-size: 1rem;
   font-weight: 500;
   color: #1a1919;
+  align-self: center;
 }
 
+/* fin innovacion */
+/* inicio nuestro equipo */
+#weTeam {
+  width: 100%;
+  padding: 5rem 0rem 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+#weTeam .teamTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#weTeam .teamTxt h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: black;
+  border-bottom: 3px solid cyan;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  width: 45%;
+}
+
+#weTeam .teamTxt h3 {
+  font-family: "Staatliches", "cursive";
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#weTeam .teamTxt p {
+  font-family: "Staatliches", "cursive";
+  font-size: 1rem;
+  font-weight: 500;
+  color: #1a1919;
+  align-self: center;
+}
+
+#weTeam .teamImg {
+  border-right: 5px solid cyan;
+  border-bottom: 5px solid cyan;
+}
+
+#weTeam .teamImg img {
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+/* fin nuestro equipo */
+/* inicio impacto */
+#impact {
+  width: 100%;
+  padding: 5rem 4rem;
+  column-gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space;
+  align-items: center;
+}
+
+#impact .impactImg {
+  border-top: 5px solid cyan;
+  border-left: 5px solid cyan;
+}
+
+#impact .impactImg img {
+  box-shadow: 0px 0px 4px #ccc;
+}
+
+#impact .impactTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+}
+
+#impact .impactTxt h2 {
+  font-family: "Alegreya Sans SC", sans-serif;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  font-weight: bold;
+  letter-spacing: 5px;
+  color: black;
+  border-bottom: 3px solid cyan;
+  margin-bottom: 5rem;
+  padding-bottom: 1rem;
+  width: 10%;
+}
+
+#impact .impactTxt h3 {
+  padding-left: 10rem;
+  font-family: "Staatliches", "cursive";
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: black;
+}
+
+#impact .impactTxt p {
+  margin-left: 10rem;
+  font-family: "Staatliches", "cursive";
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+  text-align: center;
+}
+
+/* fin impacto */
+/* inicio map */
+#location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5rem 0rem;
+  height: 50rem;
+  margin-bottom: 5rem;
+  background-color: whitesmoke;
+}
+
+#location .locationTxt {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 3rem;
+  align-items: center;
+}
+
+#location .locationTxt h2 {
+  font-family: "Staatliches", "cursive";
+  font-size: 3rem;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+#location .ubication {
+  text-align: center;
+}
+
+#location .ubication h3 {
+  font-family: "Staatliches", "cursive";
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+#location .ubication .list {
+  align-self: center;
+  text-align: start;
+  margin-bottom: 2rem;
+}
+
+#location .ubication .list ul {
+  text-align: start;
+}
+
+#location .ubication .list ul li {
+  font-family: "Alegreya Sans SC, sans-serif";
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0rem 1rem;
+}
+
+#location .map {
+  border: 2px solid #f853ea;
+}
+
+/* fin map */
 /* fin carpeta páginas */
 /* header styles*/
 #header {
@@ -2175,96 +2359,254 @@
 }
 
 /* fin banner bootstrap */
-/* tarjets black friday bootstrap */
-#sectionTarjets {
-  background-image: linear-gradient(black 98%, #222);
-  height: 38rem;
-  width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 3px 1px dimgray;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+/* primera section img completa */
+#firstComplet {
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  position: relative;
 }
 
-.card:hover .card-text {
-  color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
+#firstComplet .firstPort {
+  position: relative;
 }
 
-.card:hover .btnText {
-  background-color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
+#firstComplet .firstPort img {
+  box-shadow: 0px 0px 4px #555555;
+  border-top: 3px solid cyan;
+  border-left: 4px solid purple;
 }
 
-#sectionTarjets .container {
-  padding-top: 12px;
+#firstComplet .txtRow {
+  display: flex;
+  flex-direction: row;
+  /* inicio vermas */
+  /* fin vermas */
+  /* inicio comprar */
 }
 
-.card:hover .cardImg {
-  box-shadow: 1px 1px 7px 1px white;
-}
-
-.card {
+#firstComplet .txtRow h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
   background-color: black;
-  border-radius: 1%;
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2rem;
+  left: 4rem;
+  bottom: 3rem;
+}
+
+#firstComplet .txtRow h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
   color: white;
-  box-shadow: 1px 1px 7px 1px white;
-  transition: all 300ms;
-  overflow: hidden;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
-.card:hover.cardDark {
-  background-color: #ff0077;
-  border-radius: 1%;
-  transition: all 300ms;
-}
-
-.card:hover.cardRun {
-  background-color: yellow;
-  transition: all;
-}
-
-.card:hover.cardCold {
-  background-color: #5c04ff;
-  transition: all 300ms;
-}
-
-.cardImg {
-  box-shadow: 1px 1px 7px 1px white;
-  overflow: hidden;
-}
-
-.card-text {
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-  font-size: 30px;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
-}
-
-.card-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-.card-p {
-  font-weight: 200;
-  text-align: center;
-}
-
-.btnText {
-  font-weight: bold;
-  text-align: center;
-  margin-left: 50px;
+#firstComplet .txtRow h2:hover {
+  box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
 }
 
-/* fin tarjets black friday bootstrap */
+#firstComplet .txtRow h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#firstComplet .txtRow h3 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2.2rem;
+  right: 4rem;
+  bottom: 3.1rem;
+}
+
+#firstComplet .txtRow h3 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#firstComplet .txtRow h3:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#firstComplet .txtRow h3:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+/* fin primera section img completa */
+/* inicio txt pre style */
+.preStyle {
+  height: 15rem;
+  padding: 2rem;
+  text-align: start;
+  margin-left: 5rem;
+}
+
+.preStyle h2 {
+  font-family: "Staatliches", "cursive";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: black;
+}
+
+.preStyle h3 {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  border-bottom: 3px solid black;
+  margin-left: 2rem;
+  margin-bottom: 3rem;
+  width: 30%;
+  color: black;
+}
+
+/* fin txt pre style */
+/* inicio row styles */
+#stylesFrode {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  overflow: hidden;
+  /* inicio img izquierda */
+  /* fin first img */
+  /* inicio img derecha */
+}
+
+#stylesFrode .firstRow {
+  position: relative;
+}
+
+#stylesFrode .firstRow img {
+  border-left: 5px solid cyan;
+  border-bottom: 5px solid cyan;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#stylesFrode .firstRow h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background-color: white;
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2rem;
+  bottom: 1rem;
+  left: 1.5rem;
+}
+
+#stylesFrode .firstRow h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#stylesFrode .firstRow h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#stylesFrode .firstRow h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#stylesFrode .secondRow {
+  position: relative;
+}
+
+#stylesFrode .secondRow img {
+  border-right: 5px solid purple;
+  border-top: 5px solid purple;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#stylesFrode .secondRow h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  background-color: black;
+  width: 7rem;
+  height: 2.5rem;
+  text-align: center;
+  line-height: 2rem;
+  bottom: 1rem;
+  left: 1.5rem;
+}
+
+#stylesFrode .secondRow h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+#stylesFrode .secondRow h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#stylesFrode .secondRow h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+/* fin row styles */
 /* inicio layout hombres grid */
 #layout__hombre {
   display: grid;
@@ -2403,7 +2745,7 @@
   height: 50rem;
   border: 1px solid #777777;
   box-shadow: 0px 0px 4px #242424;
-  background-image: linear-gradient(white, wheat);
+  background-image: linear-gradient(white, #ccc);
 }
 
 #layout__mujer .layout__mujer__tittle {
@@ -2500,6 +2842,96 @@
 }
 
 /* fin layout mujeres grid*/
+/* tarjets black friday bootstrap */
+#sectionTarjets {
+  background-image: linear-gradient(black 98%, #222);
+  height: 38rem;
+  width: 95%;
+  margin: 28px 28px 28px 34px;
+  box-shadow: 1px 1px 3px 1px dimgray;
+  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+}
+
+.card:hover .card-text {
+  color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+.card:hover .btnText {
+  background-color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+#sectionTarjets .container {
+  padding-top: 12px;
+}
+
+.card:hover .cardImg {
+  box-shadow: 1px 1px 7px 1px white;
+}
+
+.card {
+  background-color: black;
+  border-radius: 1%;
+  color: white;
+  box-shadow: 1px 1px 7px 1px white;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+.card:hover.cardDark {
+  background-color: #ff0077;
+  border-radius: 1%;
+  transition: all 300ms;
+}
+
+.card:hover.cardRun {
+  background-color: yellow;
+  transition: all;
+}
+
+.card:hover.cardCold {
+  background-color: #5c04ff;
+  transition: all 300ms;
+}
+
+.cardImg {
+  box-shadow: 1px 1px 7px 1px white;
+  overflow: hidden;
+}
+
+.card-text {
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.card-p {
+  font-weight: 200;
+  text-align: center;
+}
+
+.btnText {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 50px;
+  background-color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+/* fin tarjets black friday bootstrap */
 /* INICIO CAROUSEL BOOTSTRAP*/
 #container-carousel {
   display: grid;
@@ -2614,7 +3046,7 @@
 }
 
 #comprar .containerText .subtittle-pregunta h3 a {
-  font-family: 'Alegreya Sans SC', sans-serif;
+  font-family: "Alegreya Sans SC", sans-serif;
   justify-self: space-between;
   font-weight: 500;
   text-decoration: none;
@@ -2748,6 +3180,7 @@
 }
 
 /* fin forma de pagos */
+/* inicio formulario */
 section.containerForm {
   display: flex;
   flex-direction: row;
@@ -2935,31 +3368,6 @@ footer .coder {
 }
 
 /* fin footer index */
-/* textos */
-#registroSub {
-  font-family: "PT Mono", monospace;
-}
-
-body#myStyles {
-  text-decoration: none;
-  text-transform: none;
-  font-family: "PT Mono", monospace;
-}
-
-#menu a {
-  text-transform: uppercase;
-  font-weight: 100;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  transition: all 500ms;
-}
-
-#menu a:hover {
-  color: #00ebfc;
-  font-size: 20px;
-}
-
 /* responsive en preparacion*/
 @media (max-width: 780px) {
   #header {

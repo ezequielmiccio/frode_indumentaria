@@ -3,126 +3,316 @@
 /* quienes somos */
 
 #weAre {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+  width: 100%;
+  padding: 2rem;
+  height: 40rem;
+
+  .aboutFrode {
+    margin-bottom: 2rem;
+
+    h1 {
+      font-family: $font-miccio;
+      font-size: 5rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 2rem 2rem 0rem 15rem;
+    }
+
+    h2 {
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
+      padding: 0rem 17rem;
+    }
+  }
+
+  /* fin sobre frode */
+
+  /* inicio objetivo */
+
+  .weAbout {
+    padding: 2rem 2rem 0rem 2rem;
+
+    h2 {
+      font-family: $font-miccio;
+      font-size: 4rem;
+      font-weight: 100;
+      letter-spacing: 2px;
+      color: black;
+      text-decoration: none;
+      text-transform: uppercase;
+      padding: 2rem 2rem 0rem 13rem;
+      margin-bottom: 0.5rem;
+    }
+
+    h3 {
+      text-decoration: none;
+      font-family: $font-miccio;
+      font-size: 1rem;
+      font-weight: 500;
+      letter-spacing: 2px;
+      color: black;
+      text-align: start;
+      padding: 0rem 15rem;
+    }
+
+    p {
+      padding: 0rem 15rem;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 1rem;
+      font-weight: 500;
+      color: black;
+      text-decoration: none;
+    }
+  }
+}
+
+/* fin objetivo */
+
+/* inicio innovacion */
+
+#aspiration {
+  width: 100%;
+  padding: 2rem;
+  column-gap: 3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .weImg {
+    border-top: 5px solid cyan;
+    border-left: 5px solid cyan;
+    position: relative;
+    img {
+      box-shadow: 0px 0px 4px #ccc;
+    }
+  }
+
+  .weTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    h2 {
+      font-family: "Alegreya Sans SC", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: black;
+      border-bottom: 3px solid cyan;
+      margin-bottom: 5rem;
+      padding-bottom: 1rem;
+      width: 10%;
+    }
+
+    h3 {
+      font-family: $font-miccio;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+    }
+
+    p {
+      font-family: $font-miccio;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(26, 25, 25);
+      align-self: center;
+    }
+  }
+}
+
+/* fin innovacion */
+
+/* inicio nuestro equipo */
+
+#weTeam {
+  width: 100%;
+  padding: 5rem 0rem 2rem 1rem;
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: space-evenly;
+  align-items: center;
+
+  .teamTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    h2 {
+      font-family: "Alegreya Sans SC", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: black;
+      border-bottom: 3px solid cyan;
+      margin-bottom: 5rem;
+      padding-bottom: 1rem;
+      width: 45%;
+    }
+
+    h3 {
+      font-family: $font-miccio;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+    }
+
+    p {
+      font-family: $font-miccio;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(26, 25, 25);
+      align-self: center;
+    }
+  }
+
+  .teamImg {
+    border-right: 5px solid cyan;
+    border-bottom: 5px solid cyan;
+    img {
+      box-shadow: 0px 0px 4px #ccc;
+    }
+  }
+}
+
+/* fin nuestro equipo */
+
+/* inicio impacto */
+
+#impact {
+    width: 100%;
+    padding: 5rem 4rem;
+    column-gap: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space;
+
+    align-items: center;
+
+  .impactImg {
+    border-top: 5px solid cyan;
+    border-left: 5px solid cyan;
+
+      img{
+        box-shadow: 0px 0px 4px #ccc;
+      }
+  }
+
+  .impactTxt {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    h2 {
+      font-family: "Alegreya Sans SC", sans-serif;
+      text-transform: uppercase;
+      font-size: 1.2rem;
+      font-weight: bold;
+      letter-spacing: 5px;
+      color: black;
+      border-bottom: 3px solid cyan;
+      margin-bottom: 5rem;
+      padding-bottom: 1rem;
+      width: 10%;
+    }
+
+    h3 {
+      padding-left: 10rem;
+      font-family: $font-miccio;
+      font-size: 1.5rem;
+      font-weight: bold;
+      letter-spacing: 2px;
+      color: black;
+    }
+
+    p {
+     margin-left: 10rem;
+      font-family: $font-miccio;
+      font-size: 1rem;
+      font-weight: 500;
+      color: rgb(0, 0, 0);
+      text-align: center;
+    }
+  }
+}
+
+/* fin impacto */
+
+/* inicio map */
+
+#location {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 100%;
+  padding: 5rem 0rem;
+  height: 50rem;
+  margin-bottom: 5rem;
+  background-color: whitesmoke;
+
+  .locationTxt {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    row-gap: 2rem;
-    width: 100%;
-    padding: 2rem;
-    height: 40rem;
-
-    .aboutFrode {
-        margin-bottom: 2rem;
-
-        h1 {
-            font-family: $font-miccio;
-            font-size: 5rem;
-            font-weight: 100;
-            letter-spacing: 2px;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 2rem 2rem 0rem 15rem;
-            
-        }
-
-        h2 {
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            color: black;
-            text-decoration: none;
-            padding: 0rem 17rem;
-         
-        }
-    }
-
-    .weAbout {
-        padding: 2rem 2rem 0rem 2rem;
-
-        h2 {
-            font-family: $font-miccio;
-            font-size: 4rem;
-            font-weight: 100;
-            letter-spacing: 2px;
-            color: black;
-            text-decoration: none;
-            text-transform: uppercase;
-            padding: 2rem 2rem 0rem 13rem;
-            margin-bottom: 0.5rem;
-        }
-
-        h3 {
-            text-decoration: none;
-            font-family: $font-miccio;
-            font-size: 1rem;
-            font-weight: 500;
-            letter-spacing: 2px;
-            color: black;
-            text-align: start;
-            padding: 0rem 15rem;
-        }
-
-        p {
-            padding: 0rem 15rem;
-            font-family: Arial, Helvetica, sans-serif;
-            font-size: 1rem;
-            font-weight: 500;
-            color: black;
-            text-decoration: none;
-        }
-    }
-}
-
-#aspiration {
-    width: 100%;
-    padding: 2rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
+    row-gap: 3rem;
     align-items: center;
 
-    .weImg {
-        width: 100%;
-        figure {
-            img {
-                box-shadow: 0px 0px 4px #ccc;
-            }
-        }
+    h2 {
+      font-family: $font-miccio;
+      font-size: 3rem;
+      letter-spacing: 1px;
+      text-align: center;
+    }
+  }
+
+  .ubication {
+       text-align: center;
+
+    h3 {
+      font-family: $font-miccio;
+      font-size: 1.5rem;
+      text-align: center;
     }
 
-    .weTxt {
-        display: flex;
-        flex-direction: column;
-        justify-content: start;
-        align-items: flex-start;
-        width: 100%;
+    .list {
+      align-self: center;
+      text-align: start;
+      margin-bottom: 2rem;
 
-        h2 {
-            font-family: 'Alegreya Sans SC', sans-serif;
-            text-transform: uppercase;
-            font-size: 1.2rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: black;
-            border-bottom: 2px solid cyan;
-            margin-bottom: 5rem;
-        }
+      ul {
+        text-align: start;
 
-        h3 {
-            font-family: $font-miccio;
-            font-size: 1.5rem;
-            font-weight: bold;
-            letter-spacing: 2px;
-            color: black;
-        }
-
-        p {
-            font-family: $font-miccio;
-            font-size: 1rem;
+        li {
+            font-family: "Alegreya Sans SC, sans-serif";
+            text-decoration: none;
             font-weight: 500;
-            color: rgb(26, 25, 25);
+            padding: 0rem 1rem;
         }
+      }
     }
+  }
+
+  .map {
+      border: 2px solid rgb(248, 83, 234);
+  }
 }
+
+/* fin map */

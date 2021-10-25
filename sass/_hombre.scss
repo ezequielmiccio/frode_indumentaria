@@ -441,14 +441,15 @@
 
 #sectionForty {
   width: 100%;
-  padding: 2rem;
+  padding: 0rem 2rem;
+  margin-bottom: 4rem;
 
   /* inicio titulo */
 
   .titlePreRow {
     margin: 4rem 0px;
     
-    & h1 {
+    & h2 {
       font-family: $font-miccio;
       font-size: 4rem;
       font-weight: bold;
@@ -459,7 +460,7 @@
       text-align: end;
     }
     
-    & h2 {
+    & h3 {
       color: black;
       width: 35%;
       font-family: $font-miccio;

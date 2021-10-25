@@ -82,97 +82,264 @@ $font-miccio: "Staatliches", "cursive";
 
 /* fin banner bootstrap */
 
-/* tarjets black friday bootstrap */
+/* primera section img completa */
 
-#sectionTarjets {
-  background-image: linear-gradient(black 98%, #222);
-  height: 38rem;
-  width: 95%;
-  margin: 28px 28px 28px 34px;
-  box-shadow: 1px 1px 3px 1px rgb(105, 105, 105);
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-}
-
-.card:hover .card-text {
-  color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
-}
-
-.card:hover .btnText {
-  background-color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
-}
-
-#sectionTarjets .container {
-  padding-top: 12px;
-}
-
-.card:hover .cardImg {
-  box-shadow: 1px 1px 7px 1px white;
-}
-
-.card {
-  background-color: black;
-  border-radius: 1%;
-  color: white;
-  box-shadow: 1px 1px 7px 1px white;
-  transition: all 300ms;
+#firstComplet {
+  width: 100%;
+  padding: 2rem;
   overflow: hidden;
+  position: relative;
+
+  .firstPort {
+    position: relative;
+    img {
+      box-shadow: 0px 0px 4px rgb(85, 85, 85);
+      border-top: 3px solid cyan;
+      border-left: 4px solid purple;
+    }
+  }
+
+  .txtRow {
+    display: flex;
+    flex-direction: row;
+
+    /* inicio vermas */
+
+    h2 {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      background-color: black;
+      width: 7rem;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2rem;
+      left: 4rem;
+      bottom: 3rem;
+
+      a {
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 6px cyan;
+        background-color: cyan;
+        border: 1px solid cyan;
+        width: 7.2rem;
+        height: 2.7rem;
+        transition: all 300ms;
+
+        &:hover > a {
+          color: black;
+          font-weight: bold;
+          transition: all 300ms;
+        }
+      }
+    }
+
+    /* fin vermas */
+
+    /* inicio comprar */
+
+    h3 {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      background-color: white;
+      width: 7rem;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2.2rem;
+      right: 4rem;
+      bottom: 3.1rem;
+
+      a {
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 20px;
+        color: black;
+        text-decoration: none;
+        text-transform: uppercase;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 6px cyan;
+        background-color: cyan;
+        border: 1px solid cyan;
+        width: 7.2rem;
+        height: 2.7rem;
+        transition: all 300ms;
+
+        &:hover > a {
+          color: white;
+          font-weight: bold;
+          transition: all 300ms;
+        }
+      }
+    }
+  }
 }
 
-.card:hover.cardDark {
-  background-color: rgb(255, 0, 119);
-  border-radius: 1%;
-  transition: all 300ms;
+/* fin primera section img completa */
+
+/* inicio txt pre style */
+
+.preStyle {
+  height: 15rem;
+  padding: 2rem;
+  text-align: start;
+  margin-left: 5rem;
+
+  h2 {
+    font-family: $font-miccio;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    color: black;
+  }
+
+  h3 {
+    font-family: $font-miccio;
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+    letter-spacing: 1px;
+    border-bottom: 3px solid black;
+    margin-left: 2rem;
+    margin-bottom: 3rem;
+    width: 30%;
+    color: black;
+  }
 }
 
-.card:hover.cardRun {
-  background-color: yellow;
-  transition: all;
-}
+/* fin txt pre style */
 
-.card:hover.cardCold {
-  background-color: rgb(92, 4, 255);
-  transition: all 300ms;
-}
+/* inicio row styles */
 
-.cardImg {
-  box-shadow: 1px 1px 7px 1px white;
+#stylesFrode {
+  display: flex;
+  flex-direction: row;
+  column-gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
   overflow: hidden;
+
+  /* inicio img izquierda */
+
+  .firstRow {
+    position: relative;
+
+    img {
+      border-left: 5px solid cyan;
+      border-bottom: 5px solid cyan;
+      box-shadow: 0px 0px 4px #666;
+    }
+
+    h2 {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      background-color: white;
+      width: 7rem;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2rem;
+      bottom: 1rem;
+      left: 1.5rem;
+
+      a {
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: italic;
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 6px cyan;
+        background-color: cyan;
+        border: 1px solid cyan;
+        width: 7.2rem;
+        height: 2.7rem;
+        transition: all 300ms;
+
+        &:hover > a {
+          color: white;
+          font-weight: bold;
+          transition: all 300ms;
+        }
+      }
+    }
+  }
+
+  /* fin first img */
+
+  /* inicio img derecha */
+
+  .secondRow {
+    position: relative;
+
+    img {
+      border-right: 5px solid purple;
+      border-top: 5px solid purple;
+      box-shadow: 0px 0px 4px #666;
+    }
+
+    h2 {
+      display: block;
+      position: absolute;
+      z-index: 10;
+      background-color: black;
+      width: 7rem;
+      height: 2.5rem;
+      text-align: center;
+      line-height: 2rem;
+      bottom: 1rem;
+      left: 1.5rem;
+
+      a {
+        font-family: $font-miccio;
+        font-weight: bold;
+        font-size: 20px;
+        font-style: italic;
+        color: white;
+        text-transform: uppercase;
+        text-decoration: none;
+      }
+
+      &:hover {
+        box-shadow: 0px 0px 6px cyan;
+        background-color: cyan;
+        border: 1px solid cyan;
+        width: 7.2rem;
+        height: 2.7rem;
+        transition: all 300ms;
+
+        &:hover > a {
+          color: black;
+          font-weight: bold;
+          transition: all 300ms;
+        }
+      }
+    }
+  }
 }
 
-.card-text {
-  font-weight: bold;
-  text-align: center;
-  font-style: italic;
-  font-size: 30px;
-  box-shadow: 1px 1px 5px 1px white;
-  transition: all 300ms;
-}
-
-.card-title {
-  font-family: Arial, Helvetica, sans-serif;
-  font-style: italic;
-  font-weight: 300;
-  font-size: 18px;
-}
-
-.card-p {
-  font-weight: 200;
-  text-align: center;
-}
-
-.btnText {
-  font-weight: bold;
-  text-align: center;
-  margin-left: 50px;
-  background-color: cyan;
-  box-shadow: 1px 1px 5px 1px white;
-}
-
-/* fin tarjets black friday bootstrap */
+/* fin row styles */
 
 /* inicio layout hombres grid */
 
@@ -325,7 +492,7 @@ $font-miccio: "Staatliches", "cursive";
   height: 50rem;
   border: 1px solid rgb(119, 119, 119);
   box-shadow: 0px 0px 4px rgb(36, 36, 36);
-  background-image: linear-gradient(white, wheat);
+  background-image: linear-gradient(white, #ccc);
 }
 
 #layout__mujer .layout__mujer__tittle {
@@ -421,7 +588,100 @@ $font-miccio: "Staatliches", "cursive";
   transition: all 300ms;
 }
 
+
 /* fin layout mujeres grid*/
+
+/* tarjets black friday bootstrap */
+
+#sectionTarjets {
+  background-image: linear-gradient(black 98%, #222);
+  height: 38rem;
+  width: 95%;
+  margin: 28px 28px 28px 34px;
+  box-shadow: 1px 1px 3px 1px rgb(105, 105, 105);
+  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
+}
+
+.card:hover .card-text {
+  color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+.card:hover .btnText {
+  background-color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+#sectionTarjets .container {
+  padding-top: 12px;
+}
+
+.card:hover .cardImg {
+  box-shadow: 1px 1px 7px 1px white;
+}
+
+.card {
+  background-color: black;
+  border-radius: 1%;
+  color: white;
+  box-shadow: 1px 1px 7px 1px white;
+  transition: all 300ms;
+  overflow: hidden;
+}
+
+.card:hover.cardDark {
+  background-color: rgb(255, 0, 119);
+  border-radius: 1%;
+  transition: all 300ms;
+}
+
+.card:hover.cardRun {
+  background-color: yellow;
+  transition: all;
+}
+
+.card:hover.cardCold {
+  background-color: rgb(92, 4, 255);
+  transition: all 300ms;
+}
+
+.cardImg {
+  box-shadow: 1px 1px 7px 1px white;
+  overflow: hidden;
+}
+
+.card-text {
+  font-weight: bold;
+  text-align: center;
+  font-style: italic;
+  font-size: 30px;
+  box-shadow: 1px 1px 5px 1px white;
+  transition: all 300ms;
+}
+
+.card-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 18px;
+}
+
+.card-p {
+  font-weight: 200;
+  text-align: center;
+}
+
+.btnText {
+  font-weight: bold;
+  text-align: center;
+  margin-left: 50px;
+  background-color: cyan;
+  box-shadow: 1px 1px 5px 1px white;
+}
+
+/* fin tarjets black friday bootstrap */
 
 /* INICIO CAROUSEL BOOTSTRAP*/
 
@@ -496,7 +756,11 @@ $font-miccio: "Staatliches", "cursive";
   align-items: center;
   justify-content: center;
   height: 40rem;
-  background: linear-gradient(to bottom, rgb(221, 120, 191), rgb(112, 148, 189));
+  background: linear-gradient(
+    to bottom,
+    rgb(221, 120, 191),
+    rgb(112, 148, 189)
+  );
   overflow: hidden;
   box-shadow: 0px 0px 4px #ccc;
   width: 100%;
@@ -512,7 +776,7 @@ $font-miccio: "Staatliches", "cursive";
     padding: 2rem;
 
     .containerPreg {
-        height: 100%;
+      height: 100%;
 
       .titulo-pregunta {
         font-size: 3rem;
@@ -526,48 +790,47 @@ $font-miccio: "Staatliches", "cursive";
     }
 
     .subtittle-pregunta {
-        display: flex;
-        flex-direction: row;
-        column-gap: 18rem;
-        height: 40%;
-        padding-top: 1.5rem;
+      display: flex;
+      flex-direction: row;
+      column-gap: 18rem;
+      height: 40%;
+      padding-top: 1.5rem;
 
-        h3 {
-            font-size: 1.5rem;
-            
-            a {
-                font-family: 'Alegreya Sans SC', sans-serif;
-                justify-self: space-between;
-                font-weight: 500;
-                text-decoration: none;
-                text-transform: uppercase;
-                color: white;
-            }
-        }
+      h3 {
+        font-size: 1.5rem;
 
-        .optionH a:hover {
-            color: cyan;
-            font-size: 32px;
-            font-weight: bold;
-            transition: all 500ms;
+        a {
+          font-family: "Alegreya Sans SC", sans-serif;
+          justify-self: space-between;
+          font-weight: 500;
+          text-decoration: none;
+          text-transform: uppercase;
+          color: white;
         }
-        
-        .optionM a:hover {
-            color: rgb(235, 54, 252);
-            font-size: 32px;
-            font-weight: bold;
-            transition: all 500ms;
-        }
-        
-        .optionN a:hover {
-            color: rgb(247, 234, 58);
-            font-size: 32px;
-            font-weight: bold;
-            transition: all 500ms;
-            
-        }
-     }
- }
+      }
+
+      .optionH a:hover {
+        color: cyan;
+        font-size: 32px;
+        font-weight: bold;
+        transition: all 500ms;
+      }
+
+      .optionM a:hover {
+        color: rgb(235, 54, 252);
+        font-size: 32px;
+        font-weight: bold;
+        transition: all 500ms;
+      }
+
+      .optionN a:hover {
+        color: rgb(247, 234, 58);
+        font-size: 32px;
+        font-weight: bold;
+        transition: all 500ms;
+      }
+    }
+  }
   /* fin textos - opciones */
 
   /* inicio imagenes */
@@ -582,20 +845,20 @@ $font-miccio: "Staatliches", "cursive";
     width: 100%;
     height: 50%;
     padding-left: 0.5rem;
-    
+
     .select-img {
-        border-radius: 100%;
-        height: 220px;
-        width: 220px;
-        
-        &:hover {
-            height: 225px;
-            width: 225px;
-            box-shadow: 0px 0px 10px white;
-            transition: all 300ms;
-        }
+      border-radius: 100%;
+      height: 220px;
+      width: 220px;
+
+      &:hover {
+        height: 225px;
+        width: 225px;
+        box-shadow: 0px 0px 10px white;
+        transition: all 300ms;
+      }
     }
-}
+  }
 }
 /* fin container para quien queres comprar grid-flex */
 
@@ -608,7 +871,11 @@ $font-miccio: "Staatliches", "cursive";
   grid-template-areas:
     "title"
     "celda";
-  background: linear-gradient(to bottom,rgba(65, 239, 245, 0.904),rgba(145, 46, 170, 0.932));
+  background: linear-gradient(
+    to bottom,
+    rgba(65, 239, 245, 0.904),
+    rgba(145, 46, 170, 0.932)
+  );
   height: 40rem;
   width: 100%;
   box-shadow: 0px 0px 4px #ccc;
@@ -687,12 +954,18 @@ $font-miccio: "Staatliches", "cursive";
 
 /* fin forma de pagos */
 
+/* inicio formulario */
+
 section.containerForm {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(to bottom, rgba(69, 207, 166, 0.904),rgba(177, 53, 136, 0.932));
+  background: linear-gradient(
+    to bottom,
+    rgba(69, 207, 166, 0.904),
+    rgba(177, 53, 136, 0.932)
+  );
   height: 40rem;
   width: 100%;
   margin-bottom: 0.5rem;
@@ -707,7 +980,11 @@ section.containerForm {
   height: 26rem;
   width: auto;
   border: 3px solid white;
-  background: linear-gradient(to bottom, rgba(240, 71, 164, 0.904), rgba(27, 124, 131, 0.932));
+  background: linear-gradient(
+    to bottom,
+    rgba(240, 71, 164, 0.904),
+    rgba(27, 124, 131, 0.932)
+  );
   color: white;
   font-size: 14px;
 }
@@ -819,7 +1096,11 @@ footer {
   font-size: 12px;
   padding-top: 2rem;
   box-shadow: 0px 0px 4px rgb(175, 175, 175);
-  background: linear-gradient(to bottom, rgba(15, 15, 15, 0.904) 10%, rgba(0, 0, 0, 0.932));
+  background: linear-gradient(
+    to bottom,
+    rgba(15, 15, 15, 0.904) 10%,
+    rgba(0, 0, 0, 0.932)
+  );
 }
 
 footer .containerFooter {
@@ -878,32 +1159,6 @@ footer .coder {
 }
 
 /* fin footer index */
-
-/* textos */
-
-#registroSub {
-  font-family: "PT Mono", monospace;
-}
-
-body#myStyles {
-  text-decoration: none;
-  text-transform: none;
-  font-family: "PT Mono", monospace;
-}
-
-#menu a {
-  text-transform: uppercase;
-  font-weight: 100;
-  color: white;
-  padding: 5px;
-  text-decoration: none;
-  transition: all 500ms;
-}
-
-#menu a:hover {
-  color: rgb(0, 235, 252);
-  font-size: 20px;
-}
 
 /* responsive en preparacion*/
 
