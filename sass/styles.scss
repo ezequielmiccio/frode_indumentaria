@@ -375,13 +375,14 @@ $font-miccio: "Staatliches", "cursive";
 }
 
 .layout__hombre__tittle h2 a {
-  color: black;
+  color: white;
+  text-shadow: 1px 1px 4px black;
   font-size: 6rem;
   font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid grey;
   font-style: italic;
 }
 
@@ -508,13 +509,14 @@ $font-miccio: "Staatliches", "cursive";
 }
 
 .layout__mujer__tittle h2 a {
-  color: black;
+  color: white;
+  text-shadow: 1px 1px 4px black;
   font-size: 6rem;
   font-family: "Staatliches", cursive;
   letter-spacing: 5px;
   font-weight: bold;
   text-decoration: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid purple;
   font-style: italic;
 }
 
