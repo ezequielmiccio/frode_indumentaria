@@ -2374,7 +2374,7 @@
 #firstComplet .firstPort img {
   box-shadow: 0px 0px 4px #555555;
   border-top: 3px solid cyan;
-  border-left: 4px solid purple;
+  border-left: 4px solid violet;
 }
 
 #firstComplet .txtRow {
@@ -2754,243 +2754,257 @@
 }
 
 /* fin row marcas */
-/* inicio layout hombres grid */
-#layout__hombre {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20% 1% 75% 15%;
-  grid-template-areas: "head head" "menu menu" "contenido contenido" "pie pie";
-  width: 95%;
-  margin: 28px 28px 90px 34px;
-  height: 870px;
-  height: 50rem;
-  border: 1px solid #777777;
-  box-shadow: 0px 0px 4px #242424;
-  background-image: linear-gradient(white, #dfdfdf);
-}
-
-#layout__hombre .layout__hombre__tittle {
-  grid-area: head;
-  width: 100%;
-  height: 100%;
-}
-
-.layout__hombre__tittle h2 {
-  text-align: start;
-  padding-top: 2rem;
-  padding-left: 4rem;
-}
-
-.layout__hombre__tittle h2 a {
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  font-size: 6rem;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid grey;
-  font-style: italic;
-}
-
-.layout__hombre__tittle h2 a:hover {
-  font-size: 6.5rem;
-  color: cyan;
-  border-bottom: 2px solid cyan;
-  transition: all 500ms;
-}
-
-#layout__hombre .layout__hombre__menu {
-  grid-area: menu;
-  align-items: center;
-  background-color: #111111ad;
-  border: 1px solid white;
-  padding: 12px;
-}
-
-.layout__hombre__menu ul {
-  display: flex;
-  justify-content: space-evenly;
-  color: white;
-}
-
-#layout__hombre .layout__hombre__menu ul li:hover {
-  background-color: #00e1ff;
-  color: white;
-  transition: all 500ms;
-  box-shadow: 1px 1px 3px #fdffff;
-}
-
-#layout__hombre .layout__hombre__contenido {
-  display: grid;
-  align-items: center;
-  grid-area: contenido;
-  grid-template-columns: repeat(3, 1fr);
-  padding: 12px;
-  margin-bottom: 40px;
-}
-
-.layout__hombre__contenido .layout__hombre__image {
+/* inicio layout niños */
+#rowKids {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.layout__hombre__image .img {
-  width: 400px;
-  height: 490px;
-  border-radius: 10%;
-  box-shadow: 0px 0px 4px #acacac;
-}
-
-.layout__hombre__image .img:hover {
-  width: 420px;
-  height: 520px;
-  border-radius: 5%;
-  box-shadow: 0px 0px 6px #80ecec;
-  transition: all 500ms;
-}
-
-#layout__hombre .layout__hombre__comprar {
-  grid-area: pie;
-  display: flex;
   align-items: center;
   justify-content: center;
-  padding-top: 10px;
+  column-gap: 3rem;
   width: 100%;
-  height: 75%;
+  padding: 2rem;
+}
+
+#rowKids .firstKids {
+  position: relative;
+}
+
+#rowKids .firstKids img {
+  border-top: 5px solid cyan;
+  border-left: 5px solid violet;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#rowKids .firstKids h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  bottom: 1rem;
+  right: 1.5rem;
   background-color: black;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 1px 1px 10px 1px #ccc;
-}
-
-.layout__hombre__comprar h2 a {
-  color: white;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Itim", cursive;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 5px;
-  font-weight: bold;
-  text-decoration: none;
-}
-
-.layout__hombre__comprar h2 a:hover {
-  color: cyan;
-  height: 70%;
-  transition: all 500ms;
-}
-
-/* fin layout hombres grid */
-/* inicio layout mujeres grid */
-#layout__mujer {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: 20% 1% 78% 15%;
-  grid-template-areas: "title title" "barra barra" "image image" "footer footer";
-  width: 95%;
-  margin: 28px 28px 110px 34px;
-  height: 50rem;
-  border: 1px solid #777777;
-  box-shadow: 0px 0px 4px #242424;
-  background-image: linear-gradient(white, #ccc);
-}
-
-#layout__mujer .layout__mujer__tittle {
-  grid-area: title;
-  width: 100%;
-  height: 100%;
-}
-
-.layout__mujer__tittle h2 {
-  text-align: end;
-  padding-top: 2rem;
-  padding-right: 4rem;
-}
-
-.layout__mujer__tittle h2 a {
-  color: white;
-  text-shadow: 1px 1px 4px black;
-  font-size: 6rem;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 5px;
-  font-weight: bold;
-  text-decoration: none;
-  border-bottom: 2px solid purple;
-  font-style: italic;
-}
-
-.layout__mujer__tittle h2 a:hover {
-  font-size: 6.5rem;
-  color: magenta;
-  border-bottom: 2px solid #f31dbe;
-  transition: all 500ms;
-}
-
-#layout__mujer .layout__mujer__contenido {
-  display: grid;
-  align-items: center;
-  justify-content: space-evenly;
-  grid-template-columns: repeat(3, 30%);
-  grid-area: image;
-  grid-column-gap: 5px;
-  width: 100%;
-  margin-bottom: 45px;
-}
-
-.layout__mujer__contenido .layout__mujer__image {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-.layout__mujer__image .img {
-  width: 400px;
-  height: 410px;
-  border-radius: 10%;
-  box-shadow: 0px 0px 4px #acacac;
-}
-
-.layout__mujer__image .img:hover {
-  width: 420px;
-  height: 420px;
-  border-radius: 5%;
-  box-shadow: 1px 1px 7px #ef44ff;
-  transition: all 500ms;
-  box-shadow: 1px 1px 10px 1px #e58ce5;
-}
-
-#layout__mujer .layout__mujer__comprar {
-  grid-area: footer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding-top: 10px;
-  background: black;
-  width: 100%;
-  height: 75%;
   text-align: center;
-  border-bottom: 1px solid rgba(207, 197, 197, 0.8);
-  box-shadow: 1px 1px 10px 1px #ccc;
+  line-height: 2rem;
 }
 
-.layout__mujer__comprar h2 a {
-  color: white;
-  text-transform: uppercase;
-  color: white;
-  font-family: "Itim", cursive;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 5px;
+#rowKids .firstKids h2 a {
+  font-family: "Staatliches", "cursive";
   font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: white;
   text-decoration: none;
+  text-transform: uppercase;
 }
 
-.layout__mujer__comprar h2 a:hover {
-  color: #ff3ad4;
+#rowKids .firstKids h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
   transition: all 300ms;
 }
 
-/* fin layout mujeres grid*/
+#rowKids .firstKids h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#rowKids .secondKids {
+  position: relative;
+}
+
+#rowKids .secondKids img {
+  border-right: 5px solid violet;
+  border-bottom: 5px solid cyan;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#rowKids .secondKids h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  width: 7rem;
+  height: 2.5rem;
+  bottom: 1rem;
+  right: 1.5rem;
+  background-color: white;
+  text-align: center;
+  line-height: 2rem;
+}
+
+#rowKids .secondKids h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-style: italic;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#rowKids .secondKids h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#rowKids .secondKids h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+/* fin layout niños */
+/* inicio row hombres */
+#sectionMens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 60rem;
+  padding: 2rem;
+}
+
+#sectionMens .menTitle h2 {
+  font-family: "Staatliches", "cursive";
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  color: black;
+  margin-left: 6rem;
+}
+
+#sectionMens .menTitle h3 {
+  font-family: "Staatliches", "cursive";
+  font-size: 4rem;
+  font-weight: bold;
+  font-style: italic;
+  letter-spacing: 1px;
+  border-bottom: 3px solid black;
+  margin-left: 10rem;
+  margin-bottom: 4.5rem;
+  width: 14%;
+  color: black;
+}
+
+#sectionMens .menLayout {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+}
+
+#sectionMens .menLayout .firstRow {
+  position: relative;
+}
+
+#sectionMens .menLayout .firstRow img {
+  border-left: 5px solid orangered;
+  border-bottom: 5px solid orange;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#sectionMens .menLayout .firstRow h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  background-color: black;
+  border: 1px solid orangered;
+  width: 7rem;
+  height: 2.5rem;
+  bottom: 1rem;
+  right: 1rem;
+  line-height: 0.8rem;
+}
+
+#sectionMens .menLayout .firstRow h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#sectionMens .menLayout .firstRow h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#sectionMens .menLayout .firstRow h2:hover:hover > a {
+  color: black;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+#sectionMens .menLayout .secondRow {
+  position: relative;
+}
+
+#sectionMens .menLayout .secondRow img {
+  border-top: 5px solid #04d37d;
+  border-right: 5px solid cyan;
+  box-shadow: 0px 0px 4px #666;
+}
+
+#sectionMens .menLayout .secondRow h2 {
+  display: block;
+  position: absolute;
+  z-index: 10;
+  text-align: center;
+  background-color: white;
+  border: 1px solid cyan;
+  width: 7rem;
+  height: 2.5rem;
+  right: 1.2rem;
+  bottom: 1rem;
+  line-height: 0.8rem;
+}
+
+#sectionMens .menLayout .secondRow h2 a {
+  font-family: "Staatliches", "cursive";
+  font-weight: bold;
+  font-size: 20px;
+  font-style: italic;
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#sectionMens .menLayout .secondRow h2:hover {
+  box-shadow: 0px 0px 6px cyan;
+  background-color: cyan;
+  border: 1px solid cyan;
+  width: 7.2rem;
+  height: 2.7rem;
+  transition: all 300ms;
+}
+
+#sectionMens .menLayout .secondRow h2:hover:hover > a {
+  color: white;
+  font-weight: bold;
+  transition: all 300ms;
+}
+
+/* fin row hombres */
 /* tarjets black friday bootstrap */
 #sectionTarjets {
   background-image: linear-gradient(black 98%, #222);
