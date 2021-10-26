@@ -285,55 +285,108 @@
 
     </main>
 
-    <!-- inicio footer -->
+    <!-- inicio footer bootstrap -->
 
-    <footer id="footerInline">
+    <footer class="bg-black p-5 pt-5 pb-4">
 
-        <div class="containerFooter">
+        <div class="container-fluid text-start text-md-left">
 
-            <div>
-                <p class="fotext">TÉRMINOS Y CONDICIONES</p>
-                <p class="fotext">INFORMACIÓN DE LA EMPRESA
-                <p>
-                <p class="fotext">NOSOTROS</p>
-                <p class="fotext">AYUDA</p>
-                <p class="fotext">DEFENSA AL CONSUMIDOR</p>
-                <a href="./páginas/invierno.html">
-                    <p class="fotext">UBICACIÓN</p>
-                </a> <!-- pagina nosotros -->
-                <p class="fotext">REPOSITORIO</p>
-                <p class="author fotext">&copy; Creado por Ezequiel Miccio</p>
+            <!-- primera columna -->
+
+            <div class="firstColumn row text-start text-md-left">
+
+                <!-- terminos -->
+
+                <div class="firstRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="mb-4"><a class="text-uppercase" href="./nosotros.html">Términos y Condiciones</a>
+                    </h2>
+                    <h3 class="text-uppercase">Ayuda</h3>
+                    <h3 class="text-uppercase">Defensa al Consumidor</h3>
+                </div>
+
+                <!-- frode -->
+
+                <div class="secondRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="mb-4"><a class="text-uppercase" href="./nosotros.html">Acerca de Frode</a></h2>
+                    <h3><a href="./nosotros.html">Nosotros</a></h3>
+                    <h3><a href="./nosotros.html">Contacto</a></h3>
+                    <h3><a href="./nosotros.html">Ubicación</a></h3>
+                </div>
+
+                <!-- mapa -->
+
+                <div class="thirdRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="mb-4"><a class="text-uppercase" href="./nosotros.html">Ubicación</a></h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52478.61720251763!2d-58.40937582579256!3d-34.70735972746149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33334248ec25d%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses!2sar!4v1635125489803!5m2!1ses!2sar"
+                        width="300" height="150" loading="lazy"></iframe>
+                </div>
+
+                <!-- iconos web -->
+
+                <div class="fortyRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3 text-end">
+
+                    <div class="btnTitle">
+                        <h2 class="mt-2 mb-4 text-uppercase">Visitanos</h2>
+                    </div>
+
+                    <div class="btnImages">
+                        <ul class="list-unstyled text-md-right">
+
+                            <li class="list-inline-item">
+                                <a href="https://www.instagram.com/frodeindumentaria/" target="_blank"
+                                    class="btn-floating"><i class="icon fab fa-instagram"></i></a>
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="https://www.facebook.com/frodeoficial/" target="_blank"><i
+                                        class="icon fab fa-facebook-square"></i></a>
+
+                            </li>
+
+                            <li class="list-inline-item">
+                                <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank"><i
+                                        class="icon fab fa-linkedin"></i></a>
+                            </li>
+
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <hr class="mb-4">
+
+            <!-- segunda columna -->
+
+            <div class="secondColumn row align-items-center mb-4">
+
+                 <!-- autor -->
+
+                <div class="firstRow col-md-6 col-lg-6">
+                    <p class="author fotext">&copy; Creado por <strong class="text-warning">Ezequiel Miccio</strong></p>
                 <p class="author fotext">&copy; 2021</p>
-            </div>
-
-            <div class="btnRedes">
-
-                <div class="btnTitle">
-                    <h2>Visitanos en:</h2>
                 </div>
 
-                <div class="btnImages">
-                    <a href="https://www.instagram.com/frodeindumentaria/" target="_blank"><i
-                            class="icon fab fa-instagram"></i></a>
-                    <a href="https://www.facebook.com/frodeoficial/" target="_blank"><i
-                            class="icon fab fa-facebook-square"></i></a>
-                    <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank"><i
-                            class="icon fab fa-linkedin"></i></a>
+                <!-- coderhouse -->
+
+                <div class="secondRow col-md-6 col-lg-6">
+
+                    <div class="text-center text-md-right text-white text-uppercase">
+
+                            <p class="coder">Coderhouse</p>
+                            <p class="coder">Desarrollo Web</p>
+                            <p class="coder">08/21 - 10/21</p>
+                    </div>
+
                 </div>
 
-            </div>
-
-            <div class="containerCoder">
-                <p class="coder fotext">Coderhouse</p>
-                <p class="coder fotext">Desarrollo Web</p>
-                <p class="coder fotext">08/21 - 10/21</p>
             </div>
 
         </div>
 
     </footer>
-
-    <!-- fin footer -->
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ"

@@ -1,0 +1,150 @@
+footer {
+    .firstColumn {
+       max-width: 1440px;
+        .firstRow {
+            h2 {
+                font-family: $font-miccio;
+                font-weight: bold;
+                letter-spacing: 1px;
+                
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    color: white;
+                }
+
+                &:hover > a {
+                    color: cyan;
+                    transition: 300ms;
+                }
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                font-size: 0.6rem;
+                text-decoration: none;
+                letter-spacing: 1px;
+                color: white;
+                cursor: pointer;
+
+                &:hover{
+                    color: cyan;
+                    transition: 300ms;
+                }
+            }
+        }
+
+        .secondRow {
+            h2 {
+                font-family: $font-miccio;
+                font-weight: bold;
+                letter-spacing: 1px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    color: white;
+                }
+
+                &:hover > a {
+                    color: cyan;
+                    transition: 300ms;
+                }
+            }
+
+            h3 {
+                font-family: Arial, Helvetica, sans-serif;
+                font-weight: 500;
+                letter-spacing: 1px;
+                font-size: 0.6rem;
+                
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover > a{
+                    color: cyan;
+                    transition: 300ms;
+                }
+
+            }
+        }
+
+        .thirdRow {
+            h2 {
+                font-family: $font-miccio;
+                font-weight: bold;
+                letter-spacing: 1px;
+
+                a {
+                    text-decoration: none;
+                    font-size: 0.8rem;
+                    color: white;
+                }
+
+                a {
+                    text-transform: uppercase;
+                    text-decoration: none;
+                    color: white;
+                }
+
+                &:hover > a{
+                    color: cyan;
+                    transition: 300ms;
+                }
+
+            }
+        }
+
+        .fortyRow {
+                .btnTitle {
+                    margin-right: 2.6rem;
+                   h2 {
+                    font-family: Arial, Helvetica, sans-serif;
+                    color: white;
+                    font-weight: bold;
+                    font-size: 0.8rem;
+                   }
+                }
+
+                .btnImages {
+                    .icon {
+                        font-size: 2rem;
+                        color: white;
+                        width: 3rem;
+
+                        &:hover {
+                            font-size: 2.2rem;
+                            color: cyan;
+                            transition: 300ms;
+                        }
+                    }
+
+                }
+        }
+    }
+
+    .secondColumn {
+        .firstRow {
+            p {
+                font-size: 0.8rem;
+                font-weight: bold;
+                color: white;
+            }
+        }
+
+        .secondRow {
+            div {
+            p {
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 0.6rem;
+                font-weight: bold;
+                text-align: end;
+            }
+            }
+        }
+    }
+}
