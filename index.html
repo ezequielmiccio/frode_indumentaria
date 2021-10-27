@@ -28,7 +28,7 @@
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
 
     <script src="https://kit.fontawesome.com/9e80c3eecd.js" crossorigin="anonymous"></script>
-    <script src="./main.js" refer></script>
+    <script src="./main.js" defer></script>
 
     <link rel="stylesheet" href="./css/styles.css">
     <link rel="stylesheet" href="./css/responsive.css">
@@ -179,12 +179,20 @@
 
         <div class="headerMenu">
 
-            <div class="containerLogo">
+<!--             <div class="containerLogo">
                 <a href="./index.html"><img id="logoFrode" src="./assets/images/logotipo-frode.jpg"
                         alt="logotipo-marca"></a>
-            </div>
+            </div> -->
 
             <nav id="nav">
+
+                    <a href="./index.html"><img id="logoFrode" src="./assets/images/logotipo-frode.jpg"
+                    alt="logotipo-marca"></a>
+
+                <button class="nav-toggle d-block d-md-none d-lg-none d-xl-none">
+                    <i class="fas fa-bars"></i>
+                </button>
+
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="./index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
@@ -234,10 +242,6 @@
                     <li class="nav-item"><a href="./páginas/nosotros.html" class="nav-link">Nosotros</a></li>
                 </ul>
             </nav>
-
-            <button class="nav-toggle">
-                <i class="fas fa-bars"></i>
-            </button>
 
         </div>
 

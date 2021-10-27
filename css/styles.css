@@ -2158,18 +2158,23 @@
   justify-content: center;
   width: 100%;
   height: 100%;
-  border-bottom: 1px solid #929292;
+  border-bottom: 1px solid rgba(41, 41, 41, 0.404);
 }
 
-#header .headerMenu .containerLogo {
-  margin-top: 1.1rem;
+#header .headerMenu #nav {
+  height: 12.5rem;
+  /* max-width: 1440px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-#header .headerMenu .containerLogo #logoFrode {
+#header .headerMenu #nav #logoFrode {
+  margin-bottom: 1rem;
+  margin-right: 9rem;
   width: 3.4rem;
   height: 3.2rem;
   border-radius: 80%;
-  overflow: hidden;
   box-shadow: 0px 0px 4px #585858;
   animation-name: logoRotate;
   animation-duration: 3s;
@@ -2192,21 +2197,52 @@
   }
 }
 
-#header .headerMenu #nav {
-  height: 15%;
-  margin-left: 5rem;
-  max-width: 992px;
+#header .headerMenu #nav .nav-toggle {
+  color: black;
+  background: none;
+  border: none;
+  font-size: 30px;
+  padding: 0 20px;
+  line-height: 60px;
+  cursor: pointer;
+  display: none;
 }
 
-#header .headerMenu #nav > ul > li > ul {
-  display: none;
-  position: absolute;
+#header .headerMenu #nav .nav-toggle .icon {
   color: black;
-  text-align: left;
-  width: 10rem;
-  box-shadow: 0px 2px 2px #fdfdfd;
-  margin-top: 2px;
-  z-index: 1;
+  width: 3rem;
+  height: 3rem;
+}
+
+#header .headerMenu #nav .nav-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 10rem;
+}
+
+#header .headerMenu #nav .nav-menu .nav-item {
+  margin-right: 1.5rem;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: sans-serif;
+  width: max-content;
+}
+
+#header .headerMenu #nav .nav-menu .nav-link {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  letter-spacing: 2px;
+}
+
+#header .headerMenu #nav .nav-menu .nav-link:hover {
+  background-color: black;
+  border-radius: 3px;
+  color: white;
+  scale: 1.2, 1.2;
+  transition: all 400ms;
 }
 
 #header .headerMenu #nav > ul > li:hover > ul {
@@ -2232,53 +2268,18 @@
   letter-spacing: 1px;
 }
 
-#header .headerMenu #nav .nav-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-right: 6rem;
-  left: 0;
-}
-
-#header .headerMenu #nav .nav-menu .nav-item {
-  margin: 0px 15px;
-  font-size: 20px;
-  font-weight: bold;
-  font-family: sans-serif;
-  width: max-content;
-}
-
-#header .headerMenu #nav .nav-menu .nav-link {
+#header .headerMenu #nav > ul > li > ul {
+  display: none;
+  position: absolute;
   color: black;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-family: "Staatliches", cursive;
-  letter-spacing: 2px;
-}
-
-#header .headerMenu #nav .nav-menu .nav-link:hover {
-  background-color: black;
-  color: white;
-  scale: 1.2, 1.2;
-  transition: all 400ms;
+  text-align: left;
+  width: 10rem;
+  box-shadow: 0px 2px 2px #fdfdfd;
+  margin-top: 2px;
+  z-index: 1;
 }
 
 /* fin menu de navegacion */
-.nav-toggle {
-  color: black;
-  background: none;
-  border: none;
-  font-size: 30px;
-  padding: 0 20px;
-  line-height: 60px;
-  cursor: pointer;
-  display: none;
-}
-
-.nav-menu_visible {
-  left: 0;
-}
-
 /* registrate 10% off */
 .subtitleHeader {
   height: 2rem;
@@ -3592,64 +3593,37 @@ section.containerForm {
 /* fin footer index */
 /* responsive en preparacion*/
 @media (max-width: 780px) {
-  #header {
-    width: 100%;
-    height: 8rem;
+  #nav {
+    max-width: 992px;
   }
-  #header .headerFixed {
-    position: absolute;
-    height: 1.5rem;
-  }
-  #header .headerFixed h1 {
-    font-size: 10px;
-  }
-  #header .headerMenu {
+  #nav .nav-menu {
     display: flex;
-    flex-direction: row;
-  }
-  #header .headerMenu .containerLogo {
-    margin-top: 1.5rem;
-  }
-  #header .headerMenu .containerLogo #logoFrode {
-    width: 2.9rem;
-    height: 2.8rem;
-    border-radius: 80%;
-    overflow: hidden;
-    box-shadow: 0px 0px 4px #585858;
-    animation-name: logoRotate;
-    animation-duration: 3s;
-    animation-iteration-count: 1;
-    animation-timing-function: linear;
-  }
-  #header .headerMenu #nav .nav-menu {
     flex-direction: column;
-    justify-content: center;
+    background-color: #d8d8d8;
     align-items: center;
-    margin-right: 6rem;
-    background-color: #8f8f8f;
+    padding: 0;
+    z-index: 21;
     position: fixed;
     left: 100%;
-    transition: left 300ms;
-    top: 8rem;
+    top: 9rem;
     width: 100%;
-    padding: 20px 0px;
-    height: calc(100% - 2.8rem);
+    height: calc(100% - 3rem);
     overflow-y: auto;
+    transition: left 300ms;
   }
-  #header .headerMenu #nav .nav-menu .nav-item {
-    margin: 0px 15px;
-    font-size: 20px;
-    font-weight: bold;
-    font-family: sans-serif;
-    width: max-content;
-    top: -100vh;
-    flex-direction: column;
+  #nav .nav-menu .nav-item {
+    line-height: 4rem;
   }
-  #header .headerMenu #nav .nav-menu .nav-item li {
-    margin: 30px 0 0 0;
-    line-height: 30px;
+  #nav .nav-link:hover {
+    background-color: none;
   }
-  #header .headerMenu .nav-toggle {
+  #nav .nav-toggle {
     display: block;
+  }
+  #nav .nav-toggle .icon {
+    display: block;
+  }
+  #nav .nav-menu_visible {
+    left: 0;
   }
 }

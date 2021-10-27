@@ -1,73 +1,41 @@
 @media (max-width: 780px) {
-  #header {
-    width: 100%;
-    height: 8rem;
+  #nav {
+    max-width: 992px;
 
-    .headerFixed {
-      position: absolute;
-      height: 1.5rem;
+    .nav-menu {
+      display: flex;
+      flex-direction: column;
+      background-color: rgb(216, 216, 216);
+      align-items: center;
+      padding: 0;
+      z-index: 21;
+      position: fixed;
+      left: 100%;
+      top: 9rem;
+      width: 100%;
+      height: calc(100% - 3rem);
+      overflow-y: auto;
+      transition: left 300ms;
 
-      h1 {
-        font-size: 10px;
+      .nav-item {
+        line-height: 4rem;
       }
     }
 
-    .headerMenu {
-      display: flex;
-      flex-direction: row;
+    .nav-link:hover {
+      background-color: none;
+    }
 
-      .containerLogo {
-        margin-top: 1.5rem;
+    .nav-toggle {
+      display: block;
 
-        #logoFrode {
-          width: 2.9rem;
-          height: 2.8rem;
-          border-radius: 80%;
-          overflow: hidden;
-          box-shadow: 0px 0px 4px rgb(88, 88, 88);
-          animation-name: logoRotate;
-          animation-duration: 3s;
-          animation-iteration-count: 1;
-          animation-timing-function: linear;
-        }
-      }
-
-      #nav {
-
-        .nav-menu {
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-right: 6rem;
-          background-color: rgb(143, 143, 143);
-          position: fixed;
-          left: 100%;
-          transition: left 300ms;
-          top: 8rem;
-          width: 100%;
-          padding: 20px 0px;
-          height: calc(100% - 2.8rem);
-          overflow-y: auto; 
-
-          .nav-item {
-            margin: 0px 15px;
-            font-size: 20px;
-            font-weight: bold;
-            font-family: sans-serif;
-            width: max-content;
-            top:-100vh;
-            flex-direction: column;
-
-            & li {
-              margin: 30px 0 0 0;
-              line-height: 30px;
-            }
-          }
-        }
-      }
-      .nav-toggle {
+      .icon {
         display: block;
       }
+    }
+
+    .nav-menu_visible {
+      left: 0;
     }
   }
 }
