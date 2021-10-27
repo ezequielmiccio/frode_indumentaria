@@ -1,4 +1,13 @@
-@media (max-width: 780px) {
+@media (max-width: 768px) {
+
+  #header {
+    .headerFixed {
+      h1 {
+        margin-right: 15rem;
+        
+      }
+    }
+  }
   #nav {
     max-width: 992px;
 
@@ -37,5 +46,23 @@
     .nav-menu_visible {
       left: 0;
     }
+
+    & > ul {
+      color: black;
+      background-color: none;
+    }
+
+    & > ul > li:hover > ul {
+      margin-left: 7rem !important; 
+    }
+
+     & > ul > li:hover > ul > li:hover {
+        box-shadow: 0px 0px 6px white inset;
+      }
+
+    /* fin menu */
+
+    /* inicio subtitle registro */
   }
+  /* fin subtitle registro */
 }

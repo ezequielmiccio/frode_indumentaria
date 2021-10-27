@@ -2247,13 +2247,13 @@
 
 #header .headerMenu #nav > ul > li:hover > ul {
   display: block;
-  margin-left: 0px;
-  padding-left: 0px;
+  margin-left: 0rem;
+  padding-left: 0rem;
 }
 
 #header .headerMenu #nav > ul > li:hover > ul > li {
-  background-color: #adadad;
-  border-bottom: 1px solid #cecece;
+  background-color: rgba(94, 94, 94, 0.877);
+  border-bottom: 1px solid rgba(206, 206, 206, 0.651);
   font-size: 18px;
   transition: all 300ms;
 }
@@ -3592,9 +3592,14 @@ section.containerForm {
 /* fin formulario */
 /* fin footer index */
 /* responsive en preparacion*/
-@media (max-width: 780px) {
+@media (max-width: 768px) {
+  #header .headerFixed h1 {
+    margin-right: 15rem;
+  }
   #nav {
     max-width: 992px;
+    /* fin menu */
+    /* inicio subtitle registro */
   }
   #nav .nav-menu {
     display: flex;
@@ -3626,4 +3631,15 @@ section.containerForm {
   #nav .nav-menu_visible {
     left: 0;
   }
+  #nav > ul {
+    color: black;
+    background-color: none;
+  }
+  #nav > ul > li:hover > ul {
+    margin-left: 7rem !important;
+  }
+  #nav > ul > li:hover > ul > li:hover {
+    box-shadow: 0px 0px 6px white inset;
+  }
+  /* fin subtitle registro */
 }

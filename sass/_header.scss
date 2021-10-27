@@ -153,13 +153,13 @@
 
       & > ul > li:hover > ul {
         display: block;
-        margin-left: 0px;
-        padding-left: 0px;
+        margin-left: 0rem;
+        padding-left: 0rem;
       }
 
       & > ul > li:hover > ul > li {
-        background-color: rgb(173, 173, 173);
-        border-bottom: 1px solid rgb(206, 206, 206);
+        background-color: rgba(94, 94, 94, 0.877);
+        border-bottom: 1px solid rgba(206, 206, 206, 0.651);
         font-size: 18px;
         transition: all 300ms;
       }
