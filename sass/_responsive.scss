@@ -84,13 +84,19 @@
    display: flex;
    flex-direction: column;
    align-items: start;
-   padding: 3.5rem 0rem 0rem 1.5rem;
    width: 100%;
+   padding: 5rem 0rem 0rem 1.5rem;
    margin: 0;
    height: 10rem;
 
+   h2 {
+     font-size: 3.5rem;
+   }
+
    h3 {
-     width: 80%;
+     width: 65%;
+     font-size: 3rem;
+     margin-bottom: 0;
    }
  }
 
@@ -238,18 +244,17 @@
   /* carousel bootstrap */
   #container-carousel {
      height: 40rem;
-     margin: 10rem 0rem 6rem 0rem;
+     margin: 10rem 0rem 0.2rem 0rem;
     .titleCarousel {
       h2 {
         text-align: center;
-        font-size: 3rem;
       }
     }
 
     #carouselExampleControls{
       
       .carousel-inner {
-        margin-left: 15%;
+        margin-left: 10%;
       }
     }
   }
@@ -262,6 +267,7 @@
     padding: 0;
     margin: 0;
     height: 50rem;
+    margin-bottom: 0.2rem;
 
     .containerText {
       display: none;
@@ -279,4 +285,60 @@
   }
 
   /* fin para quien queres comprar */
+
+  /* inicio tabla descuentos */
+
+  #containerPagos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0.2rem;
+
+    .tabla__descuentos {
+      width: 85%;
+    }
+  }
+
+  /* fin tabla descuentos */
+
+  /* inicio formulario */
+
+  .containerForm {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.2rem !important;
+
+    #formulario {
+      height: 30rem;
+    }
+  }
+
+  /* fin formulario */
+
+  /* footer */
+
+   footer {
+    .firstColumn {
+      .fortyRow {
+
+        .btnTitle {
+          h2 {
+            display: none;
+          }
+        }
+        ul {
+          text-align: center;
+          margin-top: 2rem;
+        }
+      }
+    }
+
+    .secondColumn {
+      .secondRow {
+        display: none;
+      }
+    }
+  } 
+
+  /* fin footer */
 }

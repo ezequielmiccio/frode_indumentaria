@@ -29,43 +29,51 @@
         integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
         <script src="https://kit.fontawesome.com/9e80c3eecd.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="main.js">
 
 </head>
 
 <body>
 
-    <header id="header">
+     <!-- pre header -->
+
+     <header id="header">
 
         <!-- title fixed -->
 
         <div class="headerFixed">
             <h1>
-               <a href="#header">Frode Indumentaria</a> 
+                <a href="#header">Frode Indumentaria</a>
             </h1>
         </div>
 
         <!-- fin title fixed -->
 
-        <!-- menu -->
+        <!-- inicio menú -->
 
         <div class="headerMenu">
 
-            <div class="containerLogo">
-                <a href="./index.html"><img id="logoFrode" src="../assets/images/logotipo-frode.jpg"
-                        alt="logotipo-marca"></a>
-            </div>
-
             <nav id="nav">
 
-                <button class="nav-toggle">
+                <!-- logo -->
+
+                    <a href="../index.html"><img id="logoFrode" src="../assets/images/logotipo-frode.jpg"
+                    alt="logotipo-marca"></a>
+
+                <!-- fin logo --> 
+
+                <!-- icono hamburguesa -->
+
+                <button class="nav-toggle d-block d-md-none d-lg-none d-xl-none">
                     <i class="fas fa-bars"></i>
                 </button>
+
+                <!-- fin icono hamburguesa -->
 
                 <ul class="nav-menu">
                     <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
                     <li class="nav-item"><a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false" href="./páginas/hombre.html"
+                            data-bs-toggle="dropdown" aria-expanded="false" href="./hombre.html"
                             class="nav-link">Hombre</a>
 
                         <ul>
@@ -110,14 +118,15 @@
                     </li>
                     <li class="nav-item"><a href="./nosotros.html" class="nav-link">Nosotros</a></li>
                 </ul>
-
             </nav>
 
         </div>
 
-        <!-- fin menu -->
+        <!-- fin menú -->
 
     </header>
+
+    <!-- fin header -->
 
     <main>
 
@@ -334,11 +343,11 @@
 
     <footer class="bg-black p-5 pt-5 pb-4">
 
-        <div class="container-fluid text-start text-md-left">
+        <div class="container-fluid text-center text-md-left">
 
             <!-- primera columna -->
 
-            <div class="firstColumn row text-start text-md-left">
+            <div class="firstColumn row text-center text-md-left">
 
                 <!-- terminos -->
 
@@ -352,16 +361,16 @@
                 <!-- frode -->
 
                 <div class="secondRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h2 class="mb-4"><a class="text-uppercase" href="./nosotros.html">Acerca de Frode</a></h2>
-                    <h3><a href="./nosotros.html">Nosotros</a></h3>
-                    <h3><a href="./nosotros.html">Contacto</a></h3>
-                    <h3><a href="./nosotros.html">Ubicación</a></h3>
+                    <h2 class="mb-4"><a class="text-uppercase" href="./páginas/nosotros.html">Acerca de Frode</a></h2>
+                    <h3><a href="./páginas/nosotros.html">Nosotros</a></h3>
+                    <h3><a href="./páginas/nosotros.html">Contacto</a></h3>
+                    <h3><a href="./páginas/nosotros.html">Ubicación</a></h3>
                 </div>
 
                 <!-- mapa -->
 
-                <div class="thirdRow col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
-                    <h2 class="mb-4"><a class="text-uppercase" href="./nosotros.html">Ubicación</a></h2>
+                <div class="thirdRow d-block d-md-none d-lg-block d-xl-block col-12 col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h2 class="mb-4"><a class="text-uppercase" href="./páginas/nosotros.html">Ubicación</a></h2>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52478.61720251763!2d-58.40937582579256!3d-34.70735972746149!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a33334248ec25d%3A0x438c219aee66c1bb!2sAlto%20Avellaneda%20Shopping!5e0!3m2!1ses!2sar!4v1635125489803!5m2!1ses!2sar"
                         width="300" height="150" loading="lazy"></iframe>
@@ -380,17 +389,17 @@
 
                             <li class="list-inline-item">
                                 <a href="https://www.instagram.com/frodeindumentaria/" target="_blank"
-                                    class="btn-floating"><i class="icon fab fa-instagram"></i></a>
+                                    class="btn-floating btn-sm"><i class="icon fab fa-instagram"></i></a>
                             </li>
 
                             <li class="list-inline-item">
-                                <a href="https://www.facebook.com/frodeoficial/" target="_blank"><i
+                                <a href="https://www.facebook.com/frodeoficial/" target="_blank" class="btn-floating btn-sm"><i
                                         class="icon fab fa-facebook-square"></i></a>
 
                             </li>
 
                             <li class="list-inline-item">
-                                <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank"><i
+                                <a href="https://www.linkedin.com/in/ezequiel-miccio-731050150/" target="_blank" class="btn-floating btn-sm"><i
                                         class="icon fab fa-linkedin"></i></a>
                             </li>
 
@@ -401,11 +410,11 @@
 
             </div>
 
-            <hr class="mb-4">
+            <hr class="mb-4 mt-4">
 
             <!-- segunda columna -->
 
-            <div class="secondColumn row align-items-center mb-4">
+            <div class="secondColumn row text-start mb-4">
 
                  <!-- autor -->
 
@@ -416,13 +425,13 @@
 
                 <!-- coderhouse -->
 
-                <div class="secondRow col-md-6 col-lg-6">
+                <div class="secondRow col-12 col-md-6 col-lg-6">
 
-                    <div class="text-center text-md-right text-white text-uppercase">
+                    <div class="text-center text-md-end text-lg-end text-md-right text-white text-uppercase">
 
-                            <p class="coder">Coderhouse</p>
-                            <p class="coder">Desarrollo Web</p>
-                            <p class="coder">08/21 - 10/21</p>
+                            <p class="coder list-inline-item p-4 p-sm-none">Coderhouse</p>
+                            <p class="coder list-inline-item p-4 p-sm-none">Desarrollo Web</p>
+                            <p class="coder list-inline-item p-4">AGOSTO 2021  -  NOVIEMBRE 2021</p>
                     </div>
 
                 </div>

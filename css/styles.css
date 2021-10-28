@@ -281,7 +281,7 @@
   display: flex;
   flex-direction: column;
   width: 95%;
-  margin: 1rem 3rem;
+  margin: 3.5rem 0rem 1rem 0rem;
   background-color: white;
   height: 13rem;
 }
@@ -951,6 +951,7 @@
 }
 
 #thirdSection .thirdImg figure img {
+  width: 100%;
   box-shadow: 0px 0px 4px black;
 }
 
@@ -1342,7 +1343,7 @@
 /* fin slider */
 #portadaTrekking {
   width: 100%;
-  height: 36rem;
+  height: 40rem;
   padding: 2rem;
   background-image: linear-gradient(#ffffff, whitesmoke);
   text-align: center;
@@ -1353,6 +1354,7 @@
 }
 
 #portadaTrekking .imgTxt figure img {
+  width: 100%;
   box-shadow: 0px 0px 4px grey;
 }
 
@@ -1424,6 +1426,7 @@
 }
 
 #openWeb .introImg figure .openImg {
+  width: 100%;
   box-shadow: 0px 0px 4px black;
 }
 
@@ -1745,6 +1748,7 @@
 }
 
 #lastLayout .lastPort figure img {
+  width: 100%;
   box-shadow: 0px 0px 4px grey;
 }
 
@@ -2083,7 +2087,7 @@
 }
 
 #location .ubication .list ul li {
-  font-family: "Alegreya Sans SC, sans-serif";
+  font-family: Arial, Helvetica, sans-serif;
   text-decoration: none;
   font-weight: 500;
   padding: 0rem 1rem;
@@ -3660,13 +3664,18 @@ section.containerForm {
     display: flex;
     flex-direction: column;
     align-items: start;
-    padding: 3.5rem 0rem 0rem 1.5rem;
     width: 100%;
+    padding: 5rem 0rem 0rem 1.5rem;
     margin: 0;
     height: 10rem;
   }
+  .preStyle h2 {
+    font-size: 3.5rem;
+  }
   .preStyle h3 {
-    width: 80%;
+    width: 65%;
+    font-size: 3rem;
+    margin-bottom: 0;
   }
   /* fin txt pre section */
   /* inicio row styles */
@@ -3781,14 +3790,13 @@ section.containerForm {
   /* carousel bootstrap */
   #container-carousel {
     height: 40rem;
-    margin: 10rem 0rem 6rem 0rem;
+    margin: 10rem 0rem 0.2rem 0rem;
   }
   #container-carousel .titleCarousel h2 {
     text-align: center;
-    font-size: 3rem;
   }
   #container-carousel #carouselExampleControls .carousel-inner {
-    margin-left: 15%;
+    margin-left: 10%;
   }
   /* fin carousel bootstrap */
   /* inicio para quien queres comprar */
@@ -3797,6 +3805,7 @@ section.containerForm {
     padding: 0;
     margin: 0;
     height: 50rem;
+    margin-bottom: 0.2rem;
   }
   #comprar .containerText {
     display: none;
@@ -3811,4 +3820,37 @@ section.containerForm {
     row-gap: 1rem;
   }
   /* fin para quien queres comprar */
+  /* inicio tabla descuentos */
+  #containerPagos {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    margin-bottom: 0.2rem;
+  }
+  #containerPagos .tabla__descuentos {
+    width: 85%;
+  }
+  /* fin tabla descuentos */
+  /* inicio formulario */
+  .containerForm {
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.2rem !important;
+  }
+  .containerForm #formulario {
+    height: 30rem;
+  }
+  /* fin formulario */
+  /* footer */
+  footer .firstColumn .fortyRow .btnTitle h2 {
+    display: none;
+  }
+  footer .firstColumn .fortyRow ul {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  footer .secondColumn .secondRow {
+    display: none;
+  }
+  /* fin footer */
 }
