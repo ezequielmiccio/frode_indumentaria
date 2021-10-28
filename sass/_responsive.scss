@@ -1,68 +1,242 @@
 @media (max-width: 768px) {
-
-  #header {
-    .headerFixed {
-      h1 {
-        margin-right: 15rem;
-        
-      }
-    }
+  body {
+    margin: 0px;
+    padding: 0px;
   }
-  #nav {
-    max-width: 992px;
-
-    .nav-menu {
-      display: flex;
-      flex-direction: column;
-      background-color: rgb(216, 216, 216);
-      align-items: center;
-      padding: 0;
-      z-index: 21;
-      position: fixed;
-      left: 100%;
-      top: 9rem;
+  #header {
+    width: auto;
+    .headerFixed {
       width: 100%;
-      height: calc(100% - 3rem);
-      overflow-y: auto;
-      transition: left 300ms;
-
-      .nav-item {
-        line-height: 4rem;
+      h1 {
       }
     }
+    #nav {
+      max-width: 992px;
 
-    .nav-link:hover {
-      background-color: none;
-    }
+      .nav-menu {
+        display: flex;
+        flex-direction: column;
+        background-color: rgb(216, 216, 216);
+        align-items: center;
+        padding: 0;
+        z-index: 21;
+        position: fixed;
+        left: 100%;
+        top: 9rem;
+        width: 100%;
+        height: calc(100% - 3rem);
+        overflow-y: auto;
+        transition: left 300ms;
 
-    .nav-toggle {
-      display: block;
+        .nav-item {
+          line-height: 4rem;
+        }
+      }
 
-      .icon {
+      .nav-link:hover {
+        background-color: none;
+      }
+
+      .nav-toggle {
         display: block;
+
+        .icon {
+          display: block;
+        }
       }
-    }
 
-    .nav-menu_visible {
-      left: 0;
-    }
+      .nav-menu_visible {
+        left: 0;
+      }
 
-    & > ul {
-      color: black;
-      background-color: none;
-    }
+      & > ul {
+        color: black;
+        background-color: none;
+      }
 
-    & > ul > li:hover > ul {
-      margin-left: 7rem !important; 
-    }
+      & > ul > li:hover > ul {
+        margin-left: 7.5rem !important;
+      }
 
-     & > ul > li:hover > ul > li:hover {
+      & > ul > li:hover > ul > li:hover {
         box-shadow: 0px 0px 6px white inset;
       }
 
-    /* fin menu */
+      /* fin menu */
+    }
+  }
 
-    /* inicio subtitle registro */
+  /* inicio subtitle registro */
+
+  #sectionWeare {
+    align-items: center;
+    width: 100%;
+    #textWeare {
+      & a {
+        font-size: 3rem;
+        text-align: center;
+        line-height: 6rem;
+      }
+    }
   }
   /* fin subtitle registro */
+
+ /* inicio txt pre section */
+
+ .preStyle {
+   display: flex;
+   flex-direction: column;
+   align-items: start;
+   padding: 2.5rem 0rem 0rem 1.5rem;
+   width: 100%;
+   margin: 0;
+   height: 10rem;
+
+   h3 {
+     width: 80%;
+   }
+ }
+
+ /* fin txt pre section */
+
+  /* inicio row styles */
+
+  #stylesFrode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    column-gap: 0px;
+    width: 100%;
+    padding: 0;
+    height: 70rem;
+    overflow: none;
+    margin: 2rem 0rem;
+
+    .firstRow {
+     padding-left: 1.4rem;
+      img {
+        width: 30rem;
+      }
+
+      h2 {
+        margin-left: 1.4rem;
+      }
+    }
+
+    .secondRow {
+      padding-left: 1.4rem;
+      img {
+        width: 30rem;
+      }
+      h2 {
+        margin-left: 1rem;
+      }
+    }
+
+  }
+
+  /* fin row styles */
+
+  /* inicio layout marcas */
+
+  #rowMarcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    width: 100%;
+    height: 70rem;
+    margin: 3rem 0rem 0rem 0rem;
+
+    .title {
+      display: none;
+    }
+
+    .firstNike {
+      .relative {
+       padding-left: 0.2rem;
+
+        img {
+          width: 29rem;
+        }
+      }
+    }
+
+    .firstAdi {
+      .relative {
+        padding-left: 0.6rem;
+
+        img {
+          width: 29rem;
+        }
+      }
+    }
+  }
+
+  /* inicio layout niños */
+
+  #rowKids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    height: 70rem;
+
+    .firstKids {
+      padding-left: 0.5rem;
+      img {
+        width: 29rem;
+      }
+    }
+
+    .secondKids {
+      padding-left: 0.5rem;
+      img {
+        width: 29rem;
+      }
+      
+    }
+  }
+
+  /* fin layout niños */
+
+  /* inicio layout hombres */
+
+  #sectionMens {
+    height: 70rem;
+    margin: 1rem 0rem;
+    .menLayout {
+      display: flex;
+      flex-direction: column;
+      row-gap: 0.8rem;
+      align-items: center;
+      width: 100%;
+      margin: 0;
+      padding: 0;
+
+      .firstRow {
+        padding-left: 0rem;
+        img {
+          width: 29rem;
+        }
+      }
+
+      .secondRow {
+        padding-left: 0rem;
+        img {
+          width: 29rem;
+        }
+      }
+    }
+  
+  }
+
+  /* fin layout hombres */
+
+  /* inicio para quien queres comprar */
+
+  /* fin para quien queres comprar */
 }

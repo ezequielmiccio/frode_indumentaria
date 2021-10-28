@@ -2404,7 +2404,8 @@ footer .firstColumn .thirdRow h2:hover > a {
 }
 
 footer .firstColumn .fortyRow .btnTitle {
-  margin-right: 2.6rem;
+  text-align: center;
+  margin-left: 7.5rem;
 }
 
 footer .firstColumn .fortyRow .btnTitle h2 {
@@ -2493,12 +2494,7 @@ footer .secondColumn .secondRow div p {
 /* primera section img completa */
 #firstComplet {
   width: 100%;
-  padding: 2rem;
-  overflow: hidden;
-  position: relative;
-}
-
-#firstComplet .firstPort {
+  padding: 2rem 6.5rem;
   position: relative;
 }
 
@@ -2525,8 +2521,9 @@ footer .secondColumn .secondRow div p {
   height: 2.5rem;
   text-align: center;
   line-height: 2rem;
-  left: 4rem;
-  bottom: 3rem;
+  left: 8rem;
+  bottom: 2.5rem;
+  border-radius: 5px;
 }
 
 #firstComplet .txtRow h2 a {
@@ -2563,8 +2560,9 @@ footer .secondColumn .secondRow div p {
   height: 2.5rem;
   text-align: center;
   line-height: 2.2rem;
-  right: 4rem;
-  bottom: 3.1rem;
+  right: 8rem;
+  bottom: 2.5rem;
+  border-radius: 5px;
 }
 
 #firstComplet .txtRow h3 a {
@@ -3593,15 +3591,21 @@ section.containerForm {
 /* fin footer index */
 /* responsive en preparacion*/
 @media (max-width: 768px) {
-  #header .headerFixed h1 {
-    margin-right: 15rem;
+  body {
+    margin: 0px;
+    padding: 0px;
   }
-  #nav {
+  #header {
+    width: auto;
+  }
+  #header .headerFixed {
+    width: 100%;
+  }
+  #header #nav {
     max-width: 992px;
     /* fin menu */
-    /* inicio subtitle registro */
   }
-  #nav .nav-menu {
+  #header #nav .nav-menu {
     display: flex;
     flex-direction: column;
     background-color: #d8d8d8;
@@ -3616,30 +3620,163 @@ section.containerForm {
     overflow-y: auto;
     transition: left 300ms;
   }
-  #nav .nav-menu .nav-item {
+  #header #nav .nav-menu .nav-item {
     line-height: 4rem;
   }
-  #nav .nav-link:hover {
+  #header #nav .nav-link:hover {
     background-color: none;
   }
-  #nav .nav-toggle {
+  #header #nav .nav-toggle {
     display: block;
   }
-  #nav .nav-toggle .icon {
+  #header #nav .nav-toggle .icon {
     display: block;
   }
-  #nav .nav-menu_visible {
+  #header #nav .nav-menu_visible {
     left: 0;
   }
-  #nav > ul {
+  #header #nav > ul {
     color: black;
     background-color: none;
   }
-  #nav > ul > li:hover > ul {
-    margin-left: 7rem !important;
+  #header #nav > ul > li:hover > ul {
+    margin-left: 7.5rem !important;
   }
-  #nav > ul > li:hover > ul > li:hover {
+  #header #nav > ul > li:hover > ul > li:hover {
     box-shadow: 0px 0px 6px white inset;
   }
+  /* inicio subtitle registro */
+  #sectionWeare {
+    align-items: center;
+    width: 100%;
+  }
+  #sectionWeare #textWeare a {
+    font-size: 3rem;
+    text-align: center;
+    line-height: 6rem;
+  }
   /* fin subtitle registro */
+  /* inicio txt pre section */
+  .preStyle {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding: 2.5rem 0rem 0rem 1.5rem;
+    width: 100%;
+    margin: 0;
+    height: 10rem;
+  }
+  .preStyle h3 {
+    width: 80%;
+  }
+  /* fin txt pre section */
+  /* inicio row styles */
+  #stylesFrode {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    column-gap: 0px;
+    width: 100%;
+    padding: 0;
+    height: 70rem;
+    overflow: none;
+    margin: 2rem 0rem;
+  }
+  #stylesFrode .firstRow {
+    padding-left: 1.4rem;
+  }
+  #stylesFrode .firstRow img {
+    width: 30rem;
+  }
+  #stylesFrode .firstRow h2 {
+    margin-left: 1.4rem;
+  }
+  #stylesFrode .secondRow {
+    padding-left: 1.4rem;
+  }
+  #stylesFrode .secondRow img {
+    width: 30rem;
+  }
+  #stylesFrode .secondRow h2 {
+    margin-left: 1rem;
+  }
+  /* fin row styles */
+  /* inicio layout marcas */
+  #rowMarcas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    width: 100%;
+    height: 70rem;
+    margin: 3rem 0rem 0rem 0rem;
+  }
+  #rowMarcas .title {
+    display: none;
+  }
+  #rowMarcas .firstNike .relative {
+    padding-left: 0.2rem;
+  }
+  #rowMarcas .firstNike .relative img {
+    width: 29rem;
+  }
+  #rowMarcas .firstAdi .relative {
+    padding-left: 0.6rem;
+  }
+  #rowMarcas .firstAdi .relative img {
+    width: 29rem;
+  }
+  /* inicio layout niños */
+  #rowKids {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 0.8rem;
+    padding: 2rem 0rem;
+    width: 100%;
+    height: 70rem;
+  }
+  #rowKids .firstKids {
+    padding-left: 0.5rem;
+  }
+  #rowKids .firstKids img {
+    width: 29rem;
+  }
+  #rowKids .secondKids {
+    padding-left: 0.5rem;
+  }
+  #rowKids .secondKids img {
+    width: 29rem;
+  }
+  /* fin layout niños */
+  /* inicio layout hombres */
+  #sectionMens {
+    height: 70rem;
+    margin: 1rem 0rem;
+  }
+  #sectionMens .menLayout {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.8rem;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+  #sectionMens .menLayout .firstRow {
+    padding-left: 0rem;
+  }
+  #sectionMens .menLayout .firstRow img {
+    width: 29rem;
+  }
+  #sectionMens .menLayout .secondRow {
+    padding-left: 0rem;
+  }
+  #sectionMens .menLayout .secondRow img {
+    width: 29rem;
+  }
+  /* fin layout hombres */
+  /* inicio para quien queres comprar */
+  /* fin para quien queres comprar */
 }
