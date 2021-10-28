@@ -3645,17 +3645,11 @@ section.containerForm {
   #header #nav > ul > li:hover > ul > li:hover {
     box-shadow: 0px 0px 6px white inset;
   }
-  /* inicio subtitle registro */
+  /* inicio banner */
   #sectionWeare {
-    align-items: center;
-    width: 100%;
+    display: none;
   }
-  #sectionWeare #textWeare a {
-    font-size: 3rem;
-    text-align: center;
-    line-height: 6rem;
-  }
-  /* fin subtitle registro */
+  /* fin banner */
   /* inicio txt pre section */
   .preStyle {
     display: flex;
@@ -3681,25 +3675,25 @@ section.containerForm {
     padding: 0;
     height: 70rem;
     overflow: none;
-    margin: 2rem 0rem;
+    margin: 2rem 0rem 0rem 0rem;
   }
   #stylesFrode .firstRow {
-    padding-left: 1.4rem;
+    padding-left: 0;
   }
   #stylesFrode .firstRow img {
-    width: 30rem;
+    width: 28rem;
   }
   #stylesFrode .firstRow h2 {
-    margin-left: 1.4rem;
+    margin-left: 0;
   }
   #stylesFrode .secondRow {
-    padding-left: 1.4rem;
+    padding-left: 0;
   }
   #stylesFrode .secondRow img {
-    width: 30rem;
+    width: 28rem;
   }
   #stylesFrode .secondRow h2 {
-    margin-left: 1rem;
+    margin-left: 0;
   }
   /* fin row styles */
   /* inicio layout marcas */
@@ -3709,23 +3703,24 @@ section.containerForm {
     align-items: center;
     row-gap: 0.8rem;
     width: 100%;
-    height: 70rem;
-    margin: 3rem 0rem 0rem 0rem;
+    height: 65rem;
+    margin: 0;
+    padding: 0;
   }
   #rowMarcas .title {
     display: none;
   }
   #rowMarcas .firstNike .relative {
-    padding-left: 0.2rem;
+    padding-left: 0;
   }
   #rowMarcas .firstNike .relative img {
-    width: 29rem;
+    width: 28rem;
   }
   #rowMarcas .firstAdi .relative {
-    padding-left: 0.6rem;
+    padding-left: 0;
   }
   #rowMarcas .firstAdi .relative img {
-    width: 29rem;
+    width: 28rem;
   }
   /* inicio layout niños */
   #rowKids {
@@ -3733,27 +3728,28 @@ section.containerForm {
     flex-direction: column;
     align-items: center;
     row-gap: 0.8rem;
-    padding: 2rem 0rem;
+    padding: 0rem;
     width: 100%;
-    height: 70rem;
+    height: 65rem;
+    margin: 0;
   }
   #rowKids .firstKids {
-    padding-left: 0.5rem;
+    padding-left: 0;
   }
   #rowKids .firstKids img {
-    width: 29rem;
+    width: 28rem;
   }
   #rowKids .secondKids {
-    padding-left: 0.5rem;
+    padding-left: 0;
   }
   #rowKids .secondKids img {
-    width: 29rem;
+    width: 28rem;
   }
   /* fin layout niños */
   /* inicio layout hombres */
   #sectionMens {
-    height: 70rem;
-    margin: 1rem 0rem;
+    height: 65rem;
+    margin: 0;
   }
   #sectionMens .menLayout {
     display: flex;
@@ -3768,15 +3764,22 @@ section.containerForm {
     padding-left: 0rem;
   }
   #sectionMens .menLayout .firstRow img {
-    width: 29rem;
+    width: 28rem;
   }
   #sectionMens .menLayout .secondRow {
     padding-left: 0rem;
   }
   #sectionMens .menLayout .secondRow img {
-    width: 29rem;
+    width: 28rem;
   }
   /* fin layout hombres */
   /* inicio para quien queres comprar */
+  #comprar {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 70rem;
+    margin-top: 8rem;
+  }
   /* fin para quien queres comprar */
 }
