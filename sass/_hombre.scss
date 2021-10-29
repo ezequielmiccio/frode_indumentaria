@@ -66,119 +66,66 @@
 /* inicio primera section */
 
 #sectionMen {
-  display: grid;
-  max-width: 1420px;
-  grid-gap: 5px;
-  grid-template-columns: repeat(3, 33%);
-  grid-template-rows: 20% 30% 50%;
-  grid-template-areas:
-    "description . ."
-    "description . ."
-    "vermas . .";
-  width: 95%;
-  margin: 30px 26px 0px 34px;
-  height: 30rem;
-  box-shadow: 0px 0px 4px grey;
-  background-image: url("../assets/images/sitio-nike-fondozapa.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 2rem;
+  height: auto;
 
-  .vermas {
-    align-self: end;
-    justify-self: center;
-    grid-area: vermas;
-    width: 30%;
-    height: 2.5rem;
-    margin-bottom: 4rem;
-    margin-left: 3rem;
-    background-color: black;
-
-    a {
-      text-decoration: none;
+  .menImg {
+    position: relative;
+    img {
+      width: 100%;
+      border-top: 5px solid violet;
+      border-bottom: 5px solid cyan;
+      box-shadow: 0px 0px 4px #ccc;
     }
-    
-    & h2 {
-      font-family: $font-miccio;
-      font-weight: 100;
-      font-size: 20px;
+
+    .menTitle {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      width: 20rem;
+      height: auto;
       text-align: center;
-      line-height: 1.7rem;
-      text-transform: uppercase;
-      font-style: italic;
-      color: white;
-    }
-
-    &:hover {
-      box-shadow: 0px 0px 6px cyan;
-      background-color: cyan;
-      border: 1px solid cyan;
-      width: 8.2rem;
-      height: 2.7rem;
-      transition: all 300ms;
-
-      &:hover > a {
-        color: black;
-        font-weight: bold;
-        transition: all 300ms;
-      }
-    }
-  }
-
-
-  .description {
-    display: flex;
-    flex-direction: column;
-    grid-area: description;
-    height: 10rem;
-    width: 22rem;
-    padding: 1rem;
-    align-items: flex-start;
-    justify-content: center;
-    margin-top: 2rem;
-    margin-left: 5rem;
-
-    .tittleCuotas {
-      font-family: $font-miccio;
+      left: 3rem;
+      top: 3rem;
       font-size: 4rem;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      font-weight: bold;
-      color: white;
-      border-bottom: 4px solid white;
-      text-shadow: 1px 1px 1px black;
-    }
-
-    .tittleInteres {
-      font-family: sans-serif;
-      align-self: center;
-      color: white;
-      text-shadow: 1px 1px 1px black;
-      text-transform: uppercase;
+      font-family: $font-miccio;
       font-weight: bold;
       font-style: italic;
-      font-size: 15px;
-      margin-right: 1.5rem;
+      color: black;
+      border-bottom: 5px solid black;
+      text-shadow: 1px 1px 1px rgb(122, 122, 122);
     }
 
-    .tittleAhorro {
-      align-self: center;
-      font-family: "Staatliches", cursive;
-      color: white;
-      font-weight: bold;
-      text-transform: uppercase;
-      font-size: 17px;
-      letter-spacing: 1px;
-      margin-right: 1.9rem;
-      background-color: orangered;
-      border-radius: 10%;
-      box-shadow: 0px 0px 6px grey;
-      padding: 5px;
+    .menTxt {
+      display: block;
+      position: absolute;
+      z-index: 20;
+      width: 7rem;
+      height: 2.5rem;
+      text-align: center;
+      left: 1.5rem;
+      bottom: 1rem;
+      background-color: black;
+      line-height: 2rem;
 
-      .valor {
+      a {
         font-family: $font-miccio;
+        font-weight: bold;
+        font-style: italic;
         color: white;
+        font-size: 20px;
+        text-decoration: none;
+        text-transform: uppercase;
       }
     }
   }
+
 }
+
 
 /* fin primera section */
 
@@ -189,16 +136,16 @@
   flex-direction: column;
   position: relative;
   overflow: hidden;
-  width: 95%;
+  width: 100%;
+  padding: 2rem;
   height: 49rem;
-  margin: 10px 20px 16px 35px;
 
   .titleJordan {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    margin: 3rem 8rem;
+    margin: 0rem 8rem 4rem 8rem;
 
     & h2 {
       font-family: $font-miccio;
@@ -590,3 +537,5 @@
 }
   
 /* fin cuarta section row */
+
+/* responsivo */

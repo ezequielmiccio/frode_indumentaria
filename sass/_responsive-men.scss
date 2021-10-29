@@ -1,0 +1,47 @@
+@media (max-width: 768px) {
+    /* inicio subnav */
+
+    #subnavH {
+        .subnav__subtittleH {
+            width: 90%;
+        }
+
+        .subnav__subtittle__itemsH {
+
+            & li {
+                & a {
+                    font-size: 20px !important;
+                }
+            }
+        }
+    }
+
+    /* fin subnav */
+
+    /* inicio first layout */
+
+    #sectionMen {
+      height: 43rem;
+      border-bottom: 1px solid rgba(180, 180, 180, 0.712);
+        .menImg {
+
+            .imgMd {
+                display: none;
+            }
+            
+            .menTitle {
+                top: 29rem;
+                text-align: center;
+            }
+
+            .menTxt {
+                top: 35rem;
+                margin-left: 7.5rem;
+                text-align: center;
+                line-height: 2.2rem;
+            }
+        }
+    }
+
+    /* fin first layout */
+}
