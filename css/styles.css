@@ -3878,19 +3878,19 @@ section.containerForm {
   /* fin jordan section */
   /* titulo pre section */
   .preSection {
-    width: 100%;
+    width: 85%;
     height: auto;
     margin: 3rem 0rem;
   }
   .preSection h2 {
     width: 100%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0;
     margin-left: 1rem;
   }
   .preSection h3 {
     width: 100%;
-    font-size: 3.5rem;
+    font-size: 3rem;
     margin: 0;
     margin-left: 1.5rem;
   }
