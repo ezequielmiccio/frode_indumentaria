@@ -30,18 +30,133 @@
             }
             
             .menTitle {
+                margin: 0;
+                margin-left: 3rem;
                 top: 29rem;
                 text-align: center;
             }
 
             .menTxt {
                 top: 35rem;
-                margin-left: 7.5rem;
                 text-align: center;
                 line-height: 2.2rem;
+                margin-right: 6.5rem;
             }
         }
     }
 
     /* fin first layout */
+
+    /* inicio jordan section */
+
+    #jordan {
+        height: 37rem;
+        .titleJordan {
+            margin: 0;
+            margin-left: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .jordanFull {
+            figure {
+
+                .noneResponsive {
+                    display: none;
+                }
+                
+                h2 {
+                    margin: 0;
+                    left: 1rem;
+                    bottom: 1.5rem;
+                    line-height: 2.2rem;
+                    width: 7rem;
+                }
+            }
+        }
+    }
+
+    /* fin jordan section */
+
+    /* titulo pre section */
+
+    .preSection {
+        width: 100%;
+        height: auto;
+        margin: 3rem 0rem;
+        
+        h2 {
+            width: 100%;
+            font-size: 3.5rem;
+            margin: 0;
+            margin-left: 1rem;
+        }
+
+        h3 {
+            width: 80%;
+            font-size: 3.5rem;
+            margin: 0;
+            margin-left: 3.5rem;
+        }
+    }
+
+    /* fin titulo pre section */
+
+    /* conjunto malib */
+
+    #secondSection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+        background-image:none;
+
+        .imageRow {
+            margin-bottom: 2rem;
+            img {
+                padding: 0;
+                width: 25rem;
+                height: auto;
+            }
+        }
+
+        .titleRow {
+            display: flex;
+            flex-direction: column;
+            margin: 0;
+            text-align: center;
+
+            .titleCuotas {
+                color: black;
+                font-size: 3.5rem;
+            }
+
+            .titleInteres {
+                color: black;
+            }
+        }
+
+            .vermas {
+                align-self: center;
+                margin-right: 5.5rem;
+                width: 7rem;
+                height: 2.5rem;
+                
+                h2 {
+                    line-height: 2.5rem;
+                }
+            }
+
+    }
+
+    /* fin conjunto malib */
+
+    /* cuarta section ex row */
+
+    #sectionForty  {
+
+    }
+
+    /* fin cuarta section ex row */
 }
