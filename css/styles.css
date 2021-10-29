@@ -3838,10 +3838,12 @@ section.containerForm {
   }
   #sectionMen .menImg .imgMd {
     display: none;
+    margin: 0;
   }
   #sectionMen .menImg .menTitle {
+    display: block;
     margin: 0;
-    margin-left: 3rem;
+    width: 100%;
     top: 29rem;
     text-align: center;
   }
@@ -3849,7 +3851,9 @@ section.containerForm {
     top: 35rem;
     text-align: center;
     line-height: 2.2rem;
-    margin-right: 6.5rem;
+    width: 7rem;
+    margin-right: 3.5rem;
+    margin-top: 1rem;
   }
   /* fin first layout */
   /* inicio jordan section */
@@ -3874,7 +3878,7 @@ section.containerForm {
   /* fin jordan section */
   /* titulo pre section */
   .preSection {
-    width: 90%;
+    width: 100%;
     height: auto;
     margin: 3rem 0rem;
   }
@@ -3885,10 +3889,10 @@ section.containerForm {
     margin-left: 1rem;
   }
   .preSection h3 {
-    width: 90%;
+    width: 100%;
     font-size: 3.5rem;
     margin: 0;
-    margin-left: 3.5rem;
+    margin-left: 1.5rem;
   }
   /* fin titulo pre section */
   /* conjunto malib */
@@ -3907,7 +3911,7 @@ section.containerForm {
   }
   #secondSection .imageRow img {
     padding: 0;
-    width: 25rem;
+    width: 100%;
     height: auto;
   }
   #secondSection .titleRow {
@@ -3940,7 +3944,7 @@ section.containerForm {
     height: 45rem;
   }
   #sectionForty .titlePreRow {
-    height: 10rem;
+    height: 12rem;
     margin: 0;
     margin: 2rem 0rem;
   }
@@ -3951,8 +3955,8 @@ section.containerForm {
     padding-right: 2rem;
   }
   #sectionForty .titlePreRow h3 {
-    font-size: 3.5rem;
-    width: 90%;
+    font-size: 3rem;
+    width: 100%;
     margin: 0;
   }
   #sectionForty .sectionRow {
