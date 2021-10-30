@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+  #firstSectionK {
+    margin: 2rem 0rem;
+    padding: 0;
+
+    .sectionRow {
+      display: flex;
+      flex-direction: column;
+
+      .firstImg {
+        img {
+          width: 23rem;
+        }
+      }
+
+      .secondImg {
+        figure {
+          img {
+            width: 23rem;
+          }
+        }
+      }
+    }
+
+    .txtProducto {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h2 {
+        font-size: 2rem;
+      }
+    }
+  }
+
+  /* fin first layout */
+
+  /* inicio layout girls */
+
+  #rowGirls {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+
+    .imgGirl {
+      img {
+        width: 23rem;
+      }
+    }
+
+    .secondImg {
+      img {
+        width: 23rem;
+      }
+
+      & h2 {
+        left: 15rem;
+      }
+    }
+  }
+
+  /* fin layout girls */
+
+  /* inicio carousel */
+
+  #containerCarousel {
+    height: 25rem;
+    margin: 0;
+    margin: 2rem 0.8rem 0.3rem 0.8rem;
+
+    .titleCarousel {
+      h2 {
+        font-size: 3rem;
+        text-align: center;
+      }
+    }
+
+    #carouselExampleControls {
+      .carousel-inner {
+        margin-left: 3%;
+
+        img {
+          width: 20rem;
+        }
+      }
+    }
+  }
+
+  /* fin carousel */
+}

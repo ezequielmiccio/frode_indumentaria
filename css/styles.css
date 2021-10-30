@@ -1055,7 +1055,7 @@
   text-align: center;
   line-height: 2rem;
   border-radius: 5%;
-  left: 1rem;
+  right: 1rem;
   bottom: 1.5rem;
 }
 
@@ -1224,7 +1224,7 @@
   line-height: 2rem;
   border-radius: 5%;
   bottom: 1.5rem;
-  left: 1rem;
+  right: 1rem;
 }
 
 #rowGirls .secondImg figure h2 a {
@@ -4074,4 +4074,64 @@ section.containerForm {
     bottom: 1rem;
   }
   /* fin variedad calidad */
+}
+
+@media (max-width: 768px) {
+  #firstSectionK {
+    margin: 2rem 0rem;
+    padding: 0;
+  }
+  #firstSectionK .sectionRow {
+    display: flex;
+    flex-direction: column;
+  }
+  #firstSectionK .sectionRow .firstImg img {
+    width: 23rem;
+  }
+  #firstSectionK .sectionRow .secondImg figure img {
+    width: 23rem;
+  }
+  #firstSectionK .txtProducto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #firstSectionK .txtProducto h2 {
+    font-size: 2rem;
+  }
+  /* fin first layout */
+  /* inicio layout girls */
+  #rowGirls {
+    margin: 2rem 0rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: column;
+  }
+  #rowGirls .imgGirl img {
+    width: 23rem;
+  }
+  #rowGirls .secondImg img {
+    width: 23rem;
+  }
+  #rowGirls .secondImg h2 {
+    left: 15rem;
+  }
+  /* fin layout girls */
+  /* inicio carousel */
+  #containerCarousel {
+    height: 25rem;
+    margin: 0;
+    margin: 2rem 0.8rem 0.3rem 0.8rem;
+  }
+  #containerCarousel .titleCarousel h2 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  #containerCarousel #carouselExampleControls .carousel-inner {
+    margin-left: 3%;
+  }
+  #containerCarousel #carouselExampleControls .carousel-inner img {
+    width: 20rem;
+  }
+  /* fin carousel */
 }
