@@ -224,25 +224,26 @@
             right: 1.5rem;
             background-color: white;
             border-radius: 5%;
-            width: 8rem;
+            width: 7rem;
             height: 2.5rem;
             text-align: center;
             line-height: 2.2rem;
-            font-family: $font-miccio;
 
             a {
+                font-family: $font-miccio;
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
+                font-style: italic;
             }
 
             &:hover {
                 box-shadow: 0px 0px 6px cyan;
                 background-color: cyan;
                 border: 1px solid cyan;
-                width: 8.2rem;
+                width: 7.2rem;
                 height: 2.7rem;
                 transition: all 300ms;
           
@@ -271,30 +272,32 @@
             right: 1.5rem;
             background-color: black;
             border-radius: 5%;
-            width: 8rem;
+            width: 7rem;
             height: 2.5rem;
             text-align: center;
             line-height: 2.2rem;
-            font-family: $font-miccio;
+
 
             a {
+                font-family: $font-miccio;
                 color: white;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
+                font-style: italic;
             }
 
             &:hover {
                 box-shadow: 0px 0px 6px cyan;
                 background-color: cyan;
                 border: 1px solid cyan;
-                width: 8.2rem;
+                width: 7.2rem;
                 height: 2.7rem;
                 transition: all 300ms;
           
                 &:hover > a {
-                  color: white;
+                  color: black;
                   font-weight: bold;
                   transition: all 300ms;
                 }
@@ -318,25 +321,27 @@
             right: 1.5rem;
             background-color: white;
             border-radius: 5%;
-            width: 8rem;
+            width: 7rem;
             height: 2.5rem;
             text-align: center;
             line-height: 2.2rem;
-            font-family: $font-miccio;
+
 
             a {
+                font-family: $font-miccio;
                 color: black;
                 text-decoration: none;
                 text-transform: uppercase;
-                font-size: 18px;
+                font-size: 20px;
                 font-weight: bold;
+                font-style: italic;
             }
 
             &:hover {
                 box-shadow: 0px 0px 6px cyan;
                 background-color: cyan;
                 border: 1px solid cyan;
-                width: 8.2rem;
+                width: 7.2rem;
                 height: 2.7rem;
                 transition: all 300ms;
           

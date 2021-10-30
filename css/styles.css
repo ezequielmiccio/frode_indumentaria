@@ -750,26 +750,27 @@
   right: 1.5rem;
   background-color: white;
   border-radius: 5%;
-  width: 8rem;
+  width: 7rem;
   height: 2.5rem;
   text-align: center;
   line-height: 2.2rem;
-  font-family: "Staatliches", "cursive";
 }
 
 #rowSection .rowFirst h2 a {
+  font-family: "Staatliches", "cursive";
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  font-style: italic;
 }
 
 #rowSection .rowFirst h2:hover {
   box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
   border: 1px solid cyan;
-  width: 8.2rem;
+  width: 7.2rem;
   height: 2.7rem;
   transition: all 300ms;
 }
@@ -796,32 +797,33 @@
   right: 1.5rem;
   background-color: black;
   border-radius: 5%;
-  width: 8rem;
+  width: 7rem;
   height: 2.5rem;
   text-align: center;
   line-height: 2.2rem;
-  font-family: "Staatliches", "cursive";
 }
 
 #rowSection .rowSecond h2 a {
+  font-family: "Staatliches", "cursive";
   color: white;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  font-style: italic;
 }
 
 #rowSection .rowSecond h2:hover {
   box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
   border: 1px solid cyan;
-  width: 8.2rem;
+  width: 7.2rem;
   height: 2.7rem;
   transition: all 300ms;
 }
 
 #rowSection .rowSecond h2:hover:hover > a {
-  color: white;
+  color: black;
   font-weight: bold;
   transition: all 300ms;
 }
@@ -842,26 +844,27 @@
   right: 1.5rem;
   background-color: white;
   border-radius: 5%;
-  width: 8rem;
+  width: 7rem;
   height: 2.5rem;
   text-align: center;
   line-height: 2.2rem;
-  font-family: "Staatliches", "cursive";
 }
 
 #rowSection .rowThird h2 a {
+  font-family: "Staatliches", "cursive";
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
+  font-style: italic;
 }
 
 #rowSection .rowThird h2:hover {
   box-shadow: 0px 0px 6px cyan;
   background-color: cyan;
   border: 1px solid cyan;
-  width: 8.2rem;
+  width: 7.2rem;
   height: 2.7rem;
   transition: all 300ms;
 }
@@ -3810,6 +3813,9 @@ section.containerForm {
   .containerForm #formulario .bodyForm {
     margin-left: 6rem;
   }
+  .containerForm #formulario .titleForm {
+    margin-right: 0.5rem;
+  }
   /* fin formulario */
   /* footer */
   footer .firstColumn .fortyRow .btnTitle h2 {
@@ -3992,4 +3998,80 @@ section.containerForm {
   /* fin cuarta section ex row */
   /* tabla pagos */
   /* fin tabla pagos */
+}
+
+@media (max-width: 768px) {
+  /* imagen presentacion women */
+  #present {
+    height: auto;
+    width: 100%;
+    margin: 2rem 0rem;
+  }
+  #present .presentBlock .responsiveNon {
+    display: none;
+  }
+  #present .presentBlock h2 {
+    left: 2.5rem;
+    bottom: 1rem;
+  }
+  /* fin imagen presentacion women */
+  /* inicio first layout */
+  #firstSection .firstText {
+    margin-bottom: 2rem;
+  }
+  #firstSection .firstText h3 {
+    width: 70%;
+  }
+  #firstSection .firstImg {
+    width: 100%;
+    height: auto;
+  }
+  #firstSection .firstImg figure .responsiveNon {
+    display: none;
+  }
+  #firstSection .firstImg figure h2 {
+    bottom: 2.5rem;
+    right: 2.5rem;
+    width: 7rem;
+    line-height: 2.2rem;
+  }
+  /* fin first layout */
+  /* title nike es para vos */
+  .divpreRow {
+    height: 12rem;
+    padding: 0;
+    text-align: start;
+    width: 90%;
+    margin: 2rem;
+  }
+  .divpreRow h2 {
+    width: 85%;
+  }
+  /* fin title nike */
+  /* layout row nike */
+  #rowSection {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  /* fin layout row nike */
+  /* tercera section variedad calidad */
+  #thirdSection .thirdTitle {
+    width: 90%;
+    padding: 0;
+  }
+  #thirdSection .thirdTitle h2 {
+    width: 100%;
+  }
+  #thirdSection .thirdTitle h3 {
+    width: 80%;
+  }
+  #thirdSection .thirdImg figure .responsiveNon {
+    display: none;
+  }
+  #thirdSection .thirdImg figure h2 {
+    right: 1rem;
+    bottom: 1rem;
+  }
+  /* fin variedad calidad */
 }

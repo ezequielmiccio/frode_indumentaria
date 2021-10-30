@@ -1,0 +1,119 @@
+@media (max-width: 768px) {
+
+    /* imagen presentacion women */
+    #present {
+        height: auto;
+        width: 100%;
+        margin: 2rem 0rem;
+        .presentBlock {
+            .responsiveNon {
+                display: none;
+            }
+
+            h2 {
+                left: 2.5rem;
+                bottom: 1rem;
+            }
+        }
+    }
+
+    /* fin imagen presentacion women */
+
+    /* inicio first layout */
+
+    #firstSection {
+        .firstText {
+            margin-bottom: 2rem;
+            h2 {
+
+            }
+
+            h3 {
+                width: 70%;
+            }
+        }
+
+        .firstImg {
+            width: 100%;
+            height: auto;
+
+            figure {
+                .responsiveNon {
+                    display: none;
+                }
+                
+                h2 {
+                    bottom: 2.5rem;
+                    right: 2.5rem;
+                    width: 7rem;
+                    line-height: 2.2rem;
+                }
+            }
+        }
+    }
+
+    /* fin first layout */
+
+    /* title nike es para vos */
+
+    .divpreRow {
+        height: 12rem;
+        padding: 0;
+        text-align: start;
+        width: 90%;
+        margin: 2rem;
+
+        h1 {
+             
+        }
+
+        h2 {
+            width: 85%;
+        }
+    }
+
+    /* fin title nike */
+
+    /* layout row nike */
+
+    #rowSection {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* fin layout row nike */
+
+    /* tercera section variedad calidad */
+
+    #thirdSection {
+
+        .thirdTitle {
+            width: 90%;
+            padding: 0;
+
+            h2 {
+                width: 100%;
+            }
+
+            h3 {
+                width: 80%;
+            }
+        }
+
+        .thirdImg {
+            figure { 
+                .responsiveNon {
+                    display: none;
+                }
+                
+                & h2 {
+                    right: 1rem;
+                    bottom: 1rem;
+                }
+            }
+        }
+    }
+
+    /* fin variedad calidad */
+}
