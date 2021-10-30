@@ -1,0 +1,39 @@
+@media (max-width: 768px) {
+
+    #portadaTrekking {
+        width: 100%;
+        height: 25rem;
+        margin: 0;
+        padding: 2rem 0.5rem;
+
+        .imgTxt {
+            figure {
+                .responsiveNon {
+                    display: none;
+                }
+                
+                h2 {
+                    display: none;
+                }
+                
+                h3 {
+                    bottom: 0.5rem;
+                    right: 0.5rem;
+                }
+            }
+        }
+    }
+
+    #openWeb {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+
+        .introImg {
+            .openImg {
+                display: none;
+            }
+        }
+    }
+}

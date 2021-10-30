@@ -4203,6 +4203,7 @@ section.containerForm {
   }
   #aspiration .weTxt h2 {
     width: 25%;
+    font-style: italic;
   }
   #weTeam {
     display: grid;
@@ -4214,7 +4215,7 @@ section.containerForm {
     width: 95%;
     padding: 0;
     margin: 0;
-    margin: 0rem 0.6rem;
+    margin: 0rem 0.8rem;
     height: 42rem;
   }
   #weTeam .teamTxt {
@@ -4224,13 +4225,14 @@ section.containerForm {
   #weTeam .teamTxt h2 {
     height: 2.8rem;
     font-size: 1.3rem;
-    width: 65%;
+    width: 70%;
     padding: 0;
     margin: 0;
     text-align: center;
     margin-bottom: 5rem;
     margin-left: 0.5rem;
     font-weight: bold;
+    font-style: italic;
   }
   #weTeam .teamTxt h3 {
     width: 100%;
@@ -4262,7 +4264,7 @@ section.containerForm {
     font-style: italic;
     margin: 0;
     padding: 0;
-    font-weight: 100;
+    font-weight: bold;
     text-decoration: none;
     height: 2.8rem;
     width: 20%;
@@ -4303,5 +4305,33 @@ section.containerForm {
     padding: 0;
     margin: 0;
     width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  #portadaTrekking {
+    width: 100%;
+    height: 25rem;
+    margin: 0;
+    padding: 2rem 0.5rem;
+  }
+  #portadaTrekking .imgTxt figure .responsiveNon {
+    display: none;
+  }
+  #portadaTrekking .imgTxt figure h2 {
+    display: none;
+  }
+  #portadaTrekking .imgTxt figure h3 {
+    bottom: 0.5rem;
+    right: 0.5rem;
+  }
+  #openWeb {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  #openWeb .introImg .openImg {
+    display: none;
   }
 }
