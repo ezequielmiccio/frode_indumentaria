@@ -4121,14 +4121,14 @@ section.containerForm {
   #containerCarousel {
     height: 25rem;
     margin: 0;
-    margin: 2rem 0.8rem 0.3rem 0.8rem;
+    margin: 2rem 0.5rem 0.3rem 0.5rem;
   }
   #containerCarousel .titleCarousel h2 {
     font-size: 3rem;
     text-align: center;
   }
   #containerCarousel #carouselExampleControls .carousel-inner {
-    margin-left: 3%;
+    margin-left: 5%;
   }
   #containerCarousel #carouselExampleControls .carousel-inner img {
     width: 20rem;
