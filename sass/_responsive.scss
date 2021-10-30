@@ -95,7 +95,7 @@
    }
 
    h3 {
-     width: 65%;
+     width: 75%;
      font-size: 3rem;
      margin-bottom: 0;
    }
@@ -248,6 +248,7 @@
      margin: 10rem 0rem 0.2rem 0rem;
     .titleCarousel {
       h2 {
+        font-size: 3rem;
         text-align: center;
       }
     }
@@ -311,6 +312,10 @@
 
     #formulario {
       height: 30rem;
+
+      .bodyForm {
+        margin-left: 6rem;
+      }
     }
   }
 
