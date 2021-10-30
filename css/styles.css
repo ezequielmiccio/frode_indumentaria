@@ -1570,7 +1570,7 @@
   height: 2.5rem;
   text-align: center;
   line-height: 2rem;
-  right: 1.5rem;
+  left: 1.5rem;
   bottom: 1.5rem;
 }
 
@@ -4269,6 +4269,7 @@ section.containerForm {
     height: 2.8rem;
     width: 20%;
     margin-bottom: 5rem;
+    margin-left: 1rem;
   }
   #impact .impactTxt h3 {
     width: 100%;
@@ -4311,9 +4312,13 @@ section.containerForm {
 @media (max-width: 768px) {
   #portadaTrekking {
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     margin: 0;
-    padding: 2rem 0.5rem;
+    padding: 2rem 0.5rem 0rem 0.5rem;
+  }
+  #portadaTrekking .imgTxt figure .imgNew {
+    border-top: 5px solid orange;
+    border-right: 5px solid orangered;
   }
   #portadaTrekking .imgTxt figure .responsiveNon {
     display: none;
@@ -4330,8 +4335,80 @@ section.containerForm {
     flex-direction: column;
     padding: 0;
     margin: 0;
+    width: 100%;
+    height: 32rem;
+    margin: 0rem 0.5rem;
   }
   #openWeb .introImg .openImg {
+    display: none;
+  }
+  #openWeb .introImg .imgNew {
+    width: 23.5rem;
+    border-left: 5px solid violet;
+    border-bottom: 5px solid cyan;
+  }
+  #openWeb .introTxt {
+    margin: 2rem 1.5rem;
+    padding: 0;
+    width: 90%;
+  }
+  #openWeb .introTxt .openTxt {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #openWeb .introTxt .openTxt a {
+    font-size: 3rem;
+    margin-right: 1.5rem;
+  }
+  #openWeb .introTxt .younger {
+    margin-right: 1.5rem;
+  }
+  #rowTwo {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 50rem;
+  }
+  #rowTwo .firstRow img {
+    width: 23rem;
+    border-top: 5px solid cyan;
+    border-left: 5px solid #2090a3;
+  }
+  #rowTwo .firstRow h2 {
+    bottom: 0rem;
+    right: 0rem;
+  }
+  #rowTwo .secondRow img {
+    width: 23rem;
+    border-bottom: 5px solid purple;
+    border-right: 5px solid violet;
+  }
+  #rowTwo .secondRow h2 {
+    left: 0rem;
+  }
+  #rowUnisx {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    height: 50rem;
+  }
+  #rowUnisx .women img {
+    width: 23rem;
+    border-top: 5px solid purple;
+    border-right: 5px solid violet;
+  }
+  #rowUnisx .men img {
+    width: 23rem;
+    border-left: 5px solid cyan;
+    border-bottom: 5px solid #0d4b4b;
+  }
+  #lastLayout {
     display: none;
   }
 }
