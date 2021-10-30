@@ -1,0 +1,208 @@
+@media (max-width: 768px) {
+    #weAre {
+        height: 40rem;
+        width: 90%;
+        margin: 0;
+        padding: 0;
+        .aboutFrode {
+            h1 {
+                height: auto;
+                font-size: 2.5rem;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                padding-left: 2rem;
+                margin-bottom: 1.5rem;
+            }
+
+            h2 {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+                text-align: start;
+                padding-left: 2.5rem;
+            }
+        }
+
+        .weAbout {
+            width: 95%;
+            h2 {
+                height: auto;
+                font-size: 2rem;
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 1.5rem;
+              
+            }
+
+            h3 {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                padding-left: 1rem;
+                margin-bottom: 1.5rem;
+            }
+
+            p {
+                width: 100%;
+                padding: 0;
+                margin: 0;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    #aspiration {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin: 0rem;
+
+        .weImg {
+            margin-bottom: 1.5rem;
+            img {
+                width: 23rem;
+            }
+
+        }
+
+        .weTxt {
+            align-self: center;
+            text-align: center;
+
+            h2 {
+                width: 25%;
+            }
+        }
+    }
+
+    #weTeam {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "img img"
+                             "texto texto";
+        column-gap: 0;
+        row-gap: 0;
+        width: 95%;
+        padding: 0;
+        margin: 0;
+        margin: 0rem 0.6rem;
+        height: 42rem;
+
+        .teamTxt {
+            grid-area: texto;
+            width: 95%;
+
+            h2 {
+                height: 2.8rem;
+                font-size: 1.3rem;
+                width: 65%;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                margin-bottom: 5rem;
+                margin-left: 0.5rem;
+                font-weight: bold;
+            }
+
+            h3 {
+                width: 100%;
+                text-align: center;
+            }
+
+            p {
+
+            }
+
+        }
+
+        .teamImg {
+
+            img {
+                width: 23rem;
+                grid-area: img;
+            }
+        }
+    }
+
+    #impact {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        margin: 0rem;
+        height: 42rem;
+
+        .impactImg {
+            margin-bottom: 1.8rem;
+            img{
+                width: 23rem;
+            }
+
+        }
+
+        .impactTxt {
+            width: 90%;
+
+            h2 {
+                font-style: italic;
+                margin: 0;
+                padding: 0;
+                font-weight: 100;
+                text-decoration: none;
+                height: 2.8rem;
+                width: 20%;
+                margin-bottom: 5rem;
+            }
+
+            h3 {
+                width: 100%;
+                text-align: center;
+                margin: 0;
+                padding: 0;
+                margin-bottom: 1rem;
+            }
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+
+    #location {
+        margin: 0;
+        padding: 0;
+        height: 45rem;
+        width: 100%;
+
+        .ubication {
+            align-self: center;
+
+            .list {
+                text-align: center;
+                margin: 0rem 0rem 1rem 0rem;
+                padding: 0;
+
+                li {
+                    text-align: start;
+                }
+            }
+        }
+
+        .map {
+            width: 95%;
+
+            iframe {
+                padding: 0;
+                margin: 0;
+                width: 100%;
+            }
+        }
+    }
+}
